@@ -1,0 +1,18 @@
+.result-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  margin-top: 20px;
+}
+
+.result-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.result-content {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}

@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background:#071214;
+  --foreground: #dee0e4;
+  --primary: #086f81;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  html { font-size: 15px; }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 13px; }
+}
+
+@media (max-width: 640px) {
+  html { font-size: 11px; }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0B0F19; }
+::-webkit-scrollbar-thumb { background: #06B6D4; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #0EA5E9; }
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.9rem;
+  margin-bottom: 2.5rem;
+  padding:1rem  0.5rem;
+}
+
+h1 { font-size: clamp(1.5rem, 5vw, 3rem); line-height: 1.5; }
+h2 { font-size: clamp(1.25rem, 4vw, 2.5rem); }
+h3 { font-size: clamp(1rem, 3vw, 1.75rem); }
+h4 { font-size: clamp(0.875rem, 2.5vw, 1.25rem); }
+
+p {
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+
+/* LINKS */
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: color 0.3s ease;
+}
+a:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* NAVBAR */
+nav {
+  margin-bottom: 0.5rem;
+  
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  z-index: 100;
+   box-shadow: 0 0 12px rgba(6, 182, 212, 0.25); /* cyan glow */
+   background: radial-gradient(circle, #161313, #151a19, #0c677e);
+  backdrop-filter: blur(12px);
+  position: sticky;;
+}
+
+
+/* BUTTONS & FORMS */
+button {
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 44px;
+  min-width: 30px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #10a4be, #0EA5E9);
+  color: #a4abac;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0EA5E9, #3B82F6);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+input, textarea, select {
+  background-color: rgba(15, 22, 40, 0.85);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 4px;
+  
+  color: #E5E7EB;
+  font-size: 1rem;
+  width: 100%;
+  padding-left:4rem;
+  padding-bottom: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #06d428;
+  background-color: rgba(15, 22, 40, 1);
+  box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.15);
+  
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+.ad-container, [data-ad-client] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 1rem 0;
+  padding:2rem;
+}
+
+ins.adsbygoogle {
+  display: block;
+  max-width: 100%;
+}
+@media (max-width: 640px) {
+  h1, h2, h3 {
+    margin-bottom: 0.75rem;
+  }
+  p {
+    margin-bottom: 0.75rem;
+  }
+  button {
+    width: 100%; /* full-width buttons on mobile */
+  }
+}
+
+
+/* RESPONSIVE SPACING FOR 1440PX+ SCREENS */
+@media (min-width: 1440px) {
+  .content-container, main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  [class*="max-w-"] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* MOBILE-FIRST SPACING (under 932px) */
+@media (max-width: 932px) {
+  body { padding: 1rem; }
+  main, [class*="mx-auto"] { padding: 0 1rem; }
+}
+
+/* MEDIUM SCREENS (933px - 1439px) */
+@media (min-width: 933px) and (max-width: 1439px) {
+  main, [class*="mx-auto"] { padding: 0 1.5rem; }
+}
+
+/* PREVENT HORIZONTAL OVERFLOW */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 6rem;
+  padding: 1rem;
+  background: linear-gradient(230deg, #02161854 0%, #0a1114 50%);
+
+}
+@media (max-width: 768px) {
+  section { margin-bottom: 1rem; }
+}
+
+/* Navbar separation */
+nav {
+  margin-bottom: 1.7rem;
+  box-shadow: 0 4px 12px rgba(11, 163, 201, 0.952);
+}
+
+/* Better mobile input experience */
+@media (max-width: 640px) {
+  input[type="button"],
+  input[type="submit"],
+  button,
+  select {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
+
+/* Accessible focus states */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+/* Print styles */
+@media print {
+  nav, footer, .ad-container { display: none !important; }
+  body { background: rgb(1, 23, 29); color: black; font-size: 6pt; }
+}

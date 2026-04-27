@@ -1,0 +1,65 @@
+.select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* slightly larger gap for clarity */
+  margin-bottom: 16px;
+}
+
+.select-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.select-input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, padding 0.2s ease;
+}
+
+.select-input:focus {
+  border-color: #4f46e5;
+}
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .select-input {
+    padding: 8px;        /* slightly smaller padding */
+    font-size: 13px;     /* reduce font size for compact fit */
+  }
+
+  .select-label {
+    font-size: 13px;
+  }
+}
+
+/* Tablet (481px – 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .select-input {
+    padding: 10px;       /* balanced padding */
+    font-size: 14px;
+  }
+}
+
+/* Large screens (1025px – 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .select-input {
+    padding: 12px;       /* more breathing room */
+    font-size: 15px;
+  }
+}
+
+/* Extra large screens (1441px+) */
+@media (min-width: 1441px) {
+  .select-input {
+    padding: 14px;       /* generous padding for wide layouts */
+    font-size: 16px;     /* upscale font for readability */
+  }
+
+  .select-label {
+    font-size: 15px;
+  }
+}
