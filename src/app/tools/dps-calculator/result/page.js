@@ -1,16 +1,15 @@
 "use client"
 
 import { useSearchParams } from "next/navigation"
+import { Suspense } from "react"
 import { motion } from "framer-motion"
 import { TrendingUp } from "lucide-react"
 
-export default function ResultPage() {
-
+function ResultContent() {
     const params = useSearchParams()
     const dps = params.get("dps")
 
     return (
-
         <div className="min-h-screen bg-slate-950 flex items-center justify-center">
 
             <motion.div
@@ -33,7 +32,17 @@ export default function ResultPage() {
             </motion.div>
 
         </div>
-
     )
+}
 
+export default function ResultPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen bg-slate-950 flex items-center justify-center">
+                <div className="text-gray-400">Loading...</div>
+            </div>
+        }>
+            <ResultContent />
+        </Suspense>
+    )
 }
