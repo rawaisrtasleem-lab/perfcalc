@@ -1,5 +1,5 @@
 export default async function sitemap() {
-  const baseUrl = "https://perfcalc.com"
+  const baseUrl = "https://perfcalcpro.com"
 
   const routes = [
     {

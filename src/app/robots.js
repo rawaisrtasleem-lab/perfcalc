@@ -12,7 +12,7 @@ export default function robots() {
         crawlDelay: 0,
       },
     ],
-    sitemap: "https://perfcalc.com/sitemap.xml",
-    host: "https://perfcalc.com",
+    sitemap: "https://perfcalcpro.com/sitemap.xml",
+    host: "https://perfcalcpro.com",
   }
 }
