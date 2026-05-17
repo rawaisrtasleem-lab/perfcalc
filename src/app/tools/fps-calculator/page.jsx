@@ -3,6 +3,7 @@ import Link from "next/link"
 
 import FPSLayout from "@/components/tools/FPSCalculator/FPSLayout/page"
 import FPSContent from "@/components/seo/FPSContent"
+import RelatedTools from "@/components/ui/RelatedTools"
 import FPSFAQ from "@/components/seo/FPSFAQ"
 
 export default function FPSCalculatorPage() {
@@ -18,6 +19,8 @@ export default function FPSCalculatorPage() {
 
                 {/* SEO CONTENT */}
                 <FPSContent />
+
+                <RelatedTools />
 
                 <FPSFAQ />
 

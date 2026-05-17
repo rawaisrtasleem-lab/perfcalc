@@ -3,9 +3,15 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Github, Twitter, Linkedin, Mail } from "lucide-react"
+import { useState, useEffect } from "react"
+import { SITE_EMAIL } from "@/lib/seo"
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const [currentYear, setCurrentYear] = useState(2026)
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear())
+  }, [])
 
   const footerLinks = {
     Tools: [
@@ -29,7 +35,7 @@ export default function Footer() {
     { icon: Github, href: "#", label: "GitHub" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "#", label: "Email" },
+    { icon: Mail, href: `mailto:${SITE_EMAIL}`, label: "Email" },
   ]
 
   return (
@@ -52,11 +58,11 @@ export default function Footer() {
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg blur opacity-50"></div>
                 <div className="relative px-2 sm:px-3 py-1 sm:py-2 bg-[#0B0F19] rounded-lg border border-cyan-400/50">
                   <span className="text-base sm:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-300">
-                    GT
+                    PCP
                   </span>
                 </div>
               </div>
-              <span className="text-lg sm:text-2xl font-bold text-gray-100">GameTools</span>
+              <span className="text-lg sm:text-2xl font-bold text-gray-100">PerfCalcPro</span>
             </div>
             <p className="text-gray-400 text-xs sm:text-sm md:text-base leading-relaxed mb-6 sm:mb-8 max-w-md">
               Premium gaming calculators designed for competitive gamers. Get instant insights on FPS, DPS, bottlenecks, and more.
@@ -122,7 +128,7 @@ export default function Footer() {
           className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3 sm:gap-4"
         >
           <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left order-2 sm:order-1">
-            © {currentYear} GameTools. All rights reserved.
+            © {currentYear} PerfCalcPro. All rights reserved.
           </p>
           
           <div className="flex items-center gap-2 sm:gap-4 text-xs text-gray-500 text-center order-1 sm:order-2">

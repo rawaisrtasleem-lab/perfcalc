@@ -1,5 +1,6 @@
 import XPLayout from "@/components/tools/XPCalculator/XPLayout"
 import XPContent from "@/components/seo/XPContent"
+import RelatedTools from "@/components/ui/RelatedTools"
 import XPFAQ from "@/components/seo/XPFAQ"
 
 export default function XPCalculatorPage() {
@@ -25,6 +26,8 @@ XP Calculator
 <XPLayout />
 
 <XPContent />
+
+<RelatedTools />
 
 <XPFAQ />
 

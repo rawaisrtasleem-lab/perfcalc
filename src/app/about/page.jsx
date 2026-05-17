@@ -3,11 +3,11 @@ export default function AboutPage() {
     <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-10 text-gray-100">
       
       <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center sm:text-left">
-        About Us – GameTools
+        About Us – PerfCalcPro
       </h1>
 
       <p className="text-gray-400 leading-relaxed">
-        Welcome to GameTools. We provide free and easy-to-use online gaming tools designed to help gamers improve their performance and make smarter decisions. 
+        Welcome to PerfCalcPro. We provide free and easy-to-use online gaming tools designed to help gamers improve their performance and make smarter decisions. 
         Our platform includes tools like FPS Calculator, Bottleneck Calculator, DPS Calculator, and XP Calculator to give accurate insights into gaming and PC performance.
       </p>
 
@@ -39,7 +39,7 @@ export default function AboutPage() {
           Have Feedback?
         </p>
         <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-          If you have any questions or suggestions, feel free to reach out. We value your feedback and are always looking to improve GameTools for our community.
+          If you have any questions or suggestions, feel free to reach out. We value your feedback and are always looking to improve PerfCalcPro for our community.
         </p>
         <button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-black font-bold rounded-lg hover:from-cyan-400 hover:to-blue-400 transition-colors">
           📩 Contact Us

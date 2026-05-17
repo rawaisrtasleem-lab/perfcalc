@@ -1,5 +1,6 @@
-export const SITE_URL = "https://perfcalc.com"
-export const SITE_NAME = "PerfCalc"
+export const SITE_URL = "https://perfcalcpro.com"
+export const SITE_NAME = "PerfCalcPro"
+export const SITE_EMAIL = "rawaisrtasleem@gmail.com"
 export const SITE_DESCRIPTION = "Professional gaming calculators for FPS, DPS, bottleneck analysis, and XP calculations. Perfect for competitive gamers and esports enthusiasts."
 
 export const getMetadata = ({
@@ -8,7 +9,7 @@ export const getMetadata = ({
   path = "/",
   image = `${SITE_URL}/og-image.png`,
   type = "website",
-  author = "PerfCalc Team",
+  author = "PerfCalcPro Team",
 }) => {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} - Gaming Performance Calculators`
   const url = `${SITE_URL}${path}`
@@ -75,17 +76,17 @@ export const getOrganizationSchema = () => {
     "@type": "Organization",
     name: SITE_NAME,
     url: SITE_URL,
-    logo: `${SITE_URL}/logo.png`,
+    logo: `${SITE_URL}/logo.svg`,
     description: SITE_DESCRIPTION,
     sameAs: [
-      "https://twitter.com/perfcalc",
-      "https://facebook.com/perfcalc",
-      "https://instagram.com/perfcalc",
+      "https://twitter.com/perfcalcpro",
+      "https://facebook.com/perfcalcpro",
+      "https://instagram.com/perfcalcpro",
     ],
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Support",
-      email: "support@perfcalc.com",
+      email: SITE_EMAIL,
     },
   })
 }

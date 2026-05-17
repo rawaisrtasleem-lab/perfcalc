@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import ToolHeader from "@/components/ui/DPSCalculator/ToolHeader"
 import DPSForm from "@/components/ui/DPSCalculator/DPSForm"
 import DPSContent from "@/components/seo/DPSContent"
+import RelatedTools from "@/components/ui/RelatedTools"
 import DPSFAQS from "@/components/seo/DPSFAQS"
 export default function DPSCalculatorPage() {
     return (
@@ -29,6 +30,8 @@ export default function DPSCalculatorPage() {
                 <DPSForm />
 
                 <DPSContent />
+
+                <RelatedTools />
 
                 <DPSFAQS />
 

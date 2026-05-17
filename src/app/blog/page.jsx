@@ -33,7 +33,7 @@ export default function BlogPage() {
   return (
     <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-10 text-gray-100">
       <div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">GameTools Blog</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">PerfCalcPro Blog</h1>
         <p className="text-gray-400 text-lg">
           Tips, guides, and insights for gaming enthusiasts and PC builders.
         </p>

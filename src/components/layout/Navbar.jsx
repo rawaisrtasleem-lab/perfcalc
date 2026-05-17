@@ -57,12 +57,12 @@ export default function Navbar() {
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-300"></div>
                 <div className="relative px-2 sm:px-3 py-1 sm:py-2 bg-[#0B0F19] rounded-lg border border-cyan-400/50">
                   <span className="text-base sm:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-300">
-                    GT
+                    PCP
                   </span>
                 </div>
               </motion.div>
               <span className="hidden sm:inline text-base sm:text-lg font-bold text-gray-100 group-hover:text-cyan-300 transition">
-                GameTools
+                PerfCalcPro
               </span>
             </Link>
 

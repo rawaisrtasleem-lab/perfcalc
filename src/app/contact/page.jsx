@@ -13,7 +13,9 @@ export default function ContactPage() {
 
       <div className="bg-slate-900 border border-slate-700 rounded-xl p-6">
         <p className="text-lg font-semibold text-white mb-2">📧 Email</p>
-        <p className="text-cyan-400 font-medium">your-email@example.com</p>
+        <a href="mailto:rawaisrtasleem@gmail.com" className="text-cyan-400 font-medium hover:text-cyan-300 transition-colors">
+          rawaisrtasleem@gmail.com
+        </a>
         <p className="text-gray-400 text-sm mt-2">
           We try to respond to all queries within 24–48 hours.
         </p>

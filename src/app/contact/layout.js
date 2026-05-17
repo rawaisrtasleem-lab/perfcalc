@@ -2,7 +2,7 @@ import { getMetadata } from "@/lib/seo"
 
 export const metadata = getMetadata({
   title: "Contact Us",
-  description: "Get in touch with PerfCalc support team. Have questions or feedback about our gaming calculators? Contact us today.",
+  description: "Get in touch with PerfCalcPro support team. Have questions or feedback about our gaming calculators? Contact us today.",
   path: "/contact",
 })
 

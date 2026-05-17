@@ -1,0 +1,45 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0EA5E9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A5F3FC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F2FE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer glowing circle -->
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#06B6D4" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Main background -->
+  <circle cx="100" cy="100" r="95" fill="#0B0F19"/>
+  
+  <!-- Corner accent lines -->
+  <line x1="30" y1="30" x2="50" y2="30" stroke="#06B6D4" stroke-width="2"/>
+  <line x1="30" y1="30" x2="30" y2="50" stroke="#06B6D4" stroke-width="2"/>
+  
+  <line x1="170" y1="30" x2="150" y2="30" stroke="#0EA5E9" stroke-width="2"/>
+  <line x1="170" y1="30" x2="170" y2="50" stroke="#0EA5E9" stroke-width="2"/>
+  
+  <line x1="30" y1="170" x2="50" y2="170" stroke="#0EA5E9" stroke-width="2"/>
+  <line x1="30" y1="170" x2="30" y2="150" stroke="#0EA5E9" stroke-width="2"/>
+  
+  <line x1="170" y1="170" x2="150" y2="170" stroke="#06B6D4" stroke-width="2"/>
+  <line x1="170" y1="170" x2="170" y2="150" stroke="#06B6D4" stroke-width="2"/>
+  
+  <!-- Inner circle border -->
+  <circle cx="100" cy="100" r="75" fill="none" stroke="url(#logoGrad)" stroke-width="1.5" opacity="0.8"/>
+  
+  <!-- Main text "PCP" -->
+  <text x="100" y="110" font-family="Arial, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="url(#textGrad)" letter-spacing="2">PCP</text>
+  
+  <!-- "Pro" text below -->
+  <text x="100" y="145" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#06B6D4" letter-spacing="1">PRO</text>
+  
+  <!-- Horizontal accent line -->
+  <line x1="55" y1="72" x2="145" y2="72" stroke="#06B6D4" stroke-width="1" opacity="0.6"/>
+  <line x1="55" y1="128" x2="145" y2="128" stroke="#0EA5E9" stroke-width="1" opacity="0.6"/>
+</svg>

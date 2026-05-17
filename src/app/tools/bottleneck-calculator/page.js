@@ -5,6 +5,7 @@ import { useState } from "react"
 import BottleneckCalculator from "@/components/ui/BottleneckCalculator"
 import BottleneckVisual from "@/components/ui/BottleneckVisual"
 import BottleneckCalculatorSeo from "@/components/seo/bottleneck-calculator"
+import RelatedTools from "@/components/ui/RelatedTools"
 
 
 export default function Page() {
@@ -47,8 +48,9 @@ export default function Page() {
 
       </section>
 
-      <section className="max-w-4xl m-16 pt-4 px-4 sm:px-6 lg:px-8 py-16 space-y-10 text-gray-100">
+      <RelatedTools />
 
+      <section className="max-w-4xl m-16 pt-4 px-4 sm:px-6 lg:px-8 py-16 space-y-10 text-gray-100">
 
         <BottleneckCalculatorSeo />
 

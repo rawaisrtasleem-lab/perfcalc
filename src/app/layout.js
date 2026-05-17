@@ -17,7 +17,7 @@ const orbitron = Orbitron({
 })
 
 export const metadata = getMetadata({
-  title: "PerfCalc - Gaming Performance Calculators",
+  title: "PerfCalcPro - Gaming Performance Calculators",
   description: "Professional gaming calculators for FPS, DPS, bottleneck analysis, and XP calculations. Free tools for competitive gamers and esports professionals.",
   path: "/",
 })
@@ -40,8 +40,8 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="keywords" content="FPS calculator, DPS calculator, bottleneck calculator, XP calculator, gaming tools, performance calculator, gaming performance" />
-        <meta name="author" content="PerfCalc Team" />
-        <meta name="copyright" content="© 2024 PerfCalc. All rights reserved." />
+        <meta name="author" content="PerfCalcPro Team" />
+        <meta name="copyright" content="© 2024 PerfCalcPro. All rights reserved." />
         <meta name="revisit-after" content="7 days" />
         <meta name="language" content="English" />
         
