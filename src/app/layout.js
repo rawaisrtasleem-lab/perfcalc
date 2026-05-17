@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
         {/* Google Analytics - Add your tracking ID */}
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-NL3W1KDQ9N"
         />
         <Script
           id="google-analytics"
@@ -87,7 +87,7 @@ export default function RootLayout({ children }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
+              gtag('config', 'G-NL3W1KDQ9N');
             `,
           }}
         />
