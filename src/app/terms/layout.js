@@ -1,8 +1,8 @@
 import { getMetadata } from "@/lib/seo"
 
 export const metadata = getMetadata({
-  title: "Terms of Service",
-  description: "PerfCalc Terms of Service - Read our full terms and conditions for using our gaming calculator platform.",
+  title: "Terms & Conditions",
+  description: "PerfCalcPro Terms & Conditions - Read our complete terms of service, usage policies, and legal agreements for our gaming calculator platform.",
   path: "/terms",
 })
 
