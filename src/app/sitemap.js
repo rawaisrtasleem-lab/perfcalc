@@ -68,6 +68,26 @@ export default async function sitemap() {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    
+    {
+  url: `${baseUrl}/blog`,
+  lastModified: new Date(),
+  changeFrequency: "weekly",
+  priority: 0.8,
+},
+{
+  url: `${baseUrl}/blog/gta-6-fps`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
+
+{
+  url: `${baseUrl}/blog/fps-in-video-editing`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+}
   ]
 
   return routes

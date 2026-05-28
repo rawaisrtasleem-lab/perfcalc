@@ -1,4 +1,5 @@
 import { gtaSetting1 } from "@/lib/blogs/gta-setting1";
+import { blog2 } from "@/lib/blogs/blog2";
 
 export const posts = [
   {
@@ -12,6 +13,17 @@ export const posts = [
     image: "/blog-images/image.png",
     content: gtaSetting1,
   },
+  {
+    id:2,
+    slug: "fps-in-video-editing",
+    title: "What Is FPS in Video Editing? Complete Beginner Guide",
+    description:
+      "FPS, or frames per second, is a crucial concept in video editing that determines the smoothness and quality of your videos. In this beginner's guide, we'll explore what FPS is, how it affects your video projects, and how to choose the right FPS for different types of content.",
+    date: "2024-06-15",
+    author: "VideoEditingPro",
+    image: "/blog-images/blog2-1.png",
+    content: blog2,
+  }
 ];
 
 export function getAllPosts() {
