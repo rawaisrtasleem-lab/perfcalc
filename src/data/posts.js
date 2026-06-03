@@ -1,5 +1,6 @@
 import { gtaSetting1 } from "@/lib/blogs/gta-setting1";
 import { blog2 } from "@/lib/blogs/blog2";
+import { blog3 } from "@/lib/blogs/blog3";
 
 export const posts = [
   {
@@ -14,7 +15,7 @@ export const posts = [
     content: gtaSetting1,
   },
   {
-    id:2,
+    id: 2,
     slug: "fps-in-video-editing",
     title: "What Is FPS in Video Editing? Complete Beginner Guide",
     description:
@@ -23,6 +24,17 @@ export const posts = [
     author: "VideoEditingPro",
     image: "/blog-images/blog2-1.png",
     content: blog2,
+  },
+  {
+    id: 3,
+    slug: "what-is-a-good-fps",
+    title: "What Is a Good FPS for Gaming? 30 vs 60 vs 144 Explained",
+    description:
+      "Discover what good FPS for gaming means. 60 FPS suits casual players. 144 FPS wins competitive matches. Find your perfect frame rate today.",
+    date: "2024-06-20",
+    author: "GamerPro",
+    image: "/blog-images/blog3-1.png",
+    content: blog3,
   }
 ];
 
