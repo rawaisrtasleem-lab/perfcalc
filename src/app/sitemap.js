@@ -87,6 +87,12 @@ export default async function sitemap() {
   lastModified: new Date(),
   changeFrequency: "monthly",
   priority: 0.9,
+},
+{
+  url : `${baseUrl}/blog/what-is-a-good-fps`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
 }
   ]
 
