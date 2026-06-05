@@ -1,6 +1,7 @@
 import { gtaSetting1 } from "@/lib/blogs/gta-setting1";
 import { blog2 } from "@/lib/blogs/blog2";
 import { blog3 } from "@/lib/blogs/blog3";
+import { blog4 } from "@/lib/blogs/blog4";
 
 export const posts = [
   {
@@ -35,6 +36,18 @@ export const posts = [
     author: "GamerPro",
     image: "/blog-images/blog3-1.png",
     content: blog3,
+  },
+  {
+    id: 4,
+    slug: "can-my-pc-run-it",
+    title: "Can My PC Run It? 4 Easy Ways to Check",
+    description:
+      "Not sure if your PC can run it? Check game system   requirements in 60 seconds — free tools, no downloads needed. ",
+        
+    date: "2024-06-25",
+    author: "PerfCalcPro",
+    image: "/blog-images/blog4-1.png",
+    content: blog4,
   }
 ];
 

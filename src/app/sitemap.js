@@ -93,6 +93,16 @@ export default async function sitemap() {
   lastModified: new Date(),
   changeFrequency: "monthly",
   priority: 0.9,
+},
+
+
+
+{
+
+  url : `${baseUrl}/blog/can-my-pc-run-it`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
 }
   ]
 
