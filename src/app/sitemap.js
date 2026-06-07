@@ -103,7 +103,14 @@ export default async function sitemap() {
   lastModified: new Date(),
   changeFrequency: "monthly",
   priority: 0.9,
+},
+{
+  url : `${baseUrl}/blog/fps-vs-hz`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
 }
+
   ]
 
   return routes
