@@ -2,6 +2,7 @@ import { gtaSetting1 } from "@/lib/blogs/gta-setting1";
 import { blog2 } from "@/lib/blogs/blog2";
 import { blog3 } from "@/lib/blogs/blog3";
 import { blog4 } from "@/lib/blogs/blog4";
+import { blog5 } from "@/lib/blogs/blog5";
 
 export const posts = [
   {
@@ -48,7 +49,21 @@ export const posts = [
     author: "PerfCalcPro",
     image: "/blog-images/blog4-1.png",
     content: blog4,
+  },
+
+  {
+    id: 5,
+    slug: "fps-vs-hz",
+    title: "FPS vs Hz: 7 Key Differences Every Gamer Must Know",
+    description:
+      "Confused about FPS vs Hz? Learn how frame rate and refresh rate differ, work together, and affect your gaming experience. Don't miss this.",
+
+    date: "2024-06-30",
+    author: "PerfCalcPro",
+    image: "/blog-images/blog5-2.png",
+    content: blog5,
   }
+
 ];
 
 export function getAllPosts() {
