@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <!-- Background -->
+  <rect width="192" height="192" fill="#0B0F19" rx="45"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer circle ring -->
+  <circle cx="96" cy="96" r="75" fill="none" stroke="url(#logoGrad)" stroke-width="5" opacity="0.8"/>
+  
+  <!-- Inner circle ring -->
+  <circle cx="96" cy="96" r="55" fill="none" stroke="url(#logoGrad)" stroke-width="3" opacity="0.5"/>
+  
+  <!-- Performance bars (like FPS indicator) -->
+  <rect x="70" y="75" width="6" height="30" fill="url(#logoGrad)" rx="2"/>
+  <rect x="82" y="65" width="6" height="40" fill="url(#logoGrad)" rx="2"/>
+  <rect x="94" y="55" width="6" height="50" fill="url(#logoGrad)" rx="2"/>
+  <rect x="106" y="65" width="6" height="40" fill="url(#logoGrad)" rx="2"/>
+  <rect x="118" y="75" width="6" height="30" fill="url(#logoGrad)" rx="2"/>
+  
+  <!-- Center play/performance symbol -->
+  <path d="M 96 115 L 80 130 L 80 115 Z" fill="url(#logoGrad)"/>
+  <path d="M 96 115 L 112 130 L 112 115 Z" fill="url(#logoGrad)"/>
+</svg>

@@ -14,6 +14,8 @@ export default function Navbar() {
     { label: "FPS", href: "/tools/fps-calculator" },
     { label: "DPS", href: "/tools/dps-calculator" },
     { label: "XP", href: "/tools/xp-calculator" },
+    { label: "Blog", href: "/blog" },
+    
   ];
 
   // Close menu when window resizes to desktop size

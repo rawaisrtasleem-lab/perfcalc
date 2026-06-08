@@ -70,11 +70,14 @@ export default function Homeseo() {
           Explore all GameTools calculators today. From FPS and DPS analysis to XP tracking and bottleneck detection, 
           our tools give you the insights you need for smarter upgrades and smoother gameplay.
         </p>
-        <button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-black font-bold rounded-lg hover:from-cyan-400 hover:to-blue-400 transition-colors">
-          🚀<Link href="/tools/bottleneck-calculator" className="text-black font-bold">
+      <Link href="/tools/bottleneck-calculator" >
+        <button className="px-6 md:px-16 py-3 md:py-4 bg-cyan-500 text-black font-semibold rounded-lg hover:bg-cyan-400 transition-colors">
+            
+        
             Explore GameTools Now
-          </Link>
+          
         </button>
+        </Link>
       </div>
     </section>
   )
