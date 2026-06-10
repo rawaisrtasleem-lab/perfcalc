@@ -1,6 +1,6 @@
 import { gtaSetting1 } from "@/lib/blogs/gta-setting1";
 import { blog2 } from "@/lib/blogs/blog2";
-
+import { blog3 } from "@/lib/blogs/blog3";
 import { blog4 } from "@/lib/blogs/blog4";
 import { blog5 } from "@/lib/blogs/blog5";
 import {blog6} from "@/lib/blogs/blog6";
@@ -28,7 +28,17 @@ export const posts = [
     image: "/blog-images/blog2-1.png",
     content: blog2,
   },
- 
+  {
+    id: 3,
+    slug: "best-budget-gaming-pc",
+    title: "Best Budget Gaming PC in 2026: Top Picks Under $1000",
+    description:
+      "Find the best budget gaming PC in 2026. Top picks for smooth 1080p gaming at prices that won't empty your wallet.",
+    date: "2024-06-20",
+    author: "PerfCalcPro",
+    image: "/blog-images/blog33-1.png",
+    content: blog3,
+  },
   {
     id: 4,
     slug: "can-my-pc-run-it",
