@@ -3,6 +3,7 @@ import { blog2 } from "@/lib/blogs/blog2";
 import { blog3 } from "@/lib/blogs/blog3";
 import { blog4 } from "@/lib/blogs/blog4";
 import { blog5 } from "@/lib/blogs/blog5";
+import {blog6} from "@/lib/blogs/blog6";
 
 export const posts = [
   {
@@ -62,6 +63,20 @@ export const posts = [
     author: "PerfCalcPro",
     image: "/blog-images/blog5-2.png",
     content: blog5,
+  },
+
+  {
+
+
+    id: 6,
+    slug: "good-fps-for-gaming",
+    title: "What Is a Good FPS for Gaming? 30 vs 60 vs 144 Explained",
+    description:
+      "Not sure what is a good FPS for gaming? This guide covers every target from 30 to 240 FPS so your setup always feels smooth. ",
+    date: "2024-07-05",
+    author: "GamerPro",
+    image: "/blog-images/blog6-1.png",
+    content: blog6,
   }
 
 ];
