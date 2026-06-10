@@ -1,6 +1,6 @@
 import { gtaSetting1 } from "@/lib/blogs/gta-setting1";
 import { blog2 } from "@/lib/blogs/blog2";
-import { blog3 } from "@/lib/blogs/blog3";
+
 import { blog4 } from "@/lib/blogs/blog4";
 import { blog5 } from "@/lib/blogs/blog5";
 import {blog6} from "@/lib/blogs/blog6";
@@ -28,17 +28,7 @@ export const posts = [
     image: "/blog-images/blog2-1.png",
     content: blog2,
   },
-  {
-    id: 3,
-    slug: "what-is-a-good-fps",
-    title: "What Is a Good FPS for Gaming? 30 vs 60 vs 144 Explained",
-    description:
-      "Discover what good FPS for gaming means. 60 FPS suits casual players. 144 FPS wins competitive matches. Find your perfect frame rate today.",
-    date: "2024-06-20",
-    author: "GamerPro",
-    image: "/blog-images/blog3-1.png",
-    content: blog3,
-  },
+ 
   {
     id: 4,
     slug: "can-my-pc-run-it",
