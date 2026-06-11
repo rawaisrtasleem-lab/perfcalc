@@ -4,6 +4,7 @@ import { blog3 } from "@/lib/blogs/blog3";
 import { blog4 } from "@/lib/blogs/blog4";
 import { blog5 } from "@/lib/blogs/blog5";
 import {blog6} from "@/lib/blogs/blog6";
+import {blog7} from "@/lib/blogs/blog7";
 
 export const posts = [
   {
@@ -77,7 +78,22 @@ export const posts = [
     author: "GamerPro",
     image: "/blog-images/blog6-1.png",
     content: blog6,
+  },
+
+
+  {
+    id :7,
+    slug: "cloud-gaming-vs-console-gaming",
+    title: "Cloud Gaming vs Console Gaming: Pros, Cons & Key Differences (2026)",
+    description:
+      "Compare cloud gaming vs console gaming — performance, cost, latency and ownership explained. Find out which platform suits your gaming style in 2026.",
+    date: "2024-07-10",
+    author: "PerfCalcPro",
+    image: "/blog-images/blog7-1.png",
+    content: blog7,
   }
+
+
 
 ];
 

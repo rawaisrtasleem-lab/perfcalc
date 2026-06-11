@@ -23,7 +23,7 @@ export const blog6=`
 
   <h2>What Is a Good FPS for Gaming (Real Answer)</h2>
   <p>Here's what most guides won't tell you: the best performance is the one your PC holds without dropping.</p>
-  <p>A locked 75 frame rate beats an unstable 120 frames per second every single time. Those drops — even brief ones — register as stutter in your brain immediately. Frame consistency is better than peak numbers.</p>
+  <p>A locked 75 frame rate beats an unstable 120 <a href="/tools/fps-calculator">frames per second</a> every single time. Those drops — even brief ones — register as stutter in your brain immediately. Frame consistency is better than peak numbers.</p>
   <p>Apart from stability, there are three elements you need for high performance: your choice of games, your monitor’s refresh rate, and how well you balance your hardware.</p>
 
   <h2>30 FPS Playable or Painful?</h2>
