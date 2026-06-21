@@ -5,6 +5,7 @@ import { blog4 } from "@/lib/blogs/blog4";
 import { blog5 } from "@/lib/blogs/blog5";
 import {blog6} from "@/lib/blogs/blog6";
 import {blog7} from "@/lib/blogs/blog7";
+import {blog8} from "@/lib/blogs/blog8";
 
 export const posts = [
   {
@@ -91,6 +92,16 @@ export const posts = [
     author: "PerfCalcPro",
     image: "/blog-images/blog7-1.png",
     content: blog7,
+  },
+  {
+    id: 8,
+    slug: "star-citizen-dps-calculator",
+    title: "Star Citizen Dps Calculator - How to calculate DPS in Star Citizen",
+    description:" Stop optimizing for on-paper DPS. This guide covers real Effective Damage Per Second in Alpha 4.5 Maelstrom armor, Resource Network limits, TTK targeting, and fleet roles.",
+    date :"2024-07-15",
+    author:"perfcalcpro",
+    image:"/blog-images/blog8-1.png",
+    content:blog8,
   }
 
 
