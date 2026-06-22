@@ -6,6 +6,7 @@ import { blog5 } from "@/lib/blogs/blog5";
 import {blog6} from "@/lib/blogs/blog6";
 import {blog7} from "@/lib/blogs/blog7";
 import {blog8} from "@/lib/blogs/blog8";
+import {blog9} from "@/lib/blogs/blog9";
 
 export const posts = [
   {
@@ -102,9 +103,16 @@ export const posts = [
     author:"perfcalcpro",
     image:"/blog-images/blog8-1.png",
     content:blog8,
+  },{
+    id: 9,
+    slug: "fps-in-minecraft",
+    title: "How to Improve FPS in Minecraft: A Complete Guide",
+    description: "Discover simple tweaks to boost FPS in Minecraft. Optimize settings, install performance mods, and fix lag for smoother, faster gameplay today.",
+    date: "2024-07-20",
+    author: "PerfCalcPro",
+    image: "/blog-images/blog9-1.png",
+    content: blog9,
   }
-
-
 
 ];
 
