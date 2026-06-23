@@ -131,6 +131,14 @@ export default async function sitemap() {
   lastModified: new Date(),
   changeFrequency: "monthly",
   priority: 0.9,
+},
+
+{
+  
+  url : `${baseUrl}/blog/counter-strike-2-online-play-guide`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
 }
 
   ]

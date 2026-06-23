@@ -7,6 +7,7 @@ import {blog6} from "@/lib/blogs/blog6";
 import {blog7} from "@/lib/blogs/blog7";
 import {blog8} from "@/lib/blogs/blog8";
 import {blog9} from "@/lib/blogs/blog9";
+import {blog10} from "@/lib/blogs/blog10"
 
 export const posts = [
   {
@@ -112,7 +113,20 @@ export const posts = [
     author: "PerfCalcPro",
     image: "/blog-images/blog9-1.png",
     content: blog9,
-  }
+  },
+
+  {
+  id: 10,
+  slug: "counter-strike-2-online-play-guide",
+  title: "Counter-Strike 2 Online Play Guide: How to Get Started and Play Smoothly in 2026",
+  description:
+    "Learn how to install, set up, and play Counter-Strike 2 online smoothly in 2026. Covers Steam setup, game modes, maps, CSO2 spin-off, FPS optimization, and FAQs.",
+  date: "2026-06-23",
+  author: "PerfCalcPro",
+  image: "/blog-images/counter-striker1.png",
+  content: blog10,
+}
+
 
 ];
 
