@@ -7,7 +7,8 @@ import {blog6} from "@/lib/blogs/blog6";
 import {blog7} from "@/lib/blogs/blog7";
 import {blog8} from "@/lib/blogs/blog8";
 import {blog9} from "@/lib/blogs/blog9";
-import {blog10} from "@/lib/blogs/blog10"
+import {blog10} from "@/lib/blogs/blog10";
+import {blog11} from "@/lib/blogs/blog11";
 
 export const posts = [
   {
@@ -125,6 +126,21 @@ export const posts = [
   author: "PerfCalcPro",
   image: "/blog-images/counter-striker1.png",
   content: blog10,
+},
+{
+  id: 11,
+    slug: "is-pubg-cross-platform",
+    title: "Is PUBG Cross Platform in 2026? Crossplay Guide for All Platforms ",
+
+    description: "PUBG crossplay works on console and PC — but not between them. See every platform combo, what changed in Nov 2025, and what crossplay off does to your lobbies.",
+
+    excerpt: "PUBG runs three separate matchmaking pools. Console crossplay works, PC stays separate, and mobile connects only within iOS and Android. This guide covers every platform combo, including the ones that quietly ruin your experience.",
+    image: "/blog-images/pubg1.png",
+    
+    author: "Rao Awais",
+    date: "June 25, 2026",
+    readTime: "10 min read",
+    content:blog11,
 }
 
 
