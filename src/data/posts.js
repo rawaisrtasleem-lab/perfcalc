@@ -9,6 +9,7 @@ import {blog8} from "@/lib/blogs/blog8";
 import {blog9} from "@/lib/blogs/blog9";
 import {blog10} from "@/lib/blogs/blog10";
 import {blog11} from "@/lib/blogs/blog11";
+import {blog12} from "@/lib/blogs/blog12";
 
 export const posts = [
   {
@@ -141,7 +142,22 @@ export const posts = [
     date: "June 25, 2026",
     readTime: "10 min read",
     content:blog11,
-}
+},
+{
+  id:12,
+  slug:"rotmg-dps-calculator",
+  title:"RotMG DPS Calculator;Why Your Best Weapon Might Be Costing You Kills",
+  description:"Learn how the RotMG DPS Calculator works . ATK vs DEX priority, DEF breakeven points and real damage output for every dungeon tier.",
+  excerpt:"Learn how the RotMG DPS Calculator works . ATK vs DEX priority, DEF breakeven points and real damage output for every dungeon tier.",
+  image:"/blog-images/dps-cal.png",
+  author:"Rao Awais",
+  date:"june 27,2026",
+  readTime:"8 min read",
+  content:blog12,
+
+
+
+},
 
 
 ];

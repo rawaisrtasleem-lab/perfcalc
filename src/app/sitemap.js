@@ -147,6 +147,13 @@ url : `${baseUrl}/blog/is-pubg-cross-platform`,
   changeFrequency: "monthly",
   priority: 0.9,
 },
+{
+  url : `${baseUrl}/blog/rotmg-dps-calculator`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
+
 
   ]
 
