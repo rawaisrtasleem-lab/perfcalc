@@ -10,6 +10,7 @@ import {blog9} from "@/lib/blogs/blog9";
 import {blog10} from "@/lib/blogs/blog10";
 import {blog11} from "@/lib/blogs/blog11";
 import {blog12} from "@/lib/blogs/blog12";
+import {blog13} from "@/lib/blogs/blog13";
 
 export const posts = [
   {
@@ -158,6 +159,17 @@ export const posts = [
 
 
 },
+{
+  id:13,
+  slug:"osrs-dps-calculator",
+  description:"Calculate OSRS DPS instantly with our free calculator. Learn the max hit formula, accuracy rolls, tick speed, and why DPS beats max hit every time.",
+  excerpt:"Calculate OSRS DPS instantly with our free calculator. Learn the max hit formula, accuracy rolls, tick speed, and why DPS beats max hit every time.",
+   image:"/blog-images/orrs-dps.png",
+  author:"Rao Awais",
+  date:"june 29,2026",
+  readTime:"8 min read",
+  content:blog13,
+}
 
 
 ];

@@ -29,7 +29,9 @@ export default function BlogPage() {
                   src={post.image}
                   alt={post.title}
                   fill
+    
                   className="object-cover"
+                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
 
