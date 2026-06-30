@@ -11,7 +11,7 @@ import {blog10} from "@/lib/blogs/blog10";
 import {blog11} from "@/lib/blogs/blog11";
 import {blog12} from "@/lib/blogs/blog12";
 import {blog13} from "@/lib/blogs/blog13";
-
+import {blog14} from "@/lib/blogs/blog14";
 export const posts = [
   {
     id: 1,
@@ -20,7 +20,8 @@ export const posts = [
     description:
       "GTA 6 is the next big title in the Grand Theft Auto series. Players expect a huge map with advanced gameplay systems.",
     date: "2026-05-21",
-    author: "PerfCalcPro",
+    author: "Rao Awais",
+     readTime:"10 min read",
     image: "/blog-images/image.png",
     content: gtaSetting1,
   },
@@ -31,7 +32,8 @@ export const posts = [
     description:
       "FPS, or frames per second, is a crucial concept in video editing that determines the smoothness and quality of your videos. In this beginner's guide, we'll explore what FPS is, how it affects your video projects, and how to choose the right FPS for different types of content.",
     date: "2024-06-15",
-    author: "VideoEditingPro",
+     readTime:"8 min read",
+    author: "Rao Awais",
     image: "/blog-images/blog2-1.png",
     content: blog2,
   },
@@ -42,7 +44,8 @@ export const posts = [
     description:
       "Find the best budget gaming PC in 2026. Top picks for smooth 1080p gaming at prices that won't empty your wallet.",
     date: "2024-06-20",
-    author: "PerfCalcPro",
+    author: "Rao Awais",
+     readTime:"8 min read",
     image: "/blog-images/blog33-1.png",
     content: blog3,
   },
@@ -54,7 +57,8 @@ export const posts = [
       "Not sure if your PC can run it? Check game system   requirements in 60 seconds — free tools, no downloads needed. ",
         
     date: "2024-06-25",
-    author: "PerfCalcPro",
+    author: "Rao Awais",
+     readTime:"12 min read",
     image: "/blog-images/blog4-1.png",
     content: blog4,
   },
@@ -67,7 +71,8 @@ export const posts = [
       "Confused about FPS vs Hz? Learn how frame rate and refresh rate differ, work together, and affect your gaming experience. Don't miss this.",
 
     date: "2024-06-30",
-    author: "PerfCalcPro",
+    author: "Rao Awais",
+     readTime:"8 min read",
     image: "/blog-images/blog5-2.png",
     content: blog5,
   },
@@ -81,7 +86,8 @@ export const posts = [
     description:
       "Not sure what is a good FPS for gaming? This guide covers every target from 30 to 240 FPS so your setup always feels smooth. ",
     date: "2024-07-05",
-    author: "GamerPro",
+    author: "Rao Awais",
+     readTime:"12 min read",
     image: "/blog-images/blog6-1.png",
     content: blog6,
   },
@@ -95,6 +101,7 @@ export const posts = [
       "Compare cloud gaming vs console gaming — performance, cost, latency and ownership explained. Find out which platform suits your gaming style in 2026.",
     date: "2024-07-10",
     author: "PerfCalcPro",
+     readTime:"10 min read",
     image: "/blog-images/blog7-1.png",
     content: blog7,
   },
@@ -105,6 +112,7 @@ export const posts = [
     description:" Stop optimizing for on-paper DPS. This guide covers real Effective Damage Per Second in Alpha 4.5 Maelstrom armor, Resource Network limits, TTK targeting, and fleet roles.",
     date :"2024-07-15",
     author:"perfcalcpro",
+     readTime:"8 min read",
     image:"/blog-images/blog8-1.png",
     content:blog8,
   },{
@@ -114,6 +122,7 @@ export const posts = [
     description: "Discover simple tweaks to boost FPS in Minecraft. Optimize settings, install performance mods, and fix lag for smoother, faster gameplay today.",
     date: "2024-07-20",
     author: "PerfCalcPro",
+     readTime:"9 min read",
     image: "/blog-images/blog9-1.png",
     content: blog9,
   },
@@ -125,6 +134,7 @@ export const posts = [
   description:
     "Learn how to install, set up, and play Counter-Strike 2 online smoothly in 2026. Covers Steam setup, game modes, maps, CSO2 spin-off, FPS optimization, and FAQs.",
   date: "2026-06-23",
+   readTime:"8 min read",
   author: "PerfCalcPro",
   image: "/blog-images/counter-striker1.png",
   content: blog10,
@@ -162,6 +172,7 @@ export const posts = [
 {
   id:13,
   slug:"osrs-dps-calculator",
+  title:"Osra dps calculator guideine",
   description:"Calculate OSRS DPS instantly with our free calculator. Learn the max hit formula, accuracy rolls, tick speed, and why DPS beats max hit every time.",
   excerpt:"Calculate OSRS DPS instantly with our free calculator. Learn the max hit formula, accuracy rolls, tick speed, and why DPS beats max hit every time.",
    image:"/blog-images/orrs-dps.png",
@@ -169,6 +180,19 @@ export const posts = [
   date:"june 29,2026",
   readTime:"8 min read",
   content:blog13,
+},
+{
+  id: "14",
+  slug:"how-to-drop-weapons-in-warframe",
+  title: "How to Drop Weapons in Warframe",
+  description: "A complete guide explaining why you cannot manually drop weapons in Warframe, how the Disarm mechanic works, which Warframe abilities force weapon drops, and how to manage your loadout effectively.",
+  excerpt: "Warframe has no manual weapon drop feature. Weapons only hit the floor through enemy disarm mechanics like the Drahk Master’s Halikar throw. Learn how to retrieve dropped weapons, prevent disarms, and manage your Arsenal loadouts.",
+  image: "/blog-images/wairframe.jpg",
+
+  author: "Rao Awais",
+  date: "2026-06-30",
+  readTime: "8 min read",
+  content:blog14,
 }
 
 

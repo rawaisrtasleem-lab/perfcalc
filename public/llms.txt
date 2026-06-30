@@ -1,0 +1,29 @@
+# PerfCalcPro
+
+> PerfCalcPro provides accurate, easy-to-use calculators and guides for PC gamers who want to optimize their gaming performance. The site covers popular titles including GTA, PUBG, Counter-Strike 2, Warframe, Star Citizen, OSRS, and more.
+
+## Tools
+- [FPS Calculator](https://perfcalcpro.com/tools/fps-calculator): Calculate and estimate frames per second based on your PC hardware
+- [DPS Calculator](https://perfcalcpro.com/tools/dps-calculator): Calculate damage per second for various games
+- [Bottleneck Calculator](https://perfcalcpro.com/tools/bottleneck-calculator): Find CPU and GPU bottlenecks in your gaming PC build
+- [XP Calculator](https://perfcalcpro.com/tools/xp-calculator): Calculate experience points and leveling progression
+
+## Blog
+- [GTA 6 FPS Guide](https://perfcalcpro.com/blog/gta-6-fps): Expected FPS performance for GTA 6 on PC
+- [FPS in Video Editing](https://perfcalcpro.com/blog/fps-in-video-editing): How FPS affects video editing and rendering
+- [What is a Good FPS](https://perfcalcpro.com/blog/what-is-a-good-fps): Understanding FPS benchmarks for gaming
+- [Can My PC Run It](https://perfcalcpro.com/blog/can-my-pc-run-it): Guide to checking PC game compatibility
+- [FPS vs Hz](https://perfcalcpro.com/blog/fps-vs-hz): Difference between frames per second and monitor refresh rate
+- [Good FPS for Gaming](https://perfcalcpro.com/blog/good-fps-for-gaming): Recommended FPS targets for different game genres
+- [Best Budget Gaming PC](https://perfcalcpro.com/blog/best-budget-gaming-pc): Budget PC builds for optimal gaming performance
+- [Cloud Gaming vs Console Gaming](https://perfcalcpro.com/blog/cloud-gaming-vs-console-gaming): Comparing cloud gaming and console gaming performance
+- [Counter-Strike 2 Online Play Guide](https://perfcalcpro.com/blog/counter-strike-2-online-play-guide): Complete guide to playing CS2 online
+- [Is PUBG Cross Platform](https://perfcalcpro.com/blog/is-pubg-cross-platform): PUBG crossplay support across platforms
+- [RotMG DPS Calculator](https://perfcalcpro.com/blog/rotmg-dps-calculator): Realm of the Mad God DPS calculation guide
+- [OSRS DPS Calculator](https://perfcalcpro.com/blog/osrs-dps-calculator): Old School RuneScape DPS calculation guide
+
+## Optional
+- [About](https://perfcalcpro.com/about)
+- [Contact](https://perfcalcpro.com/contact)
+- [Privacy Policy](https://perfcalcpro.com/privacy-policy)
+- [Terms of Service](https://perfcalcpro.com/terms)

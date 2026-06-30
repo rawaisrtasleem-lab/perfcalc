@@ -159,6 +159,12 @@ url : `${baseUrl}/blog/is-pubg-cross-platform`,
   changeFrequency: "monthly",
   priority: 0.9,
 },
+{
+  url :`${baseUrl}/blog/how-to-drop-weapons-in-warframe`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+}
 
 
   ]
