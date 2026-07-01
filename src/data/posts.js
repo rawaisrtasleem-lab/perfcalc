@@ -187,7 +187,7 @@ export const posts = [
   title: "How to Drop Weapons in Warframe",
   description: "A complete guide explaining why you cannot manually drop weapons in Warframe, how the Disarm mechanic works, which Warframe abilities force weapon drops, and how to manage your loadout effectively.",
   excerpt: "Warframe has no manual weapon drop feature. Weapons only hit the floor through enemy disarm mechanics like the Drahk Master’s Halikar throw. Learn how to retrieve dropped weapons, prevent disarms, and manage your Arsenal loadouts.",
-  image: "/blog-images/wairframe.jpg",
+  image: "/blog-images/wairframe.png",
 
   author: "Rao Awais",
   date: "2026-06-30",
