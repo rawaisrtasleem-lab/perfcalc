@@ -161,9 +161,17 @@ url : `${baseUrl}/blog/is-pubg-cross-platform`,
 },
 {
   url :`${baseUrl}/blog/how-to-drop-weapons-in-warframe`,
-  lastModified: new Date(),
+  lastModified: new Date(),         
   changeFrequency: "monthly",
   priority: 0.9,
+},
+{
+  
+  url :`${baseUrl}/blog/is-arc-raiders-crossplay`,
+  lastModified: new Date(),          
+  changeFrequency: "monthly",
+  priority: 0.9,
+
 }
 
 

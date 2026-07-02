@@ -12,6 +12,7 @@ import {blog11} from "@/lib/blogs/blog11";
 import {blog12} from "@/lib/blogs/blog12";
 import {blog13} from "@/lib/blogs/blog13";
 import {blog14} from "@/lib/blogs/blog14";
+import {blog15} from "@/lib/blogs/blog15";
 export const posts = [
   {
     id: 1,
@@ -182,7 +183,7 @@ export const posts = [
   content:blog13,
 },
 {
-  id: "14",
+  id: 14,
   slug:"how-to-drop-weapons-in-warframe",
   title: "How to Drop Weapons in Warframe",
   description: "A complete guide explaining why you cannot manually drop weapons in Warframe, how the Disarm mechanic works, which Warframe abilities force weapon drops, and how to manage your loadout effectively.",
@@ -193,6 +194,20 @@ export const posts = [
   date: "2026-06-30",
   readTime: "8 min read",
   content:blog14,
+},
+{
+  id: 15,
+  slug:"is-arc-raiders-crossplay",
+  title:"Is Arc Raiders Crossplay in 2026? PC, PS5 & Xbox Guide",
+  description:"Arc Raiders has full crossplay across PC, PS5, and Xbox but no console-only pool. See every platform combo, input matchmaking traps, and what crossplay off actually does.",
+
+  excerpt:"Arc Raiders has full crossplay across PC, PS5, and Xbox but no console-only pool. See every platform combo, input matchmaking traps, and what crossplay off actually does.",
+
+  image:"/blog-images/arc raiders.png",
+  author:"Rao Awais",
+  date:"2026-07-1",
+  readTime:"10 min read",
+  content:blog15,
 }
 
 
