@@ -9,7 +9,7 @@ const authors = {
     role: "Founder & Writer", // 👈 edit to the real role
     bio: "Writes about gaming FPS, PC performance, and building fast, SEO-friendly websites.", // 👈 edit to the real bio
     twitter: "https://twitter.com/raoawais",   // 👈 edit or remove
-    linkedin: "https://linkedin.com/in/raoawais", // 👈 edit or remove
+    linkedin: "https://www.linkedin.com/in/awais-tasleem-142457412/?isSelfProfile=true", // 👈 edit or remove
   },
 };
 

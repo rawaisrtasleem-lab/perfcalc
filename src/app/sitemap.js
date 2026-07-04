@@ -172,6 +172,12 @@ url : `${baseUrl}/blog/is-pubg-cross-platform`,
   changeFrequency: "monthly",
   priority: 0.9,
 
+},
+{
+ url :`${baseUrl}/blog/is-hollow-knight-hard`,
+  lastModified: new Date(),          
+  changeFrequency: "monthly",
+  priority: 0.9,
 }
 
 

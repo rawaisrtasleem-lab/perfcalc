@@ -13,6 +13,7 @@ import {blog12} from "@/lib/blogs/blog12";
 import {blog13} from "@/lib/blogs/blog13";
 import {blog14} from "@/lib/blogs/blog14";
 import {blog15} from "@/lib/blogs/blog15";
+import { blog16 } from "@/lib/blogs/blog16";
 export const posts = [
   {
     id: 1,
@@ -208,7 +209,22 @@ export const posts = [
   date:"2026-07-1",
   readTime:"10 min read",
   content:blog15,
+},
+{
+  id: 16,
+  slug: "is-hollow-knight-hard",
+  title: "Is Hollow Knight Hard? Difficulty Breakdown by Player Type",
+  description: "Hollow Knight’s difficulty is layered across boss combat, platforming, and navigation. See how player type changes the challenge, where the spikes hit, and how charms act as a hidden difficulty slider.",
+  
+  excerpt: "Hollow Knight’s difficulty is layered across boss combat, platforming, and navigation. The answer depends on your gaming background and how far you want to go — normal ending, true ending, or 112% Godmaster.",
+  
+  image: "/blog-images/hollow knight.png",
+  author: "Rao Awais",
+  date: "2026-07-04",
+  readTime: "12 min read",
+  content: blog16,
 }
+
 
 
 ];
