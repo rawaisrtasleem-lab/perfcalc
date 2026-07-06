@@ -83,15 +83,19 @@ function SeoTable({ headers, rows }) {
     )
 }
 
-const h2 = "text-2xl md:text-3xl font-bold text-white mb-3 mt-2"
-const h3 = "text-lg md:text-xl font-semibold text-cyan-400 mb-2"
+const h2 = "text-2xl md:text-3xl font-bold text-white "
+const h3 = "text-lg md:text-xl font-semibold text-cyan-400 mb-1"
 const p = "text-sm md:text-base text-gray-300 leading-relaxed"
+
+const section="mb-0 m-0 p-2"
+
+
 
 export default function DownloadTimeCalculatorSeo() {
     return (
-        <article className="space-y-10">
+       
 
-            <section className="space-y-4">
+            <>
                 <figure><img src="/blog-images/time-cal.png" alt="Download Time Calculator" className="w-full h-auto rounded-lg shadow-lg" /></figure>
                 <h2 className={h2}>What You Need for an Accurate Estimate</h2>
                 <p className={p}>
@@ -119,9 +123,9 @@ export default function DownloadTimeCalculatorSeo() {
                     divides the file size by it. The result appears in seconds, minutes, or even hours,
                     depending on how big the file is.
                 </p>
-            </section>
-
-            <section className="space-y-4">
+            
+            
+            
                 <h2 className={h2}>What Is a Download Time Calculator?</h2>
                 <p className={p}>
                     A download time calculator is a simple tool that estimates how long a file will
@@ -137,9 +141,9 @@ export default function DownloadTimeCalculatorSeo() {
                     process works the same whether you're downloading a game, a movie, or a software
                     update.
                 </p>
-            </section>
+       
 
-            <section className="space-y-4">
+         
                 <h2 className={h2}>Understanding Computer File Sizes</h2>
                 <p className={p}>
                     File sizes can be confusing because of the layered measurements. A kilobyte contains
@@ -156,9 +160,9 @@ export default function DownloadTimeCalculatorSeo() {
                     Once you know where your file lands on this scale, the calculator's output makes a
                     lot more sense.
                 </p>
-            </section>
+          
 
-            <section className="space-y-4">
+          
                 <h2 className={h2}>Upload and Download Speeds</h2>
                 <p className={p}>
                     Your internet plan usually advertises one number, but upload and download speeds
@@ -171,9 +175,9 @@ export default function DownloadTimeCalculatorSeo() {
                     headers={["Connection Type", "Typical Download Speed", "Typical Upload Speed"]}
                     rows={connectionRows}
                 />
-            </section>
+          
 
-            <section className="space-y-4">
+     
                 <h2 className={h2}>Megabits (Mbps) vs. Megabytes (MB): The Key Difference</h2>
                 <p className={p}>
                     This catches almost everyone at some point. Internet service providers rate your
@@ -183,9 +187,9 @@ export default function DownloadTimeCalculatorSeo() {
                     only 12.5 megabytes per second. This is the most common mistake people make when
                     calculating download time manually.
                 </p>
-            </section>
+         
 
-            <section className="space-y-4">
+         
                 <h2 className={h2}>How to Determine Download Time</h2>
                 <p className={p}>
                     There are two ways to get your answer: do the math yourself or let a tool handle
@@ -206,9 +210,9 @@ export default function DownloadTimeCalculatorSeo() {
                     behind the scenes. This is the fastest route if math isn't your thing or you just
                     want the answer now.
                 </p>
-            </section>
+            
 
-            <section className="space-y-4">
+        
                 <h2 className={h2}>Factors Affecting Download Time</h2>
                 <p className={p}>
                     Several things push your real-world download time away from the calculator's estimate:
@@ -227,9 +231,9 @@ export default function DownloadTimeCalculatorSeo() {
                     real-world speeds run 10 to 30 percent lower than advertised. The download time
                     calculator assumes a best-case scenario, so treat the result as an estimate.
                 </p>
-            </section>
+           
 
-            <section className="space-y-4">
+       
                 <h2 className={h2}>Real-World Download Time Examples</h2>
                 <p className={p}>
                     Numbers make more sense with real examples attached. Here's how long common
@@ -258,9 +262,9 @@ export default function DownloadTimeCalculatorSeo() {
                     100 Mbps connection, expect 27 to 55 minutes. At 25 Mbps, it may take more than
                     two hours.
                 </p>
-            </section>
+          
 
-            <section className="space-y-4">
+        
                 <h2 className={h2}>Average Global Internet Speeds</h2>
                 <p className={p}>
                     Global broadband speed keeps rising year over year as fiber adoption grows and DSL
@@ -298,9 +302,9 @@ export default function DownloadTimeCalculatorSeo() {
                     now many gigabytes — which is exactly why a good download time calculator has
                     become so useful.
                 </p>
-            </section>
+           
 
-            <section className="space-y-4">
+         
                 <h2 className={h2}>How to Increase Your Download Speed</h2>
                                 <figure><img src="/blog-images/time-calculator.png" alt="Download Time Calculator" className="w-full h-auto rounded-lg shadow-lg" /></figure>
                 <p className={p}>
@@ -321,9 +325,9 @@ export default function DownloadTimeCalculatorSeo() {
                     Ethernet will always outperform Wi-Fi — use it when speed matters. Restarting your
                     router periodically and keeping its firmware updated also helps.
                 </p>
-            </section>
+            
 
-            <section className="space-y-4">
+        
                 <h2 className={h2}>FAQs</h2>
                 <div className="space-y-5">
                     {faqs.map((f) => (
@@ -333,9 +337,9 @@ export default function DownloadTimeCalculatorSeo() {
                         </div>
                     ))}
                 </div>
-            </section>
+        
 
-            <section className="space-y-4">
+            
                 <h2 className={h2}>Conclusion</h2>
                 <p className={p}>
                     A download time calculator removes all doubt from any download — whether it's a
@@ -345,7 +349,7 @@ export default function DownloadTimeCalculatorSeo() {
                     download, upgrade your router if your speeds don't match your plan, and spend less
                     time waiting.
                 </p>
-            </section>
-        </article>
+         
+     </>
     )
 }
