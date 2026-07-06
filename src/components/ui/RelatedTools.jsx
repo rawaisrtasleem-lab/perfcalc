@@ -38,6 +38,14 @@ export default function RelatedTools() {
       color: "from-amber-500 to-orange-500",
       delay: 0.3,
     },
+      {
+      name: "Download Time Calculator",
+      description: "Estimate how long files will take to download",
+      href: "/tools/download-time-calculator",
+      icon: FileText,
+      color: "from-amber-500 to-orange-500",
+      delay: 0.3,
+    },
   ]
 
   return (

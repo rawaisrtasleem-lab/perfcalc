@@ -19,6 +19,7 @@ export default function Footer() {
       { label: "FPS Calculator", href: "/tools/fps-calculator" },
       { label: "DPS Calculator", href: "/tools/dps-calculator" },
       { label: "XP Calculator", href: "/tools/xp-calculator" },
+      {label : "Download Time Calculator" , href:"/tools/download-time-calculator"}
     ],
     Company: [
       { label: "About", href: "/about" },

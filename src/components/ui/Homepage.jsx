@@ -37,6 +37,13 @@ export default function Homepage({ tools }) {
       link: "/tools/bottleneck-calculator",
       icon: () => <span>💻</span>,
     },
+     {
+      id: 5,
+      title: "Download Time Calculator",
+      description: "Estimate how long files will take to download",
+      link: "/tools/download-time-calculator",
+      icon: () => <span>📥</span>,
+    },
   ];
 
   const toolList = tools && Array.isArray(tools) ? tools : defaultTools;

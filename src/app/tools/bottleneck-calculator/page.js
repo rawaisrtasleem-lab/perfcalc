@@ -1,6 +1,6 @@
-"use client"
 
-import { useState } from "react"
+
+
 
 import BottleneckCalculator from "@/components/ui/BottleneckCalculator"
 import BottleneckVisual from "@/components/ui/BottleneckVisual"
