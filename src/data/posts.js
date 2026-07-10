@@ -14,6 +14,7 @@ import {blog13} from "@/lib/blogs/blog13";
 import {blog14} from "@/lib/blogs/blog14";
 import {blog15} from "@/lib/blogs/blog15";
 import { blog16 } from "@/lib/blogs/blog16";
+import {blog17} from "@/lib/blogs/blog17";
 export const posts = [
   {
     id: 1,
@@ -223,7 +224,21 @@ export const posts = [
   date: "2026-07-04",
   readTime: "12 min read",
   content: blog16,
-}
+},
+{
+  id: 17,
+  slug: "gta-6-gameplay-features",
+  title: "GTA 6 Gameplay & Features: Every Confirmed Mechanic Explained",
+  description: "GTA 6 launches November 19, 2026 on PS5 and Xbox Series X/S with dual protagonists, a witness-based wanted system, and a map twice the size of GTA 5. See every confirmed mechanic, labeled by source, with leaks and speculation clearly separated.",
+
+  excerpt: "GTA 6 gameplay reveals are buried under three years of speculation. This guide separates the confirmed from the fake — dual protagonists, the new wanted system, dynamic weather, and NPC AI, all labeled by official source.",
+
+  image: "/blog-images/GTA-6-playgame.png",
+  author: "Rao Awais",
+  date: "2026-07-10",
+  readTime: "10 min read",
+  content: blog17,
+},
 
 
 
