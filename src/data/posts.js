@@ -15,6 +15,7 @@ import {blog14} from "@/lib/blogs/blog14";
 import {blog15} from "@/lib/blogs/blog15";
 import { blog16 } from "@/lib/blogs/blog16";
 import {blog17} from "@/lib/blogs/blog17";
+import {blog18} from "@/lib/blogs/blog18";
 export const posts = [
   {
     id: 1,
@@ -239,7 +240,22 @@ export const posts = [
   readTime: "10 min read",
   content: blog17,
 },
+{
+  id: 18,
+  slug: "how-to-fix-cpu-bottleneck",
+  title: "How to Help with CPU Bottleneck: Every Confirmed Fix, Ranked by Cost",
+  description:
+    "Learn how to fix a CPU bottleneck with confirmed solutions ranked by cost. Discover free optimizations, BIOS tweaks, cooling improvements, hardware upgrades, and how to accurately diagnose CPU bottlenecks before spending money.",
 
+  excerpt:
+    "CPU at 100% while your GPU sits idle? Learn how to identify a real CPU bottleneck, apply the most effective free fixes, and know exactly when a hardware upgrade is worth it.",
+
+  image: "/blog-images/cpu-vs-gpu.png",
+  author: "Rao Awais",
+  date: "2026-07-25",
+  readTime: "8 min read",
+  content: blog18,
+},
 
 
 ];
