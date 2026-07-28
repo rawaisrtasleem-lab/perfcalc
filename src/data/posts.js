@@ -16,6 +16,7 @@ import {blog15} from "@/lib/blogs/blog15";
 import { blog16 } from "@/lib/blogs/blog16";
 import {blog17} from "@/lib/blogs/blog17";
 import {blog18} from "@/lib/blogs/blog18";
+import {blog19} from "@/lib/blogs/blog19";
 export const posts = [
   {
     id: 1,
@@ -257,6 +258,23 @@ export const posts = [
   content: blog18,
 },
 
+
+{
+  id: 19,
+  slug: "which-is-better-ryzen-or-intel-for-gaming",
+  title: "Ryzen vs Intel for Gaming: Which CPU Should You Buy in 2026?",
+  description:
+    "Discover the ultimate showdown between Ryzen and Intel processors. Compare performance, pricing, and features to find the best fit for your needs.",
+
+  excerpt:
+    "AMD or Intel? Discover which processor delivers better gaming performance, lower power consumption, and the best value based on your budget and workload.",
+
+  image: "/blog-images/amdryzen.png",
+  author: "Rao Awais",
+  date: "2026-07-28",
+  readTime: "9 min read",
+  content: blog19,
+},
 
 ];
 
