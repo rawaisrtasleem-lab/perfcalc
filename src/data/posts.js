@@ -17,6 +17,7 @@ import { blog16 } from "@/lib/blogs/blog16";
 import {blog17} from "@/lib/blogs/blog17";
 import {blog18} from "@/lib/blogs/blog18";
 import {blog19} from "@/lib/blogs/blog19";
+import {blog20} from "@/lib/blogs/blog20";
 export const posts = [
   {
     id: 1,
@@ -257,23 +258,37 @@ export const posts = [
   readTime: "8 min read",
   content: blog18,
 },
+{
+  id: 19,
+  slug: "which-is-better-ryzen-or-intel-for-gaming",
+  title: "Ryzen vs Intel for Gaming: Which CPU Should You Buy in 2026?",
+  description:
+    "Discover the ultimate showdown between Ryzen and Intel processors. Compare performance, pricing, and features to find the best fit for your needs.",
 
+
+  excerpt:
+    "AMD or Intel? Discover which processor delivers better gaming performance, lower power consumption, and the best value based on your budget and workload.",
+
+  image: "/blog-images/amdryzen.png",
+  author: "Rao Awais",
+  date: "2026-07-28",
+  readTime: "9 min read",
+  content: blog19,
+},
 
 {
-  id: 19,
-  slug: "which-is-better-ryzen-or-intel-for-gaming",
-  title: "Ryzen vs Intel for Gaming: Which CPU Should You Buy in 2026?",
+  id: 20,
+  slug: "how-to-upgrade-graphics-card",
+  title: "How to Upgrade Graphics Card",
   description:
-    "Discover the ultimate showdown between Ryzen and Intel processors. Compare performance, pricing, and features to find the best fit for your needs.",
-
+    "Upgrade your graphics card effortlessly with our step-by-step guide. Discover tips and tricks to enhance your gaming experience today!",
   excerpt:
-    "AMD or Intel? Discover which processor delivers better gaming performance, lower power consumption, and the best value based on your budget and workload.",
-
-  image: "/blog-images/amdryzen.png",
+    "Learn how to upgrade your GPU with confidence. From compatibility checks to installation steps, this guide covers everything you need for a smooth graphics card replacement.",
+  image: "/blog-images/graphic-card.png",
   author: "Rao Awais",
-  date: "2026-07-28",
-  readTime: "9 min read",
-  content: blog19,
+  date: "2026-08-01",
+  readTime: "8 min read",
+  content: blog20,
 },
 
 ];

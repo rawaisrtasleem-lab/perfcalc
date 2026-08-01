@@ -4,7 +4,7 @@ export const blog19=`
 
 
 <h2>Which is Better: Ryzen or Intel for Gaming?</h2>
-<figure><img src="/blog-images/amdryzen.png" alt="amd ryen"></figure>
+<figure><img src="/blog-images/amdryzen.png" alt="amd ryen" class="w-full rounded-xl"></figure>
 
 <p>Picking between <strong>Ryzen vs Intel</strong> is still the first fight every PC builder faces in 2026. Both brands push out strong chips every year, and the gap keeps shifting depending on what you actually do with your machine. This guide breaks down the <strong>AMD vs Intel CPU</strong> debate across gaming, editing, power draw, and price so you land on the right pick without guesswork.</p>
 
@@ -82,7 +82,7 @@ export const blog19=`
 
 
 <h2>AMD Processors Compared to Intel Processors: Power and Heat</h2>
-<figure><img src="/blog-images/iteladvantage.png" alt="advantages og itel"></figure>
+<figure><img src="/blog-images/iteladvantage.png" alt="advantages og itel" class="w-full rounded-xl"></figure>
 
 <p>Ryzen processors generally run cooler under sustained workloads. Intel's K-series flagship CPUs can draw well over twice the power of a well-tuned <strong>Ryzen 7</strong> during gaming, resulting in louder cooling systems and higher electricity costs over time. If you value a quiet and power-efficient PC, this is one area where <strong>AMD processors vs Intel processors</strong> is no longer a close competition.</p>
 
