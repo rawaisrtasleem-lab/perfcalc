@@ -18,6 +18,7 @@ import {blog17} from "@/lib/blogs/blog17";
 import {blog18} from "@/lib/blogs/blog18";
 import {blog19} from "@/lib/blogs/blog19";
 import {blog20} from "@/lib/blogs/blog20";
+import {blog21} from "@/lib/blogs/blog21";
 export const posts = [
   {
     id: 1,
@@ -291,6 +292,24 @@ export const posts = [
   content: blog20,
 },
 
+
+
+
+
+{
+  id: 21,
+  slug: "why-is-my-pc-so-laggy",
+  title: "Why Is My PC So Laggy?",
+  description:
+    "Is your PC running slow or lagging? Learn about common causes, including CPU bottlenecks, background processes, outdated drivers, overheating, and storage issues.",
+  excerpt:
+    "Discover why your PC is laggy and learn practical solutions to improve performance, reduce CPU bottlenecks, and enjoy a smoother gaming experience.",
+  image: "/blog-images/pc-is-laagy.png",
+  author: "Rao Awais",
+  date: "2026-08-08",
+  readTime: "8 min read",
+  content: blog21,
+},
 ];
 
 export function getAllPosts() {
