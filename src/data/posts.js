@@ -19,6 +19,7 @@ import {blog18} from "@/lib/blogs/blog18";
 import {blog19} from "@/lib/blogs/blog19";
 import {blog20} from "@/lib/blogs/blog20";
 import {blog21} from "@/lib/blogs/blog21";
+import {blog22} from "@/lib/blogs/blog22";
 export const posts = [
   {
     id: 1,
@@ -309,6 +310,23 @@ export const posts = [
   date: "2026-08-08",
   readTime: "8 min read",
   content: blog21,
+},
+
+
+
+{
+  id: 22,
+  slug: "bits-vs-bytes",
+  title: "Bits vs Bytes: What’s the Difference?",
+  description:
+    "Confused about bits and bytes? Learn the difference between bits and bytes, why internet speeds use Mbps, how file sizes use MB, and how to convert between them.",
+  excerpt:
+    "Understand the difference between bits and bytes, why your 500 Mbps internet plan downloads at around 62.5 MB/s, and how data units work in everyday technology.",
+  image: "/blog-images/bit-bytes.png",
+  author: "Rao Awais",
+  date: "2026-08-09",
+  readTime: "8 min read",
+  content: blog22,
 },
 ];
 
