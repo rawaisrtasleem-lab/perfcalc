@@ -20,6 +20,7 @@ import {blog19} from "@/lib/blogs/blog19";
 import {blog20} from "@/lib/blogs/blog20";
 import {blog21} from "@/lib/blogs/blog21";
 import {blog22} from "@/lib/blogs/blog22";
+import {blog23} from "@/lib/blogs/blog23";
 export const posts = [
   {
     id: 1,
@@ -328,6 +329,85 @@ export const posts = [
   readTime: "8 min read",
   content: blog22,
 },
+
+
+
+
+
+  {
+    id: 23,
+    slug: "is-150-mbps-good",
+    title: "Is 150 Mbps Good? Here's What It Actually Supports",
+    description:
+      "Find out whether 150 Mbps is good for streaming, gaming, video calls, remote work, downloads, and everyday household internet use.",
+    excerpt:
+      "Learn what a 150 Mbps internet connection can actually support, including 4K streaming, online gaming, work-from-home tasks, video calls, large downloads, and multiple connected devices.",
+    image: "/blog-images/internetspeed.png",
+   
+   
+    author: "Rao Awais",
+    date: "2026-08-11",
+    readTime: "10 min read",
+
+    keywords: [
+      "is 150 Mbps good",
+      "150 Mbps internet speed",
+      "150 Mbps for streaming",
+      "150 Mbps for gaming",
+      "150 Mbps for working from home",
+      "how many devices can 150 Mbps handle",
+      "150 Mbps vs 100 Mbps",
+      "150 Mbps vs 200 Mbps",
+      "150 Mbps download speed",
+      "150 Mbps upload speed",
+      "4K streaming internet speed",
+      "internet speed for gaming",
+      "internet speed for remote work",
+      "Download Time Calculator"
+    ],
+
+    content: blog23,
+
+    faqs: [
+      {
+        question: "Is 150 Mbps good for streaming in 4K?",
+        answer:
+          "Yes. Most 4K streams need about 15 Mbps, so 150 Mbps supports several at once with room left over."
+      },
+      {
+        question: "Is 150 Mbps fast enough for online gaming?",
+        answer:
+          "Yes, for gameplay itself. Latency matters more than speed, though big game downloads go noticeably faster at 150 Mbps."
+      },
+      {
+        question: "Is 150 Mbps good for working from home?",
+        answer:
+          "Yes, for most remote work setups, though it's worth checking your upload speed if you're often on video calls."
+      },
+      {
+        question: "How many devices is 150 Mbps good for?",
+        answer:
+          "Most households can comfortably run several devices at once, generally enough for two to four people with mixed daily use."
+      },
+      {
+        question: "Is 150 Mbps fast for internet?",
+        answer:
+          "Yes. It sits well above the FCC's 100 Mbps broadband benchmark and covers nearly all everyday household needs."
+      },
+      {
+        question: "Is 150 Mbps better than 100 Mbps?",
+        answer:
+          "It's noticeably more headroom, which matters most once a second or third person starts streaming, gaming, or calling at the same time."
+      },
+      {
+        question: "How many devices is 150 Mbps good for?",
+        answer:
+          "Yes, 150 Mbps is fast for 2 people, easily supporting simultaneous HD streaming, remote work video calls, and online gaming."
+      }
+    ],
+
+   
+  }
 ];
 
 export function getAllPosts() {
