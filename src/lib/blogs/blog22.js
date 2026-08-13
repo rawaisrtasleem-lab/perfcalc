@@ -1,13 +1,8 @@
-export const blog22 = `
-<article>
 
-  <figure>
-    <img
-      src="/blog-images/bit-bytes.png"
-      alt="bits vs bytes"
-      class="w-full rounded-xl"
-    />
-  </figure>
+export const blog22 = `
+
+
+  <h1>bits vs bytes</h1>
 
   <p>
     Your internet plan promises 500 Mbps. Your download bar crawls along, and the number on screen looks nothing like 500. You didn't get scammed, you just walked into the oldest mix-up in tech: bit vs byte. One tiny letter case changes the math by a factor of eight, and it's the reason download times, storage limits, and "internet speed" never quite add up the way you'd expect. Here's exactly what separates the two, and why it matters.
@@ -17,10 +12,14 @@ export const blog22 = `
 
   <ul>
     <li>
-      <a href="#what-is-a-bit">What Is a Bit?</a>
+      <a href="#what-is-a-bit">
+        What Is a Bit?
+      </a>
     </li>
     <li>
-      <a href="#what-is-a-byte">What Is a Byte?</a>
+      <a href="#what-is-a-byte">
+        What Is a Byte?
+      </a>
     </li>
     <li>
       <a href="#bit-vs-byte-the-core-difference">
@@ -48,6 +47,11 @@ export const blog22 = `
       </a>
     </li>
     <li>
+      <a href="#bits-or-bytes-faster">
+        Are Bits or Bytes Faster?
+      </a>
+    </li>
+    <li>
       <a href="#decimal-vs-binary">
         Decimal vs Binary: Why Your Hard Drive "Loses" Space
       </a>
@@ -58,10 +62,14 @@ export const blog22 = `
       </a>
     </li>
     <li>
-      <a href="#faqs">FAQs</a>
+      <a href="#faqs">
+        FAQs
+      </a>
     </li>
     <li>
-      <a href="#conclusion">Conclusion</a>
+      <a href="#conclusion">
+        Conclusion
+      </a>
     </li>
   </ul>
 
@@ -97,7 +105,37 @@ export const blog22 = `
     Notation gives it away. A lowercase b means binary digits (Mb, Gb), while an uppercase B means bytes (MB, GB). Kilobits break the pattern slightly with a lowercase "kb," but past kilo, the case always tells the story.
   </p>
 
-  <!-- Aapka first table yahan same rahega -->
+  <table id="bit-vs-byte-comparison" style="width: 100%; border-collapse: collapse; margin: 2rem 0; background-color: rgba(30, 41, 59, 0.5); border: 1px solid rgba(148, 163, 184, 0.2); border-radius: 8px; overflow: hidden;">
+    <thead style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(6, 182, 212, 0.15)); border-bottom: 2px solid rgba(14, 165, 233, 0.3);">
+      <tr>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9; border-right: 1px solid rgba(148, 163, 184, 0.2);">Feature</th>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9; border-right: 1px solid rgba(148, 163, 184, 0.2);">Bit</th>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9;">Byte</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2); background-color: rgba(15, 23, 42, 0.3);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">Symbol</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">b</td>
+        <td style="padding: 1rem;">B</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">Size</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">1 unit (0 or 1)</td>
+        <td style="padding: 1rem;">8 bits</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2); background-color: rgba(15, 23, 42, 0.3);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">Used for</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">Data transfer, bandwidth</td>
+        <td style="padding: 1rem;">File size, storage</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">Typical units</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">kb, Mb, Gb, Tb</td>
+        <td style="padding: 1rem;">KB, MB, GB, TB</td>
+      </tr>
+    </tbody>
+  </table>
 
   <h2 id="are-bits-or-bytes-bigger">Are Bits or Bytes Bigger?</h2>
 
@@ -105,7 +143,37 @@ export const blog22 = `
     Byte, always. A single byte holds eight times more information than a single bit, and that ratio holds at every scale kilobyte, megabyte, and beyond.
   </p>
 
-  <!-- Aapka second table yahan same rahega -->
+  <table id="unit-conversion-table" style="width: 100%; border-collapse: collapse; margin: 2rem 0; background-color: rgba(30, 41, 59, 0.5); border: 1px solid rgba(148, 163, 184, 0.2); border-radius: 8px; overflow: hidden;">
+    <thead style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(6, 182, 212, 0.15)); border-bottom: 2px solid rgba(14, 165, 233, 0.3);">
+      <tr>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9; border-right: 1px solid rgba(148, 163, 184, 0.2);">Unit</th>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9; border-right: 1px solid rgba(148, 163, 184, 0.2);">In bit</th>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9;">In byte</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2); background-color: rgba(15, 23, 42, 0.3);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">1 byte</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">8 bit</td>
+        <td style="padding: 1rem;">1 byte</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">1 kilobyte (KB)</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">8,000 bit</td>
+        <td style="padding: 1rem;">1,000 bytes</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2); background-color: rgba(15, 23, 42, 0.3);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">1 megabyte (MB)</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">8,000,000 bit</td>
+        <td style="padding: 1rem;">1,000,000 bytes</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">1 gigabyte (GB)</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">8,000,000,000 bit</td>
+        <td style="padding: 1rem;">1,000,000,000 bytes</td>
+      </tr>
+    </tbody>
+  </table>
 
   <p>
     💡 Quick tip: Capital "B" looks physically bigger on the page than lowercase "b" and it is bigger, by a factor of eight.
@@ -123,7 +191,7 @@ export const blog22 = `
     The file size remains in bytes since a byte means a specific thing such as a character, a pixel, and a piece of data. Your download speed comes in bits while your file size remains in bytes. They are both right but are answering two separate things.
   </p>
 
-  <h2>Are Bits or Bytes Faster?</h2>
+  <h2 id="bits-or-bytes-faster">Are Bits or Bytes Faster?</h2>
 
   <p>
     Neither is actually faster, since bits and bytes measure different things: transmission rate versus data volume. But the binary units-per-second figure always looks eight times bigger for the exact same real-world speed, which is exactly why ISPs advertise "500 Mbps" instead of the far less impressive "62.5 MB/s."
@@ -147,13 +215,73 @@ export const blog22 = `
     to get a quick estimate.
   </p>
 
-  <!-- Aapka speed table yahan same rahega -->
+  <table id="speed-conversion-table" style="width: 100%; border-collapse: collapse; margin: 2rem 0; background-color: rgba(30, 41, 59, 0.5); border: 1px solid rgba(148, 163, 184, 0.2); border-radius: 8px; overflow: hidden;">
+    <thead style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(6, 182, 212, 0.15)); border-bottom: 2px solid rgba(14, 165, 233, 0.3);">
+      <tr>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9; border-right: 1px solid rgba(148, 163, 184, 0.2);">Speed advertised</th>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9;">Realistic transfer rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2); background-color: rgba(15, 23, 42, 0.3);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">25 Mbps</td>
+        <td style="padding: 1rem;">3.1 MB/s</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">100 Mbps</td>
+        <td style="padding: 1rem;">12.5 MB/s</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2); background-color: rgba(15, 23, 42, 0.3);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">500 Mbps</td>
+        <td style="padding: 1rem;">62.5 MB/s</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">1,000 Mbps (1 Gbps)</td>
+        <td style="padding: 1rem;">125 MB/s</td>
+      </tr>
+    </tbody>
+  </table>
 
   <h2 id="quick-reference">
     Kilobit vs Kilobyte vs Megabit vs Megabyte: Quick Reference
   </h2>
 
-  <!-- Aapka quick reference table yahan same rahega -->
+  <table id="unit-reference-table" style="width: 100%; border-collapse: collapse; margin: 2rem 0; background-color: rgba(30, 41, 59, 0.5); border: 1px solid rgba(148, 163, 184, 0.2); border-radius: 8px; overflow: hidden;">
+    <thead style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(6, 182, 212, 0.15)); border-bottom: 2px solid rgba(14, 165, 233, 0.3);">
+      <tr>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9; border-right: 1px solid rgba(148, 163, 184, 0.2);">Data unit</th>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9; border-right: 1px solid rgba(148, 163, 184, 0.2);">Bit version</th>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9; border-right: 1px solid rgba(148, 163, 184, 0.2);">Byte version</th>
+        <th style="padding: 1rem; text-align: left; font-weight: 600; color: #0ea5e9;">Byte is bigger by</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2); background-color: rgba(15, 23, 42, 0.3);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">Kilo</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">1 kilobit (kb) = 1,000</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">1 kilobyte (KB) = 1,000 bytes</td>
+        <td style="padding: 1rem; color: #06b6d4; font-weight: 600;">8x</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">Mega</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">1 megabit (Mb) = 1,000,000</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">1 megabyte (MB) = 1,000,000 bytes</td>
+        <td style="padding: 1rem; color: #06b6d4; font-weight: 600;">8x</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2); background-color: rgba(15, 23, 42, 0.3);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">Giga</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">1 gigabit (Gb) = 1,000,000,000</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">1 gigabyte (GB) = 1,000,000,000 bytes</td>
+        <td style="padding: 1rem; color: #06b6d4; font-weight: 600;">8x</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(148, 163, 184, 0.2);">
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2); font-weight: 500;">Tera</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">1 terabit (Tb) = 10¹²</td>
+        <td style="padding: 1rem; border-right: 1px solid rgba(148, 163, 184, 0.2);">1 terabyte (TB) = 10¹² bytes</td>
+        <td style="padding: 1rem; color: #06b6d4; font-weight: 600;">8x</td>
+      </tr>
+    </tbody>
+  </table>
 
   <h2 id="decimal-vs-binary">
     Decimal vs Binary: Why Your Hard Drive "Loses" Space
@@ -177,7 +305,8 @@ export const blog22 = `
     Half a byte even has its own nickname: a nibble, four binary units, a small joke from early computing that stuck around. In networking documentation, you'll also see the word "octet" used instead of byte. The term is widely used in networking standards, where an octet specifically means 8 bits. For more technical details, see the
     <a href="https://www.rfc-editor.org/rfc/rfc791">
       IETF RFC 791 documentation
-    </a>.
+    </a>
+    .
   </p>
 
   <h2 id="faqs">FAQs</h2>
@@ -224,5 +353,4 @@ export const blog22 = `
     In summary, bits and bytes are both essential units of digital information, with a bit being the smallest unit that represents a single binary value of 0 or 1, while a byte consists of eight bits and can represent a wider range of data. Understanding the difference between them is important for grasping how computers process and store information.
   </p>
 
-</article>
-`;
+`

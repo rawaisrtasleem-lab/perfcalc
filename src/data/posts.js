@@ -21,6 +21,7 @@ import {blog20} from "@/lib/blogs/blog20";
 import {blog21} from "@/lib/blogs/blog21";
 import {blog22} from "@/lib/blogs/blog22";
 import {blog23} from "@/lib/blogs/blog23";
+import {blog24} from "@/lib/blogs/blog24";
 export const posts = [
   {
     id: 1,
@@ -405,10 +406,24 @@ export const posts = [
           "Yes, 150 Mbps is fast for 2 people, easily supporting simultaneous HD streaming, remote work video calls, and online gaming."
       }
     ],
+  },
+  {
+    id: 24,
+    slug: "what-internet-speed-do-i-need-to-work-from-home",
+    title: " What internet speed do I need to work from home? ",
+    description:
+      "Find out what internet speed you need to work from home, including recommended download and upload speeds for video meetings, cloud storage, multiple users, and remote work tasks.",
+    excerpt:
+      "Discover the ideal internet speed for working from home and learn how video calls, cloud storage, connected devices, WiFi signals, and household users affect your connection.",
+    image:"/blog-images/interentspeed.webp",
+    author: "Rao Awais",
+    date: "2026-08-13",
+    readTime: "8 min read",
+    content: blog24,
+  },
 
-   
-  }
-];
+  ]
+
 
 export function getAllPosts() {
   return posts;
