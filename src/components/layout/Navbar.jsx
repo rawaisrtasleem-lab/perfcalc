@@ -15,6 +15,7 @@ export default function Navbar() {
     { label: "DPS", href: "/tools/dps-calculator" },
     { label: "XP", href: "/tools/xp-calculator" },
     { label:"Download Time" , href:"/tools/download-time-calculator"},
+    {label:"eDPI", href:"/tools/edpi-calculator"},
     { label: "Blog", href: "/blog" },
     
   ];
@@ -46,7 +47,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 w-full bg-[#0B0F19]/95 backdrop-blur-md border-b border-cyan-400/10">
+      <nav className="sticky top-0 z-50 w-full bg-[#0B0F19]/95 backdrop-blur-md border-b border-cyan-400/10 mb-4">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-3 md:py-4">
           <div className="flex items-center justify-between h-14 md:h-16">
             
