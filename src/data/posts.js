@@ -22,6 +22,13 @@ import {blog21} from "@/lib/blogs/blog21";
 import {blog22} from "@/lib/blogs/blog22";
 import {blog23} from "@/lib/blogs/blog23";
 import {blog24} from "@/lib/blogs/blog24";
+import {downloadSpeed} from "@/lib/blogs/downloadspeed";
+
+
+
+
+
+
 export const posts = [
   {
     id: 1,
@@ -421,6 +428,26 @@ export const posts = [
     readTime: "8 min read",
     content: blog24,
   },
+
+
+
+
+  
+    {
+  id: 25,
+  slug: "how-to-increase-download-speed",
+  title: "How To Increase Download Speed:The Ultimate Guide",
+  description: "Learn how to increase download speed with simple tips to optimize your network, reduce background activity, and improve performance.",
+  excerpt: "Learn how to identify stressed and unstressed syllables using natural speech, call-out tests, dictionaries, and poetry patterns to improve your English rhythm.",
+
+  image: "/blog-images/increase-speed.png",
+  author: "Rao Awais",
+  date: "2026-08-16",
+  readTime: "10 min read",
+ 
+  content: downloadSpeed,
+
+  }
 
   ]
 

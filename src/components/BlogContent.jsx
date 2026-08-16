@@ -64,7 +64,7 @@ export default function BlogContent({ post }) {
             {/* Meta Info */}
             <div className="flex flex-wrap items-center gap-3 text-zinc-300 border-t border-white/10 pt-3">
               <div className="flex items-center gap-2 bg-zinc-800/60 rounded-full px-3 py-1 text-xs sm:text-sm">
-                <User size={14} />
+                <User size={20} />
                 <span>{post.author}</span>
               </div>
               <div className="flex items-center gap-2 bg-zinc-800/60 rounded-full px-3 py-1 text-xs sm:text-sm">
