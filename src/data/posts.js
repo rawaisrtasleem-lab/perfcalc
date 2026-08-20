@@ -23,6 +23,7 @@ import {blog22} from "@/lib/blogs/blog22";
 import {blog23} from "@/lib/blogs/blog23";
 import {blog24} from "@/lib/blogs/blog24";
 import {downloadSpeed} from "@/lib/blogs/downloadspeed";
+import {downloadSpeedLow} from "@/lib/blogs/download-speed";
 
 
 
@@ -447,7 +448,25 @@ export const posts = [
  
   content: downloadSpeed,
 
-  }
+  },
+
+
+
+{
+  id: 26,
+  slug: "why-is-my-download-speed-so-slow",
+  title: "Why Is My Download Speed So Slow? 7 Real Fixes That Work",
+  description:
+    "Fast internet but slow downloads? Here's why your download speed is so slow, plus 7 fixes to try right now.",
+  excerpt:
+    "Learn why downloads can be slow even when your internet is fast, and discover practical ways to improve Wi-Fi, router, VPN, storage, and network performance.",
+  image: "/blog-images/download-speed.png",
+  author: "Rao Awais",
+  date: "2026-08-16",
+  readTime: "10 min read",
+  content: downloadSpeedLow,
+}
+
 
   ]
 

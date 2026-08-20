@@ -178,8 +178,103 @@ url : `${baseUrl}/blog/is-pubg-cross-platform`,
   lastModified: new Date(),          
   changeFrequency: "monthly",
   priority: 0.9,
-}
+},
 
+{
+  url :`${baseUrl}/blog/how-to-increase-download-speed`,
+  lastModified: new Date(),          
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
+{
+  url :`${baseUrl}/blog/what-internet-speed-do-i-need-to-work-from-home`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
+{
+  url :`${baseUrl}/blog/is-150-mbps-good`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
+{
+  url :`${baseUrl}/blog/bits-vs-bytes`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
+{
+url :`${baseUrl}/tools/edpi-calculator`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+
+},{
+  url :`${baseUrl}/tools/download-time-calculator`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
+{
+ url :`${baseUrl}/blog/why-is-my-download-speed-so-slow`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+
+}
+,
+{
+  url :`${baseUrl}/blog/bits-vs-bytes`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
+{
+  url :`${baseUrl}/blog/why-is-my-pc-so-laggy`,
+    lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+
+}
+,
+{
+  
+  url :`${baseUrl}/blog/how-to-upgrade-graphics-card`,
+    lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+
+
+},
+{
+  
+  url :`${baseUrl}/blog/which-is-better-ryzen-or-intel-for-gaming`,
+    lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+
+
+},
+
+{
+  
+  url :`${baseUrl}/blog/how-to-fix-cpu-bottleneck`,
+    lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+
+
+},
+{
+  
+  url :`${baseUrl}/blog/gta-6-gameplay-features`,
+    lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
+
+
+}
 
   ]
 
