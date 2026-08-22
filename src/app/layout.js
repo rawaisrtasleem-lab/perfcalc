@@ -70,11 +70,7 @@ export default function RootLayout({ children }) {
         />
         
         {/* Google AdSense - Replace with your client ID */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
-          crossOrigin="anonymous"
-        />
+     
         
         {/* Google Analytics - Add your tracking ID */}
         <Script

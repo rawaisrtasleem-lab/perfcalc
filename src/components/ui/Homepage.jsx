@@ -44,6 +44,21 @@ export default function Homepage({ tools }) {
       link: "/tools/download-time-calculator",
       icon: () => <span>📥</span>,
     },
+    {
+      id: 6,
+      title: "EDPI Calculator",
+      description: "Calculate effective dots per inch for your gaming setup.",
+      link: "/tools/edpi-calculator",
+      icon: () => <span>🖱️</span>,
+    },
+    { 
+      id:7,
+      title: "Pokémon Type Calculator",
+      description: "Calculate Pokémon weaknesses, resistances, and immunities.",
+      link: "/tools/pokemon-type-calculator",
+      icon: () => <span>🛡️</span>,
+
+    }
   ];
 
   const toolList = tools && Array.isArray(tools) ? tools : defaultTools;
