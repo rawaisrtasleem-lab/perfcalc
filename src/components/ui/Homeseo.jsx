@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Homeseo() {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-12 text-gray-100">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-6 text-gray-100">
       
       <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center sm:text-left">
         GameTools – Optimize Your PC & Gaming Performance
@@ -71,9 +71,9 @@ export default function Homeseo() {
           our tools give you the insights you need for smarter upgrades and smoother gameplay.
         </p>
       <Link href="/tools/bottleneck-calculator" >
-        <button className="px-6 md:px-16 py-3 md:py-4 bg-cyan-500 text-black font-semibold rounded-lg hover:bg-cyan-400 transition-colors">
+        <button  className="inline-flex min-h-10 min-w-[118px] items-center justify-center rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-sm font-semibold !text-white !no-underline shadow-md shadow-cyan-500/10 transition-all duration-200 hover:from-cyan-400 hover:to-blue-400 hover:shadow-lg hover:shadow-cyan-500/20 active:scale-[0.98]"
             
-        
+        >
             Explore GameTools Now
           
         </button>

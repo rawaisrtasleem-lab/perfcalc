@@ -109,18 +109,18 @@ export default function Homepage({ tools }) {
             className="flex flex-col sm:flex-row gap-4"
           >
             <Link href="#tools">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 md:px-16 py-3 md:py-4 bg-cyan-500 text-black font-semibold rounded-lg hover:bg-cyan-400 transition-colors"
-              >
-                Explore Tools
-              </motion.button>
+             <motion.button
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="inline-flex min-h-10 min-w-[118px] items-center justify-center rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-sm font-semibold !text-white !no-underline shadow-md shadow-cyan-500/10 transition-all duration-200 hover:from-cyan-400 hover:to-blue-400 hover:shadow-lg hover:shadow-cyan-500/20 active:scale-[0.98]"
+>
+  Explore Tools
+</motion.button>
             </Link>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 md:px-8 py-3 md:py-4 border-2 border-gray-600 text-gray-200 font-semibold rounded-lg hover:border-cyan-400 hover:text-cyan-300 transition-colors"
+               className="inline-flex min-h-10 min-w-[118px] items-center justify-center rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-sm font-semibold !text-white !no-underline shadow-md shadow-cyan-500/10 transition-all duration-200 hover:from-cyan-400 hover:to-blue-400 hover:shadow-lg hover:shadow-cyan-500/20 active:scale-[0.98]"
             >
               Learn More
             </motion.button>

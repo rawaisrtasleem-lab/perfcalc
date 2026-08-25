@@ -274,6 +274,12 @@ url :`${baseUrl}/tools/edpi-calculator`,
   priority: 0.9,
 
 
+},
+{
+  url: `${baseUrl}/blog/upload-speed-slow`,
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.9,
 }
 
   ]

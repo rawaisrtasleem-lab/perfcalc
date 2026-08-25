@@ -1,16 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
+
 :root {
   --background: #0f172a;
   --foreground: #e2e8f0;
+
   --primary: #0ea5e9;
   --secondary: #06b6d4;
+
   --text-dark: #1e293b;
   --text-light: #f1f5f9;
+
   --border: #cbd5e1;
   --shadow: rgba(0, 0, 0, 0.1);
 }
+
 
 @theme inline {
   --color-background: var(--background);
@@ -18,299 +23,688 @@
   --font-sans: "Inter", sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
 
+/* =========================================================
+   BASE RESET
+========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
 
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-@media (max-width: 1024px) {
-  html { font-size: 16px; }
-}
-
-@media (max-width: 768px) {
-  html { font-size: 15px; }
-}
-
-@media (max-width: 640px) {
-  html { font-size: 14px; }
-}
 
 body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+
   background: var(--background);
   color: var(--foreground);
+
   font-family: "Inter", sans-serif;
   font-weight: 400;
+
   line-height: 1.7;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   text-rendering: optimizeLegibility;
-  letter-spacing: 0.3px;
 }
+
+
+/* Images and media should never overflow */
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+
+/* Keep raster/video media proportional */
+img,
+video,
+canvas {
+  height: auto;
+}
+
+
+/* Embedded content should stay inside the viewport */
+iframe,
+embed,
+object {
+  max-width: 100%;
+}
+
+
+/* Main layout elements should be allowed to shrink */
+main,
+section,
+article,
+aside,
+header,
+footer {
+  max-width: 100%;
+  min-width: 0;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
 
 .container {
+  width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
 }
 
-/* CUSTOM SCROLLBAR */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.5); }
-::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 4px; border: 2px solid rgba(15, 23, 42, 0.5); }
-::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
 
-/* TYPOGRAPHY */
-h1, h2, h3, h4, h5, h6 {
+/* Important for flex/grid children inside the main container */
+.container > * {
+  min-width: 0;
+}
+
+
+@media (min-width: 640px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 3rem;
+  }
+}
+
+
+/* =========================================================
+   CUSTOM SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #0ea5e9;
+  border-radius: 4px;
+  border: 2px solid rgba(15, 23, 42, 0.5);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   Important:
+   No global margin-top / margin-bottom on headings.
+   Tailwind/component classes control spacing.
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
   font-family: "Inter", sans-serif;
   font-weight: 700;
+
   letter-spacing: -0.02em;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
   color: var(--text-light);
+
   line-height: 1.2;
 }
 
-h1 { 
-  font-size: clamp(2rem, 6vw, 3.5rem); 
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-  margin-top: 4rem;
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
-h2 { 
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
   line-height: 1.3;
-  margin-bottom: 1 rem;
-  margin-top: 3rem;
 }
 
-h3 { 
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
+
+h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   line-height: 1.4;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
 }
 
-h4 { 
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+
+h4 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: 1.4;
-  margin-bottom: 0.75rem;
 }
 
-h5, h6 {
+
+h5,
+h6 {
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
 }
 
+
 p {
+  margin: 0;
+
   font-weight: 400;
   line-height: 1.8;
-  margin-bottom: 1 rem;
+
   color: #cbd5e1;
   font-size: 1rem;
 }
 
 
-/* LINKS */
+/* =========================================================
+   LINKS
+========================================================= */
+
 a {
   color: var(--primary);
   text-decoration: none;
   cursor: pointer;
-  pointer-events: auto;
 
   font-weight: 500;
 }
 
+
 a:hover {
   color: var(--secondary);
-  text-decoration: underline;
 }
+
 
 a:focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 3px;
-  border-radius: 2px;
-}
-
-/* NAVBAR */
-nav {
-  margin-bottom: 0;
-  padding: 1rem 2rem;
-  z-index: 100;
-  background: rgba(15, 23, 42, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(51, 65, 85, 0.3);
-  position: sticky;
-  top: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 
-/* BUTTONS & FORMS */
+/* =========================================================
+   NAVIGATION
+   Do NOT globally style <nav>.
+   Navbar.jsx owns its own Tailwind styles.
+
+   This also prevents SEO table-of-contents <nav>
+   from accidentally becoming sticky.
+========================================================= */
+
+
+/* =========================================================
+   BUTTONS
+   Keep global button rules neutral.
+   Individual components control design with Tailwind.
+========================================================= */
+
 button {
-  border: none;
+  font: inherit;
+  color: inherit;
+
+  border: 0;
+  margin: 0;
+
   cursor: pointer;
-  transition: all 0.3s ease;
-  min-height: 44px;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  font-weight: 600;
-  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
-  color: #ffffff;
-  font-size: 0.95rem;
-  box-shadow: 0 2px 6px rgba(14, 165, 233, 0.2);
+
+  -webkit-tap-highlight-color: transparent;
 }
 
-button:hover {
-  background: linear-gradient(135deg, #0396d0, #0891b2);
-  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.35);
-  transform: translateY(-2px);
+
+button:disabled {
+  cursor: not-allowed;
 }
 
-button:active {
-  transform: translateY(0);
-}
 
-input, textarea, select {
+/*
+  Do not add:
+  width: 100%;
+  global gradients,
+  global transform,
+  global padding.
+
+  Those rules were breaking navbar/mobile UI.
+*/
+
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+input,
+textarea,
+select {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+
+  color: #e2e8f0;
+
   background-color: rgba(30, 41, 59, 0.5);
+
   border: 1.5px solid rgba(148, 163, 184, 0.3);
   border-radius: 6px;
-  color: #e2e8f0;
-  font-size: 1rem;
-  width: 100%;
-  padding: 0.75rem 1rem;
-  font-family: "Inter", sans-serif;
-  transition: all 0.3s ease;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-input::placeholder, textarea::placeholder {
+
+input::placeholder,
+textarea::placeholder {
   color: #94a3b8;
 }
 
-input:focus, textarea:focus, select:focus {
+
+input:focus,
+textarea:focus,
+select:focus {
   border-color: #0ea5e9;
+
   background-color: rgba(30, 41, 59, 0.8);
-  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+
+  box-shadow:
+    0 0 0 3px rgba(14, 165, 233, 0.1);
+
   outline: none;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 1.5rem;
+
+/*
+  Prevent iOS from zooming when focusing
+  fields on mobile.
+*/
+@media (max-width: 640px) {
+  input,
+  textarea,
+  select {
+    font-size: 16px;
   }
 }
-.ad-container, [data-ad-client] {
+
+
+/* =========================================================
+   ADS
+========================================================= */
+
+.ad-container,
+[data-ad-client] {
   display: flex;
+
   justify-content: center;
   align-items: center;
+
   overflow: hidden;
+
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 60px;
+
   margin: 2.5rem auto;
   padding: 1.5rem;
-  max-width: 100%;
-  min-height: 60px;
+
   background: rgba(30, 41, 59, 0.3);
+
   border-radius: 8px;
-  border: 1px solid rgba(148, 163, 184, 0.2);
+
+  border:
+    1px solid rgba(148, 163, 184, 0.2);
 }
+
 
 ins.adsbygoogle {
   display: block;
   max-width: 100%;
 }
-@media (max-width: 640px) {
-  h1, h2, h3 {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-  p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-  button {
-    width: 100%; /* full-width buttons on mobile */
-    min-height: 48px;
-  }
-}
 
 
-/* RESPONSIVE SPACING FOR 1440PX+ SCREENS */
-@media (min-width: 1440px) {
-  .content-container, main {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  [class*="max-w-"] {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+/* =========================================================
+   SECTIONS
+   No global margin/padding.
+   Every page/component handles its own spacing.
+========================================================= */
 
-/* MOBILE-FIRST SPACING (under 932px) */
-@media (max-width: 932px) {
-  body { padding: 1rem; }
-  main, [class*="mx-auto"] { padding: 0 1rem; }
-}
-
-/* MEDIUM SCREENS (933px - 1439px) */
-@media (min-width: 933px) and (max-width: 1439px) {
-  main, [class*="mx-auto"] { padding: 0 1.5rem; }
-}
-
-/* PREVENT HORIZONTAL OVERFLOW */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* Section spacing */
 section {
-  margin-bottom: 4rem;
-  padding: 2rem 0;
+  margin: 0;
 }
+
+
+/*
+  This is intentionally NOT:
+
+  section {
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+  }
+
+  because that was causing huge SEO content gaps.
+*/
+
+
+/* =========================================================
+   GLOBAL MOBILE RESPONSIVE SAFETY NET
+
+   Purpose:
+   - Prevent horizontal overflow
+   - Let flex/grid children shrink correctly
+   - Keep long text/URLs inside the screen
+   - Make tables/code/embeds usable on mobile
+   - Avoid forcing buttons/inputs to width: 100%
+   - Avoid changing Navbar/component-specific design
+========================================================= */
 
 @media (max-width: 768px) {
-  section { margin-bottom: 2rem; padding: 1.5rem 0; }
-}
 
-/* Better mobile input experience */
-@media (max-width: 640px) {
-  input[type="button"],
-  input[type="submit"],
-  button,
-  select {
-    min-height: 48px;
-    min-width: 48px;
-    padding: 12px 16px;
+  /*
+    Keep root font size at 16px.
+    Do not shrink it because Tailwind spacing/sizing uses rem.
+  */
+  html {
     font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
+
+
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+  }
+
+
+  /*
+    This fixes a very common mobile issue:
+    flex/grid children refusing to shrink because min-width:auto.
+    Tailwind min-w-* utilities still override this where explicitly used.
+  */
+  *,
+  *::before,
+  *::after {
+    min-width: 0;
+  }
+
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 1rem;
+  }
+
+
+  main,
+  section,
+  article,
+  aside,
+  header,
+  footer {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+
+  /*
+    Prevent long words, URLs, labels and generated content
+    from causing horizontal scrolling.
+  */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  a,
+  span,
+  label {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+
+  h1 {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }
+
+
+  h2 {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+
+  h3 {
+    font-size: clamp(1.2rem, 5.5vw, 1.5rem);
+  }
+
+
+  p {
+    font-size: 1rem;
+  }
+
+
+  /*
+    Media / embeds stay inside the mobile viewport.
+    SVG height is intentionally NOT forced to auto
+    because that can break icon sizing.
+  */
+  img,
+  svg,
+  video,
+  canvas,
+  iframe,
+  embed,
+  object {
+    max-width: 100%;
+  }
+
+
+  img,
+  video,
+  canvas {
+    height: auto;
+  }
+
+
+  /*
+    Large tables scroll horizontally instead of
+    stretching the whole page.
+  */
+  table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+  /*
+    Code blocks can scroll without expanding the page.
+  */
+  pre {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+  /*
+    Forms/buttons stay inside their parent,
+    but width is NOT globally forced to 100%.
+  */
+  input,
+  textarea,
+  select,
+  button {
+    max-width: 100%;
+  }
+
+
+  textarea {
+    resize: vertical;
+  }
+
 }
 
-/* Accessible focus states */
+
+/* Extra protection for very small phones */
+@media (max-width: 480px) {
+
+  .container {
+    padding-inline: 0.875rem;
+  }
+
+
+  .ad-container,
+  [data-ad-client] {
+    margin-block: 1.75rem;
+    padding: 1rem;
+  }
+
+}
+
+
+/* =========================================================
+   TOUCH TARGETS
+
+   Only ensure reasonable minimum sizes where appropriate.
+   Width is NEVER globally forced to 100%.
+========================================================= */
+
+@media (max-width: 640px) {
+
+  button,
+  select,
+  input[type="button"],
+  input[type="submit"] {
+    min-height: 44px;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBLE FOCUS STATES
+========================================================= */
+
 button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid var(--primary);
+  outline:
+    2px solid var(--primary);
+
   outline-offset: 3px;
 }
 
-/* Print styles - AdSense Compliant */
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+
+    scroll-behavior: auto !important;
+  }
+
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
 @media print {
-  nav, footer, .ad-container { display: none !important; }
-  body { 
-    background: white; 
-    color: #000; 
-    font-size: 12pt; 
+
+  nav,
+  footer,
+  .ad-container,
+  [data-ad-client] {
+    display: none !important;
+  }
+
+
+  body {
+    background: white;
+    color: #000;
+
+    font-size: 12pt;
     line-height: 1.5;
   }
-  a { color: #0000ee; }
-  h1, h2, h3, h4, h5, h6 { color: #000; page-break-after: avoid; }
-  p { orphans: 3; widows: 3; }
+
+
+  a {
+    color: #0000ee;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    page-break-after: avoid;
+  }
+
+
+  p {
+    color: #000;
+
+    orphans: 3;
+    widows: 3;
+  }
+
 }

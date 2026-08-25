@@ -24,6 +24,7 @@ import {blog23} from "@/lib/blogs/blog23";
 import {blog24} from "@/lib/blogs/blog24";
 import {downloadSpeed} from "@/lib/blogs/downloadspeed";
 import {downloadSpeedLow} from "@/lib/blogs/download-speed";
+import { uploadSpeed } from "@/lib/blogs/blog28";
 
 
 
@@ -465,6 +466,26 @@ export const posts = [
   date: "2026-08-16",
   readTime: "10 min read",
   content: downloadSpeedLow,
+},
+
+
+
+
+
+
+{
+  id: 27,
+  slug: "upload-speed-slow",
+  title: "Why Is My Upload Speed So Slow? Causes, Tests, and Fixes",
+  description:
+    "Is your upload speed slow?Find the real causes, test it the right way, and fix it fast with these 9 proven steps.",
+  excerpt:
+    "Learn why upload speed is slow even when downloads are fast, and discover practical ways to test, troubleshoot, and improve your internet upload performance.",
+  image: "/blog-images/uploadSpeed.png",
+  author: "Rao Awais",
+  date: "2026-08-25",
+  readTime: "10 min read",
+  content: uploadSpeed,
 }
 
 
