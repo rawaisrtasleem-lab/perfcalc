@@ -25,6 +25,7 @@ import {blog24} from "@/lib/blogs/blog24";
 import {downloadSpeed} from "@/lib/blogs/downloadspeed";
 import {downloadSpeedLow} from "@/lib/blogs/download-speed";
 import { uploadSpeed } from "@/lib/blogs/blog28";
+import { wattsOfComputer } from "@/lib/blogs/blog29";
 
 
 
@@ -486,6 +487,18 @@ export const posts = [
   date: "2026-08-25",
   readTime: "10 min read",
   content: uploadSpeed,
+},
+{
+  id: 28,
+  slug: "how-many-watts-does-a-computer-use",
+  title: "How Many Watts Does a Computer Use? Complete Power Guide 2026",
+  description: "See how many watts a computer uses when idle, browsing, or gaming, plus a simple calculator to check your own electricity cost.",
+  excerpt: "Learn exact wattage figures for desktops, laptops, and gaming PCs across different activities, with a simple calculator to estimate your electricity costs.",
+  image: "/blog-images/computer-Power.webp",
+  author: "Rao Awais",
+  date: "2026-08-27",
+  readTime: "12 min read",
+  content: wattsOfComputer,
 }
 
 

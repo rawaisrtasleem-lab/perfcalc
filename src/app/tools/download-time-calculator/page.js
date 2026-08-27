@@ -6,11 +6,11 @@ export const metadata = {
     title: "Download Time Calculator — How Long Will a File Take? | PerfCalcPro",
     description:
         "Free download time calculator. Enter your file size and internet speed to instantly estimate download time, with real-world overhead and connection comparisons.",
-    alternates: { canonical: "https://perfcalcpro.com/download-time-calculator" },
+    alternates: { canonical: "https://perfcalcpro.com/tools/download-time-calculator" },
     openGraph: {
         title: "Download Time Calculator | PerfCalcPro",
         description: "Instantly estimate how long any file takes to download on your connection.",
-        url: "https://perfcalcpro.com/download-time-calculator",
+        url: "https://perfcalcpro.com/tools/download-time-calculator",
         type: "website",
     },
 }

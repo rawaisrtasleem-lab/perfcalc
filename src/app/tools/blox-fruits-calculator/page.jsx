@@ -12,7 +12,7 @@ export const metadata = {
 
     alternates: {
         canonical:
-            "https://perfcalcpro.com/blox-fruits-calculator",
+            "https://perfcalcpro.com/tools/blox-fruits-calculator",
     },
 
     openGraph: {
@@ -23,7 +23,7 @@ export const metadata = {
             "Compare Blox Fruits trade values, physical and permanent fruits, demand, and instantly calculate Win, Fair, or Loss.",
 
         url:
-            "https://perfcalcpro.com/blox-fruits-calculator",
+            "https://perfcalcpro.com/tools/blox-fruits-calculator",
 
         type: "website",
 

@@ -12,7 +12,7 @@ export const metadata = {
 
     alternates: {
         canonical:
-            "https://perfcalcpro.com/pokemon-type-calculator",
+            "https://perfcalcpro.com/tools/pokemon-type-calculator",
     },
 
     openGraph: {
@@ -23,7 +23,7 @@ export const metadata = {
             "Calculate Pokémon type weaknesses, resistances, immunities, and defensive effectiveness for single and dual types.",
 
         url:
-            "https://perfcalcpro.com/pokemon-type-calculator",
+            "https://perfcalcpro.com/tools/pokemon-type-calculator",
 
         type: "website",
 

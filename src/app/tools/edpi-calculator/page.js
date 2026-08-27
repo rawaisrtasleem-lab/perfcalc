@@ -7,13 +7,13 @@ export const metadata = {
     description:
         "Free eDPI calculator for gaming. Enter your mouse DPI and in-game sensitivity to instantly calculate your effective DPI and compare equivalent sensitivities.",
     alternates: {
-        canonical: "https://perfcalcpro.com/edpi-calculator",
+        canonical: "https://perfcalcpro.com/tools/edpi-calculator",
     },
     openGraph: {
         title: "eDPI Calculator | PerfCalcPro",
         description:
             "Calculate your effective mouse DPI from DPI and in-game sensitivity instantly.",
-        url: "https://perfcalcpro.com/edpi-calculator",
+        url: "https://perfcalcpro.com/tools/edpi-calculator",
         type: "website",
     },
 }

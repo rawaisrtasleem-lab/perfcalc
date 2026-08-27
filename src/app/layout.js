@@ -4,23 +4,28 @@ import Footer from "@/components/layout/Footer"
 import Script from "next/script"
 import { getMetadata, getOrganizationSchema, getWebsiteSchema } from "@/lib/seo"
 
+
 import { Inter, Orbitron } from "next/font/google"
+
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 })
 
+
 const orbitron = Orbitron({
   subsets: ["latin"],
   variable: "--font-orbitron",
 })
+
 
 export const metadata = getMetadata({
   title: "PerfCalcPro - Gaming Performance Calculators",
   description: "Professional gaming calculators for FPS, DPS, bottleneck analysis, and XP calculations. Free tools for competitive gamers and esports professionals.",
   path: "/",
 })
+
 
 export const generateViewport = () => ({
   width: "device-width",
@@ -30,10 +35,26 @@ export const generateViewport = () => ({
   themeColor: "#0B0F19",
 })
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Google Tag Manager */}
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-K3JVR2S3');
+            `
+          }}
+        />
+
         <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
@@ -70,7 +91,7 @@ export default function RootLayout({ children }) {
         />
         
         {/* Google AdSense - Replace with your client ID */}
-     
+      
         
         {/* Google Analytics - Add your tracking ID */}
         <Script
@@ -105,6 +126,16 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${inter.variable} ${orbitron.variable} bg-[#0B0F19] text-gray-200 antialiased`}>
+
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K3JVR2S3"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
 
         <Navbar />
 
