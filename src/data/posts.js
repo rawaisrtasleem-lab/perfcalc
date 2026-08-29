@@ -26,6 +26,7 @@ import {downloadSpeed} from "@/lib/blogs/downloadspeed";
 import {downloadSpeedLow} from "@/lib/blogs/download-speed";
 import { uploadSpeed } from "@/lib/blogs/blog28";
 import { wattsOfComputer } from "@/lib/blogs/blog29";
+import { starBuilder } from "@/lib/blogs/star-builder";
 
 
 
@@ -499,6 +500,19 @@ export const posts = [
   date: "2026-08-27",
   readTime: "12 min read",
   content: wattsOfComputer,
+},
+
+{
+  id: 29,
+  slug: "star-citizen-ship-builder",
+  title: "Star Citizen Ship Builder: Create, Compare & Optimize Ship Loadouts",
+  description: "Build, compare, and optimize your Star Citizen ship loadout. Check DPS, shields, and hardpoint compatibility instantly, free.",
+  excerpt: "Create, compare, and optimize your Star Citizen ship loadout with live DPS, survivability, and compatibility checks—no spreadsheets required.",
+  image: "/blog-images/starbuilder.png",
+  author: "Rao Awais",
+  date: "2026-08-29",
+  readTime: "12 min read",
+  content: starBuilder,
 }
 
 
