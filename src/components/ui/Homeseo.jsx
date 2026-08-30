@@ -1,84 +1,225 @@
-"use client";
-
-
-import Link from "next/link";
-
+import Link from "next/link"
 
 
 export default function Homeseo() {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-6 text-gray-100">
-      
-      <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center sm:text-left">
-        GameTools – Optimize Your PC & Gaming Performance
-      </h1>
+    <section
+      aria-labelledby="performance-guide-heading"
+      className="mx-auto max-w-6xl px-4 py-14 text-gray-100 sm:px-6 sm:py-16 lg:px-8"
+    >
 
-      <p className="text-gray-400 leading-relaxed">
-        GameTools brings together a suite of professional calculators designed for competitive gamers and PC enthusiasts. 
-        Whether you want to measure FPS stability, calculate DPS efficiency, track XP progress, or detect CPU/GPU bottlenecks, 
-        our tools help you achieve smoother gameplay, smarter upgrades, and balanced system performance. 
-        Built for accuracy and speed, GameTools ensures your PC runs at peak efficiency across gaming, streaming, and productivity tasks.
-      </p>
+      {/* =====================================================
+          INTRODUCTION
+      ====================================================== */}
 
-      {/* FPS Calculator */}
-      <div>
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">FPS Calculator – Measure Frame Rates Instantly</h2>
-        <p className="text-gray-400 leading-relaxed">
-          The FPS Calculator helps you estimate frame rates across different resolutions and game settings. 
-          By analyzing CPU and GPU workloads, it detects FPS drops, frame time instability, and performance bottlenecks. 
-          Use it to fine‑tune graphics settings, balance system resources, and enjoy smoother gameplay without stuttering.
-        </p>
-      </div>
+      <div className="mb-12 max-w-3xl">
 
-      {/* DPS Calculator */}
-      <div>
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">DPS Calculator – Maximize Combat Efficiency</h2>
-        <p className="text-gray-400 leading-relaxed">
-          The DPS Calculator measures your damage per second in RPGs and MMOs. 
-          It helps you optimize builds, weapons, and skill rotations for maximum combat output. 
-          By understanding your DPS performance, you can plan strategies better, dominate battles, and improve overall gaming efficiency.
-        </p>
-      </div>
+        <span className="mb-3 inline-block text-xs font-bold uppercase tracking-[0.2em] text-cyan-400">
+          Gaming Performance Guide
+        </span>
 
-      {/* XP Calculator */}
-      <div>
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">XP Calculator – Track Leveling Progress</h2>
-        <p className="text-gray-400 leading-relaxed">
-          The XP Calculator makes grinding smarter by tracking experience points and leveling progress. 
-          It shows how much XP you need to reach the next level, helping you plan sessions efficiently. 
-          Whether you’re playing RPGs or competitive games, this tool ensures you hit milestones faster with less wasted effort.
-        </p>
-      </div>
-
-      {/* Bottleneck Calculator */}
-      <div>
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">Bottleneck Calculator – Balance CPU & GPU Performance</h2>
-        <p className="text-gray-400 leading-relaxed">
-          The Bottleneck Calculator detects mismatches between CPU and GPU performance. 
-          It identifies whether your processor or graphics card is limiting system speed, 
-          and provides upgrade recommendations to restore balance. 
-          By spotting bottlenecks early, you can prevent FPS drops, optimize builds, and ensure smoother gaming and multitasking performance.
-        </p>
-      </div>
-
-      {/* CTA */}
-      <div className="text-center mt-12">
-        <p className="text-lg md:text-xl font-semibold text-gray-200 mb-6">
-          Unlock Your PC’s Full Potential
-        </p>
-        <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-          Explore all GameTools calculators today. From FPS and DPS analysis to XP tracking and bottleneck detection, 
-          our tools give you the insights you need for smarter upgrades and smoother gameplay.
-        </p>
-      <Link href="/tools/bottleneck-calculator" >
-        <button  className="inline-flex min-h-10 min-w-[118px] items-center justify-center rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-sm font-semibold !text-white !no-underline shadow-md shadow-cyan-500/10 transition-all duration-200 hover:from-cyan-400 hover:to-blue-400 hover:shadow-lg hover:shadow-cyan-500/20 active:scale-[0.98]"
-            
+        <h2
+          id="performance-guide-heading"
+          className="mb-5 text-3xl font-bold tracking-tight text-white md:text-4xl"
         >
-            Explore GameTools Now
-          
-        </button>
-        </Link>
+          Optimize Your PC & Gaming Performance
+        </h2>
+
+        <p className="text-base leading-7 text-gray-400 md:text-lg md:leading-8">
+          PerfCalcPro brings together professional calculators designed for
+          competitive gamers and PC enthusiasts. Whether you want to estimate
+          FPS performance, calculate DPS efficiency, track XP progress, or
+          identify CPU and GPU bottlenecks, our tools help you make smarter
+          decisions about your gaming setup.
+        </p>
+
       </div>
+
+
+      {/* =====================================================
+          INFORMATION GRID
+      ====================================================== */}
+
+      <div className="grid gap-6 md:grid-cols-2">
+
+        {/* FPS */}
+        <article className="rounded-2xl border border-gray-800 bg-gray-900/40 p-6">
+
+          <div
+            aria-hidden="true"
+            className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-400/10 text-lg"
+          >
+            🎮
+          </div>
+
+          <h3 className="mb-3 text-xl font-bold text-white md:text-2xl">
+            FPS Calculator
+          </h3>
+
+          <p className="leading-7 text-gray-400">
+            The FPS Calculator helps you estimate frame rates across different
+            resolutions and game settings. Use it to understand possible
+            performance limitations, adjust graphics settings, and plan a more
+            balanced gaming setup.
+          </p>
+
+          <Link
+            href="/tools/fps-calculator"
+            className="mt-5 inline-flex items-center text-sm font-semibold !text-cyan-400 !no-underline transition-colors hover:!text-cyan-300"
+          >
+            Open FPS Calculator
+            <span
+              aria-hidden="true"
+              className="ml-2"
+            >
+              →
+            </span>
+          </Link>
+
+        </article>
+
+
+        {/* DPS */}
+        <article className="rounded-2xl border border-gray-800 bg-gray-900/40 p-6">
+
+          <div
+            aria-hidden="true"
+            className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-400/10 text-lg"
+          >
+            ⚔️
+          </div>
+
+          <h3 className="mb-3 text-xl font-bold text-white md:text-2xl">
+            DPS Calculator
+          </h3>
+
+          <p className="leading-7 text-gray-400">
+            The DPS Calculator measures damage per second and helps you compare
+            builds, weapons, attacks, and combat setups. Use the results to make
+            more informed decisions about damage output and efficiency.
+          </p>
+
+          <Link
+            href="/tools/dps-calculator"
+            className="mt-5 inline-flex items-center text-sm font-semibold !text-cyan-400 !no-underline transition-colors hover:!text-cyan-300"
+          >
+            Open DPS Calculator
+            <span
+              aria-hidden="true"
+              className="ml-2"
+            >
+              →
+            </span>
+          </Link>
+
+        </article>
+
+
+        {/* XP */}
+        <article className="rounded-2xl border border-gray-800 bg-gray-900/40 p-6">
+
+          <div
+            aria-hidden="true"
+            className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-400/10 text-lg"
+          >
+            ⭐
+          </div>
+
+          <h3 className="mb-3 text-xl font-bold text-white md:text-2xl">
+            XP Calculator
+          </h3>
+
+          <p className="leading-7 text-gray-400">
+            The XP Calculator helps you track experience points and estimate
+            progress toward your next level. It makes it easier to understand
+            how much XP remains and plan your gaming sessions efficiently.
+          </p>
+
+          <Link
+            href="/tools/xp-calculator"
+            className="mt-5 inline-flex items-center text-sm font-semibold !text-cyan-400 !no-underline transition-colors hover:!text-cyan-300"
+          >
+            Open XP Calculator
+            <span
+              aria-hidden="true"
+              className="ml-2"
+            >
+              →
+            </span>
+          </Link>
+
+        </article>
+
+
+        {/* Bottleneck */}
+        <article className="rounded-2xl border border-gray-800 bg-gray-900/40 p-6">
+
+          <div
+            aria-hidden="true"
+            className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-400/10 text-lg"
+          >
+            💻
+          </div>
+
+          <h3 className="mb-3 text-xl font-bold text-white md:text-2xl">
+            Bottleneck Calculator
+          </h3>
+
+          <p className="leading-7 text-gray-400">
+            The Bottleneck Calculator helps identify potential mismatches
+            between your CPU and GPU. Use it to better understand system balance
+            before changing hardware or planning a gaming PC upgrade.
+          </p>
+
+          <Link
+            href="/tools/bottleneck-calculator"
+            className="mt-5 inline-flex items-center text-sm font-semibold !text-cyan-400 !no-underline transition-colors hover:!text-cyan-300"
+          >
+            Open Bottleneck Calculator
+            <span
+              aria-hidden="true"
+              className="ml-2"
+            >
+              →
+            </span>
+          </Link>
+
+        </article>
+
+      </div>
+
+
+      {/* =====================================================
+          CTA
+      ====================================================== */}
+
+      <div className="mt-10 rounded-2xl border border-cyan-400/10 bg-gradient-to-r from-cyan-500/[0.06] to-blue-500/[0.06] px-6 py-8 text-center sm:px-8">
+
+        <h3 className="mb-3 text-xl font-bold text-white md:text-2xl">
+          Get More From Your Gaming Setup
+        </h3>
+
+        <p className="mx-auto mb-6 max-w-2xl leading-7 text-gray-400">
+          Explore PerfCalcPro&apos;s gaming calculators for faster performance
+          estimates, smarter hardware decisions, and useful insights into your
+          setup.
+        </p>
+
+        <Link
+          href="#tools"
+          className="inline-flex min-h-11 items-center justify-center rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 text-sm font-semibold !text-white !no-underline shadow-lg shadow-cyan-500/10 transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0"
+        >
+          Explore All Tools
+          <span
+            aria-hidden="true"
+            className="ml-2"
+          >
+            →
+          </span>
+        </Link>
+
+      </div>
+
     </section>
   )
 }

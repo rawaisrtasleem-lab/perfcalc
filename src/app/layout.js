@@ -15,9 +15,7 @@ import {
 
 /* =========================================================
    FONTS
-   next/font automatically self-hosts and optimizes fonts.
-   display: "swap" prevents text from staying invisible
-   while the font is loading.
+   Next.js downloads and self-hosts these at build time.
 ========================================================= */
 
 const inter = Inter({
@@ -49,7 +47,6 @@ export const metadata = getMetadata({
 
 /* =========================================================
    VIEWPORT
-   Don't duplicate viewport/theme-color inside <head>.
 ========================================================= */
 
 export const generateViewport = () => ({
@@ -70,7 +67,10 @@ export default function RootLayout({ children }) {
   const websiteSchema = getWebsiteSchema()
 
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+    >
 
       <head>
 
@@ -94,11 +94,6 @@ export default function RootLayout({ children }) {
         />
 
         <meta
-          name="revisit-after"
-          content="7 days"
-        />
-
-        <meta
           name="language"
           content="English"
         />
@@ -106,9 +101,6 @@ export default function RootLayout({ children }) {
 
         {/* =================================================
             GOOGLE SITE VERIFICATION
-
-            Replace this with the real verification value
-            when you have one.
         ================================================= */}
 
         <meta
@@ -134,9 +126,6 @@ export default function RootLayout({ children }) {
 
         {/* =================================================
             STRUCTURED DATA
-
-            These are tiny inline JSON objects and do not
-            require downloading third-party JavaScript.
         ================================================= */}
 
         <script
@@ -167,9 +156,24 @@ export default function RootLayout({ children }) {
       >
 
         {/* =================================================
-            NAVIGATION
+            GOOGLE TAG MANAGER NOSCRIPT
+        ================================================= */}
 
-            Critical visible content stays synchronous.
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K3JVR2S3"
+            height="0"
+            width="0"
+            style={{
+              display: "none",
+              visibility: "hidden",
+            }}
+          />
+        </noscript>
+
+
+        {/* =================================================
+            NAVIGATION
         ================================================= */}
 
         <Navbar />
@@ -194,11 +198,8 @@ export default function RootLayout({ children }) {
         {/* =================================================
             GOOGLE TAG MANAGER
 
-            IMPORTANT:
-            lazyOnload means GTM waits until the important
-            page resources have loaded.
-
-            This reduces competition with FCP/LCP resources.
+            lazyOnload keeps GTM away from the critical
+            FCP/LCP loading path.
         ================================================= */}
 
         <Script
@@ -208,14 +209,15 @@ export default function RootLayout({ children }) {
             __html: `
               (function(w,d,s,l,i){
                 w[l]=w[l]||[];
+
                 w[l].push({
                   'gtm.start': new Date().getTime(),
-                  event:'gtm.js'
+                  event: 'gtm.js'
                 });
 
                 var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),
-                dl=l!='dataLayer'?'&l='+l:'';
+                    j=d.createElement(s),
+                    dl=l!='dataLayer'?'&l='+l:'';
 
                 j.async=true;
                 j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
@@ -229,10 +231,12 @@ export default function RootLayout({ children }) {
 
 
         {/* =================================================
-            GOOGLE ANALYTICS
+            GOOGLE ANALYTICS GA4
 
-            Load only when browser becomes idle instead
-            of competing with the initial rendering.
+            Loaded only after the important page content.
+
+            Measurement ID:
+            G-NL3W1KDQ9N
         ================================================= */}
 
         <Script
@@ -254,7 +258,9 @@ export default function RootLayout({ children }) {
 
               gtag('js', new Date());
 
-              gtag('config', 'G-NL3W1KDQ9N');
+              gtag('config', 'G-NL3W1KDQ9N', {
+                send_page_view: true
+              });
             `,
           }}
         />
@@ -263,51 +269,8 @@ export default function RootLayout({ children }) {
         {/* =================================================
             MICROSOFT CLARITY
 
-            Clarity is useful but is not required for
-            first paint, so it is delayed.
+            Intentionally removed for performance.
         ================================================= */}
-
-        <Script
-          id="microsoft-clarity"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-
-                c[a]=c[a]||function(){
-                  (c[a].q=c[a].q||[]).push(arguments)
-                };
-
-                t=l.createElement(r);
-                t.async=1;
-                t.src="https://www.clarity.ms/tag/"+i;
-
-                y=l.getElementsByTagName(r)[0];
-                y.parentNode.insertBefore(t,y);
-
-              })(window, document, "clarity", "script", "wse10ocw54");
-            `,
-          }}
-        />
-
-
-        {/* =================================================
-            GOOGLE TAG MANAGER NOSCRIPT
-
-            Required GTM fallback.
-        ================================================= */}
-
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-K3JVR2S3"
-            height="0"
-            width="0"
-            style={{
-              display: "none",
-              visibility: "hidden",
-            }}
-          />
-        </noscript>
 
       </body>
 
