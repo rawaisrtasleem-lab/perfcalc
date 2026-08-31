@@ -2,9 +2,10 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Github, Twitter, Linkedin, Mail } from "lucide-react"
 import { useState, useEffect } from "react"
 import { SITE_EMAIL } from "@/lib/seo"
+import { Github, Linkedin,  } from "lucide-react";
+import { DiscordIcon, PinterestIcon, XIcon } from "@/components/icons/BrandIcons";
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState(2026)
@@ -34,12 +35,15 @@ export default function Footer() {
     ],
   }
 
-  const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: `mailto:${SITE_EMAIL}`, label: "Email" },
-  ]
+
+const socialLinks = [
+ 
+  { icon: XIcon, href: "https://x.com/GawaisG98795", label: "X" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/awais-tasleem-142457412/", label: "LinkedIn" },
+  { icon: DiscordIcon, href: "https://discord.com/channels/1507297665636110338/1507299485372518510", label: "Discord" }, // pehle proper invite link generate karo, phir yahan daalo
+  { icon: PinterestIcon, href: "https://www.pinterest.com/perfcalcpro/", label: "Pinterest" },
+  
+];
 
   return (
     <footer className="relative mt-7 mb-6 bg-gradient-to-b from-[#0B0F19] via-[#0F1628] to-[#0B0F19] border-t border-cyan-400/10">
