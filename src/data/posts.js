@@ -27,6 +27,7 @@ import {downloadSpeedLow} from "@/lib/blogs/download-speed";
 import { uploadSpeed } from "@/lib/blogs/blog28";
 import { wattsOfComputer } from "@/lib/blogs/blog29";
 import { starBuilder } from "@/lib/blogs/star-builder";
+import {  mostXP} from "@/lib/blogs/most-xp";
 
 
 
@@ -495,7 +496,7 @@ export const posts = [
   title: "How Many Watts Does a Computer Use? Complete Power Guide 2026",
   description: "See how many watts a computer uses when idle, browsing, or gaming, plus a simple calculator to check your own electricity cost.",
   excerpt: "Learn exact wattage figures for desktops, laptops, and gaming PCs across different activities, with a simple calculator to estimate your electricity costs.",
-  image: "/blog-images/computer-Power.webp",
+  image: "/blog-images/computer-power.webp",
   author: "Rao Awais",
   date: "2026-08-27",
   readTime: "12 min read",
@@ -513,6 +514,22 @@ export const posts = [
   date: "2026-08-29",
   readTime: "12 min read",
   content: starBuilder,
+},
+
+
+
+
+{
+  id: 30,
+  slug: "blocks-give-most-xp-minecraft",
+  title: "What Blocks Give the Most XP in Minecraft",
+  description: "Discover how to get the most XP in Minecraft — from the Ender Dragon's 12,000 XP to top ore blocks and fast diamond generators.",
+  excerpt: "Create, compare, and optimize your Star Citizen ship loadout with live DPS, survivability, and compatibility checks—no spreadsheets required.",
+  image: "/blog-images/mostxp.webp",
+  author: "Rao Awais",
+  date: "2026-08-29",
+  readTime: "12 min read",
+  content: mostXP,
 }
 
 
