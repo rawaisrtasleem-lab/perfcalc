@@ -1,145 +1,384 @@
-export const metadata = {
-title: "Terms and Conditions"
-}
+import Link from "next/link";
 
-export default function TermsPage(){
+export default function TermsPage() {
+  return (
+    <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-gray-100">
+      <div className="space-y-10">
 
-return(
+        {/* Header */}
+        <header className="space-y-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-center sm:text-left">
+            Terms & Conditions
+          </h1>
 
-<section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-10 text-gray-100">
+          <p className="text-gray-500 text-sm italic">
+            Last Updated: September 3, 2026
+          </p>
 
-<h1 className="text-3xl md:text-4xl font-bold mb-6 text-center sm:text-left">
-  Terms & Conditions
-</h1>
+          <p className="text-gray-400 leading-relaxed">
+            These Terms & Conditions (&quot;Terms&quot;) govern your access to
+            and use of PerfCalcPro, including our website, calculators, tools,
+            articles, and related services.
+          </p>
 
-<p className="text-gray-500 text-sm italic mb-4">
-  Effective Date: May 17, 2026
-</p>
+          <p className="text-gray-400 leading-relaxed">
+            By accessing or using PerfCalcPro, you agree to these Terms. If you
+            do not agree with these Terms, please discontinue use of the
+            website.
+          </p>
+        </header>
 
-<p className="text-gray-400 leading-relaxed">
-  These Terms & Conditions ("Terms") govern your access to and use of the PerfCalcPro website and services ("Website", "Platform", or "Services"). By accessing and using this website, you agree to be bound by these Terms. If you do not agree to any part of these Terms, please do not use this website.
-</p>
+        {/* 1 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            1. About PerfCalcPro
+          </h2>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">1. USE LICENSE</h2>
-  <p className="text-gray-400 leading-relaxed mb-4">
-    Permission is granted to temporarily access and use PerfCalcPro for lawful purposes only. You agree not to:
-  </p>
-  <ul className="list-disc list-inside space-y-2 text-gray-400 mb-4">
-    <li>Republish or copy content from the website</li>
-    <li>Sell or rent the website content</li>
-    <li>Attempt to disrupt or hack the website</li>
-    <li>Use the website for commercial purposes without written permission</li>
-    <li>Create harmful or malicious code targeting the website</li>
-    <li>Collect or track personal information of others without consent</li>
-  </ul>
-</div>
+          <p className="text-gray-400 leading-relaxed">
+            PerfCalcPro provides online calculators, gaming tools, PC
+            performance tools, informational articles, and related resources.
+            Our services are intended to help users better understand and
+            compare gaming, hardware, performance, and progression scenarios.
+          </p>
+        </div>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">2. DISCLAIMER OF WARRANTIES</h2>
-  <p className="text-gray-400 leading-relaxed mb-4">
-    The materials on PerfCalcPro are provided "as is" without warranties of any kind. We make no warranties or representations, express or implied, regarding:
-  </p>
-  <ul className="list-disc list-inside space-y-2 text-gray-400">
-    <li>Accuracy, completeness, or reliability of calculator results</li>
-    <li>Fitness for a particular purpose</li>
-    <li>Non-infringement of third-party rights</li>
-    <li>Uninterrupted or error-free service</li>
-  </ul>
-</div>
+        {/* 2 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            2. Informational Purpose
+          </h2>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">3. CALCULATOR RESULTS & ACCURACY</h2>
-  <p className="text-gray-400 leading-relaxed mb-4">
-    Our gaming calculators (FPS, DPS, Bottleneck, XP) provide estimates based on algorithms and available data. These results:
-  </p>
-  <ul className="list-disc list-inside space-y-2 text-gray-400 mb-4">
-    <li>Are approximations only and may not reflect actual performance</li>
-    <li>May vary based on system conditions and game optimization</li>
-    <li>Should not be used as the sole basis for hardware purchasing decisions</li>
-  </ul>
-  <p className="text-gray-400 leading-relaxed">
-    We are not responsible for any damages or losses resulting from reliance on calculator results.
-  </p>
-</div>
+          <p className="text-gray-400 leading-relaxed mb-4">
+            The information, calculations, estimates, and other materials
+            available on PerfCalcPro are provided for general informational
+            purposes only.
+          </p>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">4. LIMITATION OF LIABILITY</h2>
-  <p className="text-gray-400 leading-relaxed">
-    In no event shall PerfCalcPro, its directors, employees, or agents be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the website or services.
-  </p>
-</div>
+          <p className="text-gray-400 leading-relaxed">
+            You are responsible for evaluating whether information provided by
+            PerfCalcPro is appropriate for your particular situation before
+            relying on it or making purchasing, configuration, gaming, or
+            other decisions.
+          </p>
+        </div>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">5. USER CONTENT & FEEDBACK</h2>
-  <p className="text-gray-400 leading-relaxed mb-4">
-    If you submit feedback, suggestions, or other content ("User Content") to PerfCalcPro, you grant us a non-exclusive, royalty-free license to use, modify, and distribute such content without compensation.
-  </p>
-</div>
+        {/* 3 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            3. Calculator Results and Accuracy
+          </h2>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">6. INTELLECTUAL PROPERTY</h2>
-  <p className="text-gray-400 leading-relaxed mb-4">
-    All content on PerfCalcPro, including text, graphics, logos, and images, is the property of PerfCalcPro or its content suppliers and is protected by copyright laws. You may not reproduce, distribute, or transmit any content without our written permission.
-  </p>
-</div>
+          <p className="text-gray-400 leading-relaxed mb-4">
+            PerfCalcPro calculators may use formulas, user-provided inputs,
+            publicly available information, assumptions, and other relevant
+            data to generate results.
+          </p>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">7. THIRD-PARTY CONTENT & LINKS</h2>
-  <p className="text-gray-400 leading-relaxed mb-4">
-    PerfCalcPro may contain links to third-party websites. We are not responsible for the content, accuracy, or practices of these external sites. Your use of third-party websites is subject to their own terms and privacy policies.
-  </p>
-</div>
+          <p className="text-gray-400 leading-relaxed mb-4">
+            Results generated by tools such as FPS, bottleneck, DPS, XP, and
+            other calculators may be estimates and should not be interpreted
+            as guaranteed real-world results.
+          </p>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">8. PROHIBITED CONDUCT</h2>
-  <p className="text-gray-400 leading-relaxed mb-4">
-    You agree not to engage in any of the following activities:
-  </p>
-  <ul className="list-disc list-inside space-y-2 text-gray-400">
-    <li>Violating any laws or regulations</li>
-    <li>Harassing, threatening, or abusing other users</li>
-    <li>Spamming or posting unwanted content</li>
-    <li>Attempting to breach website security</li>
-    <li>Using automated tools to scrape or collect data</li>
-  </ul>
-</div>
+          <p className="text-gray-400 leading-relaxed mb-4">
+            Actual outcomes may vary because of factors including:
+          </p>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">9. TERMINATION OF SERVICE</h2>
-  <p className="text-gray-400 leading-relaxed">
-    We reserve the right to suspend or terminate your access to PerfCalcPro at any time for violations of these Terms or for any other reason at our sole discretion.
-  </p>
-</div>
+          <ul className="list-disc pl-6 space-y-2 text-gray-400">
+            <li>Hardware configuration and component variations</li>
+            <li>Game versions, patches, and optimization</li>
+            <li>Graphics settings and resolution</li>
+            <li>Drivers and operating system configuration</li>
+            <li>Background applications and system load</li>
+            <li>Cooling, power limits, and thermal conditions</li>
+            <li>Network conditions where relevant</li>
+            <li>Changes to game mechanics or publicly available data</li>
+          </ul>
+        </div>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">10. GOVERNING LAW</h2>
-  <p className="text-gray-400 leading-relaxed">
-    These Terms are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.
-  </p>
-</div>
+        {/* 4 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            4. No Guarantee of Results
+          </h2>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">11. MODIFICATIONS TO TERMS</h2>
-  <p className="text-gray-400 leading-relaxed mb-4">
-    We may modify these Terms at any time. Changes will be posted on this page with an updated "Effective Date". Your continued use of the website constitutes acceptance of the modified Terms.
-  </p>
-</div>
+          <p className="text-gray-400 leading-relaxed">
+            Although we aim to provide useful and carefully designed tools, we
+            do not guarantee that any calculator result, estimate, article,
+            specification, or other information available on PerfCalcPro will
+            be completely accurate, current, complete, or suitable for every
+            situation.
+          </p>
+        </div>
 
-<div>
-  <h2 className="text-2xl md:text-3xl font-bold mb-4">12. CONTACT US</h2>
-  <p className="text-gray-400 leading-relaxed">
-    If you have questions about these Terms & Conditions, please contact us at:
-    <a 
-      href="mailto:rawaisrtasleem@gmail.com" 
-      className="text-cyan-400 hover:text-cyan-300 ml-2 inline-block"
-    >
-      rawaisrtasleem@gmail.com
-    </a>
-  </p>
-</div>
+        {/* 5 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            5. Acceptable Use
+          </h2>
 
-</section>
+          <p className="text-gray-400 leading-relaxed mb-4">
+            You may use PerfCalcPro for lawful personal and informational
+            purposes. You agree not to:
+          </p>
 
-)
-}
+          <ul className="list-disc pl-6 space-y-2 text-gray-400">
+            <li>
+              Use the website in violation of applicable laws or regulations
+            </li>
+            <li>
+              Attempt to gain unauthorized access to the website, servers, or
+              related systems
+            </li>
+            <li>
+              Interfere with, disrupt, overload, or damage the operation of the
+              website
+            </li>
+            <li>
+              Introduce malware, malicious code, automated attacks, or harmful
+              technologies
+            </li>
+            <li>
+              Use automated systems to excessively scrape, crawl, or extract
+              website content in a manner that disrupts the service
+            </li>
+            <li>
+              Copy, reproduce, republish, or commercially redistribute our
+              original content without authorization where permission is
+              required
+            </li>
+            <li>
+              Misrepresent your association with PerfCalcPro
+            </li>
+          </ul>
+        </div>
+
+        {/* 6 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            6. Intellectual Property
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed mb-4">
+            Unless otherwise stated, original website content created for
+            PerfCalcPro, including text, page design, graphics, branding,
+            calculator interfaces, and original written materials, is owned by
+            or licensed to PerfCalcPro and may be protected by applicable
+            intellectual property laws.
+          </p>
+
+          <p className="text-gray-400 leading-relaxed">
+            You may access our content for personal use, but you may not copy,
+            reproduce, republish, sell, or commercially redistribute
+            substantial portions of our original content without prior
+            permission, except where permitted by applicable law.
+          </p>
+        </div>
+
+        {/* 7 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            7. Third-Party Trademarks
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed">
+            Product names, game titles, hardware brands, company names,
+            trademarks, logos, and other third-party intellectual property
+            referenced on PerfCalcPro belong to their respective owners.
+            References to third-party products or games do not imply
+            sponsorship, endorsement, or affiliation unless expressly stated.
+          </p>
+        </div>
+
+        {/* 8 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            8. Third-Party Links and Services
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed">
+            PerfCalcPro may contain links to third-party websites, products,
+            advertisements, or services. These third parties operate
+            independently from PerfCalcPro. We do not control and are not
+            responsible for their content, availability, security, accuracy,
+            terms, or privacy practices.
+          </p>
+        </div>
+
+        {/* 9 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            9. Advertising
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed">
+            PerfCalcPro may display advertisements provided by third-party
+            advertising services. The appearance of an advertisement does not
+            necessarily mean that PerfCalcPro recommends, guarantees, or
+            endorses the advertised product or service.
+          </p>
+        </div>
+
+        {/* 10 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            10. Feedback and Suggestions
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed">
+            If you voluntarily send us feedback, corrections, ideas, or
+            suggestions regarding PerfCalcPro, you acknowledge that we may use
+            that feedback to improve our website, tools, or services without
+            an obligation to compensate you.
+          </p>
+        </div>
+
+        {/* 11 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            11. Website Availability
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed">
+            We aim to keep PerfCalcPro available and functioning properly, but
+            we do not guarantee uninterrupted access. We may modify, update,
+            suspend, remove, or discontinue any part of the website or its
+            functionality when reasonably necessary.
+          </p>
+        </div>
+
+        {/* 12 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            12. Disclaimer of Warranties
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed">
+            To the extent permitted by applicable law, PerfCalcPro and its
+            content, calculators, tools, and services are provided on an
+            &quot;as is&quot; and &quot;as available&quot; basis without
+            warranties of any kind, whether express or implied. We do not
+            guarantee uninterrupted availability, error-free operation, or
+            that all information will always be accurate or current.
+          </p>
+        </div>
+
+        {/* 13 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            13. Limitation of Liability
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed mb-4">
+            To the maximum extent permitted by applicable law, PerfCalcPro and
+            its owners, operators, contributors, or service providers will not
+            be liable for indirect, incidental, special, consequential, or
+            similar damages arising from or relating to your use of, or
+            inability to use, the website.
+          </p>
+
+          <p className="text-gray-400 leading-relaxed">
+            This includes losses arising from reliance on calculator results,
+            purchasing decisions, hardware configurations, game-related
+            decisions, third-party services, interruptions, or inaccuracies in
+            information available on the website.
+          </p>
+        </div>
+
+        {/* 14 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            14. Privacy
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed">
+            Your use of PerfCalcPro is also subject to our{" "}
+            <Link
+              href="/privacy-policy"
+              className="text-cyan-400 hover:text-cyan-300 underline underline-offset-4"
+            >
+              Privacy Policy
+            </Link>
+            , which explains how information, cookies, analytics, and
+            advertising technologies may be handled on the website.
+          </p>
+        </div>
+
+        {/* 15 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            15. Restricting Access
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed">
+            We reserve the right to restrict access to PerfCalcPro when
+            reasonably necessary to protect the website, prevent abuse,
+            maintain security, comply with legal requirements, or enforce
+            these Terms.
+          </p>
+        </div>
+
+        {/* 16 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            16. Governing Law and Disputes
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed">
+            These Terms will be interpreted in accordance with applicable
+            laws. Any dispute relating to these Terms or the use of
+            PerfCalcPro will be handled by courts or other competent
+            authorities having jurisdiction under applicable law.
+          </p>
+        </div>
+
+        {/* 17 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            17. Severability
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed">
+            If any provision of these Terms is found to be invalid,
+            unenforceable, or unlawful, the remaining provisions will continue
+            to apply to the extent permitted by law.
+          </p>
+        </div>
+
+        {/* 18 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            18. Changes to These Terms
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed">
+            We may update these Terms from time to time to reflect changes to
+            PerfCalcPro, our services, or applicable requirements. When we
+            update these Terms, we will revise the &quot;Last Updated&quot;
+            date at the top of this page.
+          </p>
+        </div>
+
+        {/* 19 */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            19. Contact Us
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed mb-4">
+            If you have questions regarding these Terms & Conditions, please
+            contact us through our Contact page.
+          </p>
+
+          <Link
+            href="/contact"
+            className="text-cyan-400 hover:text-cyan-300 underline underline-offset-4"
+          >
+            Contact PerfCalcPro
+          </Link>
+        </div>
+
+      </div>
+    </section>
+  );
+} 

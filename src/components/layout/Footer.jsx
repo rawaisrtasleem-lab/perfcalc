@@ -1,11 +1,14 @@
 "use client"
 
 import Link from "next/link"
-import { motion } from "framer-motion"
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
+import { Linkedin } from "lucide-react"
+import {
+  DiscordIcon,
+  PinterestIcon,
+  XIcon,
+} from "@/components/icons/BrandIcons"
 import { SITE_EMAIL } from "@/lib/seo"
-import { Github, Linkedin,  } from "lucide-react";
-import { DiscordIcon, PinterestIcon, XIcon } from "@/components/icons/BrandIcons";
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState(2026)
@@ -14,134 +17,226 @@ export default function Footer() {
     setCurrentYear(new Date().getFullYear())
   }, [])
 
-  const footerLinks = {
-    Tools: [
-      { label: "Bottleneck Calculator", href: "/tools/bottleneck-calculator" },
-      { label: "FPS Calculator", href: "/tools/fps-calculator" },
-      { label: "DPS Calculator", href: "/tools/dps-calculator" },
-      { label: "XP Calculator", href: "/tools/xp-calculator" },
-      {label : "Download Time Calculator" , href:"/tools/download-time-calculator"},
-      {label : "eDPI Calculator" , href:"/tools/edpi-calculator"}
-    ],
+  const popularTools = [
+    {
+      label: "Bottleneck Calculator",
+      href: "/tools/bottleneck-calculator",
+    },
+    {
+      label: "FPS Calculator",
+      href: "/tools/fps-calculator",
+    },
+    {
+      label: "DPS Calculator",
+      href: "/tools/dps-calculator",
+    },
+    {
+      label: "XP Calculator",
+      href: "/tools/xp-calculator",
+    },
+    {
+      label: "Download Time Calculator",
+      href: "/tools/download-time-calculator",
+    },
+    {
+      label: "eDPI Calculator",
+      href: "/tools/edpi-calculator",
+    },
+  ]
 
-    Company: [
-      { label: "About", href: "/about" },
-      { label: "Contact", href: "/contact" },
-      { label: "Blog", href: "/blog" },
-    ],
-    Legal: [
-      { label: "Privacy Policy", href: "/privacy-policy" },
-      { label: "Terms & Conditions", href: "/terms" },
-    ],
-  }
+  const companyLinks = [
+    { label: "About Us", href: "/about" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact Us", href: "/contact" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms & Conditions", href: "/terms" },
+  ]
 
-
-const socialLinks = [
- 
-  { icon: XIcon, href: "https://x.com/GawaisG98795", label: "X" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/awais-tasleem-142457412/", label: "LinkedIn" },
-  { icon: DiscordIcon, href: "https://discord.com/channels/1507297665636110338/1507299485372518510", label: "Discord" }, // pehle proper invite link generate karo, phir yahan daalo
-  { icon: PinterestIcon, href: "https://www.pinterest.com/perfcalcpro/", label: "Pinterest" },
-  
-];
+  const socialLinks = [
+    {
+      icon: XIcon,
+      href: "https://x.com/GawaisG98795",
+      label: "X",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/awais-tasleem-142457412/",
+      label: "LinkedIn",
+    },
+    {
+      icon: DiscordIcon,
+      href: "https://discord.com/channels/1507297665636110338/1507299485372518510",
+      label: "Discord",
+    },
+    {
+      icon: PinterestIcon,
+      href: "https://www.pinterest.com/perfcalcpro/",
+      label: "Pinterest",
+    },
+  ]
 
   return (
-    <footer className="relative mt-7 mb-6 bg-gradient-to-b from-[#0B0F19] via-[#0F1628] to-[#0B0F19] border-t border-cyan-400/10">
-      <div className="max-w-7xl mx-auto mt-8 sm:mt-14 px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-16 md:py-20 lg:py-28">
-        
-        {/* MAIN FOOTER CONTENT */}
-        <div className="grid mt-8 sm:mt-14 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 md:gap-12 lg:gap-20 mb-8 sm:mb-12 lg:mb-20">
-          
-          {/* BRAND SECTION */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="sm:col-span-2 lg:col-span-2"
-          >
-            <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-              <div className="relative flex-shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg blur opacity-50"></div>
-                <div className="relative px-2 sm:px-3 py-1 sm:py-2 bg-[#0B0F19] rounded-lg border border-cyan-400/50">
-                  <span className="text-base sm:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-300">
-                    PCP
-                  </span>
-                </div>
+    <footer className="border-t border-white/[0.04] bg-[#020817]">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+        {/* Main Footer */}
+        <div className="grid gap-12 py-12 sm:py-16 lg:grid-cols-[1.35fr_0.9fr_0.9fr] lg:gap-24 lg:py-10">
+          {/* Brand */}
+          <div>
+            <Link
+              href="/"
+              className="inline-flex items-center gap-3"
+              aria-label="PerfCalcPro Home"
+            >
+              {/* Logo */}
+              <div className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-cyan-400 via-sky-500 to-blue-600 shadow-[0_0_22px_rgba(34,211,238,0.18)]">
+                <div className="absolute inset-[3px] rounded-full border border-white/30" />
+
+                <span className="relative text-[13px] font-black tracking-[-1px] text-white">
+                  PCP
+                </span>
               </div>
-              <span className="text-lg sm:text-2xl font-bold text-gray-100">PerfCalcPro</span>
-            </div>
-            <p className="text-gray-400 text-xs sm:text-sm md:text-base leading-relaxed mb-6 sm:mb-8 max-w-md">
-              Premium gaming calculators designed for competitive gamers. Get instant insights on FPS, DPS, bottlenecks, and more.
+
+              {/* Brand Name */}
+              <span className="text-[24px] font-bold tracking-tight">
+                <span className="text-cyan-400">PerfCalc</span>
+                <span className="text-violet-400">Pro</span>
+              </span>
+            </Link>
+
+            <p className="mt-5 max-w-[390px] text-[14px] leading-6 text-slate-400">
+              Free browser-based gaming calculators for FPS, performance,
+              bottlenecks, DPS, sensitivity, and more. Fast, practical tools
+              built for gamers.
             </p>
-            {/* SOCIAL LINKS */}
-            <div className="flex gap-3 sm:gap-4">
-              {socialLinks.map((social, i) => {
+
+            {/* Socials */}
+            <div className="mt-6 flex flex-wrap gap-3">
+              {socialLinks.map((social) => {
                 const Icon = social.icon
+
                 return (
-                  <motion.a
-                    key={i}
+                  <a
+                    key={social.label}
                     href={social.href}
-                    whileHover={{ y: -3 }}
-                    className="p-2 sm:p-3 rounded-lg bg-white/5 border border-cyan-400/20 text-gray-400 hover:text-cyan-300 hover:border-cyan-400/60 transition-all duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
                     title={social.label}
+                    className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-700/60 bg-white/[0.025] text-slate-400 transition-all duration-200 hover:border-cyan-400/40 hover:bg-cyan-400/[0.06] hover:text-cyan-300"
                   >
-                    <Icon size={18} className="sm:w-5 sm:h-5" />
-                  </motion.a>
+                    <Icon size={17} />
+                  </a>
                 )
               })}
             </div>
-          </motion.div>
+          </div>
 
-          {/* FOOTER LINKS */}
-          {Object.entries(footerLinks).map(([category, links], i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              viewport={{ once: true }}
-              className="sm:col-span-1"
+          {/* Popular Tools */}
+          <div>
+            <h3 className="mb-6 text-[14px] font-bold uppercase tracking-[0.15em] text-slate-100">
+              Popular Tools
+            </h3>
+
+            <ul className="space-y-[14px]">
+              {popularTools.slice(0, 6).map((tool) => (
+                <li key={tool.href}>
+                  <Link
+                    href={tool.href}
+                    className="text-[14px] text-sky-300/90 transition-colors duration-200 hover:text-cyan-300"
+                  >
+                    {tool.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <Link
+              href="/tools"
+              className="mt-6 inline-flex items-center gap-2 text-[14px] font-semibold text-cyan-400 transition-colors hover:text-cyan-300"
             >
-              <h3 className="font-bold text-gray-100 mb-3 sm:mb-5 text-xs sm:text-sm md:text-base uppercase tracking-wider">
-                {category}
-              </h3>
-              <ul className="space-y-2 sm:space-y-4">
-                {links.map((link, j) => (
-                  <li key={j}>
-                    <Link
-                      href={link.href}
-                      className="text-gray-400 text-xs sm:text-sm md:text-base hover:text-cyan-300 transition-colors duration-300 flex items-center gap-1 sm:gap-2 group"
-                    >
-                      <span className="opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400">→</span>
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
+              View all tools
+              <span aria-hidden="true">↗</span>
+            </Link>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h3 className="mb-6 text-[14px] font-bold uppercase tracking-[0.15em] text-slate-100">
+              Company
+            </h3>
+
+            <ul className="space-y-[14px]">
+              {companyLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-[14px] text-sky-300/90 transition-colors duration-200 hover:text-cyan-300"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            {/* Support */}
+            <div className="mt-7 border-t border-white/[0.08] pt-5">
+              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-slate-500">
+                Support
+              </p>
+
+              <a
+                href={`mailto:${SITE_EMAIL}`}
+                className="text-[14px] text-sky-300 transition-colors hover:text-cyan-300"
+              >
+                {SITE_EMAIL}
+              </a>
+            </div>
+          </div>
         </div>
 
-        {/* DIVIDER */}
-        <div className="h-px bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent mb-6 sm:mb-8 lg:mb-10"></div>
+        {/* Divider */}
+        <div className="h-px bg-white/[0.09]" />
 
-        {/* BOTTOM FOOTER */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3 sm:gap-4"
-        >
-          <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left order-2 sm:order-1">
-            © {currentYear} PerfCalcPro. All rights reserved.
-          </p>
-          
-          <div className="flex items-center gap-2 sm:gap-4 text-xs text-gray-500 text-center order-1 sm:order-2">
-            <span className="text-xs">Made with Next.js & Tailwind</span>
+        {/* Bottom */}
+        <div className="flex flex-col gap-5 py-6 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <p className="text-[12px] text-slate-400">
+              © {currentYear}{" "}
+              <span className="text-slate-500">PerfCalcPro.</span> All rights
+              reserved.
+            </p>
+
+            <p className="mt-4 max-w-[870px] text-[12px] leading-5 text-slate-600">
+              PerfCalcPro is an independent gaming tools platform. Some pages
+              may contain advertisements or affiliate links, which help
+              support the site without affecting how our tools work.
+            </p>
           </div>
-        </motion.div>
+
+          {/* Bottom Links */}
+          <div className="flex shrink-0 items-center gap-5 text-[12px] text-slate-500">
+            <Link
+              href="/privacy-policy"
+              className="transition-colors hover:text-cyan-300"
+            >
+              Privacy
+            </Link>
+
+            <Link
+              href="/terms"
+              className="transition-colors hover:text-cyan-300"
+            >
+              Terms
+            </Link>
+
+            <Link
+              href="/contact"
+              className="transition-colors hover:text-cyan-300"
+            >
+              Contact
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   )

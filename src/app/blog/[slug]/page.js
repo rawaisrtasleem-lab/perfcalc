@@ -59,7 +59,7 @@ export default async function BlogPost({ params }) {
         className="
         relative min-h-screen
         overflow-hidden
-        bg-[#050505]
+      
         text-white
         flex items-center justify-center
         px-4
@@ -67,25 +67,8 @@ export default async function BlogPost({ params }) {
       >
 
         {/* Background Glow */}
-        <div
-          className="
-          absolute inset-0 -z-10
-          bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.12),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.12),transparent_30%)]
-          "
-        />
+      
 
-        <div
-          className="
-          w-full max-w-2xl
-          rounded-3xl
-          border border-white/10
-          bg-white/[0.03]
-          backdrop-blur-2xl
-          p-8 sm:p-12
-          text-center
-          shadow-[0_20px_80px_-20px_rgba(0,0,0,0.8)]
-          "
-        >
 
           {/* Icon */}
           <div
@@ -145,7 +128,6 @@ export default async function BlogPost({ params }) {
             Back to Blog
           </Link>
 
-        </div>
       </main>
     );
   }
@@ -153,19 +135,11 @@ export default async function BlogPost({ params }) {
   return (
     <main
       className="
-      relative min-h-screen
+      relative -m-16 min-h-screen w-[calc(100%+8rem)]
       overflow-hidden
-      bg-[#050505]
+      bg-[#0f172a]
       "
     >
-
-      {/* Background Effects */}
-      <div
-        className="
-        fixed inset-0 -z-10
-        bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.10),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.10),transparent_30%)]
-        "
-      />
 
       {/* Article */}
       <div

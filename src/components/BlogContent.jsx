@@ -15,20 +15,25 @@ const authors = {
 
 export default function BlogContent({ post }) {
   return (
-    <main className="min-h-screen bg-[#050505] text-white overflow-hidden">
+    <main className="min-h-screen bg-[#0f172a] text-white">
       {/* Background Glow */}
-      <div className="fixed inset-0 -z-10 pointer-events-none">
-        <div className="absolute inset-0 animate-gradient bg-[conic-gradient(at_top_left,_#6366f1_10%,_#a855f7_40%,_#06b6d4_70%,_#6366f1_100%)] opacity-30 blur-2xl" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.10),transparent_40%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.10),transparent_40%)]" />
-      </div>
+      
 
       {/* Blog Header */}
-      <div className="relative px-4 sm:px-6 py-6">
-        <div className="max-w-5xl mx-auto">
+      <div className="relative bg-[#0f172a] px-4 sm:px-6 py-6">
+        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-4">
           <h2 className="text-2xl sm:text-3xl font-bold text-blue-300 tracking-wide flex items-center gap-2">
             <span className="inline-block w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></span>
             PerfCalcPro Blog
           </h2>
+
+          <Link
+            href="/blog"
+            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/40 px-4 py-2 text-sm text-white hover:bg-white/10 transition"
+          >
+            <ArrowLeft size={16} />
+            Back to Blog
+          </Link>
         </div>
       </div>
 
@@ -36,24 +41,14 @@ export default function BlogContent({ post }) {
       <section className="relative">
         <div className="relative w-full h-[100px] sm:h-[100px] lg:h-[100px] overflow-hidden">
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-black/70 to-black/10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-[#0f172a]/10" />
 
-          {/* Back Button */}
-          <div className="absolute top-4 left-6 z-20">
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/40 backdrop-blur-md px-4 py-2 text-sm text-white hover:bg-black/60 transition"
-            >
-              <ArrowLeft size={16} />
-              Back to Blog
-            </Link>
-          </div>
         </div>
 
         {/* Hero Content */}
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 -mt-16 sm:-mt-20 lg:-mt-24 z-10">
-          <div className="rounded-2xl border border-white/10 bg-white/10 backdrop-blur-2xl p-6 sm:p-8 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.8)] ring-1 ring-blue-500/10">
-            <span className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 px-3 py-1 text-xs sm:text-sm font-semibold text-blue-200 tracking-wide mb-3 shadow">
+          <div className="rounded-2xl border  bg-white/10  p-6 sm:p-8  ">
+            <span className="inline-flex items-center rounded-full   px-3 py-1 text-xs sm:text-sm font-semibold text-blue-200 tracking-wide mb-3 shadow">
               Gaming Performance Guide
             </span>
 
@@ -92,7 +87,7 @@ export default function BlogContent({ post }) {
       {/* Article */}
       <section className="relative py-10 sm:py-16">
         <article className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-6 sm:p-8 lg:p-10">
+          <div className="rounded-3xl  p-6 sm:p-8 lg:p-10">
             <div
               className="
                 prose prose-invert max-w-none

@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen bg-black text-white px-4 py-12">
+    <main className="min-h-screen bg-[#0f172a] text-white px-4 py-12">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl font-bold mb-10">PerfCalcPro Blog</h1>
 
