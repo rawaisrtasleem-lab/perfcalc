@@ -28,6 +28,7 @@ import { uploadSpeed } from "@/lib/blogs/blog28";
 import { wattsOfComputer } from "@/lib/blogs/blog29";
 import { starBuilder } from "@/lib/blogs/star-builder";
 import {  mostXP} from "@/lib/blogs/most-xp";
+import { osrsTable } from "@/lib/blogs/osrs-table";
 
 
 
@@ -194,7 +195,7 @@ export const posts = [
 {
   id:13,
   slug:"osrs-dps-calculator",
-  title:"Osra dps calculator guideine",
+  title:"OSRS DPS Calculator Guide",
   description:"Calculate OSRS DPS instantly with our free calculator. Learn the max hit formula, accuracy rolls, tick speed, and why DPS beats max hit every time.",
   excerpt:"Calculate OSRS DPS instantly with our free calculator. Learn the max hit formula, accuracy rolls, tick speed, and why DPS beats max hit every time.",
    image:"/blog-images/orrs-dps.png",
@@ -530,7 +531,26 @@ export const posts = [
   date: "2026-08-29",
   readTime: "12 min read",
   content: mostXP,
-}
+},
+
+
+
+
+
+
+
+{
+  id: 31,
+  slug: "osrs-xp-table",
+  title: "OSRS XP Table: The Complete Level 1 to 99 Experience Chart",
+  description: "The OSRS XP table below lists every experience requirement, straight from Jagex's own formula, plus a calculator that does the math for you.",
+  excerpt: "Find the exact XP required for every OSRS level from 1 to 99, check key milestones, understand virtual levels, and calculate the XP needed for your next level.",
+  image: "/blog-images/osrs.png",
+  author: "Rao Awais",
+  date: "2026-09-03",
+  readTime: "12 min read",
+  content: osrsTable,
+},
 
 
   ]
