@@ -38,6 +38,10 @@ const tools = [
     label: "Blox Fruits Calculator",
     href: "/tools/blox-fruits-calculator",
   },
+  {
+    label: "VRAM Calculator",
+    href: "/vram-calculator-for-llm",
+  }
 ]
 
 

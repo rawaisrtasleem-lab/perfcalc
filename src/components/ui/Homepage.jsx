@@ -58,6 +58,14 @@ const defaultTools = [
     category: "Game-Specific Tools",
     icon: () => <span aria-hidden="true">🛡️</span>,
   },
+  {
+    id: 8,
+    title: "VRAM Calculator",
+    description: "Estimate VRAM requirements for LLMs and gaming workloads.",
+    link: "/vram-calculator-for-llm",
+    category: "Performance & Hardware",
+    icon: () => <span aria-hidden="true">🧠</span>,
+  },
 ]
 
 const preferredCategoryOrder = [
