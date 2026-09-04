@@ -29,6 +29,7 @@ import { wattsOfComputer } from "@/lib/blogs/blog29";
 import { starBuilder } from "@/lib/blogs/star-builder";
 import {  mostXP} from "@/lib/blogs/most-xp";
 import { osrsTable } from "@/lib/blogs/osrs-table";
+import { osrsGuide } from "@/lib/blogs/osrsguide";
 
 
 
@@ -551,6 +552,20 @@ export const posts = [
   readTime: "12 min read",
   content: osrsTable,
 },
+
+
+{
+  id: 32,
+  slug: "osrs-xp-calculator",
+  title: "OSRS XP Calculator: The Complete Guide",
+  description: "OSRS XP Calculator to see XP needed for your target level, compare training methods, and estimate XP rates and time.",
+  excerpt: "Find the exact XP required for every OSRS level from 1 to 99, check key milestones, understand virtual levels, and calculate the XP needed for your next level.",
+  image: "/blog-images/osrs-guide.webp",
+  author: "Rao Awais",
+  date: "2026-09-04",
+  readTime: "12 min read",
+  content: osrsGuide,
+}
 
 
   ]
