@@ -42,8 +42,8 @@ export const posts = [
     slug: "gta-6-fps",
     title: "How Much FPS Can You Get in GTA 6?",
     description:
-      "GTA 6 is the next big title in the Grand Theft Auto series. Players expect a huge map with advanced gameplay systems.",
-    date: "2026-05-21",
+     "GTA 6 FPS: Is 60 FPS possible on console? Discover the confirmed 30 FPS target and whether smoother 60 FPS gameplay could still happen.",
+     date: "2026-09-06",
     author: "Rao Awais",
      readTime:"10 min read",
     image: "/blog-images/image.png",
@@ -54,8 +54,8 @@ export const posts = [
     slug: "fps-in-video-editing",
     title: "What Is FPS in Video Editing? Complete Beginner Guide",
     description:
-      "FPS, or frames per second, is a crucial concept in video editing that determines the smoothness and quality of your videos. In this beginner's guide, we'll explore what FPS is, how it affects your video projects, and how to choose the right FPS for different types of content.",
-    date: "2024-06-15",
+     "FPS or frame rate in video editing explained: learn what FPS means, how frame rates affect video quality, motion, and editing results.",
+    date: "2026-09-06",
      readTime:"8 min read",
     author: "Rao Awais",
     image: "/blog-images/blog2-1.png",
@@ -64,10 +64,11 @@ export const posts = [
   {
     id: 3,
     slug: "best-budget-gaming-pc",
-    title: "Best Budget Gaming PC in 2026: Top Picks Under $1000",
+    title: "Best Gaming PC for Budget: Top Picks for 2026",
+
     description:
-      "Find the best budget gaming PC in 2026. Top picks for smooth 1080p gaming at prices that won't empty your wallet.",
-    date: "2024-06-20",
+     "Best Budget Gaming PC for beginners in 2026: discover affordable gaming PCs with strong performance, great value, and smooth 1080p gaming.",
+    date: "2026-09-06",
     author: "Rao Awais",
      readTime:"8 min read",
     image: "/blog-images/blog33-1.png",
