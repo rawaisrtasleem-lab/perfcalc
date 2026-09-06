@@ -30,6 +30,7 @@ import { starBuilder } from "@/lib/blogs/star-builder";
 import {  mostXP} from "@/lib/blogs/most-xp";
 import { osrsTable } from "@/lib/blogs/osrs-table";
 import { osrsGuide } from "@/lib/blogs/osrsguide";
+import { bloxfruits } from "@/lib/blogs/bloxfruits";
 
 
 
@@ -566,7 +567,25 @@ export const posts = [
   date: "2026-09-04",
   readTime: "12 min read",
   content: osrsGuide,
-}
+},
+
+
+
+
+
+
+{
+  id: 33,
+  slug: "blox-fruits-trading-guide",
+  title: "Blox Fruits Value Calculator: Trading Values & WFL Guide",
+  description: "Check real Blox Fruits trading values, spot scams early, and calculate a fair WFL trade with our free Blox Fruits value calculator.",
+  excerpt: "Compare Blox Fruits trading values, understand WFL trades, check demand and trends, and learn how to avoid common trading scams.",
+  image: "/blog-images/blox-fruit-box.webp",
+  author: "Rao Awais",
+  date: "2026-09-06",
+  readTime: "10 min read",
+  content: bloxfruits,
+},
 
 
   ]
