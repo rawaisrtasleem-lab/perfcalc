@@ -1,8 +1,8 @@
 export const osrsGuide = `
 
 
-<body>
-    <article>
+
+    
      <figure>
   <img
     src="/blog-images/osrs-guide.webp"

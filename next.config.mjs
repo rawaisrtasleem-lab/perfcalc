@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   reactCompiler: true,
-  
+
   // Turbopack configuration
   turbopack: {},
-  
+
   // Image optimization
   images: {
     unoptimized: false,
@@ -41,12 +42,13 @@ const nextConfig = {
           },
         ],
       },
-    ]
+    ];
   },
 
-  // Redirects for common variations
+  // Redirects for old / incorrect tool URLs
   async redirects() {
     return [
+      // Existing short URLs
       {
         source: "/fps",
         destination: "/tools/fps-calculator",
@@ -67,7 +69,36 @@ const nextConfig = {
         destination: "/tools/xp-calculator",
         permanent: true,
       },
-    ]
+
+      // Fix old tool URLs without /tools/
+      {
+        source: "/fps-calculator",
+        destination: "/tools/fps-calculator",
+        permanent: true,
+      },
+      {
+        source: "/dps-calculator",
+        destination: "/tools/dps-calculator",
+        permanent: true,
+      },
+      {
+        source: "/bottleneck-calculator",
+        destination: "/tools/bottleneck-calculator",
+        permanent: true,
+      },
+      {
+        source: "/xp-calculator",
+        destination: "/tools/xp-calculator",
+        permanent: true,
+      },
+
+      // Fix incorrect relative blog URL
+      {
+        source: "/blog/tools/dps-calculator",
+        destination: "/tools/dps-calculator",
+        permanent: true,
+      },
+    ];
   },
 
   // Performance optimizations

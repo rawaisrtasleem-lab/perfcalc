@@ -40,7 +40,7 @@ const tools = [
   },
   {
     label: "VRAM Calculator",
-    href: "/vram-calculator-for-llm",
+    href: "/tools/vram-calculator-for-llm",
   }
 ]
 

@@ -57,9 +57,9 @@ export default function Page() {
 
                 <div className="max-w-3xl mx-auto text-center mb-6 md:mb-10 mt-8 md:mt-8">
 
-                    <h2 className="text-2xl md:text-3xl font-bold text-slate-100 leading-tight">
+                    <h1 className="text-2xl md:text-3xl font-bold text-slate-100 leading-tight">
                     Blox Fruits Calculator – Smart Trade Value & W/F/L Checker
-                </h2>
+                </h1>
 
                     <p className="mt-5 text-sm md:text-base leading-7 text-slate-400">
                     Trading in Blox Fruits moves fast, and one wrong move can cost you a rare permanent fruit you&apos;ll never see again. Scammers count on that panic, and pure guesswork gets a lot of players burned. This{" "}
