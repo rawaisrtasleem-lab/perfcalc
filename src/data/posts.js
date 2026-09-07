@@ -31,6 +31,7 @@ import {  mostXP} from "@/lib/blogs/most-xp";
 import { osrsTable } from "@/lib/blogs/osrs-table";
 import { osrsGuide } from "@/lib/blogs/osrsguide";
 import { bloxfruits } from "@/lib/blogs/bloxfruits";
+import {minecraftBlogs} from "@/lib/blogs/minecraft";
 
 
 
@@ -587,6 +588,21 @@ export const posts = [
   content: bloxfruits,
 },
 
+
+
+
+{
+  id: 34,
+  slug: "is-minecraft-real",
+  title: "Is Minecraft Real? How to Spot Fake Minecraft Games",
+  description: "Is Minecraft real or just a rumor? Discover the truth, learn to spot fake clone apps, and find safe official download links.",
+  excerpt: "Learn whether Minecraft is real, how to identify fake Minecraft clone apps, where to download the official game, and how to avoid unsafe copies.",
+  image: "/blog-images/minecraft.webp",
+  author: "Rao Awais",
+  date: "2026-09-07",
+  readTime: "9 min read",
+  content: minecraftBlogs,
+},
 
   ]
 
