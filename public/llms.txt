@@ -1,28 +1,54 @@
 # PerfCalcPro
 
-> PerfCalcPro provides accurate, easy-to-use calculators and guides for PC gamers who want to optimize their gaming performance. The site covers popular titles including GTA, PUBG, Counter-Strike 2, Warframe, Star Citizen, OSRS, and more.
+> PerfCalcPro provides tools, guides, and calculators for PC gamers, hardware enthusiasts, and internet users who want better performance and smarter decisions.
 
 ## Tools
-- [FPS Calculator](https://perfcalcpro.com/tools/fps-calculator): Calculate and estimate frames per second based on your PC hardware
-- [DPS Calculator](https://perfcalcpro.com/tools/dps-calculator): Calculate damage per second for various games
-- [Bottleneck Calculator](https://perfcalcpro.com/tools/bottleneck-calculator): Find CPU and GPU bottlenecks in your gaming PC build
-- [XP Calculator](https://perfcalcpro.com/tools/xp-calculator): Calculate experience points and leveling progression
+- [FPS Calculator](https://perfcalcpro.com/tools/fps-calculator): Estimate FPS based on your CPU, GPU, resolution, and settings.
+- [DPS Calculator](https://perfcalcpro.com/tools/dps-calculator): Calculate damage per second for games and character builds.
+- [Bottleneck Calculator](https://perfcalcpro.com/tools/bottleneck-calculator): Find whether your CPU or GPU is limiting your gaming performance.
+- [XP Calculator](https://perfcalcpro.com/tools/xp-calculator): Track experience gains, leveling progress, and training efficiency.
+- [Download Time Calculator](https://perfcalcpro.com/tools/download-time-calculator): Estimate download time from file size and internet speed.
+- [EDPI Calculator](https://perfcalcpro.com/tools/edpi-calculator): Calculate effective DPI for aiming and mouse sensitivity.
+- [Pokemon Type Calculator](https://perfcalcpro.com/tools/pokemon-type-calculator): Check type matchups and weaknesses.
+- [Blox Fruits Calculator](https://perfcalcpro.com/tools/blox-fruits-calculator): Compare Blox Fruits values and trading worth.
+- [VRAM Calculator for LLM](https://perfcalcpro.com/vram-calculator-for-llm): Estimate VRAM requirements for local AI and LLM workloads.
 
 ## Blog
-- [GTA 6 FPS Guide](https://perfcalcpro.com/blog/gta-6-fps): Expected FPS performance for GTA 6 on PC
-- [FPS in Video Editing](https://perfcalcpro.com/blog/fps-in-video-editing): How FPS affects video editing and rendering
-- [What is a Good FPS](https://perfcalcpro.com/blog/what-is-a-good-fps): Understanding FPS benchmarks for gaming
-- [Can My PC Run It](https://perfcalcpro.com/blog/can-my-pc-run-it): Guide to checking PC game compatibility
-- [FPS vs Hz](https://perfcalcpro.com/blog/fps-vs-hz): Difference between frames per second and monitor refresh rate
-- [Good FPS for Gaming](https://perfcalcpro.com/blog/good-fps-for-gaming): Recommended FPS targets for different game genres
-- [Best Budget Gaming PC](https://perfcalcpro.com/blog/best-budget-gaming-pc): Budget PC builds for optimal gaming performance
-- [Cloud Gaming vs Console Gaming](https://perfcalcpro.com/blog/cloud-gaming-vs-console-gaming): Comparing cloud gaming and console gaming performance
-- [Counter-Strike 2 Online Play Guide](https://perfcalcpro.com/blog/counter-strike-2-online-play-guide): Complete guide to playing CS2 online
-- [Is PUBG Cross Platform](https://perfcalcpro.com/blog/is-pubg-cross-platform): PUBG crossplay support across platforms
-- [RotMG DPS Calculator](https://perfcalcpro.com/blog/rotmg-dps-calculator): Realm of the Mad God DPS calculation guide
-- [OSRS DPS Calculator](https://perfcalcpro.com/blog/osrs-dps-calculator): Old School RuneScape DPS calculation guide
+- [GTA 6 FPS Guide](https://perfcalcpro.com/blog/gta-6-fps): FPS expectations and performance outlook for GTA 6.
+- [FPS in Video Editing](https://perfcalcpro.com/blog/fps-in-video-editing): Learn how FPS affects video editing and rendering.
+- [Best Budget Gaming PC](https://perfcalcpro.com/blog/best-budget-gaming-pc): Budget gaming PC recommendations and buying advice.
+- [Can My PC Run It](https://perfcalcpro.com/blog/can-my-pc-run-it): Check if your PC can handle a game.
+- [FPS vs Hz](https://perfcalcpro.com/blog/fps-vs-hz): Understand the difference between frame rate and refresh rate.
+- [What Is a Good FPS for Gaming](https://perfcalcpro.com/blog/good-fps-for-gaming): Find the right FPS targets for different games.
+- [Cloud Gaming vs Console Gaming](https://perfcalcpro.com/blog/cloud-gaming-vs-console-gaming): Compare performance, cost, and convenience.
+- [Star Citizen DPS Calculator](https://perfcalcpro.com/blog/star-citizen-dps-calculator): Learn how to calculate DPS in Star Citizen.
+- [How to Improve FPS in Minecraft](https://perfcalcpro.com/blog/fps-in-minecraft): Optimize Minecraft performance and reduce lag.
+- [Counter-Strike 2 Online Play Guide](https://perfcalcpro.com/blog/counter-strike-2-online-play-guide): Get started with CS2 and improve gameplay.
+- [Is PUBG Cross Platform](https://perfcalcpro.com/blog/is-pubg-cross-platform): Explore PUBG crossplay support across platforms.
+- [RotMG DPS Calculator](https://perfcalcpro.com/blog/rotmg-dps-calculator): Analyze DPS and gear efficiency in RotMG.
+- [OSRS DPS Calculator](https://perfcalcpro.com/blog/osrs-dps-calculator): Calculate DPS and combat performance in OSRS.
+- [How to Drop Weapons in Warframe](https://perfcalcpro.com/blog/how-to-drop-weapons-in-warframe): Understand Warframe weapon dropping and loadout mechanics.
+- [Is Arc Raiders Crossplay](https://perfcalcpro.com/blog/is-arc-raiders-crossplay): Check platform crossplay information for Arc Raiders.
+- [Is Hollow Knight Hard](https://perfcalcpro.com/blog/is-hollow-knight-hard): Learn how difficult Hollow Knight really is.
+- [GTA 6 Gameplay & Features](https://perfcalcpro.com/blog/gta-6-gameplay-features): Review confirmed gameplay features and mechanics.
+- [How to Fix CPU Bottleneck](https://perfcalcpro.com/blog/how-to-fix-cpu-bottleneck): Solve CPU bottleneck issues with practical fixes.
+- [Ryzen vs Intel for Gaming](https://perfcalcpro.com/blog/which-is-better-ryzen-or-intel-for-gaming): Compare AMD Ryzen and Intel gaming performance.
+- [How to Upgrade Graphics Card](https://perfcalcpro.com/blog/how-to-upgrade-graphics-card): Upgrade your GPU safely and efficiently.
+- [Why Is My PC So Laggy](https://perfcalcpro.com/blog/why-is-my-pc-so-laggy): Diagnose slow performance and common lag causes.
+- [Bits vs Bytes](https://perfcalcpro.com/blog/bits-vs-bytes): Understand data size units and conversions.
+- [Is 150 Mbps Good](https://perfcalcpro.com/blog/is-150-mbps-good): Decide whether 150 Mbps is enough for your home internet needs.
+- [What Internet Speed Do I Need to Work From Home](https://perfcalcpro.com/blog/what-internet-speed-do-i-need-to-work-from-home): Learn recommended speeds for work and video calls.
+- [How to Increase Download Speed](https://perfcalcpro.com/blog/how-to-increase-download-speed): Improve internet performance and download rates.
+- [Why Is My Download Speed So Slow](https://perfcalcpro.com/blog/why-is-my-download-speed-so-slow): Troubleshoot slow downloads.
+- [Why Is My Upload Speed So Slow](https://perfcalcpro.com/blog/upload-speed-slow): Fix slow upload performance.
+- [How Many Watts Does a Computer Use](https://perfcalcpro.com/blog/how-many-watts-does-a-computer-use): Estimate computer power draw and electricity costs.
+- [Star Citizen Ship Builder](https://perfcalcpro.com/blog/star-citizen-ship-builder): Build and compare Star Citizen ships.
+- [What Blocks Give the Most XP in Minecraft](https://perfcalcpro.com/blog/blocks-give-most-xp-minecraft): Discover the best XP sources in Minecraft.
+- [OSRS XP Table](https://perfcalcpro.com/blog/osrs-xp-table): View Level 1 to 99 XP requirements in OSRS.
+- [OSRS XP Calculator](https://perfcalcpro.com/blog/osrs-xp-calculator): Estimate XP needs and compare training methods.
+- [Blox Fruits Trading Guide](https://perfcalcpro.com/blog/blox-fruits-trading-guide): Learn Blox Fruits values and fair trade checks.
 
-## Optional
+## Site Pages
 - [About](https://perfcalcpro.com/about)
 - [Contact](https://perfcalcpro.com/contact)
 - [Privacy Policy](https://perfcalcpro.com/privacy-policy)
