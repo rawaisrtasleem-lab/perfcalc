@@ -5,7 +5,7 @@ export const metadata = {
         "Free VRAM calculator for AI & LLM models. Find exact GPU VRAM needs by model size, quantization, context length, and batch size. Try it now.",
 
     alternates: {
-        canonical: "https://perfcalcpro.com/vram-calculator-for-llm",
+        canonical: "https://perfcalcpro.com/tools/vram-calculator-for-llm",
     },
 
     openGraph: {
@@ -14,7 +14,7 @@ export const metadata = {
         description:
             "Calculate GPU VRAM requirements for local LLMs and gaming based on model size, quantization, context length, resolution, and graphics settings.",
 
-        url: "https://perfcalcpro.com/vram-calculator-for-llm",
+        url: "https://perfcalcpro.com/tools/vram-calculator-for-llm",
 
         type: "website",
 
