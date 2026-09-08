@@ -66,6 +66,14 @@ const defaultTools = [
     category: "Performance & Hardware",
     icon: () => <span aria-hidden="true">🧠</span>,
   },
+  {
+    id: 9,
+    title: "Aspect Ratio Finder",
+    description: "Find image and video aspect ratios from width and height dimensions.",
+    link: "/tools/aspect-ratio-finder",
+    category: "Utilities",
+    icon: () => <span aria-hidden="true">📐</span>,
+  },
 ]
 
 const preferredCategoryOrder = [

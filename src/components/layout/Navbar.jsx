@@ -41,7 +41,11 @@ const tools = [
   {
     label: "VRAM Calculator",
     href: "/tools/vram-calculator-for-llm",
-  }
+  },
+  {
+    label: "Aspect Ratio Finder",
+    href: "/tools/aspect-ratio-finder",
+  },
 ]
 
 
