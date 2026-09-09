@@ -32,6 +32,7 @@ import { osrsTable } from "@/lib/blogs/osrs-table";
 import { osrsGuide } from "@/lib/blogs/osrsguide";
 import { bloxfruits } from "@/lib/blogs/bloxfruits";
 import {minecraftBlogs} from "@/lib/blogs/minecraft";
+import { vramNeed } from "@/lib/blogs/vram-need";
 
 
 
@@ -602,6 +603,18 @@ export const posts = [
   date: "2026-09-07",
   readTime: "9 min read",
   content: minecraftBlogs,
+},
+{
+  id: 35,
+  slug: "how-much-vram-do-you-need-gpu-guide",
+  title: "How Much VRAM Do You Need? Choosing the Best GPU by VRAM in 2026",
+  description: "Confused about how much VRAM you need? Compare 8GB, 12GB, 16GB and 24GB GPUs by resolution and workload, then pick the right one today.",
+  excerpt: "Learn how much VRAM you need for 1080p, 1440p, 4K gaming, and AI workloads, compare 8GB to 24GB GPUs by resolution, and find the right card for your budget.",
+  image: "/blog-images/how-much-vram-need.webp",
+  author: "Rao Awais",
+  date: "2026-09-09",
+  readTime: "14 min read",
+  content: vramNeed,
 },
 
   ]
