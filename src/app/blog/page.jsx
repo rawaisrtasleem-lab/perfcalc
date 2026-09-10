@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { posts } from "@/data/posts";
-import { User, Calendar, Clock, ArrowRight } from "lucide-react";
+import { User, Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
 
 export const metadata = {
   title: "PerfCalcPro Blog",
@@ -10,9 +10,31 @@ export const metadata = {
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen bg-[#0f172a] text-white px-4 py-12">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl font-bold mb-10">PerfCalcPro Blog</h1>
+    <main className="min-h-screen bg-[#0f172a] text-white">
+      <section className="border-b border-white/5 bg-[#0b1222] px-4 py-10 text-center sm:px-6 sm:py-12">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-3 flex items-center justify-center gap-3">
+            <div className="flex flex-col gap-0.5" aria-hidden="true">
+              <span className="h-1.5 w-10 rounded-r-full bg-lime-400" />
+              <span className="h-1.5 w-10 rounded-r-full bg-cyan-400" />
+              <span className="h-1.5 w-10 rounded-r-full bg-orange-400" />
+            </div>
+
+            <BookOpen size={36} strokeWidth={2.25} className="text-cyan-400" />
+          </div>
+
+          <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl">
+            PerfCalcPro Blogs
+          </h1>
+
+          <p className="mx-auto mt-3 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg">
+            Discover gaming performance tips, PC hardware guides, FPS advice,
+            and practical tools to help you get more from your setup.
+          </p>
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {posts.map((post) => (

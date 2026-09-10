@@ -4,6 +4,7 @@ import {
   Clock3,
   ArrowLeft,
   ArrowRight,
+  Wrench,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -94,13 +95,23 @@ export default function BlogContent({ post }) {
             PerfCalcPro Blog
           </h2>
 
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/40 px-4 py-2 text-sm !text-white !no-underline transition hover:bg-white/10"
-          >
-            <ArrowLeft size={16} />
-            Back to Blog
-          </Link>
+          <div className="flex flex-wrap items-center gap-3">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-500/10 px-4 py-2 text-sm !text-cyan-200 !no-underline transition hover:bg-cyan-500/20"
+            >
+              <Wrench size={16} />
+              Explore Tools
+            </Link>
+
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/40 px-4 py-2 text-sm !text-white !no-underline transition hover:bg-white/10"
+            >
+              <ArrowLeft size={16} />
+              Back to Blog
+            </Link>
+          </div>
         </div>
       </div>
 
