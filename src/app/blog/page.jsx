@@ -23,13 +23,13 @@ export default function BlogPage() {
             <BookOpen size={36} strokeWidth={2.25} className="text-cyan-400" />
           </div>
 
-          <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl">
+          <h1 className="text-balance text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl">
             PerfCalcPro Blogs
           </h1>
 
-          <p className="mx-auto mt-3 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg">
-            Discover gaming performance tips, PC hardware guides, FPS advice,
-            and practical tools to help you get more from your setup.
+          <p className="mx-auto mt-4 max-w-5xl text-pretty text-base leading-7 text-slate-300 sm:text-lg">
+            Discover gaming performance tips, PC hardware guides, FPS advice, and
+            practical tools to help you get more from your setup.
           </p>
         </div>
       </section>

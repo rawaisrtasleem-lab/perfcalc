@@ -15,7 +15,6 @@ import {
 
 /* =========================================================
    FONTS
-   Next.js downloads and self-hosts these at build time.
 ========================================================= */
 
 const inter = Inter({
@@ -71,7 +70,6 @@ export default function RootLayout({ children }) {
       lang="en"
       data-scroll-behavior="smooth"
     >
-
       <head>
 
         {/* =================================================
@@ -90,7 +88,7 @@ export default function RootLayout({ children }) {
 
         <meta
           name="copyright"
-          content="© 2024 PerfCalcPro. All rights reserved."
+          content="© 2026 PerfCalcPro. All rights reserved."
         />
 
         <meta
@@ -101,6 +99,9 @@ export default function RootLayout({ children }) {
 
         {/* =================================================
             GOOGLE SITE VERIFICATION
+
+            Replace this with your real verification code.
+            If you don't have one, remove this meta tag.
         ================================================= */}
 
         <meta
@@ -183,7 +184,7 @@ export default function RootLayout({ children }) {
             MAIN CONTENT
         ================================================= */}
 
-        <main className="w-full p-16 min-h-screen flex flex-col items-center justify-start">
+        <main className="w-full min-h-screen flex flex-col items-center justify-start">
           {children}
         </main>
 
@@ -196,15 +197,33 @@ export default function RootLayout({ children }) {
 
 
         {/* =================================================
-            GOOGLE TAG MANAGER
+            GOOGLE ADSENSE
 
-            lazyOnload keeps GTM away from the critical
-            FCP/LCP loading path.
+            IMPORTANT:
+            Do NOT place the raw async script inside <head>.
+
+            afterInteractive allows React hydration to finish
+            before AdSense starts changing the document.
+
+            Publisher:
+            ca-pub-8746794886503243
+        ================================================= */}
+
+        <Script
+          id="google-adsense"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8746794886503243"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
+
+
+        {/* =================================================
+            GOOGLE TAG MANAGER
         ================================================= */}
 
         <Script
           id="google-tag-manager"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){
@@ -233,8 +252,6 @@ export default function RootLayout({ children }) {
         {/* =================================================
             GOOGLE ANALYTICS GA4
 
-            Loaded only after the important page content.
-
             Measurement ID:
             G-NL3W1KDQ9N
         ================================================= */}
@@ -242,12 +259,12 @@ export default function RootLayout({ children }) {
         <Script
           id="google-analytics-library"
           src="https://www.googletagmanager.com/gtag/js?id=G-NL3W1KDQ9N"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
 
         <Script
           id="google-analytics"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -273,7 +290,6 @@ export default function RootLayout({ children }) {
         ================================================= */}
 
       </body>
-
     </html>
   )
 }

@@ -49,7 +49,7 @@ export const posts = [
      date: "2026-09-06",
     author: "Rao Awais",
      readTime:"10 min read",
-    image: "/blog-images/image.png",
+    image: "/blog-images/images.webp",
     content: gtaSetting1,
   },
   {
