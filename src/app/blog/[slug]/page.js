@@ -135,7 +135,7 @@ export default async function BlogPost({ params }) {
   return (
     <main
       className="
-      relative -m-16 min-h-screen w-[calc(100%+8rem)]
+      relative min-h-screen w-full
       overflow-hidden
       bg-[#0f172a]
       "

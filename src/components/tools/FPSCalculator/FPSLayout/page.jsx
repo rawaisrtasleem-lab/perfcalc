@@ -6,7 +6,6 @@ import GPUSelect from "../GPUSelect";
 import GameSettings from "../GameSettings";
 import FPSResult from "../FPSResult";
 import { motion } from "framer-motion";
-import { TrendingUp, Zap, Gauge } from "lucide-react";
 
 export default function FPSLayout() {
   const [result, setResult] = useState(null);
@@ -41,28 +40,6 @@ export default function FPSLayout() {
                The Frames Per Second (FPS)  analyzing your CPU, GPU, RAM, and 
     resolution settings, this tool provides accurate predictions of performance 
     so you can optimize your hardware and enjoy a better gaming experience.</p>
-        </motion.div>
-
-        {/* Features */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-12 sm:mb-16"
-        >
-          {[
-            { icon: TrendingUp, text: "Accurate FPS" },
-            { icon: Zap, text: "Instant Results" },
-            { icon: Gauge, text: "Deep Analysis" }
-          ].map((feature, i) => (
-            <div 
-              key={i} 
-              className="flex items-center gap-3 m-8  p-4 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/40 transition-colors"
-            >
-              <feature.icon className="w-5 h-5 p-8 text-indigo-400 flex-shrink-0" />
-              <span className="text-sm font-medium m-8 text-gray-300">{feature.text}</span>
-            </div>
-          ))}
         </motion.div>
 
         {/* Layout Grid */}
