@@ -3,7 +3,7 @@ export const bloxFruit =`
 
 <figure>
   <img
-    src="/blog-images/blox-fruit-value.png"
+    src="/blog-images/Blox-fruit-value.png"
     alt="Blox Fruits Value List 2026"
     class="w-full rounded-xl"
   />
@@ -313,22 +313,22 @@ export const bloxFruit =`
 <p>Goal Grinding requires Buddha or Magma for maximum efficiency. Goal PvP demands Portal or Dough for high mobility combat. Goal Trading profit means hoarding Dragon and Kitsune constantly.</p>
 
 <h2>FAQ: Blox Fruits Values & Trading</h2>
-<strong>Are permanent fruits worth the cost?</strong>
+<h3>Are permanent fruits worth the cost?</h3>
 <p>Yes they provide permanent account upgrades. They hold the highest Blox Fruits trading values possible.</p>
 
-<strong>How often do market numbers shift?</strong>
+<h3>How often do market numbers shift?</h3>
 <p>Major value changes happen weekly. Minor market fluctuations occur almost daily.</p>
 
-<strong>What is the single most valuable item?</strong>
+<h3>What is the single most valuable item?</h3>
 <p>Permanent Kitsune currently dominates the entire trade list. Its Robux cost drives the community wild.</p>
 
-<strong>Should I trade Dragon right now?</strong>
+<h3>Should I trade Dragon right now?</h3>
 <p>Hold it until the highly anticipated rework drops. Its Blox Fruits trade value will inevitably skyrocket.</p>
 
-<strong>How do I check exact item rarity?</strong>
+<h3>How do I check exact item rarity?</h3>
 <p>The in game color system shows basic item rarity. White denotes common while red indicates mythical fruits.</p>
 
-<strong>Can I trade gamepasses?</strong>
+<h3>Can I trade gamepasses?</h3>
 <p>Yes you can trade unredeemed Blox Fruits gamepasses. They function exactly like standard Blox Fruits trade items.</p>
 
 <h2>Maximizing Your Trading Potential</h2>
