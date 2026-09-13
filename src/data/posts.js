@@ -33,6 +33,7 @@ import { osrsGuide } from "@/lib/blogs/osrsguide";
 import { bloxfruits } from "@/lib/blogs/bloxfruits";
 import {minecraftBlogs} from "@/lib/blogs/minecraft";
 import { vramNeed } from "@/lib/blogs/vram-need";
+import {bloxFruit} from "@/lib/blogs/blox-cal";
 
 
 
@@ -617,6 +618,21 @@ export const posts = [
   content: vramNeed,
 },
 
+
+
+
+{
+  id: 36,
+  slug: "blox-fruits-trade-value-list",
+  title: "Blox Fruits Value List & Market Trends (2026 Updated)",
+  description: "Stop losing rare items. Master the ultimate Blox Fruits trade value guide to secure the best offers and boost your inventory profit.",
+  excerpt: "Discover the updated 2026 Blox Fruits value list for physical and permanent fruits, track market trends, avoid scams, and learn the best trading strategies to maximize your inventory.",
+  image: "/blog-images/blox-fruit-value.png",
+  author: "Rao Awais",
+  date: "2026-09-13",
+  readTime: "7 min read",
+  content: bloxFruit,
+}
   ]
 
 
