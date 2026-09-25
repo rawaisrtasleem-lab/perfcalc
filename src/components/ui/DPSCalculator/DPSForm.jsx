@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-import { Zap } from "lucide-react"
 import StatInput from "./StatInput"
 import { calculateDPS } from "@/lib/calculations/dpsformula"
 
@@ -34,21 +33,22 @@ export default function DPSForm() {
 
         <form
             onSubmit={handleSubmit}
-            className="bg-slate-900 border border-slate-800 rounded-2xl p-8 space-y-6 shadow-xl"
+            className="mx-auto max-w-2xl rounded-lg border border-slate-800 bg-slate-900 p-5 sm:p-6"
         >
 
-            <h2 className="text-xl font-semibold flex items-center gap-2">
-                <Zap className="text-indigo-400" />
+            <h2 className="mb-5 text-xl font-semibold text-white">
                 DPS Stats
             </h2>
 
-            <StatInput label="Base Damage" value={damage} setValue={setDamage} />
-            <StatInput label="Attack Speed" value={attackSpeed} setValue={setAttackSpeed} />
-            <StatInput label="Crit Chance %" value={critChance} setValue={setCritChance} />
-            <StatInput label="Crit Damage %" value={critDamage} setValue={setCritDamage} />
+            <div className="grid gap-4 sm:grid-cols-2">
+                <StatInput label="Base Damage" value={damage} setValue={setDamage} />
+                <StatInput label="Attack Speed" value={attackSpeed} setValue={setAttackSpeed} />
+                <StatInput label="Crit Chance %" value={critChance} setValue={setCritChance} />
+                <StatInput label="Crit Damage %" value={critDamage} setValue={setCritDamage} />
+            </div>
 
             <button
-                className="w-full bg-indigo-600 hover:bg-indigo-500 transition rounded-lg py-3 font-semibold"
+                className="mt-5 w-full rounded-lg bg-indigo-600 py-3 font-semibold transition-colors hover:bg-indigo-500"
             >
                 Calculate DPS
             </button>

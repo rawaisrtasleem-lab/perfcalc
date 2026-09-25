@@ -1,3 +1,5 @@
+"use client";
+
 import {
   CalendarDays,
   User,
@@ -5,9 +7,12 @@ import {
   ArrowLeft,
   ArrowRight,
   Wrench,
+  List,
+  ChevronDown,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 const authors = {
   "rao-awais": {
@@ -65,8 +70,29 @@ const relatedArticles = [
   },
 ];
 
+// Turns heading text into a URL-safe id, avoiding duplicates on the page.
+function slugify(text, used) {
+  const base =
+    text
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-") || "section";
+
+  let id = base;
+  let i = 1;
+  while (used.has(id)) {
+    id = `${base}-${i++}`;
+  }
+  return id;
+}
+
 export default function BlogContent({ post }) {
   const currentSlug = post?.slug || "";
+  const contentRef = useRef(null);
+  const [toc, setToc] = useState([]);
+  const [activeId, setActiveId] = useState("");
+  const [mobileTocOpen, setMobileTocOpen] = useState(false);
 
   const recommendedArticles = relatedArticles
     .filter((article) => article.slug !== currentSlug)
@@ -82,6 +108,77 @@ export default function BlogContent({ post }) {
     : null;
 
   const authorInfo = authorKey ? authors[authorKey] : null;
+
+  const articleClassName = [
+    "prose prose-invert max-w-none",
+    "prose-headings:font-extrabold prose-headings:tracking-tight prose-headings:text-white prose-headings:scroll-mt-24",
+    "prose-h2:mt-8 prose-h2:mb-3 prose-h2:border-b prose-h2:border-white/10 prose-h2:pb-3 prose-h2:text-3xl",
+    "prose-h3:mt-6 prose-h3:mb-3 prose-h3:text-xl",
+    "prose-p:mt-2 prose-p:mb-4 prose-p:leading-7 prose-p:text-zinc-300",
+    "prose-strong:text-white",
+    "prose-a:text-blue-400 hover:prose-a:text-blue-300",
+    "prose-li:text-zinc-300 prose-li:marker:text-blue-400 prose-ul:space-y-2",
+    "prose-table:w-full prose-table:border-collapse",
+    "prose-th:border prose-th:border-white/10 prose-th:bg-white/5 prose-th:p-3 prose-th:font-semibold prose-th:text-white",
+    "prose-td:border prose-td:border-white/10 prose-td:p-3 prose-td:text-zinc-300",
+    "prose-blockquote:rounded-xl prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:bg-white/5 prose-blockquote:px-5 prose-blockquote:py-2 prose-blockquote:text-zinc-300",
+  ].join(" ");
+
+  // Build the table of contents from the rendered h2/h3s once the HTML
+  // content has been injected into the DOM.
+  useEffect(() => {
+    if (!contentRef.current) return;
+
+    const headingEls = Array.from(
+      contentRef.current.querySelectorAll("h2, h3")
+    );
+    const used = new Set();
+
+    const items = headingEls.map((el) => {
+      if (!el.id) {
+        el.id = slugify(el.textContent, used);
+      }
+      used.add(el.id);
+      return {
+        id: el.id,
+        text: el.textContent,
+        level: el.tagName === "H3" ? 3 : 2,
+      };
+    });
+
+    setToc(items);
+    setActiveId(items[0]?.id ?? "");
+  }, [post?.content]);
+
+  // Highlight whichever section is currently in view.
+  useEffect(() => {
+    if (toc.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveId(entry.target.id);
+        });
+      },
+      { rootMargin: "-96px 0px -70% 0px", threshold: 0 }
+    );
+
+    toc.forEach(({ id }) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [toc]);
+
+  const scrollToHeading = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + window.scrollY - 24;
+    window.scrollTo({ top, behavior: "smooth" });
+    setActiveId(id);
+    setMobileTocOpen(false);
+  };
 
   return (
     <main className="min-h-screen bg-[#0f172a] text-white">
@@ -165,161 +262,199 @@ export default function BlogContent({ post }) {
       </section>
 
       {/* =====================================================
-          ARTICLE CONTENT
+          ARTICLE CONTENT — TOC (left) + Content (right)
       ====================================================== */}
       <section className="relative py-10 sm:py-16">
-        <article className="mx-auto max-w-5xl px-4 sm:px-6">
-          <div className="rounded-3xl p-2 sm:p-4 lg:p-6">
-            <div
-              className="
-                prose prose-invert max-w-none
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          {/* MOBILE / TABLET TOC TOGGLE */}
+          {toc.length > 0 && (
+            <div className="mb-6 lg:hidden">
+              <button
+                type="button"
+                onClick={() => setMobileTocOpen((v) => !v)}
+                className="flex w-full items-center justify-between rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-zinc-200"
+                aria-expanded={mobileTocOpen}
+              >
+                <span className="flex items-center gap-2">
+                  <List size={16} className="text-blue-300" />
+                  On this page
+                </span>
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform ${
+                    mobileTocOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
 
-                prose-headings:font-extrabold
-                prose-headings:tracking-tight
-                prose-headings:text-white
+              {mobileTocOpen && (
+                <nav className="mt-2 rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                  <ul className="space-y-2.5 text-sm">
+                    {toc.map((item) => (
+                      <li key={item.id}>
+                        <button
+                          type="button"
+                          onClick={() => scrollToHeading(item.id)}
+                          className={`block text-left leading-5 ${
+                            item.level === 3 ? "pl-4" : ""
+                          } ${
+                            activeId === item.id
+                              ? "font-semibold text-blue-300"
+                              : "text-zinc-400"
+                          }`}
+                        >
+                          {item.text}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              )}
+            </div>
+          )}
 
-                prose-h2:mt-8
-                prose-h2:mb-3
-                prose-h2:border-b
-                prose-h2:border-white/10
-                prose-h2:pb-3
-                prose-h2:text-3xl
+          <div
+            className={`grid grid-cols-1 gap-8 lg:gap-10 ${
+              toc.length > 0 ? "lg:grid-cols-[260px_1fr]" : ""
+            }`}
+          >
+            {/* LEFT — sticky table of contents (desktop) */}
+            {toc.length > 0 && (
+              <aside className="hidden lg:block">
+                <div className="sticky top-6 rounded-2xl border border-white/10 bg-white/[0.035] p-5">
+                  <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-blue-300">
+                    On this page
+                  </p>
+                  <nav>
+                    <ul className="space-y-1 text-sm">
+                      {toc.map((item) => (
+                        <li key={item.id}>
+                          <button
+                            type="button"
+                            onClick={() => scrollToHeading(item.id)}
+                            aria-current={
+                              activeId === item.id ? "location" : undefined
+                            }
+                            className={`block w-full border-l-2 py-1.5 text-left leading-5 transition ${
+                              item.level === 3 ? "pl-6" : "pl-3"
+                            } ${
+                              activeId === item.id
+                                ? "border-blue-400 font-semibold text-blue-300"
+                                : "border-white/10 text-zinc-400 hover:border-white/25 hover:text-zinc-200"
+                            }`}
+                          >
+                            {item.text}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </nav>
+                </div>
+              </aside>
+            )}
 
-                prose-h3:mt-6
-                prose-h3:mb-3
-                prose-h3:text-xl
+            {/* RIGHT — article body */}
+            <article>
+              <div className="rounded-3xl p-2 sm:p-4 lg:p-6">
+                <div
+                  ref={contentRef}
+                  className={articleClassName}
+                  dangerouslySetInnerHTML={{ __html: post.content }}
+                />
 
-                prose-p:mt-2
-                prose-p:mb-4
-                prose-p:leading-7
-                prose-p:text-zinc-300
+                {/* =====================================================
+                    AUTHOR BOX
+                ====================================================== */}
+                <div className="mt-16 border-t border-white/10 pt-10">
+                  <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035] p-6 sm:p-8">
+                    <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-center">
+                      {/* AUTHOR */}
+                      <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+                        {authorInfo ? (
+                          <>
+                            {/* REAL AUTHOR IMAGE */}
+                            <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-blue-400/20 bg-slate-900 shadow-[0_12px_35px_rgba(37,99,235,0.16)] sm:h-28 sm:w-28">
+                              <Image
+                                src={authorInfo.image}
+                                alt={`${authorInfo.name}, ${authorInfo.role}`}
+                                fill
+                                sizes="112px"
+                                className="object-cover object-top"
+                              />
+                            </div>
 
-                prose-strong:text-white
+                            <div className="max-w-xl">
+                              <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-300">
+                                Written by
+                              </p>
 
-                prose-a:text-blue-400
-                hover:prose-a:text-blue-300
+                              <h3 className="mt-2 text-xl font-extrabold text-white sm:text-2xl">
+                                {authorInfo.name}
+                              </h3>
 
-                prose-li:text-zinc-300
-                prose-li:marker:text-blue-400
-                prose-ul:space-y-2
+                              <p className="mt-1 text-sm font-semibold text-slate-400">
+                                {authorInfo.role}
+                              </p>
 
-                prose-table:w-full
-                prose-table:border-collapse
+                              <p className="mt-3 text-sm leading-6 text-slate-400 sm:text-[15px]">
+                                {authorInfo.bio}
+                              </p>
 
-                prose-th:border
-                prose-th:border-white/10
-                prose-th:bg-white/5
-                prose-th:p-3
-                prose-th:font-semibold
-                prose-th:text-white
+                              <div className="mt-4 flex flex-wrap gap-4 text-sm font-semibold">
+                                {authorInfo.twitter && (
+                                  <a
+                                    href={authorInfo.twitter}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="!text-blue-400 !no-underline transition hover:!text-blue-300"
+                                  >
+                                    Twitter
+                                  </a>
+                                )}
 
-                prose-td:border
-                prose-td:border-white/10
-                prose-td:p-3
-                prose-td:text-zinc-300
+                                {authorInfo.linkedin && (
+                                  <a
+                                    href={authorInfo.linkedin}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="!text-blue-400 !no-underline transition hover:!text-blue-300"
+                                  >
+                                    LinkedIn
+                                  </a>
+                                )}
+                              </div>
+                            </div>
+                          </>
+                        ) : (
+                          <div>
+                            <p className="text-sm text-gray-400">Written by</p>
 
-                prose-blockquote:rounded-xl
-                prose-blockquote:border-l-4
-                prose-blockquote:border-blue-500
-                prose-blockquote:bg-white/5
-                prose-blockquote:px-5
-                prose-blockquote:py-2
-                prose-blockquote:text-zinc-300
-              "
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
-
-            {/* =====================================================
-                AUTHOR BOX
-            ====================================================== */}
-            <div className="mt-16 border-t border-white/10 pt-10">
-              <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035] p-6 sm:p-8">
-                <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-center">
-                  {/* AUTHOR */}
-                  <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-                    {authorInfo ? (
-                      <>
-                        {/* REAL AUTHOR IMAGE */}
-                        <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-blue-400/20 bg-slate-900 shadow-[0_12px_35px_rgba(37,99,235,0.16)] sm:h-28 sm:w-28">
-                          <Image
-                            src={authorInfo.image}
-                            alt={`${authorInfo.name}, ${authorInfo.role}`}
-                            fill
-                            sizes="112px"
-                            className="object-cover object-top"
-                          />
-                        </div>
-
-                        <div className="max-w-xl">
-                          <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-300">
-                            Written by
-                          </p>
-
-                          <h3 className="mt-2 text-xl font-extrabold text-white sm:text-2xl">
-                            {authorInfo.name}
-                          </h3>
-
-                          <p className="mt-1 text-sm font-semibold text-slate-400">
-                            {authorInfo.role}
-                          </p>
-
-                          <p className="mt-3 text-sm leading-6 text-slate-400 sm:text-[15px]">
-                            {authorInfo.bio}
-                          </p>
-
-                          <div className="mt-4 flex flex-wrap gap-4 text-sm font-semibold">
-                            {authorInfo.twitter && (
-                              <a
-                                href={authorInfo.twitter}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="!text-blue-400 !no-underline transition hover:!text-blue-300"
-                              >
-                                Twitter
-                              </a>
-                            )}
-
-                            {authorInfo.linkedin && (
-                              <a
-                                href={authorInfo.linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="!text-blue-400 !no-underline transition hover:!text-blue-300"
-                              >
-                                LinkedIn
-                              </a>
-                            )}
+                            <p className="text-xl font-bold text-white">
+                              {post.author}
+                            </p>
                           </div>
-                        </div>
-                      </>
-                    ) : (
-                      <div>
-                        <p className="text-sm text-gray-400">Written by</p>
-
-                        <p className="text-xl font-bold text-white">
-                          {post.author}
-                        </p>
+                        )}
                       </div>
-                    )}
+
+                      {/* BLOG BUTTON */}
+                      <Link
+                        href="/blog"
+                        className="group inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-6 py-3 text-sm font-bold !text-white !no-underline shadow-[0_12px_35px_rgba(37,99,235,0.18)] transition hover:-translate-y-0.5 hover:brightness-110"
+                      >
+                        Read More Articles
+
+                        <ArrowRight
+                          size={17}
+                          className="transition-transform group-hover:translate-x-1"
+                        />
+                      </Link>
+                    </div>
                   </div>
-
-                  {/* BLOG BUTTON */}
-                  <Link
-                    href="/blog"
-                    className="group inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-6 py-3 text-sm font-bold !text-white !no-underline shadow-[0_12px_35px_rgba(37,99,235,0.18)] transition hover:-translate-y-0.5 hover:brightness-110"
-                  >
-                    Read More Articles
-
-                    <ArrowRight
-                      size={17}
-                      className="transition-transform group-hover:translate-x-1"
-                    />
-                  </Link>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
-        </article>
+        </div>
       </section>
 
       {/* =====================================================

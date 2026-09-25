@@ -98,19 +98,6 @@ export default function RootLayout({ children }) {
 
 
         {/* =================================================
-            GOOGLE SITE VERIFICATION
-
-            Replace this with your real verification code.
-            If you don't have one, remove this meta tag.
-        ================================================= */}
-
-        <meta
-          name="google-site-verification"
-          content="your-google-verification-code"
-        />
-
-
-        {/* =================================================
             FAVICONS
         ================================================= */}
 
@@ -198,24 +185,8 @@ export default function RootLayout({ children }) {
 
         {/* =================================================
             GOOGLE ADSENSE
-
-            IMPORTANT:
-            Do NOT place the raw async script inside <head>.
-
-            afterInteractive allows React hydration to finish
-            before AdSense starts changing the document.
-
-            Publisher:
-            ca-pub-8746794886503243
+            Disabled until real AdSense approval is active.
         ================================================= */}
-
-        <Script
-          id="google-adsense"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8746794886503243"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
-
 
         {/* =================================================
             GOOGLE TAG MANAGER

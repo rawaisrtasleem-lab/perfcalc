@@ -2,9 +2,9 @@ export default function StatInput({label,value,setValue}){
 
 return(
 
-<div className="flex flex-col gap-2">
+<div className="rounded-lg border border-slate-800 bg-slate-950/40 p-3">
 
-<label className="text-sm text-slate-400">
+<label className="mb-2 block text-sm text-slate-400">
 {label}
 </label>
 

@@ -1,8 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
-
 export default function FPSFAQ() {
 
 const faqs = [
@@ -41,12 +38,8 @@ return (
 
   <div className="space-y-8">
     {faqs.map((faq, index) => (
-      <motion.div
+      <div
         key={index}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.4, delay: index * 0.1 }}
         className="border border-slate-800 rounded-xl p-5 sm:p-6 bg-slate-900 shadow-md"
       >
         <h3 className="font-semibold mb-3 text-lg sm:text-xl text-white">
@@ -55,7 +48,7 @@ return (
         <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
           {faq.answer}
         </p>
-      </motion.div>
+      </div>
     ))}
   </div>
 </section>

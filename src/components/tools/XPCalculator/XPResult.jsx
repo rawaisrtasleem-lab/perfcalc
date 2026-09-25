@@ -1,18 +1,7 @@
 export default function XPResult({result}){
 
 if(!result){
-
-return(
-
-<div className="bg-slate-900 border border-slate-800 rounded-xl p-10 text-center">
-
-<h3 className="text-xl">
-Enter your stats to calculate XP
-</h3>
-
-</div>
-
-)
+return null;
 
 }
 

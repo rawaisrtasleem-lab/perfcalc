@@ -4,7 +4,6 @@ import { Settings } from "lucide-react";
 import Select from "@/components/ui/Select";
 import games from "@/data/games";
 import { calculateFPS } from "@/lib/fpsCalculation";
-import { motion } from "framer-motion";
 
 export default function GameSettings({ setResult }) {
   function handleCalculate() {
@@ -20,13 +19,15 @@ export default function GameSettings({ setResult }) {
     "transition-all duration-200 " +
     "hover:border-slate-600 hover:bg-slate-800/80";
 
+  const buttonClasses =
+    "w-full bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 " +
+    "active:from-indigo-700 active:to-indigo-600 transition-all duration-200 rounded-lg py-2.5 sm:py-3 " +
+    "font-bold text-white text-xs sm:text-sm md:text-base shadow-lg shadow-indigo-500/30 " +
+    "hover:shadow-indigo-500/50 border border-indigo-400/30 hover:border-indigo-300/50 flex items-center " +
+    "justify-center gap-2 min-h-10 sm:min-h-12 mt-1";
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
-      className="w-full bg-gradient-to-br from-slate-800/60 to-slate-900/60 border border-slate-700/50 rounded-xl p-4 sm:p-5 space-y-3 sm:space-y-4 hover:border-green-500/20 transition-all"
-    >
+    <div className="w-full bg-gradient-to-br from-slate-800/60 to-slate-900/60 border border-slate-700/50 rounded-xl p-4 sm:p-5 space-y-3 sm:space-y-4 hover:border-green-500/20 transition-all">
       {/* Heading */}
       <div className="flex items-center gap-2 sm:gap-3">
         <div className="p-1.5 sm:p-2 rounded-lg bg-green-500/10 border border-green-500/30">
@@ -38,11 +39,7 @@ export default function GameSettings({ setResult }) {
       </div>
 
       {/* Game Selection */}
-      <motion.div
-        initial={{ opacity: 0, x: -10 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0.1 }}
-      >
+      <div>
         <label className="block text-xs font-semibold text-gray-300 mb-0.5">
           Select Game
         </label>
@@ -54,14 +51,10 @@ export default function GameSettings({ setResult }) {
           }))}
           className={selectClasses}
         />
-      </motion.div>
+      </div>
 
       {/* Resolution */}
-      <motion.div
-        initial={{ opacity: 0, x: -10 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0.15 }}
-      >
+      <div>
         <label className="block text-xs font-semibold text-gray-300 mb-0.5">
           Resolution
         </label>
@@ -74,14 +67,10 @@ export default function GameSettings({ setResult }) {
           ]}
           className={selectClasses}
         />
-      </motion.div>
+      </div>
 
       {/* RAM */}
-      <motion.div
-        initial={{ opacity: 0, x: -10 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0.2 }}
-      >
+      <div>
         <label className="block text-xs font-semibold text-gray-300 mb-0.5">
           RAM Amount
         </label>
@@ -94,14 +83,10 @@ export default function GameSettings({ setResult }) {
           ]}
           className={selectClasses}
         />
-      </motion.div>
+      </div>
 
       {/* Storage */}
-      <motion.div
-        initial={{ opacity: 0, x: -10 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0.25 }}
-      >
+      <div>
         <label className="block text-xs font-semibold text-gray-300 mb-0.5">
           Storage Type
         </label>
@@ -114,32 +99,20 @@ export default function GameSettings({ setResult }) {
           ]}
           className={selectClasses}
         />
-      </motion.div>
+      </div>
 
       {/* Calculate Button - Mobile Optimized */}
-      <motion.button
+      <button
         onClick={handleCalculate}
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: 0.3 }}
-        className="w-full bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 
-                   active:from-indigo-700 active:to-indigo-600
-                   transition-all duration-200 rounded-lg py-2.5 sm:py-3 font-bold text-white 
-                   text-xs sm:text-sm md:text-base
-                   shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50
-                   border border-indigo-400/30 hover:border-indigo-300/50
-                   flex items-center justify-center gap-2
-                   min-h-10 sm:min-h-12 mt-1"
+        className={buttonClasses}
       >
         <span>⚡ Calculate FPS Now</span>
-      </motion.button>
+      </button>
 
       {/* Info Text */}
       <p className="text-xs text-center text-gray-500 px-2">
         Results are estimates based on average benchmark data
       </p>
-    </motion.div>
+    </div>
   );
 }

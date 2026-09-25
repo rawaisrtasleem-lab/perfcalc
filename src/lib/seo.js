@@ -15,6 +15,7 @@ export const getMetadata = ({
   const url = `${SITE_URL}${path}`
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: fullTitle,
     description: description || SITE_DESCRIPTION,
     authors: [{ name: author }],
@@ -53,10 +54,6 @@ export const getMetadata = ({
         "max-snippet": -1,
         "max-video-preview": -1,
       },
-    },
-    verification: {
-      google: "your-google-verification-code",
-      yandex: "your-yandex-verification-code",
     },
     other: {
       "Content-Language": "en-US",

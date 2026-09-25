@@ -28,10 +28,9 @@ export default function FPSCalculatorPage() {
              <div className="max-w-5xl mx-auto px-4 md:px-8 mb-12 flex justify-center">
         <Link
           href="#fps-calculator-page"
-          className="inline-flex items-center justify-center rounded-md bg-cyan-600 px-5 py-3 text-white font-semibold shadow-lg shadow-cyan-500/20 hover:bg-cyan-700 transition-colors duration-200"
+          className="inline-flex items-center justify-center rounded-md border border-cyan-400/20 bg-cyan-500/10 px-5 py-3 text-sm font-medium text-cyan-200 backdrop-blur-sm transition-colors duration-200 hover:bg-cyan-500/15 hover:text-cyan-100"
         >
           Back to top
-          
         </Link>
       </div>
       </div>

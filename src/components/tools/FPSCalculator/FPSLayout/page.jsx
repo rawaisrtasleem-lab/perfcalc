@@ -5,7 +5,6 @@ import CPUSelect from "../CPUSelect";
 import GPUSelect from "../GPUSelect";
 import GameSettings from "../GameSettings";
 import FPSResult from "../FPSResult";
-import { motion } from "framer-motion";
 
 export default function FPSLayout() {
   const [result, setResult] = useState(null);
@@ -19,12 +18,7 @@ export default function FPSLayout() {
       <div className="mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 max-w-6xl lg:max-w-7xl">
         
         {/* Hero */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mb-12 sm:mb-16"
-        >
+        <div className="mb-12 sm:mb-16">
           <div className="flex items-center gap-2 mb-4">
             <div className="h-1 w-10 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full"></div>
             <span className="text-xs sm:text-sm font-semibold text-indigo-400 uppercase tracking-wider">
@@ -40,18 +34,13 @@ export default function FPSLayout() {
                The Frames Per Second (FPS)  analyzing your CPU, GPU, RAM, and 
     resolution settings, this tool provides accurate predictions of performance 
     so you can optimize your hardware and enjoy a better gaming experience.</p>
-        </motion.div>
+        </div>
 
         {/* Layout Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16 m-8">
           
           {/* Inputs */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="lg:col-span-2 space-y-6"
-          >
+          <div className="lg:col-span-2 space-y-6">
             <div>
               <label className="block text-sm font-semibold text-gray-300 mb-2 m-8">CPU Selection</label>
               <CPUSelect className="w-full rounded-lg m-8 bg-slate-900/60 border border-slate-700 focus:ring-2 focus:ring-indigo-500 transition-all text-sm py-3 px-4" />
@@ -71,50 +60,32 @@ export default function FPSLayout() {
             <div className="lg:hidden mt-6">
               <FPSResult result={result} />
             </div>
-          </motion.div>
+          </div>
 
           {/* Sidebar */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="hidden lg:block space-y-6"
-          >
+          <div className="hidden lg:block space-y-6">
             <FPSResult result={result} />
-            <div className="bg-slate-800/40 border border-slate-700/50 rounded-lg p-6 min-h-80 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-xs text-slate-500 mb-2">Advertisement</div>
-                <div className="w-full h-72 bg-slate-800/30 rounded border border-slate-700/30 flex items-center justify-center text-slate-600">
-                  📢 Ad Space
-                </div>
-              </div>
-            </div>
-          </motion.div>
+         
+          </div>
         </div>
 
         {/* Info Cards */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-6 m-8  mb-16"
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 m-8  mb-16">
           {[
             { title: "How It Works", desc: "Select your components and game settings, then click calculate for instant FPS estimates." },
             { title: "Accurate Data", desc: "Built with real performance benchmarks from thousands of gaming rigs." },
             { title: "Bottleneck Analysis", desc: "Get insights on CPU/GPU compatibility and performance limitations." },
             { title: "Optimization Tips", desc: "Receive personalized recommendations to boost your gaming performance." }
           ].map((card, i) => (
-            <motion.div
+            <div
               key={i}
-              whileHover={{ y: -4 }}
               className="p-6 m-8  rounded-xl bg-slate-800/50 border border-slate-700/50 hover:border-indigo-500/40 transition-all cursor-pointer"
             >
               <h3 className="text-base font-semibold text-white mb-2">{card.title}</h3>
               <p className="text-sm text-gray-400 leading-relaxed">{card.desc}</p>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

@@ -32,15 +32,7 @@ export default function XPContentPage() {
         </p>
 
         {/* Tool Placeholder */}
-        <motion.div
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="bg-gray-800 rounded-lg shadow-lg p-6 w-full max-w-md mx-auto flex flex-col items-center"
-        >
-          <Calculator className="w-10 h-10 text-blue-400 mb-4" />
-          <p className="text-gray-300 mb-4">👉 (PLACE YOUR TOOL HERE)</p>
-        </motion.div>
+     
 
         {/* How it Works */}
         <h2 className="text-2xl font-bold">How the XP Calculator Works</h2>

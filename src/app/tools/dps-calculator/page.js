@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import ToolHeader from "@/components/ui/DPSCalculator/ToolHeader"
-import DPSForm from "@/components/ui/DPSCalculator/DPSForm"
 import DPSContent from "@/components/seo/DPSContent"
 import RelatedTools from "@/components/ui/RelatedTools"
 import DPSFAQS from "@/components/seo/DPSFAQS"
@@ -12,13 +11,7 @@ export default function DPSCalculatorPage() {
 
             <ToolHeader
                 title="DPS Calculator"
-                description="
-    The Damage Per Second (DPS) Calculator helps gamers and developers 
-    measure how much damage a character, weapon, or ability can deal 
-    over time. By analyzing attack speed, damage values, and cooldowns, 
-    this tool provides accurate insights into your performance so you 
-    can optimize builds, strategies, and gameplay efficiency.
-  </p>"
+                                description="The Damage Per Second (DPS) Calculator helps gamers and developers measure how much damage a character, weapon, or ability can deal over time. By analyzing attack speed, damage values, and cooldowns, this tool provides accurate insights into your performance so you can optimize builds, strategies, and gameplay efficiency."
             />
 
             <motion.div
@@ -27,8 +20,6 @@ export default function DPSCalculatorPage() {
                 transition={{ duration: 0.5 }}
                 className="mt-10 max-w-3xl mx-auto"
             >
-                <DPSForm />
-
                 <DPSContent />
 
                 <RelatedTools />

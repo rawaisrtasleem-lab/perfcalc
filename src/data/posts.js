@@ -81,7 +81,7 @@ export const posts = [
   {
     id: 4,
     slug: "can-my-pc-run-it",
-    title: "Can My PC Run It? 4 Easy Ways to Check",
+    title: "Can My PC Run It? 4 Easy Ways to Check Before You Buy",
     description:
       "Not sure if your PC can run it? Check game system   requirements in 60 seconds — free tools, no downloads needed. ",
         
