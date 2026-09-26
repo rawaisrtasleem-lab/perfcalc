@@ -1,6 +1,6 @@
 import { gtaSetting1 } from "@/lib/blogs/gta-setting1";
 import { blog2 } from "@/lib/blogs/blog2";
-import { blog3 } from "@/lib/blogs/blog3";
+import { blog3 } from "@/lib/blogs/blog3_new";
 import { blog4 } from "@/lib/blogs/blog4";
 import { blog5 } from "@/lib/blogs/blog5";
 import {blog6} from "@/lib/blogs/blog6";
@@ -148,7 +148,7 @@ export const posts = [
     id: 9,
     slug: "fps-in-minecraft",
     title: "How to Improve FPS in Minecraft: A Complete Guide",
-    description: "Discover simple tweaks to boost FPS in Minecraft. Optimize settings, install performance mods, and fix lag for smoother, faster gameplay today.",
+    description: "Free Minecraft FPS Calculator: instantly check FPS for your CPU & GPU at 1080p, 1440p & 4K, plus system requirements & benchmark results.",
     date: "2024-07-20",
     author: "PerfCalcPro",
      readTime:"9 min read",
@@ -214,7 +214,7 @@ export const posts = [
   id: 14,
   slug:"how-to-drop-weapons-in-warframe",
   title: "How to Drop Weapons in Warframe",
-  description: "A complete guide explaining why you cannot manually drop weapons in Warframe, how the Disarm mechanic works, which Warframe abilities force weapon drops, and how to manage your loadout effectively.",
+  description: "Warframe guide: learn disarm mechanics, check PC drop tables & loot data, plus quick start controls for Primary, Secondary & Melee weapons.",
   excerpt: "Warframe has no manual weapon drop feature. Weapons only hit the floor through enemy disarm mechanics like the Drahk Master’s Halikar throw. Learn how to retrieve dropped weapons, prevent disarms, and manage your Arsenal loadouts.",
   image: "/blog-images/wairframe.png",
 
@@ -359,7 +359,7 @@ export const posts = [
     slug: "is-150-mbps-good",
     title: "Is 150 Mbps Good? Here's What It Actually Supports",
     description:
-      "Find out whether 150 Mbps is good for streaming, gaming, video calls, remote work, downloads, and everyday household internet use.",
+      "Is 150 Mbps good? Yes for most homes, stream ultra-HD on 6 devices, game lag-free & download movies fast. See what speed you really need",
     excerpt:
       "Learn what a 150 Mbps internet connection can actually support, including 4K streaming, online gaming, work-from-home tasks, video calls, large downloads, and multiple connected devices.",
     image: "/blog-images/internetspeed.png",
@@ -449,7 +449,7 @@ export const posts = [
   id: 25,
   slug: "how-to-increase-download-speed",
   title: "How To Increase Download Speed:The Ultimate Guide",
-  description: "Learn how to increase download speed with simple tips to optimize your network, reduce background activity, and improve performance.",
+  description: "How to increase download speed: optimize your router, use a wired connection, clear cache, limit background apps & update your hardware",
   excerpt: "Learn how to identify stressed and unstressed syllables using natural speech, call-out tests, dictionaries, and poetry patterns to improve your English rhythm.",
 
   image: "/blog-images/increase-speed.png",

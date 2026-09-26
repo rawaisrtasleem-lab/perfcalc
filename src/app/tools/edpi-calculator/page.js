@@ -5,14 +5,14 @@ import EdpiCalculatorSeo from "@/components/seo/edpi-calculator"
 export const metadata = {
     title: "eDPI Calculator — Calculate Effective Mouse Sensitivity | PerfCalcPro",
     description:
-        "Free eDPI calculator for gaming. Enter your mouse DPI and in-game sensitivity to instantly calculate your effective DPI and compare equivalent sensitivities.",
+        "Calculate your eDPI instantly for CS2, Valorant & more. Enter DPI & sensitivity free, accurate mouse sensitivity calculator for gamers.",
     alternates: {
         canonical: "https://perfcalcpro.com/tools/edpi-calculator",
     },
     openGraph: {
         title: "eDPI Calculator | PerfCalcPro",
         description:
-            "Calculate your effective mouse DPI from DPI and in-game sensitivity instantly.",
+            "Calculate your eDPI instantly for CS2, Valorant & more. Enter DPI & sensitivity free, accurate mouse sensitivity calculator for gamers.",
         url: "https://perfcalcpro.com/tools/edpi-calculator",
         type: "website",
     },
