@@ -98,6 +98,13 @@ const nextConfig = {
         destination: "/tools/dps-calculator",
         permanent: true,
       },
+
+      // Legacy blog URL alias
+      {
+        source: "/blogs",
+        destination: "/blog",
+        permanent: true,
+      },
     ];
   },
 

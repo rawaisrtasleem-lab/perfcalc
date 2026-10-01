@@ -257,24 +257,34 @@ export const osrsGuide = `
 
   <h2>Frequently Asked Questions</h2>
 
+  <div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
   <h3>Is This OSRS Calculator Free?</h3>
 
   <p>Yes, every calculator on this page, including the OSRS XP calc, is completely free to use. No account, download, or membership status is required.</p>
+  </div>
 
+  <div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
   <h3>How Accurate Are Combat and XP Calculations?</h3>
 
   <p>This OSRS XP calculator and the combat tools beside it use the same formulas Jagex built into the game client, so results match your in-game numbers exactly. The only exception is live GE pricing, which shifts throughout the day.</p>
+  </div>
 
+  <div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
   <h3>Which Skills Are Included in Combat XP?</h3>
 
   <p>Attack, Strength, Defence, Hitpoints, Ranged, Magic, and Prayer all factor into combat XP and combat level. Every other skill runs on the standard non-combat XP table instead.</p>
+  </div>
 
+  <div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
   <h3>Can I Use This for RS3 Hit Chance?</h3>
 
   <p>No, RS3 uses a different combat formula with different weightings and skills like Summoning included. Stick to a dedicated RS3 tool if that's the version you're playing.</p>
+  </div>
 
+  <div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
   <h3>Does It Work on Mobile?</h3>
 
   <p>Yes, the full calculator suite works on OSRS mobile and any phone browser. Every input and result resizes automatically for a smaller screen.</p>
+  </div>
 </article>
 `

@@ -366,9 +366,9 @@ export default function BloxFruitsCalculatorSeo() {
                 </p>
 
 
-                <div className="mt-7 space-y-8">
+                <div className="mt-7 grid gap-4 sm:grid-cols-2">
 
-                    <div>
+                    <div className="rounded-xl border border-slate-800 bg-slate-950/50 p-5">
 
                         <h3 className="text-xl font-semibold text-slate-200">
                             Step 1 – Select your items (Side A)
@@ -381,7 +381,7 @@ export default function BloxFruitsCalculatorSeo() {
                     </div>
 
 
-                    <div>
+                    <div className="rounded-xl border border-slate-800 bg-slate-950/50 p-5">
 
                         <h3 className="text-xl font-semibold text-slate-200">
                             Step 2 – Select their items (Side B)
@@ -394,7 +394,7 @@ export default function BloxFruitsCalculatorSeo() {
                     </div>
 
 
-                    <div>
+                    <div className="rounded-xl border border-slate-800 bg-slate-950/50 p-5">
 
                         <h3 className="text-xl font-semibold text-slate-200">
                             Step 3 – Choose value type (Physical / Perm)
@@ -407,7 +407,7 @@ export default function BloxFruitsCalculatorSeo() {
                     </div>
 
 
-                    <div>
+                    <div className="rounded-xl border border-slate-800 bg-slate-950/50 p-5">
 
                         <h3 className="text-xl font-semibold text-slate-200">
                             Step 4 – Read the verdict (Win / Fair / Lose)
@@ -420,7 +420,7 @@ export default function BloxFruitsCalculatorSeo() {
                     </div>
 
 
-                    <div>
+                    <div className="rounded-xl border border-slate-800 bg-slate-950/50 p-5">
 
                         <h3 className="text-xl font-semibold text-slate-200">
                             Step 5 – Decide: accept, negotiate, or decline
@@ -897,9 +897,9 @@ export default function BloxFruitsCalculatorSeo() {
                 </h2>
 
 
-                <div className="mt-7 space-y-8">
+                <div className="mt-7 grid gap-4 sm:grid-cols-2">
 
-                    <div>
+                    <div className="rounded-xl border border-slate-800 bg-slate-950/50 p-5">
 
                         <h3 className="text-xl font-semibold text-slate-200">
                             How often are values updated?
@@ -912,7 +912,7 @@ export default function BloxFruitsCalculatorSeo() {
                     </div>
 
 
-                    <div>
+                    <div className="rounded-xl border border-slate-800 bg-slate-950/50 p-5">
 
                         <h3 className="text-xl font-semibold text-slate-200">
                             Can I trust this calculator 100%?
@@ -925,7 +925,7 @@ export default function BloxFruitsCalculatorSeo() {
                     </div>
 
 
-                    <div>
+                    <div className="rounded-xl border border-slate-800 bg-slate-950/50 p-5">
 
                         <h3 className="text-xl font-semibold text-slate-200">
                             Does this work for swords and accessories too?
@@ -938,7 +938,7 @@ export default function BloxFruitsCalculatorSeo() {
                     </div>
 
 
-                    <div>
+                    <div className="rounded-xl border border-slate-800 bg-slate-950/50 p-5">
 
                         <h3 className="text-xl font-semibold text-slate-200">
                             How is permanent value different from physical?
@@ -951,7 +951,7 @@ export default function BloxFruitsCalculatorSeo() {
                     </div>
 
 
-                    <div>
+                    <div className="rounded-xl border border-slate-800 bg-slate-950/50 p-5">
 
                         <h3 className="text-xl font-semibold text-slate-200">
                             Can I suggest a value change?

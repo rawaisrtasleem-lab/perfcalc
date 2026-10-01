@@ -87,6 +87,61 @@ function slugify(text, used) {
   return id;
 }
 
+function boxFaqSections(root) {
+  const faqHeadings = Array.from(root.querySelectorAll("h2, h3")).filter(
+    (heading) => /faq|frequently asked questions/i.test(heading.textContent)
+  );
+
+  faqHeadings.forEach((heading) => {
+    const sectionLevel = Number(heading.tagName.slice(1));
+    const questionLevel = sectionLevel + 1;
+    const sectionNodes = [];
+    let sibling = heading.nextElementSibling;
+
+    while (sibling) {
+      const siblingHeading = /^H([1-6])$/.exec(sibling.tagName);
+      if (siblingHeading && Number(siblingHeading[1]) <= sectionLevel) break;
+      sectionNodes.push(sibling);
+      sibling = sibling.nextElementSibling;
+    }
+
+    const alreadyBoxed = sectionNodes.some(
+      (node) =>
+        node.matches(".faq-item, details, div[style*='display:grid']") ||
+        node.querySelector(
+          ".faq-item, details, div[style*='display:grid']"
+        )
+    );
+    if (alreadyBoxed) return;
+
+    const isQuestion = (node) =>
+      node.tagName === `H${questionLevel}` ||
+      (node.tagName === "P" && node.querySelector(":scope > strong"));
+
+    const leadIn = document.createDocumentFragment();
+    const cards = document.createElement("div");
+    cards.className = "mt-6 grid gap-4 sm:grid-cols-2";
+    let currentCard = null;
+
+    sectionNodes.forEach((node) => {
+      if (isQuestion(node)) {
+        currentCard = document.createElement("div");
+        currentCard.className =
+          "rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6";
+        cards.append(currentCard);
+        currentCard.append(node);
+      } else if (currentCard) {
+        currentCard.append(node);
+      } else {
+        leadIn.append(node);
+      }
+    });
+
+    if (!cards.childElementCount) return;
+    heading.after(leadIn, cards);
+  });
+}
+
 export default function BlogContent({ post }) {
   const currentSlug = post?.slug || "";
   const contentRef = useRef(null);
@@ -128,6 +183,8 @@ export default function BlogContent({ post }) {
   // content has been injected into the DOM.
   useEffect(() => {
     if (!contentRef.current) return;
+
+    boxFaqSections(contentRef.current);
 
     const headingEls = Array.from(
       contentRef.current.querySelectorAll("h2, h3")
@@ -223,7 +280,7 @@ export default function BlogContent({ post }) {
         <div className="relative z-10 mx-auto -mt-16 max-w-5xl px-4 sm:-mt-20 sm:px-6 lg:-mt-24">
           <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-6 backdrop-blur-sm sm:p-8">
             <span className="mb-3 inline-flex items-center rounded-full bg-blue-500/10 px-3 py-1 text-xs font-semibold tracking-wide text-blue-200 sm:text-sm">
-              Gaming Performance Guide
+              {post.category || "Gaming Performance Guide"}
             </span>
 
             <h1 className="mb-4 text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl lg:text-5xl">

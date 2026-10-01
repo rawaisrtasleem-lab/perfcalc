@@ -1,59 +1,47 @@
 const links = [
     {
-        href: "#the-tool",
-        label: "The VRAM Calculator",
+        href: "#quick-answer",
+        label: "Quick Answer",
     },
     {
         href: "#how-to-use",
-        label: "How to Use This Tool",
+        label: "How to Use the Calculator",
     },
     {
-        href: "#common-problems",
-        label: "Common Problems",
+        href: "#calculation",
+        label: "How the Calculator Works",
+    },
+    {
+        href: "#bytes-per-parameter",
+        label: "Bytes per Parameter",
+    },
+    {
+        href: "#context-length",
+        label: "Context Length",
+    },
+    {
+        href: "#popular-models",
+        label: "Popular Model VRAM",
+    },
+    {
+        href: "#model-fit",
+        label: "What Fits on Your GPU?",
+    },
+    {
+        href: "#if-model-does-not-fit",
+        label: "If the Model Does Not Fit",
+    },
+    {
+        href: "#moe-models",
+        label: "Mixture-of-Experts Models",
     },
     {
         href: "#vram-vs-system-ram",
         label: "VRAM vs System RAM",
     },
     {
-        href: "#features",
-        label: "Features",
-    },
-    {
-        href: "#is-6gb-enough",
-        label: "Is 6GB VRAM Enough?",
-    },
-    {
-        href: "#llm-inference-vram",
-        label: "VRAM for LLM Inference",
-    },
-    {
-        href: "#llm-training-vram",
-        label: "VRAM for LLM Training",
-    },
-    {
-        href: "#model-size-by-gpu",
-        label: "What Size LLM Can I Run?",
-    },
-    {
-        href: "#chatgpt-vram",
-        label: "How Much VRAM Does ChatGPT Use?",
-    },
-    {
-        href: "#calculate-vram-step-by-step",
-        label: "Calculate VRAM Step by Step",
-    },
-    {
-        href: "#popular-llm-vram",
-        label: "Popular LLM VRAM Requirements",
-    },
-    {
-        href: "#gaming-vram",
-        label: "Gaming VRAM Guide",
-    },
-    {
-        href: "#conclusion",
-        label: "Conclusion",
+        href: "#limitations",
+        label: "What the Calculator Does Not Cover",
     },
     {
         href: "#faq",

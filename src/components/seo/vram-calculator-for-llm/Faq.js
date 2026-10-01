@@ -8,11 +8,11 @@ export default function Faq({ items }) {
                 Frequently Asked Questions
             </h2>
 
-            <div className="mt-6 divide-y divide-slate-800 overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/50">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {items.map((item) => (
                     <div
                         key={item.question}
-                        className="p-5 sm:p-6"
+                        className="rounded-xl border border-slate-800 bg-slate-950/50 p-5 sm:p-6"
                     >
                         <h3 className="font-semibold leading-6 text-slate-200">
                             {item.question}

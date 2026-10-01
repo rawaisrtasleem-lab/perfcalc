@@ -501,11 +501,11 @@ export default function EdpiCalculatorSeo() {
             <section>
                 <h2 className={h2}>FAQs</h2>
 
-                <div className="space-y-6">
+                <div className="grid gap-4 sm:grid-cols-2">
                     {faqs.map((faq) => (
                         <div
                             key={faq.q}
-                            className="border-b border-slate-800/70 pb-5 last:border-b-0"
+                            className="rounded-xl border border-slate-800 bg-slate-950/50 p-5 sm:p-6"
                         >
                             <h3 className="text-base md:text-lg font-semibold text-white mb-2">
                                 {faq.q}

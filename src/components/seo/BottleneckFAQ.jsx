@@ -58,6 +58,76 @@ export default function BottleneckFAQ() {
       answer:
         "A 50%+ bottleneck indicates significant hardware mismatch. You should consider upgrading one component to balance your system. Determine which component is limiting (check benchmark scores), then prioritize upgrading that component. In the meantime, reduce game settings or resolution to improve performance.",
     },
+    {
+      question: "What is a bottleneck in a computer system?",
+      answer:
+        "A bottleneck happens when one component (CPU, GPU, RAM, or storage) is much slower than the others and limits the performance of the whole system. For example, a fast GPU paired with a slow CPU can't reach its full potential because it isn't getting data quickly enough.",
+    },
+    {
+      question: "Can my graphics card be a bottleneck?",
+      answer:
+        "Yes. If your GPU is weak compared to your CPU, frame rates are limited by the GPU. This is most common at high resolutions (1440p, 4K) and high graphics settings.",
+    },
+    {
+      question: "Can the CPU be a bottleneck?",
+      answer:
+        "Yes. An older or low-end CPU can hold back a powerful GPU, especially at 1080p, in high-FPS gaming, and in CPU-heavy games (strategy, simulation, open world).",
+    },
+    {
+      question: "How can I tell if my PC has a bottleneck?",
+      answer:
+        "Monitor usage while gaming with MSI Afterburner or Task Manager: GPU at 95-100% while CPU usage is lower suggests a GPU bottleneck; one or more CPU cores at 90-100% while GPU is below about 70% suggests a CPU bottleneck; RAM full or disk at 100% means memory or storage may be the cause.",
+    },
+    {
+      question: "How does the Bottleneck Calculator work?",
+      answer:
+        "It typically compares the benchmark scores of your CPU and GPU, factors in resolution and workload type (gaming, video editing, etc.), and outputs a percentage showing how much one component is limiting the other.",
+    },
+    {
+      question: "Are bottleneck calculators completely accurate?",
+      answer:
+        "No. They give estimates only. Real performance depends on the specific game, settings, cooling, RAM speed, and drivers. Treat results as a guide, not a final verdict.",
+    },
+    {
+      question: "Does the Bottleneck Calculator consider the latest games?",
+      answer:
+        "Usually not fully. Most calculators rely on general benchmark data and don't account for every new game's demands. It depends on how often that particular tool updates its database.",
+    },
+    {
+      question: "Can RAM or storage cause a bottleneck?",
+      answer:
+        "Yes. Too little RAM (such as 8GB for modern games) or single-channel RAM can cause stutter. Running games from a hard drive leads to slow loading and texture pop-in. An SSD makes a big difference.",
+    },
+    {
+      question: "Do different games cause different bottlenecks?",
+      answer:
+        "Yes. Esports titles (Valorant, CS2) tend to lean on the CPU, while graphically demanding games (Cyberpunk, 4K titles) push the GPU harder.",
+    },
+    {
+      question: "Are the results different for laptops and desktops?",
+      answer:
+        "Yes. Laptop CPUs and GPUs are limited by power and heat, so they often perform below desktop parts with similar names. This makes laptop results vary more.",
+    },
+    {
+      question: "Why did my bottleneck result change compared to last month?",
+      answer:
+        "Likely reasons: the calculator updated its database or algorithm, new benchmark data was added, new hardware was added to the list, or you changed inputs like resolution, game, or drivers.",
+    },
+    {
+      question: "What can I do if my PC has a bottleneck?",
+      answer:
+        "Upgrade the limiting component (CPU or GPU). Adjust resolution and graphics settings (lower resolution eases a GPU bottleneck; raising it can mask a CPU bottleneck). Use dual-channel RAM, an SSD, and up-to-date drivers. Improve cooling to avoid thermal throttling.",
+    },
+    {
+      question: "Does overclocking help with bottlenecks?",
+      answer:
+        "A little. Overclocking the CPU or GPU can boost performance, but it won't fix a large gap between parts. It also increases heat and power draw and can cause stability issues, so good cooling is essential.",
+    },
+    {
+      question: "Can software cause a bottleneck?",
+      answer:
+        "Yes. Outdated drivers, background apps, malware, a Power Saver power plan, and unoptimized games or Windows settings can all drag down performance even when the hardware is fine.",
+    },
   ]
 
   const toggleFAQ = (index) => {

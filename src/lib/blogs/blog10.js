@@ -71,17 +71,25 @@ export const blog10 =`
 
 <h2>Frequently Asked Questions</h2>
 
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
 <h3>Do I need Prime status to play online?</h3>
 <p>No, Prime status isn't mandatory for playing CS2 online. However, Prime matchmaking gives you access to better lobbies with fewer Counter Strike 2 cheats and a smoother competitive experience overall.</p>
+</div>
 
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
 <h3>Can I play CS2 with friends?</h3>
 <p>Absolutely yes! Just add friends on Steam, create a party lobby and enjoy seamless Counter-Strike 2 Online Play in any multiplayer mode together instantly.</p>
+</div>
 
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
 <h3>What's the difference between CS2 and CSO2?</h3>
 <p>CS2 is Valve's serious tactical shooter built for competitive play. CSO2 is Nexon's casual arcade-style spin-off designed for lighter, fun-focused gaming sessions.</p>
+</div>
 
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
 <h3>What internet speed/FPS do I need?</h3>
 <p>A minimum 10 Mbps internet speed and stable 60 FPS performance keeps your CS2 matches smooth and fully enjoyable always.</p>
+</div>
 
 <h2>Conclusion:</h2>
 <p>Counter-Strike 2 Online Play provides you with an engaging and enjoyable experience in multiplayer games, regardless of whether you are a beginner or a professional gamer. You can choose from several game options including casual and ranked matchmaking. With a stable internet connection and a high FPS, you will enjoy your gaming experience even more. If you decide not to play Counter Strike 2 but prefer other games such as CSO2 and online shooting games, then you have many different options.</p>

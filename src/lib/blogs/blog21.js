@@ -1,95 +1,203 @@
-export const blog21 =`
+export const blog21 = `
 
 
+<figure><img src="/blog-images/why-is-my-pc-so-laggy.webp" alt="Why Is My PC So Laggy?" class="w-full rounded-xl"></figure>
 
+<p>When a PC lags, games stutter, programs open slowly, and the mouse can feel late. The cause is often one part of your system that is working too hard or waiting on another part. This guide shows you how to find that part in a few minutes, and then how to fix each of the 10 most common causes.</p>
 
+<h2>What Kind of Lag Do You Have?</h2>
+<p>"Lag" can mean three different things. Knowing which one you have saves time.</p>
 
-<article>
- <figure><img src="/blog-images/pc-is-laagy.png" alt="why pc is laggy" class="w-full rounded-xl"></figure>
+<ul>
+  <li><strong>Low FPS:</strong> the game runs at a low frame rate and looks choppy all the time. Read our guide on <a href="https://perfcalcpro.com/blog/fps-vs-hz">FPS vs Hz</a> for how frame rate works.</li>
+  <li><strong>Stutter:</strong> the game is smooth most of the time but freezes for a moment now and then.</li>
+  <li><strong>Network lag:</strong> the picture is smooth, but actions happen late in online games. This is usually a connection problem, not a PC problem (see cause 10).</li>
+</ul>
 
-  <p>This is the main question on the internet. When you find that the frame rate of your computer is lower than expected despite owning a powerful graphics card, then chances are that you have something called a CPU bottleneck. In this situation, the processor of your computer is unable to perform at the same pace as other components of your system, and it is one of the most frequent reasons why people end up being unhappy with their new GPU purchase. In this guide, we will learn more about CPU bottlenecks.</p>
+<h2>Step 1: Find the Cause With Task Manager</h2>
+<ol>
+  <li>Press Ctrl + Shift + Esc to open the Task Manager.</li>
+  <li>If you see a small window, click More details.</li>
+  <li>Open the Performance tab.</li>
+  <li>Click CPU, Memory, Disk, and GPU one at a time while the lag is happening.</li>
+</ol>
+<p>Look for one part that stays close to its maximum while the others stay low. That part is the likely cause.</p>
 
-  <h2>What Is a CPU Bottleneck?</h2>
+<table class="w-full border-collapse rounded-xl overflow-hidden">
+  <thead>
+    <tr class="bg-white/5">
+      <th class="border border-white/20 p-4 text-white font-semibold">What You See</th>
+      <th class="border border-white/20 p-4 text-white font-semibold">Likely Cause</th>
+      <th class="border border-white/20 p-4 text-white font-semibold">Go To</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-white/20 p-4 text-zinc-300">CPU stays very high</td>
+      <td class="border border-white/20 p-4 text-zinc-300">Background apps, malware, or a CPU bottleneck</td>
+      <td class="border border-white/20 p-4 text-zinc-300">Causes 1, 7, 8</td>
+    </tr>
+    <tr>
+      <td class="border border-white/20 p-4 text-zinc-300">Memory stays almost full</td>
+      <td class="border border-white/20 p-4 text-zinc-300">Not enough RAM or too many apps</td>
+      <td class="border border-white/20 p-4 text-zinc-300">Causes 1, 6</td>
+    </tr>
+    <tr>
+      <td class="border border-white/20 p-4 text-zinc-300">Disk stays at the top</td>
+      <td class="border border-white/20 p-4 text-zinc-300">Full or slow storage</td>
+      <td class="border border-white/20 p-4 text-zinc-300">Cause 5</td>
+    </tr>
+    <tr>
+      <td class="border border-white/20 p-4 text-zinc-300">GPU low, CPU high in games</td>
+      <td class="border border-white/20 p-4 text-zinc-300">CPU bottleneck</td>
+      <td class="border border-white/20 p-4 text-zinc-300">Cause 7</td>
+    </tr>
+    <tr>
+      <td class="border border-white/20 p-4 text-zinc-300">Everything looks normal, but online games lag</td>
+      <td class="border border-white/20 p-4 text-zinc-300">Network problem</td>
+      <td class="border border-white/20 p-4 text-zinc-300">Cause 10</td>
+    </tr>
+    <tr>
+      <td class="border border-white/20 p-4 text-zinc-300">Lag gets worse after some time</td>
+      <td class="border border-white/20 p-4 text-zinc-300">Heat</td>
+      <td class="border border-white/20 p-4 text-zinc-300">Cause 4</td>
+    </tr>
+  </tbody>
+</table>
 
-  <p>The term CPU bottleneck refers to the scenario when the processor is the weak point of your computer that does not allow you to use the graphics card to its fullest. Your GPU is able to render more frames, but the CPU is unable to supply enough data. This phenomenon is known as being processor-limited and should be distinguished from a CPU-GPU bottleneck, which refers to the weakness of the graphics card.</p>
+<h2>10 Causes and Fixes</h2>
+<figure><img src="/blog-images/find-the-cause-with-task-manager.webp" alt="find-the-cause-with-task-manager?" class="w-full rounded-xl"></figure>
 
-  <p>The majority of gamers look for keywords like CPU bottleneck gaming or central processing unit bottlenecked games because they experience frame rate drops and other problems with their computer performance, although they have relatively new components.</p>
+<h3>1. Too Many Background Apps</h3>
+<p>Browsers with many tabs, chat apps, launchers, and cloud sync tools all use CPU and memory. In Task Manager, open the Processes tab and sort by CPU or Memory. Close what you do not need before you play.</p>
 
-  <h2>Common Signs of a CPU Bottleneck</h2>
+<h3>2. Too Many Startup Programs</h3>
+<p>Apps that start with Windows use resources right after you turn on the PC. Open Task Manager, go to the Startup apps tab, and disable programs you do not need at startup. Do not disable anything you do not recognize without checking what it is first.</p>
 
-  <p>Before learning how to fix CPU bottleneck issues, it helps to confirm that this is actually your problem. Watch out for these signs:</p>
+<h3>3. Outdated Drivers or Windows</h3>
+<p>Old graphics drivers and missing Windows updates can cause stutter, crashes, and low performance in new games.</p>
+<ul>
+  <li>Update Windows through Settings &gt; Windows Update.</li>
+  <li>Download your graphics driver from the NVIDIA, AMD, or Intel website.</li>
+  <li>Update chipset drivers from your motherboard or laptop maker.</li>
+</ul>
+<p>Update a BIOS only if you have a specific reason and follow your maker's instructions carefully.</p>
 
-  <ul>
-    <li>Your GPU usage stays below 90 percent while gaming, even in demanding titles.</li>
-    <li>Frame rates drop sharply in CPU-heavy areas such as crowded cities or large multiplayer battles.</li>
-    <li>Task Manager shows your CPU running near 100 percent while the GPU sits idle.</li>
-    <li>Performance feels choppy at lower resolutions but improves at higher resolutions.</li>
-  </ul>
+<h3>4. Overheating</h3>
+<p>When a CPU or GPU gets too hot, it slows itself down to protect itself. This is called thermal throttling. The typical sign is a PC that runs well at first and then lags after a while, often with loud fans.</p>
+<ul>
+  <li>Clean dust from fans and vents. Turn the PC off and unplug it first.</li>
+  <li>Make sure the case has clear airflow and nothing blocks the vents.</li>
+  <li>On a laptop, use it on a hard flat surface.</li>
+  <li>Watch temperatures with a monitoring tool. Safe limits differ by chip, so check your CPU or GPU maker's specifications.</li>
+</ul>
 
-  <p>If several of these apply to you, your system is likely CPU-bottlenecked in certain games. If you are unsure whether your CPU or GPU is holding your system back, you can check with a free tool like <a href="https://perfcalcpro.com/" target="_blank" rel="noopener noreferrer">PC Builds Bottleneck Calculator</a> before making any changes.</p>
+<h3>5. Full or Slow Storage</h3>
+<p>If Task Manager shows the disk at the top during lag, storage is the problem. A hard disk drive (HDD) is much slower than a solid state drive (SSD), especially for loading Windows, apps, and game levels.</p>
+<ul>
+  <li>Free up space. As a rule of thumb, avoid running a drive almost full.</li>
+  <li>Use Settings &gt; System &gt; Storage to clean temporary files.</li>
+  <li>If Windows is installed on an HDD, moving it to an SSD is often the biggest improvement you can make for general speed.</li>
+</ul>
+<p>An SSD makes loading and opening things faster. It does not usually raise FPS in games.</p>
 
-  <h2>How to Help With CPU Bottleneck Problems</h2>
+<h3>6. Not Enough RAM</h3>
+<p>If memory stays close to full in Task Manager, Windows starts using your drive as extra memory, which is much slower. First close apps you do not need. If memory is still almost full during normal use, adding more RAM helps. Check your motherboard for free slots and match the type your PC uses.</p>
 
-  <p>There are several practical ways to reduce or eliminate a computer's CPU bottleneck, ranging from free software tweaks to hardware upgrades.</p>
+<h3>7. CPU Bottleneck</h3>
+<p>A CPU bottleneck happens when your processor cannot prepare frames as fast as your graphics card can draw them. The GPU waits, and FPS stays lower than expected.</p>
 
-  <ol>
-    <li>
-      <h3>Lower Background Processes</h3>
-      <p>Close unnecessary browser tabs, chat apps, and background software before gaming. These programs quietly consume processor cycles and can worsen an existing CPU bottleneck.</p>
-    </li>
+<h4>Signs:</h4>
+<ul>
+  <li>GPU usage stays well below full while the CPU is very high.</li>
+  <li>FPS drops in crowded scenes, large cities, or big multiplayer matches.</li>
+  <li>Lowering the resolution does not raise FPS.</li>
+</ul>
+<p>GPU usage can also be low because of an FPS cap or VSync, so check those settings first.</p>
 
-    <li>
-      <h3>Update Drivers and BIOS</h3>
-      <p>Outdated chipset drivers and BIOS versions can cause your CPU to underperform. Keeping everything updated often resolves minor cases of processor bottlenecking without spending any money.</p>
-    </li>
+<h4>Fixes:</h4>
+<ul>
+  <li>Lower CPU-heavy settings such as draw distance, crowd density, and physics.</li>
+  <li>Raise the resolution or turn on upscaling such as DLSS or FSR to move more work to the GPU.</li>
+  <li>Close background apps.</li>
+  <li>If you are still limited, consider a faster CPU.</li>
+</ul>
+<p>To check whether your CPU or GPU is holding your PC back, try our <a href="https://perfcalcpro.com/tools/bottleneck-calculator">Bottleneck Calculator</a>. For CPU choices, see <a href="https://perfcalcpro.com/blog/which-is-better-ryzen-or-intel-for-gaming">Ryzen vs Intel for Gaming</a>.</p>
 
-    <li>
-      <h3>Adjust In-Game Settings</h3>
-      <p>Lowering settings that rely heavily on the processor, such as draw distance, physics quality, and crowd density, can ease the load and reduce how often the game feels CPU-limited.</p>
-    </li>
+<h3>8. Malware</h3>
+<p>Malicious software can use your CPU or network in the background. Run a full scan with Windows Security (Virus &amp; threat protection &gt; Scan options &gt; Full scan). If the PC is still slow, run a scan with a second trusted scanner.</p>
 
-    <li>
-      <h3>Increase Resolution or Enable Upscaling</h3>
-      <p>Raising your resolution shifts more of the workload onto the GPU, which can mask a mild CPU bottleneck. Tools like DLSS or FSR can also help balance the load between components.</p>
-    </li>
+<h3>9. Power Settings</h3>
+<p>A power plan set to save energy can hold back performance. On Windows 11, open Settings &gt; System &gt; Power &amp; battery and set the power mode to Best performance. On a laptop, plug in the charger while gaming. Also make sure Game Mode is turned on in Windows settings.</p>
 
-    <li>
-      <h3>Overclock Your Processor</h3>
-      <p>If your CPU supports overclocking, carefully raising the clock speed can add extra headroom and help fix bottlenecking in demanding titles. Always monitor temperatures closely when doing this.</p>
-    </li>
+<h3>10. Network Lag</h3>
+<p>If your PC feels smooth but online games react late, the connection is the issue. Check the ping shown in the game.</p>
+<ul>
+  <li>Use a wired Ethernet cable instead of Wi-Fi if you can.</li>
+  <li>Pause downloads and streaming on other devices.</li>
+  <li>Pick the game server closest to you.</li>
+  <li>Restart your router.</li>
+</ul>
 
-    <li>
-      <h3>Upgrade Your RAM Speed</h3>
-      <p>Faster memory with lower latency can noticeably reduce a processing unit bottleneck, especially on platforms where the processor is sensitive to memory bandwidth.</p>
-    </li>
+<h2>When to Upgrade</h2>
+<p>Try the free fixes first. Think about an upgrade when:</p>
+<ul>
+  <li>Task Manager shows the same part at its limit even after a clean restart and closing apps.</li>
+  <li>Games lag even on low settings.</li>
+  <li>Your PC still uses an HDD for Windows.</li>
+  <li>Your CPU is much older than your graphics card.</li>
+</ul>
+<p>Upgrade the part that Task Manager and the steps above point to, rather than guessing. To see what your PC can handle, use <a href="https://perfcalcpro.com/blog/can-my-pc-run-it">Can My PC Run It?</a>, and for a new build see <a href="https://perfcalcpro.com/blog/best-budget-gaming-pc">Best Gaming PC for Budget</a>. To estimate FPS before you buy, use the <a href="https://perfcalcpro.com/tools/fps-calculator">FPS Calculator</a>.</p>
 
-    <li>
-      <h3>Consider a CPU Upgrade</h3>
-      <p>If software tweaks are not enough, upgrading to a newer processor is often the most reliable way to fix CPU bottleneck issues permanently. This is especially true if your current chip is several generations old compared to your graphics card.</p>
-    </li>
-  </ol>
+<h2>Tools to Monitor Your PC</h2>
+<ul>
+  <li>Task Manager: built into Windows. Shows CPU, memory, disk, and GPU.</li>
+  <li>Resource Monitor: built into Windows. Gives a more detailed view.</li>
+  <li>MSI Afterburner: shows GPU usage and FPS while you play.</li>
+  <li>HWMonitor: shows temperatures and fan speeds.</li>
+  <li>CrystalDiskInfo: shows the health of your drives.</li>
+</ul>
 
-  <h2>Frequently Asked Questions</h2>
+<h2>Frequently Asked Questions</h2>
 
-  <h3>How do I clean up my PC so it runs faster?</h3>
-  <p>Close unused programs, clear temporary files, and uninstall software you no longer need. Running Disk Cleanup and disabling unnecessary startup apps also frees up resources quickly.</p>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Why is my PC lagging all of a sudden?</h3>
+<p>Think about what changed: a new update, a new app, a new game, or more dust and heat. Check Task Manager, then run a malware scan and check temperatures.</p>
+</div>
 
-  <h3>Why is my PC really laggy all of a sudden?</h3>
-  <p>Sudden lag is usually caused by a background process eating up resources, malware, or a driver that recently updated incorrectly. Checking the Task Manager right away usually reveals the cause. <a href="https://learn.microsoft.com/en-us/answers/questions/4233077/massive-lag-and-computer-issues" target="_blank" rel="noopener noreferrer">Microsoft's support community also has a detailed thread on fixing sudden PC lag and slow performance</a> if the issue persists.</p>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Why does my PC lag only in games?</h3>
+<p>Games use the CPU, GPU, and drive much harder than normal apps. Check graphics drivers, game settings, temperatures, and whether your CPU is a bottleneck.</p>
+</div>
 
-  <h3>Why is my PC lagging but the internet is fine?</h3>
-  <p>This means the slowdown is local, not network-related, so the problem lies in your CPU, RAM, storage, or overheating. Focus on system resources rather than your Wi-Fi or router.</p>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Why is my PC lagging but my internet is fine?</h3>
+<p>Then the cause is probably local. Check CPU, memory, disk, and temperature in the Task Manager.</p>
+</div>
 
-  <h3>How can I improve PC lag?</h3>
-  <p>Restart your PC regularly, keep drivers updated, and avoid running too many programs at once. Freeing up storage space and checking temperatures also helps reduce lag over time.</p>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>How do I tell if the lag is a software or hardware problem?</h3>
+<p>Software problems usually come from a specific app or a setting and improve after you close it or update. Hardware limits show one part at its maximum even with few apps open.</p>
+</div>
 
-  <h2>Final Thoughts</h2>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Why does restarting the PC fix lag for a while?</h3>
+<p>A restart closes all apps and clears memory. If the lag comes back after a few hours, look for a background app that keeps using more memory, or for heat.</p>
+</div>
 
-  <p>Dealing with a CPU bottleneck can be frustrating, especially when you have already invested in a powerful GPU. The good news is that most cases can be improved through simple adjustments like closing background apps, updating drivers, tweaking in-game settings, or increasing your resolution. When these steps are not enough, upgrading your processor or memory will usually solve the problem for good. By identifying the signs early and applying the fixes above, you can finally get rid of a stubborn CPU bottleneck and enjoy smoother, more consistent gaming performance.</p>
-</article>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Will a new graphics card fix my lag?</h3>
+<p>Only if the GPU is the weak part. If the CPU is the bottleneck, a new GPU will not help much.</p>
+</div>
 
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Is lag the same as low FPS?</h3>
+<p>No. Low FPS is one kind of lag. Stutter and network delay are others, and they have different fixes.</p>
+</div>
 
-
-
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Should I upgrade my PC or buy a new one?</h3>
+<p>If several parts are old, a new PC can make more sense than replacing them one by one. If only one part is the problem, such as an HDD or too little RAM, upgrading that part is usually cheaper. Compare real prices before you decide.</p>
+</div>
 
 `

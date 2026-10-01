@@ -329,9 +329,12 @@ export default function DownloadTimeCalculatorSeo() {
 
         
                 <h2 className={h2}>FAQs</h2>
-                <div className="space-y-5">
+                <div className="grid gap-4 sm:grid-cols-2">
                     {faqs.map((f) => (
-                        <div key={f.q}>
+                        <div
+                            key={f.q}
+                            className="rounded-xl border border-slate-800 bg-slate-950/50 p-5"
+                        >
                             <h3 className="text-base md:text-lg font-semibold text-white mb-1.5">{f.q}</h3>
                             <p className={p}>{f.a}</p>
                         </div>

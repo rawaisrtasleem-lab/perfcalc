@@ -1,251 +1,176 @@
-export const blog17 =`
+export const blog17 = `
 
+<h1>GTA 6 Gameplay &amp; Features: Every Confirmed Mechanic Explained</h1>
+<figure><img src="/blog-images/gta6-gameplay-and-features.webp" alt="GTA 6 Gameplay & Features" class="w-full rounded-xl"></figure>
+<p>Between two trailers, a leak, a Netflix premiere, and endless fan theories, it is hard to know what is actually confirmed about GTA 6. This guide sorts it out. Every feature below is labeled by where it comes from, and unconfirmed claims are kept in their own section.</p>
 
+<h2>Quick Answer</h2>
+<p>GTA 6 (Grand Theft Auto VI) launches on November 19, 2026 for PS5 and Xbox Series X|S. It is a single-player experience at launch, with two protagonists, Jason Duval and Lucia Caminos. There is no announced PC version.</p>
 
-
-
-<p>You watched the GTA 6 gameplay trailers. Twice. Then you fell into a YouTube rabbit hole of reaction videos, fan analyses, and "leaked footage" that turned out to be GTA 5 with a reshade mod. Now you are back at square one, genuinely unsure what is real. The Grand Theft Auto vi gameplay reveals are buried under three years of speculation, and nobody has cleanly separated the confirmed from the fake. This guide does exactly that.</p>
-
-<h2>GTA 6 Gameplay &amp; Features: Quick Answer</h2>
-
-<p><strong>GTA 6 gameplay</strong> launches November 19, 2026, exclusively on PS5 and Xbox Series X/S. The game features two playable protagonists, a map twice the size of Grand Theft Auto 5, a fully overhauled wanted system, and real-time character switching during heists. No PC release date has been confirmed by Rockstar.</p>
-
-<table style="width:100%; border-collapse:collapse; margin:16px 0; font-size:15px;">
+<table class="w-full border-collapse">
   <thead>
-    <tr >
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Category</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Detail</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Source</th>
-    </tr>
+    <tr><th class="border border-white/20 p-3 text-left">Detail</th><th class="border border-white/20 p-3 text-left">What We Know</th><th class="border border-white/20 p-3 text-left">Source</th></tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Release Date</td>
-      <td style="border:1px solid #ddd; padding:10px;">November 19, 2026</td>
-      <td style="border:1px solid #ddd; padding:10px;">Rockstar Official</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Platforms</td>
-      <td style="border:1px solid #ddd; padding:10px;">PS5 &amp; Xbox Series X/S only</td>
-      <td style="border:1px solid #ddd; padding:10px;">Confirmed</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">PC Release</td>
-      <td style="border:1px solid #ddd; padding:10px;">No date announced</td>
-      <td style="border:1px solid #ddd; padding:10px;">Rockstar Official</td>
-    </tr>
-    <tr >
-      <td style="border:1px solid #ddd; padding:10px;">Standard Price</td>
-      <td style="border:1px solid #ddd; padding:10px;">$79.99</td>
-      <td style="border:1px solid #ddd; padding:10px;">PlayStation Store</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Ultimate Price</td>
-      <td style="border:1px solid #ddd; padding:10px;">$99.99</td>
-      <td style="border:1px solid #ddd; padding:10px;">PlayStation Store</td>
-    </tr>
-    <tr >
-      <td style="border:1px solid #ddd; padding:10px;">Protagonists</td>
-      <td style="border:1px solid #ddd; padding:10px;">Jason Duval &amp; Lucia Caminos</td>
-      <td style="border:1px solid #ddd; padding:10px;">Trailer 1 &amp; 2</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Map Size</td>
-      <td style="border:1px solid #ddd; padding:10px;">2x larger than GTA 5</td>
-      <td style="border:1px solid #ddd; padding:10px;">Community mapping + leaks</td>
-    </tr>
+    <tr><td class="border border-white/20 p-3">Release date</td><td class="border border-white/20 p-3">November 19, 2026</td><td class="border border-white/20 p-3">Rockstar</td></tr>
+    <tr><td class="border border-white/20 p-3">Platforms</td><td class="border border-white/20 p-3">PS5, Xbox Series X|S</td><td class="border border-white/20 p-3">Rockstar</td></tr>
+    <tr><td class="border border-white/20 p-3">Mode at launch</td><td class="border border-white/20 p-3">Single-player experience</td><td class="border border-white/20 p-3">Rockstar</td></tr>
+    <tr><td class="border border-white/20 p-3">Price</td><td class="border border-white/20 p-3">Standard $79.99, Ultimate $99.99</td><td class="border border-white/20 p-3">Rockstar (reported by Variety)</td></tr>
+    <tr><td class="border border-white/20 p-3">Pre-order bonus</td><td class="border border-white/20 p-3">Vintage Vice City Pack for purchases before Nov 20</td><td class="border border-white/20 p-3">Rockstar</td></tr>
+    <tr><td class="border border-white/20 p-3">Digital pre-order extra</td><td class="border border-white/20 p-3">One free month of GTA+</td><td class="border border-white/20 p-3">Rockstar</td></tr>
+    <tr><td class="border border-white/20 p-3">Pre-loading</td><td class="border border-white/20 p-3">Starts November 12 for digital pre-orders</td><td class="border border-white/20 p-3">Rockstar</td></tr>
+    <tr><td class="border border-white/20 p-3">Physical copy</td><td class="border border-white/20 p-3">Download code inside the box</td><td class="border border-white/20 p-3">Rockstar</td></tr>
+    <tr><td class="border border-white/20 p-3">PC</td><td class="border border-white/20 p-3">No announcement</td><td class="border border-white/20 p-3">Rockstar has said nothing</td></tr>
+    <tr><td class="border border-white/20 p-3">Length</td><td class="border border-white/20 p-3">About 80 hours (one Rockstar North developer's playthrough)</td><td class="border border-white/20 p-3">Reported from previews</td></tr>
   </tbody>
 </table>
 
-<h2>The Confirmed vs Leaked Problem Nobody Addresses</h2>
-<figure><img src="/blog-images/GTA-6-playgame2.png" alt="gta 6 play game"  class="w-full rounded-xl"></figure>
-<p>Most Grand Theft Auto 6 gameplay articles mix official Rockstar trailer footage with Amazon Brazil store listing leaks with Reddit anonymous posts, and label all three as confirmed. That is not how this guide works.</p>
-
-<p>Everything in this article is labeled by source. Rockstar's two official trailers and the Rockstar Newswire are the only primary sources. The Amazon Brazil and KaBum retailer listings that leaked in June 2026 are labeled as leaked but credible because they match prior credible leak patterns. Anything else gets called speculation or unverified.</p>
-
-<p>Before you plan your build around a Grand Theft Auto 6 feature you saw on YouTube, run this check: can you trace it to Trailer 1, Trailer 2, the Rockstar Newswire, or the official PlayStation store listing? If not, treat it as unconfirmed. That single habit saves you from getting excited about features that may have been cut in development.</p>
-
-<h2>Dual Protagonists: How Jason and Lucia Actually Play Differently</h2>
-
-<p><strong>GTA vi gameplay</strong> introduces the series' first female lead in a mainline game. Lucia Caminos and Jason Duval are not just two skins for the same playstyle. Each character carries a distinct special ability that changes how you approach combat and heist sequences.</p>
-
-<p>Jason's slow-motion targeting covers multiple enemies in a single window, making it better for crowd control during open gunfights. Lucia's single-shot precision mode gives you one guaranteed hit with maximum accuracy, which makes it the stronger choice for taking out a specific high-value target before a heist goes loud.</p>
-
-<p>You can switch between them in real time during open-world exploration and during certain story sequences. Rockstar places additional emphasis on completing missions as a coordinated duo rather than solo, which is a structural shift from GTA 5's three-protagonist system where characters operated mostly in parallel.</p>
-
-<table style="width:100%; border-collapse:collapse; margin:16px 0; font-size:15px;">
-  <thead>
-    <tr >
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Feature</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Jason Duval</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Lucia Caminos</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Background</td>
-      <td style="border:1px solid #ddd; padding:10px;">Ex-military, Army veteran</td>
-      <td style="border:1px solid #ddd; padding:10px;">From Liberty City, trained fighter</td>
-    </tr>
-    <tr >
-      <td style="border:1px solid #ddd; padding:10px;">Special Ability</td>
-      <td style="border:1px solid #ddd; padding:10px;">Slow-motion targeting (multi-target)</td>
-      <td style="border:1px solid #ddd; padding:10px;">Single-shot precision slow-motion</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Story Start</td>
-      <td style="border:1px solid #ddd; padding:10px;">Working debt collection in Leonidas Keys</td>
-      <td style="border:1px solid #ddd; padding:10px;">Released from prison, ankle monitor removed</td>
-    </tr>
-    <tr >
-      <td style="border:1px solid #ddd; padding:10px;">Switch Mechanic</td>
-      <td style="border:1px solid #ddd; padding:10px;">Real-time switch during open world</td>
-      <td style="border:1px solid #ddd; padding:10px;">Real-time switch during heists</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>The New Wanted System Changes How You Play Every Mission</h2>
-
-<p><strong>GTA 6 gameplay video</strong> leaked from the 2022 Rockstar hack and the official trailers both show the same mechanic: police no longer teleport to your location the moment a crime occurs. In Grand Theft Auto 6, NPCs must physically call 911 before dispatch begins.</p>
-
-<p>That single change transforms every heist. You now have a visible countdown window after the crime starts. Eliminate witnesses before they make the call and the timer never starts. Miss one witness and the clock begins, giving you limited time to complete your objective and clear the area before law enforcement arrives.</p>
-
-<p>The six-star wanted system also returns with tiered and smarter responses. At two stars, police attempt non-lethal containment before escalating. You can surrender rather than fight your way out, which opens dialogue options that did not exist in GTA 5. Higher wanted levels trigger more coordinated tactical responses rather than simply spawning more police vehicles.</p>
-
-<h2>Open World Map: What Leonida Actually Contains</h2>
-
-<p>The GTA 6 gameplay map covers the state of Leonida, Rockstar's fictionalized version of Florida. Community mapping projects using coordinate data from the 2022 leak estimate the landmass at over twice the size of GTA 5's Los Santos and Blaine County combined. Rockstar's official website confirms six distinct regions.</p>
-
-<p><strong>Vice City</strong> is the main urban hub, modeled on Miami with Art Deco architecture, waterways, and the iconic beachfront. <strong>The Leonida Keys</strong> is an island chain south of Vice City where the story begins. <strong>Grassrivers</strong> is the Everglades analog featuring swamps and subtropical wilderness. <strong>Port Gellhorn</strong> is a working port with industrial areas and cheap motels. <strong>Ambrosia</strong> is rural territory home to a biker gang. <strong>Mount Kalaga National Park</strong> adds wilderness terrain to the northern map area.</p>
-
-<p>Each region has its own police response timing. Rural areas take significantly longer to dispatch law enforcement than downtown Vice City. That geography directly affects mission planning and escape routes in a way Grand Theft Auto 5's map never required.</p>
-
-<h2>Dynamic Weather Is a Gameplay System, Not Just a Visual</h2>
-
-<p><strong>GTA 6 gameplay</strong> includes storms that alter physics and gameplay mechanics, not just lighting. The distinction matters because most coverage treats weather as a graphics upgrade. It is not.</p>
-
-<p>Heavy rain changes how vehicles handle and how pedestrian crowds behave. NPCs seek shelter, dress appropriately for conditions, and reduce street density during extreme weather. Rockstar's job listings from development mentioned insects appearing in certain weather conditions and rain dripping off buildings as specific environmental targets, suggesting the level of simulation detail goes beyond surface-level visual effects.</p>
-
-<p>Storm events can alter pursuit mechanics as well. A high-speed chase in a hurricane hits different terrain physics than the same chase on a clear day. That is not a cosmetic difference. It is a mechanical one that changes what vehicles and routes are viable during missions.</p>
-
-<h2>NPC AI and the Dialogue Decay System</h2>
-
-<p><strong>GTA six gameplay</strong> features what Rockstar reportedly describes as hundreds of thousands of conditional NPC dialogue lines, not a pool of repeating one-liners. A Reddit source who accurately named both protagonists and the Leonida setting before Trailer 1 dropped described the system in detail: lines are conditional, not shuffled. NPCs respond to your specific actions, location, time of day, and recent history in the area.</p>
-
-<p>The decay system pulls deep-cut dialogue variants as you spend more time in an area, reducing repeat lines over extended play sessions. This is a significant technical difference from Grand Theft Auto 5's NPC dialogue, which cycled through a fixed pool regardless of context.</p>
-
-<p>NPCs also have daily routines that operate independently of your presence. Businesses open and close. Traffic responds to weather. Crowds react to gunfire by scattering rather than standing still. If you cause chaos in a neighborhood, resident behavior toward you changes over subsequent visits. That level of persistent reactivity is new to the series.</p>
-
-<h2>Combat and Stealth Mechanics: What Is New</h2>
-
-<p><strong>GTA 6 gameplay</strong> introduces several combat mechanics that were not present in GTA 5. All of the following are confirmed from official trailer footage or Rockstar communications:</p>
-
+<h2>How This Guide Labels Sources</h2>
 <ul>
-  <li>Prone crawling during combat</li>
-  <li>Zip ties to restrain NPCs rather than kill them</li>
-  <li>Human shields as a tactical option</li>
-  <li>Under-fire animations that add realism to gunfights</li>
-  <li>Weapon hand switching during combat</li>
-  <li>Improved melee system with refined timing windows</li>
-  <li>Body looting and carrying mechanics</li>
+  <li>Confirmed: from Rockstar itself: its Newswire, Trailer 1 and Trailer 2, the official pre-order page, and the Extended Look.</li>
+  <li>Reported: from press previews at Rockstar North, where journalists played or watched the game and described it. These are firsthand, but not official statements.</li>
+  <li>Unconfirmed: leaks, retailer listings, and rumors. These are listed at the end, so you can ignore them.</li>
 </ul>
 
-<p>The stealth layer matters more in Grand Theft Auto 6 than in any previous entry because of the witness-based wanted system. Eliminating a target quietly before witnesses can call keeps the police timer from starting at all. That creates a genuine reason to use stealth mechanics rather than treating them as optional. When you do go loud, weapon choice matters more than most players realize. Run your loadout through our <a href="/tools/dps-calculator" style="color: #007bff; text-decoration: underline;">DPS Calculator</a> to see exactly how much damage you deal per second before you commit to a build</p>
+<h2>What the Extended Look Showed</h2>
+<p>On August 27, 2026, Rockstar released Grand Theft Auto VI: An Extended Look, a 26-minute video captured entirely from in-game footage on PS5. It was the first real gameplay shown, rather than cutscenes. It showed cover-based shooting, a car chase through Vice City, racing, and how several systems work together. You can watch it on Netflix or on Rockstar's YouTube channel.</p>
 
-<h2>GTA 6 Vehicles, Side Activities, and Social Media Integration</h2>
+<p>Rockstar also flew media to Rockstar North for previews, published after the video. The rest of this guide uses the Extended Look for confirmed items and the previews for reported ones.</p>
 
-<p>Over 200 vehicles are confirmed across cars, motorcycles, helicopters, planes, and boats. Retailer listings specify that vehicles feature fully interactive interiors. The side activity roster is the widest confirmed in the series, verified through a December 2025 Grand Theft Auto Online update that crossed over activities from GTA 6.</p>
+<h2>Jason and Lucia</h2>
+<p>Confirmed: you can switch between the two characters. The strength of their relationship affects the story and its ending. Jason and Lucia do not have to be a romantic couple.</p>
 
-<table style="width:100%; border-collapse:collapse; margin:16px 0; font-size:15px;">
-  <thead>
-    <tr >
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Activity</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Confirmation Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Fishing</td>
-      <td style="border:1px solid #ddd; padding:10px;">GTA Online December 2025 crossover update</td>
-    </tr>
-    <tr >
-      <td style="border:1px solid #ddd; padding:10px;">Hunting</td>
-      <td style="border:1px solid #ddd; padding:10px;">GTA Online December 2025 crossover update</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Scuba Diving</td>
-      <td style="border:1px solid #ddd; padding:10px;">Trailer 2 footage</td>
-    </tr>
-    <tr >
-      <td style="border:1px solid #ddd; padding:10px;">MMA</td>
-      <td style="border:1px solid #ddd; padding:10px;">GTA Online December 2025 crossover update</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Mini-Golf</td>
-      <td style="border:1px solid #ddd; padding:10px;">GTA Online December 2025 crossover update</td>
-    </tr>
-    <tr >
-      <td style="border:1px solid #ddd; padding:10px;">Pet Customization</td>
-      <td style="border:1px solid #ddd; padding:10px;">GTA Online December 2025 crossover update</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Workout Mechanic</td>
-      <td style="border:1px solid #ddd; padding:10px;">GTA Online December 2025 crossover update</td>
-    </tr>
-    <tr >
-      <td style="border:1px solid #ddd; padding:10px;">Kayaking</td>
-      <td style="border:1px solid #ddd; padding:10px;">GTA Online December 2025 crossover update</td>
-    </tr>
-  </tbody>
-</table>
+<h3>Reported (previews):</h3>
+<ul>
+  <li>You can switch at any time in the open world, although some story sections block it.</li>
+  <li>You can phone or text your partner to meet up.</li>
+  <li>You can swap roles while driving, for example shooting from the passenger seat while your partner drives.</li>
+  <li>The relationship system is described as roleplay: closeness changes some missions and situations, but there are no direct bonuses for a happy relationship.</li>
+  <li>Jason and Lucia have separate Criminal Profiles, so they can end up very different.</li>
+</ul>
 
-<p>Social media integration via the in-game smartphone is confirmed as a gameplay system, not a cinematic device. Players can watch viral videos, follow in-game influencers, and discover world events through the phone. <strong>GTA 6 gameplay video</strong> from Trailer 1 showed fictional social media clips and news broadcasts, which now appear to be active gameplay feeds rather than cutscene elements.</p>
+<h2>Wanted System, Heat, and Criminal Profiles</h2>
+<figure><img src="/blog-images/wanted-system-heat-and-criminal.webp" alt="How to Fix CPU Bottleneck" class="w-full rounded-xl"></figure>
+<p>Confirmed: the six-star wanted level returns. The police also take your clothing, appearance, and vehicle into account.</p>
 
-<h2>Next-Gen Graphics: What the RAGE Engine Delivers</h2>
+<h3>Reported (previews):</h3>
+<ul>
+  <li>A crime does not always trigger a wanted level. The police are alerted if someone sees you, an alarm goes off, or a tracker on a stolen car is triggered.</li>
+  <li>After an alert, police search the area, and the search zone can stay active after you leave.</li>
+  <li>A Heat display shows what police know: whether CCTV footage exists, your appearance and clothing, your weapons, and your getaway vehicle.</li>
+  <li>You can remove clues by destroying CCTV footage, changing clothes, hiding weapons, switching vehicles, or splitting up with your partner.</li>
+  <li>Star colors carry meaning: solid white means direct visual contact, flashing white means you just lost sight, hollow stars mean a reported crime with no description, and red means you are inside the search area.</li>
+  <li>Wearing a mask stops CCTV from giving police a usable description.</li>
+  <li>Rockstar has not confirmed what happens at six stars.</li>
+</ul>
 
-<p><strong>GTA vi gameplay</strong> runs on an updated RAGE engine with confirmed graphical upgrades: advanced ray-traced global illumination, strand-based hair physics, dynamic clothing simulation, and growing facial hair over time. The PS5 Pro version adds higher frame rates and enhanced resolution, confirmed by retailer KaBum's pre-order listing.</p>
+<h3>Criminal Profile (confirmed, details reported):</h3>
+<p>It tracks how you commit crimes across the game, unlike wanted levels, which reset. Reported tiers run from Professional to Aggressive, Violent, and Psycho, and previews say a further tier may exist that can cause irreversible changes.</p>
 
-<p>The practical effect of ray tracing in Vice City is perfect reflections on vehicles and water surfaces in real time. Dynamic weather pairs with the lighting engine to produce storms that change how the environment looks and how physics behaves simultaneously. These are not separate systems running in parallel. They interact.</p>
+<h2>Cars, Robberies, and Money</h2>
+<h3>Reported (previews):</h3>
+<ul>
+  <li>Vehicle theft: the Waink app shows a car's security level, tools needed, tracker level, and resale value. Older cars can be hot-wired. Expensive cars need special tools. Hijacking occupied cars uses a quick-time event.</li>
+  <li>Registering stolen cars: you can register some stolen cars as your own for a fee. High-end models come later in the story.</li>
+  <li>Fuel: you can run out of petrol and refuel at stations. Pay 'n' Sprays return and remove a car's wanted level.</li>
+  <li>Driving: Rockstar says the driving physics were rebuilt, aiming for the weight of GTA 4 with the accessibility of GTA 5. Circuit and dirt-bike racing were shown.</li>
+  <li>Robberies: you can rob almost any shop. Every location differs in entrances, cameras, safes, and staff. Small robberies are hands-on, such as bagging cash from a till.</li>
+  <li>Money: there are three kinds: bank balance (safe), cash (you can lose it if you are Wasted or Busted), and loot in duffel bags (must be sold to a fence). Loot can be sold only to the right fence, who is unlocked through the story.</li>
+</ul>
 
-<p>Grand Theft Auto 6 is a PS5 and Xbox Series X/S exclusive with no PC release date announced. If a PC version arrives in 2027 or later, hardware requirements will be significant. Run your build through our <a href="/tools/fps-calculator" style="color: #007bff; text-decoration: underline;">FPS Calculator</a> before you commit to a PC upgrade around this title. GTA 6's RAGE engine will push hardware hard, and knowing your frame rate ceiling before launch saves you from a bad experience on day one.</p>
+<h2>Combat</h2>
+<h3>Reported (previews):</h3>
+<ul>
+  <li>Auto-aim is no longer active by default. Aiming is more flexible and can be customized.</li>
+  <li>The Focus ability slows time and highlights enemy weak points.</li>
+  <li>You can carry two handguns and two long guns, but only one long gun on your back. Openly carrying a ready weapon makes NPCs react with fear.</li>
+  <li>Weapons have more weight and recoil than in GTA 5, so sustained accurate fire is harder.</li>
+</ul>
 
-<h2>Platforms, Price, and Editions</h2>
+<h2>The World and Activities</h2>
+<p>Confirmed: the game is set in Leonida (Rockstar's version of Florida) and features Vice City. Rockstar's GTA VI site lists six regions: Leonida Keys, Vice City, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park.</p>
 
-<p>GTA 6 is available for pre-order now on PS5 and Xbox Series X/S. The Standard Edition at $79.99 includes the Vintage Vice City pre-order pack and one month of Grand Theft Auto+. The Ultimate Edition at $99.99 adds premium vehicles, weapons, and apparel across the story. Pre-orders opened June 25, 2026 with a deadline of November 20, 2026 for the GTA+ bonus.</p>
+<h3>Map size is not confirmed.</h3>
+<p>Rockstar has not published a size in square kilometers. Press reports vary: previews said Vice City alone is about twice the size of Los Santos, and another report put the whole map at about three times the size of Red Dead Redemption 2's. Treat all of these as unofficial.</p>
 
-<p>GTA+ membership auto-renews after the free month. Cancel through your console subscription management before the renewal date if you do not want to continue.</p>
+<h3>Activities (reported and seen in footage):</h3>
+<p>Basketball, kayaking, mini-golf, billiards, diving, skydiving, jet skiing, fishing, hunting (including alligators), wrestling, and shooting ranges. Transport includes buses, trains, taxis, and the RydeMe app.</p>
+
+<h3>Character changes (reported):</h3>
+<p>What you eat, how often you work out, and how you sleep show on your character. Regular training builds muscle, and eating badly adds weight.</p>
+
+<h3>Social media (reported):</h3>
+<p>You can scroll social feeds in the game and find NPC events to visit.</p>
+
+<h3>Small details (reported):</h3>
+<p>Footprints stay in the sand, sweat shows after sprinting, traffic changes by time of day, and dogs may refuse to be petted.</p>
+
+<h2>Graphics and Platforms</h2>
+<p>Rockstar says the Extended Look was captured entirely in-game on PS5. Rockstar has not detailed specific graphics features such as ray tracing or hair physics, and previews did not confirm whether PS5 Pro will have a higher-frame-rate performance mode.</p>
+
+<p>PC: there is no announcement, no release date, no price, and no system requirements. GTA 5 came to PC roughly 18 months after consoles, so some outlets expect a PC version in 2027 or 2028, but that is a prediction, not a fact. If you plan a PC build for GTA 6, wait for official requirements first. When they are announced, you can use our <a href="https://perfcalcpro.com/tools/fps-calculator">FPS Calculator</a> and <a href="https://perfcalcpro.com/tools/bottleneck-calculator">Bottleneck Calculator</a> to check your setup.</p>
+
+<h2>Price, Editions, and Pre-Orders</h2>
+<ul>
+  <li>Standard Edition: $79.99.</li>
+  <li>Ultimate Edition: $99.99, with extra vehicles, weapons, and apparel.</li>
+  <li>All pre-orders and purchases before November 20 get the Vintage Vice City Pack.</li>
+  <li>Digital pre-orders also include one free month of GTA+. Check your console's subscription settings before it renews, if you do not want to keep it.</li>
+  <li>Digital pre-orders can pre-load from November 12.</li>
+  <li>The physical version is a box containing a download code.</li>
+</ul>
+
+<h2>No Microtransactions, No Online Details</h2>
+<p>Rockstar has said the single-player portion will launch without microtransactions and that no generative AI was used in its development, according to Red Bull's summary of Rockstar's statements. The Extended Look revealed nothing new about GTA Online, and GTA 6 launches as a single-player experience.</p>
+
+<h2>What Is Still Unconfirmed</h2>
+<p>Do not rely on these until Rockstar confirms them:</p>
+<ul>
+  <li>Different special abilities for Jason and Lucia.</li>
+  <li>A "911 call countdown" wanted system, or specific police behavior at two stars.</li>
+  <li>The exact number of vehicles, and details of vehicle interiors.</li>
+  <li>Claims about hundreds of thousands of NPC dialogue lines.</li>
+  <li>The exact map size.</li>
+  <li>Specific ray tracing or hair physics features.</li>
+  <li>Any PC or PS5 Pro details.</li>
+  <li>Anything based on the 2022 hack footage or retailer listings.</li>
+</ul>
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>Is GTA 6 gameplay confirmed for PC?</h3>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Is GTA 6 coming to PC?</h3>
+<p>Rockstar has not announced it. Some outlets expect 2027 or 2028, but that is only a prediction.</p>
+</div>
 
-<p>No. Rockstar has not announced a PC release date. Grand Theft Auto 6 launches November 19, 2026 on PS5 and Xbox Series X/S exclusively. A PC version is widely expected based on GTA 5's release pattern, but no timeline has been officially confirmed.</p>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Will GTA 6 have online multiplayer at launch?</h3>
+<p>No. It launches as a single-player experience, and no online details have been shown.</p>
+</div>
 
-<h3>What is the difference between Jason and Lucia in GTA vi gameplay?</h3>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>How long is GTA 6?</h3>
+<p>A Rockstar North developer's own playthrough took about 80 hours. Reports differ on what is included, so your time may vary.</p>
+</div>
 
-<p>Jason has a multi-target slow-motion ability suited for crowd control in open gunfights. Lucia has a single-shot precision slow-motion that works best for eliminating specific targets quickly. You can switch between them in real time during open-world play and during coordinated heist sequences.</p>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Does GTA 6 have microtransactions?</h3>
+<p>Rockstar says the single-player portion launches without them.</p>
+</div>
 
-<h3>How does the GTA 6 gameplay wanted system work differently from GTA 5?</h3>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Is there a physical disc?</h3>
+<p>The physical version contains a download code instead of a disc, according to Rockstar.</p>
+</div>
 
-<p>Police do not spawn instantly when you commit a crime. An NPC must physically call 911 before dispatch begins. You have a window after a crime to eliminate witnesses and prevent the call entirely. The six-star system also adds non-lethal responses at lower star levels and a surrender option that did not exist in Grand Theft Auto 5.</p>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>When can I pre-load?</h3>
+<p>Digital pre-orders can pre-load from November 12, one week before launch.</p>
+</div>
 
-<h3>Will GTA 6 gameplay include online multiplayer at launch?</h3>
+<div class="faq-item rounded-xl border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+<h3>Can I play as both characters?</h3>
+<p>Yes. You can switch between Jason and Lucia in the open world, although some story sections restrict it.</p>
+</div>
 
-<p>Rockstar's official pre-order listing confirms GTA 6 is a single-player experience at launch. No official details on Grand Theft Auto 6 Online have been announced. Online features are widely expected but unconfirmed for the launch window.</p>
-
-<h3>What side activities are confirmed for GTA 6 gameplay?</h3>
-
-<p>Fishing, hunting, scuba diving, MMA, mini-golf, kayaking, pet customization, and a workout mechanic are all confirmed through a December 2025 GTA Online crossover update. These were introduced to Grand Theft Auto Online in advance of GTA 6's release, suggesting direct integration with the main game's activity roster.</p>
-
-<h3>Is the GTA 6 gameplay trailer real or is it leaked footage?</h3>
-
-<p>Two official trailers exist, released by Rockstar Games in December 2023 and 2024. Both are real and official. The 2022 footage circulating online is from a verified Rockstar hack, showing early development builds. Most <strong>GTA 6 gameplay video</strong> content on YouTube outside these three sources is AI-generated, Grand Theft Auto 5 modded footage, or fabricated screenshots.</p>
-
-<h2>Conclusion</h2>
-
-<p><strong>GTA 6 gameplay</strong> delivers the most structurally ambitious open world Rockstar has built. The witness-based wanted system, dual protagonist abilities, conditional NPC dialogue, and dynamic weather mechanics are not marketing language. They are confirmed mechanical changes that alter how every mission, heist, and open-world session plays. If you want the cleanest picture of what <strong>GTA vi gameplay</strong> actually includes before November 19, 2026, stick to the two official trailers, the Rockstar Newswire, and the confirmed retailer listings. Everything else is noise. Check your FPS Calculator and Bottleneck Calculator to make sure your setup is ready when the PC version eventually lands.</p>
-
-
-
-`
+`;

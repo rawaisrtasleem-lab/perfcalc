@@ -1,214 +1,164 @@
-export const blog13=`
+export const blog13 = `
 
+<h1>OSRS DPS Calculator: How Is DPS Calculated in OSRS?</h1>
+<figure><img src="/blog-images/osrs-dps-calculator.webp" alt="dps calculator image" class="w-full rounded-xl"></figure>
 
-<h1>
-OSRS DPS Calculator ,How Is DPS Calculated in OSRS?
-</h1>
-<figure><img src="/blog-images/orrs-dps.png" alt="dps calcualtor image" class="w-full rounded-xl"></figure>
+<p>You upgrade your weapon and the max hit goes up, but kills feel slower. This is the "max hit trap." Max hit shows your biggest possible hit, not your real damage output. This guide explains how OSRS DPS is calculated, with the formulas and a full worked example, so you can compare setups before you spend GP.</p>
 
-<p>You upgraded your weapon. Your kills got slower. The max hit went up. You saw it in the equipment tab but something felt off. That is the Max Hit Trap, and almost every OSRS player falls into it at least once. This guide breaks down exactly how OSRS DPS is calculated, why max hit lies to you, and how to use our free OSRS <a href="tools/dps-calculator" style="color:blue"> DPS Calculator </a> to find the setup that actually kills faster.</p>
+<p><strong>Short answer:</strong> DPS = (max hit ÷ 2) × hit chance ÷ attack time in seconds. Max hit comes from your Strength, prayers, and gear. Hit chance comes from your attack roll against the target's defence roll. Attack time is the weapon's tick speed × 0.6.</p>
 
-<h2>What Is DPS in OSRS? The One Number That Actually Matters</h2>
+<h2>What DPS Means in OSRS</h2>
+<p>DPS stands for damage per second. It is the average damage your character deals each second. Three things decide it: your max hit, your accuracy, and your weapon's attack speed. Change any one and your DPS changes.</p>
 
-<p>Damage Per Second stands for Damage Per Second. It is the average damage your character deals every second not your biggest possible hit, not your most impressive number. Your real output.</p>
+<h2>The Max Hit Trap</h2>
+<p>A bigger max hit does not always mean faster kills. Consider two imaginary weapons, both with 70% hit chance:</p>
 
-<p>Three inputs determine your DPS: your maximum hit, your accuracy, and your weapon's attack speed. Change any one of them and your DPS shifts. Ignore any one of them and your upgrade decisions will cost you GP and kill time.</p>
-
-<p>Max hit the ceiling. Damage Per Second tells you the truth. Before you buy your next upgrade, run your current setup through our OSRS DPS Calculator and get the real number first.</p>
-
-<h2>The Max Hit Trap: Why Stronger Weapons Kill Slower</h2>
-
-<p>Here is what the game never tells you: a higher max hit does not mean faster kills.</p>
-
-<p>The Armadyl Godsword hits for a maximum of 51. The Abyssal Whip maxes at 28. On paper the Godsword wins by 23 damage. In practice, the Whip kills faster against most targets because the Godsword swings on a 6-tick timer while the Whip swings on a 4-tick timer. The Whip gets 25 attacks per minute. The Godsword gets fewer than 17.</p>
-
-<table style="width:100%; border-collapse:collapse; text-align:center; font-family:Arial, sans-serif;">
+<table class="w-full border-collapse">
   <thead>
-    <tr >
-      <th style="border:1px solid #ddd; padding:10px;">Weapon</th>
-      <th style="border:1px solid #ddd; padding:10px;">Max Hit</th>
-      <th style="border:1px solid #ddd; padding:10px;">Tick Speed</th>
-      <th style="border:1px solid #ddd; padding:10px;">DPS vs 75 Def Target</th>
-    </tr>
+    <tr><th class="border border-white/20 p-3 text-left"></th><th class="border border-white/20 p-3 text-left">Weapon A</th><th class="border border-white/20 p-3 text-left">Weapon B</th></tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Abyssal Whip</td>
-      <td style="border:1px solid #ddd; padding:10px;">28</td>
-      <td style="border:1px solid #ddd; padding:10px;">4 tick</td>
-      <td style="border:1px solid #ddd; padding:10px;">4.1</td>
-    </tr>
-    <tr >
-      <td style="border:1px solid #ddd; padding:10px;">Armadyl Godsword</td>
-      <td style="border:1px solid #ddd; padding:10px;">51</td>
-      <td style="border:1px solid #ddd; padding:10px;">6 tick</td>
-      <td style="border:1px solid #ddd; padding:10px;">3.8</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Dragon Scimitar</td>
-      <td style="border:1px solid #ddd; padding:10px;">24</td>
-      <td style="border:1px solid #ddd; padding:10px;">4 tick</td>
-      <td style="border:1px solid #ddd; padding:10px;">3.6</td>
-    </tr>
+    <tr><td class="border border-white/20 p-3">Max hit</td><td class="border border-white/20 p-3">28</td><td class="border border-white/20 p-3">40</td></tr>
+    <tr><td class="border border-white/20 p-3">Attack speed</td><td class="border border-white/20 p-3">4 ticks (2.4 s)</td><td class="border border-white/20 p-3">6 ticks (3.6 s)</td></tr>
+    <tr><td class="border border-white/20 p-3">DPS</td><td class="border border-white/20 p-3">14 × 0.70 ÷ 2.4 ≈ 4.08</td><td class="border border-white/20 p-3">20 × 0.70 ÷ 3.6 ≈ 3.89</td></tr>
   </tbody>
 </table>
 
+<p>Weapon B has a max hit about 43% higher, but it attacks 50% slower, so Weapon A wins. This is an example with made-up numbers. Real weapons differ, so always check the actual stats.</p>
 
-<p>The Godsword looks stronger. The Whip kills faster. That gap between appearance and reality is the Max Hit Trap. Every player who has ever bought a slow heavy weapon because the max hit looked good has paid for this lesson in wasted GP.</p>
+<h2>How DPS Is Calculated, Step by Step</h2>
+<p>These are the standard formulas used by the OSRS Wiki's DPS calculator, known as the Bitterkoekje formulas.</p>
 
-<h2>How Is DPS Calculated in OSRS? The Full Formula</h2>
+<h3>Step 1: Effective level.</h3>
+<p>Effective level = floor((level + potion boost) × prayer multiplier) + stance bonus + 8.</p>
 
-<p>The dps osrs calculator math runs on three sequential calculations. Each one feeds into the next.</p>
+<h3>Step 2: Max hit.</h3>
+<p>Max hit = floor(0.5 + effective Strength × (gear Strength bonus + 64) ÷ 640). Then multiply by any set or item bonuses.</p>
 
-<h3>Step 1: Effective Level</h3>
-<p>Your base stat plus prayer multiplier plus potion boost plus style bonus. This number drives everything downstream.</p>
+<h3>Step 3: Attack roll and defence roll.</h3>
+<p>Attack roll = effective Attack × (gear Attack bonus + 64).</p>
+<p>Defence roll = (target Defence level + 9) × (target defence bonus + 64).</p>
 
-<h3>Step 2: Max Hit</h3>
-<p>Max Hit = floor(0.5 + Effective Strength × (Strength Bonus + 64) ÷ 640)</p>
-<p>Then multiply by any set bonuses: Slayer Helm on task adds ×7/6, Salve Amulet (ei) adds ×6/5, Inquisitor's set adds its own multiplier on top.</p>
+<h3>Step 4: Hit chance.</h3>
+<p>If your attack roll is higher: hit chance = 1 − (defence roll + 2) ÷ (2 × (attack roll + 1)).</p>
+<p>If the defence roll is higher or equal: hit chance = attack roll ÷ (2 × (defence roll + 1)).</p>
 
-<h3>Step 3: Accuracy</h3>
-<p>Your attack roll goes up against the target's defence roll. If your roll beats theirs:</p>
-<p>Accuracy = 1 − (Defence Roll + 2) ÷ (2 × (Attack Roll + 1))</p>
-<p>If their roll beats yours: Accuracy = Attack Roll ÷ (2 × (Defence Roll + 1))</p>
+<h3>Step 5: DPS.</h3>
+<p>DPS = (max hit ÷ 2) × hit chance ÷ (weapon ticks × 0.6).</p>
 
-<h3>Step 4: DPS</h3>
-<p>DPS = (Max Hit ÷ 2) × Accuracy ÷ Attack Speed in seconds</p>
+<p>The "÷ 2" is there because damage on a successful hit is random from 0 to your max hit, so the average is half the max.</p>
 
-<p>This is the same Bitterkoekje formula the OSRS Wiki publishes. Every reputable dps calculator osrs wiki tool runs on this math. The inputs change, the formula does not.</p>
-
-<p>One thing the formula makes clear: accuracy and speed matter as much as raw damage. A max hit of 40 with 50% accuracy produces the same Damage Per Second as a max hit of 20 with 100% accuracy. The number on your equipment tab is only half the picture.</p>
-
-
-<h2>The Variable That Kills Your DPS Without Telling You</h2>
-
-<p>One tick equals 0.6 seconds. That single conversion changes how you should read every weapon in the game.</p>
-
-<p>A 4-tick weapon attacks every 2.4 seconds or 25 times per minute, 1,500 times per hour. A 6-tick weapon attacks every 3.6 seconds fewer than 17 times per minute, 1,000 times per hour. That is 500 extra attacks per hour from tick speed alone, before you factor in max hit or accuracy.</p>
-
-<p>Against a boss like Vorkath with 750 HP, those extra attacks translate directly into extra kills per hour. A 3-tick Blowpipe gets 2,000 attacks per hour. A 6-tick Godsword gets 1,000. That 720-kill-per-hour gap is not a minor efficiency edge at Vorkath drop rates; that difference runs into hundreds of millions of GP over a grinding session. Tick speed is the most underpriced stat in OSRS gear discussions, and the osrs wiki dps calculator confirms this every time players compare setups side by side.</p>
-
-<h2>Accuracy vs Strength: Which Upgrade Actually Raises Your DPS?</h2>
-
-<p>This is the question every player asks when they have upgraded GP ready. The answer depends entirely on where your accuracy sits right now.</p>
-
-<p>Your attack roll versus the target's defence roll determines hit chance. If you miss frequently, a strength upgrade adds max hit to attacks that are not landing. The ceiling goes up, the floor stays broken. Accuracy upgrades fix the floor first.</p>
-
-<p><strong>The practical rule:</strong> check your hit chance against your target before spending GP.</p>
-
+<h2>Worked Example</h2>
+<p>This example uses made up gear values to show the method.</p>
 <ul>
-  <li>Below 55% accuracy — fix accuracy first. Switch prayer, improve attack bonus gear, or adjust combat style. Strength gains return almost nothing here.</li>
-  <li>55% to 75% accuracy — test both options in the calculator. The result depends on your specific setup and target defence level.</li>
-  <li>Above 75% accuracy — strength bonus wins. Max hit upgrades now return full value on every swing.</li>
+  <li>Strength and Attack level 99, with a Super combat potion (+5 + 15%) and Piety (+23% Strength, +20% Attack), on the Aggressive stance (+3 Strength).</li>
+  <li>Gear Strength bonus 120, gear Attack bonus 150, a 4-tick weapon.</li>
+  <li>Target: Defence level 100, defence bonus 60.</li>
 </ul>
+<ol>
+  <li>Potion boost = 5 + floor(99 × 0.15) = 19, so the boosted level is 118.</li>
+  <li>Effective Strength = floor(118 × 1.23) + 3 + 8 = 156.</li>
+  <li>Max hit = floor(0.5 + 156 × (120 + 64) ÷ 640) = 45.</li>
+  <li>Effective Attack = floor(118 × 1.20) + 0 + 8 = 149.</li>
+  <li>Attack roll = 149 × (150 + 64) = 31,886.</li>
+  <li>Defence roll = (100 + 9) × (60 + 64) = 13,516.</li>
+  <li>Hit chance = 1 − (13,516 + 2) ÷ (2 × 31,887) ≈ 78.8%.</li>
+  <li>DPS = (45 ÷ 2) × 0.788 ÷ 2.4 ≈ 7.39.</li>
+</ol>
+<p>Time to kill (TTK) is the target HP ÷ DPS. Against a target with 750 HP, that is 750 ÷ 7.39 ≈ 101 seconds, or about 1 minute 41 seconds, if your DPS stays constant.</p>
 
-<p>One thing almost no guide explains clearly: accuracy upgrades give diminishing returns once you clear 80% hit chance. Pushing from 85% to 90% adds far less Damage Per Second than pushing from 50% to 60%. Once you hit consistently, switch focus to strength and speed.</p>
+<h2>Tick Speed</h2>
+<figure><img src="/blog-images/the-max-hit-trap.webp" alt="dps calculator image" class="w-full rounded-xl"></figure>
+<p>One game tick is 0.6 seconds. Attack speed is measured in ticks, and fewer ticks means more attacks.</p>
 
-<h2>Aggressive vs Accurate Stance: The Free DPS Boost Nobody Talks About</h2>
-
-<p>Your combat stance gives invisible stat bonuses. They cost nothing to switch and most players leave them on the wrong setting for their entire account.</p>
-
-<p>Aggressive stance adds 3 invisible levels to your Strength raising your effective Strength level, which directly raises your max hit. Accurate stance adds 3 invisible levels to your Attack instead, improving accuracy but not your damage ceiling.</p>
-
-<ul>
-  <li><strong>Accurate (+3 Attack)</strong> — use when your hit chance sits below 60%</li>
-  <li><strong>Aggressive (+3 Strength)</strong> — use when your hit chance already clears 70%</li>
-  <li><strong>Controlled (+1 Attack, Strength, Defence)</strong> — XP spreading only, never for DPS</li>
-  <li><strong>Defensive (+3 Defence)</strong> — never use for DPS</li>
-</ul>
-
-<p>Against most Slayer targets where your accuracy is already high, Aggressive stance is a free DPS upgrade that requires zero GP. Switch it now and you will notice the difference in kill speed by the end of the task.</p>
-
-<h2>The Slayer Helm + Salve Stack: What Almost No Guide Explains Clearly</h2>
-
-<p>Here is what almost every DPS guide skips over: the Slayer Helm (i) and Salve Amulet (ei) do not just add their bonuses — they multiply together.</p>
-
-<p>Slayer Helm (i) on task gives ×7/6 to both accuracy and damage roughly 16.67% to each. Salve Amulet (ei) against undead gives ×6/5 to both exactly 20% to each. When you equip both on an undead Slayer task like Vorkath, both multipliers apply simultaneously and stack multiplicatively across accuracy and max hit at the same time.</p>
-
-<p>The result: a standard Whip setup sitting at roughly 4.1 Damage Per Second against Vorkath jumps to approximately 6.3 Damage Output with both bonuses active. That is not additive. That is a 53% DPS increase from two item slots working together.</p>
-
-<p>The interaction is why Vorkath builds look so efficient even at mid-level gear. The bonuses scale off your base stats, so higher Attack and Strength levels push the multiplied output even higher. Before you build a Vorkath setup, plug your exact stats into our OSRS DPS Calculator with both bonuses toggled on to see your real output before you step through the portal.</p>
-
-<h2>The OSRS Wiki DPS Calculator Now Has Support for Demonic Leagues!</h2>
-
-<figure><img src="/blog-images/rotmg dps.png" alt="dps calcualtor image" class="w-full rounded-xl"></figure>
-
-<p>The OSRS Wiki Damage Per Second Calculator added full Demonic Leagues support, meaning players can now model league-specific relics, restrictions, and combat modifiers directly inside the calculator without switching between tools.</p>
-
-<p>For standard accounts this changes nothing; the base formula and gear database stay identical. For league players, it closes a gap that forces you to manually adjust numbers or guess at relic interaction values. You can now select your active Demonic Leagues region and relic tier and the tool recalculates accuracy and max hit with those modifiers already baked in.</p>
-
-<p>One thing worth knowing: the OSRS Wiki calculator and our OSRS DPS Calculator run the same core Bitterkoekje formula. The difference is feature surface — the Wiki tool now covers Demonic Leagues, while our calculator focuses on fast gear comparison, side-by-side loadout testing, and calculator walk-through without needing a wiki tab open alongside it.</p>
-
-<h2>OSRS DPS by Combat Style: Melee, Ranged, and Magic</h2>
-
-<p>Each combat style peaks in different encounters. The right style for your target is worth more than any individual gear upgrade.</p>
-
-<p>Twisted Bow scales off target Magic level. Against enemies with 250+ Magic it produces the highest ranged Damage Per Second in the game over 13 Damage Output in a fully optimised setup. Scythe of Vitur hits up to three times per swing against size-2 and larger targets, making it dominant in raids where large bosses appear frequently. Tumeken's Shadow applies a 3× multiplier to magic attack and damage bonuses from equipped gear, compressing the value of every Magic upgrade you make.</p>
-
-<table style="width:100%; border-collapse:collapse; text-align:center; font-family:Arial, sans-serif;">
+<table class="w-full border-collapse">
   <thead>
-    <tr >
-      <th style="border:1px solid #ddd; padding:10px;">Style</th>
-      <th style="border:1px solid #ddd; padding:10px;">Best Encounter</th>
-      <th style="border:1px solid #ddd; padding:10px;">Peak DPS Weapon</th>
-      <th style="border:1px solid #ddd; padding:10px;">Approx DPS</th>
-    </tr>
+    <tr><th class="border border-white/20 p-3 text-left">Attack Speed</th><th class="border border-white/20 p-3 text-left">Time per Attack</th><th class="border border-white/20 p-3 text-left">Attacks per Minute</th><th class="border border-white/20 p-3 text-left">Attacks per Hour</th></tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">Melee</td>
-      <td style="border:1px solid #ddd; padding:10px;">Raids, Cerberus, large targets</td>
-      <td style="border:1px solid #ddd; padding:10px;">Scythe of Vitur</td>
-      <td style="border:1px solid #ddd; padding:10px;">9.8</td>
-    </tr>
-    <tr >
-      <td style="border:1px solid #ddd; padding:10px;">Ranged</td>
-      <td style="border:1px solid #ddd; padding:10px;">Vorkath, Zulrah, high-Magic targets</td>
-      <td style="border:1px solid #ddd; padding:10px;">Twisted Bow</td>
-      <td style="border:1px solid #ddd; padding:10px;">13+</td>
-    </tr>
-    <tr >
-      <td style="border:1px solid #ddd; padding:10px;">Magic</td>
-      <td style="border:1px solid #ddd; padding:10px;">Tombs of Amascut, Zulrah</td>
-      <td style="border:1px solid #ddd; padding:10px;">Tumeken's Shadow</td>
-      <td style="border:1px solid #ddd; padding:10px;">11</td>
-    </tr>
+    <tr><td class="border border-white/20 p-3">2 ticks</td><td class="border border-white/20 p-3">1.2 s</td><td class="border border-white/20 p-3">50</td><td class="border border-white/20 p-3">3,000</td></tr>
+    <tr><td class="border border-white/20 p-3">3 ticks</td><td class="border border-white/20 p-3">1.8 s</td><td class="border border-white/20 p-3">33.3</td><td class="border border-white/20 p-3">2,000</td></tr>
+    <tr><td class="border border-white/20 p-3">4 ticks</td><td class="border border-white/20 p-3">2.4 s</td><td class="border border-white/20 p-3">25</td><td class="border border-white/20 p-3">1,500</td></tr>
+    <tr><td class="border border-white/20 p-3">5 ticks</td><td class="border border-white/20 p-3">3.0 s</td><td class="border border-white/20 p-3">20</td><td class="border border-white/20 p-3">1,200</td></tr>
+    <tr><td class="border border-white/20 p-3">6 ticks</td><td class="border border-white/20 p-3">3.6 s</td><td class="border border-white/20 p-3">16.7</td><td class="border border-white/20 p-3">1,000</td></tr>
   </tbody>
 </table>
 
+<p>Compare max hit per tick to see weapon speed quickly. A 28 max hit on 4 ticks is 7 per tick. A 51 max hit on 6 ticks is 8.5 per tick, so the slower weapon can still win. Always include accuracy in the comparison.</p>
 
-<p>If your PC slows down on heavy raid instances with multiple players, check your frame rate target against your hardware with our <a href="/tools/fps-calculator" style="color:blue"> FPS Calculator</a> before your next raid session.</p>
+<h2>Accuracy or Strength: Which Upgrade Is Better?</h2>
+<p>Instead of fixed thresholds, compare the relative gain of each upgrade. DPS rises in proportion to both hit chance and max hit.</p>
+<ul>
+  <li>Raising hit chance from 60% to 66% is +10% DPS.</li>
+  <li>Raising max hit from 40 to 44 is also about +10% DPS.</li>
+  <li>If one costs much less than the other, the cheaper one gives better value.</li>
+</ul>
+<p>Accuracy has a ceiling of 100%, so its gains shrink as you approach it. Going from 50% to 60% is +20% DPS, but going from 90% to 92% is only about +2.2%. When you already hit almost every time, extra Strength and speed usually matter more. Test your own numbers, because the answer depends on your setup and target.</p>
+
+<h2>Attack Styles (Stances)</h2>
+<p>Your stance gives an invisible level bonus, and switching is free.</p>
+<ul>
+  <li>Accurate: +3 Attack, which raises hit chance.</li>
+  <li>Aggressive: +3 Strength, which raises max hit.</li>
+  <li>Controlled: +1 to Attack, Strength, and Defence, which mainly spreads XP.</li>
+  <li>Defensive: +3 Defence, which does not help DPS.</li>
+</ul>
+<p>Run both Accurate and Aggressive through the formulas and pick the higher DPS for your target.</p>
+
+<h2>Slayer Helmet and Salve Amulet</h2>
+<ul>
+  <li>Slayer helmet (i) on task gives melee a ×7/6 boost to accuracy and damage. The bonus for Ranged and Magic is smaller, so check the Wiki for the exact value.</li>
+  <li>Salve amulet (ei) against undead gives ×6/5 to accuracy and damage across styles.</li>
+</ul>
+<p>These two effects do not stack. According to the OSRS Wiki, the Salve amulet takes priority on undead targets. Rules can change, so check the current Wiki page before you plan a setup.</p>
+
+<h2>Melee, Ranged, and Magic</h2>
+<p>Each style suits different targets, and the best choice depends on the target's defence, size, and weaknesses.</p>
+<ul>
+  <li>Twisted bow scales with the target's Magic level, up to a cap, so it shines against high-Magic targets.</li>
+  <li>Scythe of Vitur can hit up to three times on large targets, which makes it strong in raids.</li>
+  <li>Tumeken's shadow multiplies the magic attack and magic damage bonuses from your gear.</li>
+</ul>
+<p>For exact current numbers, use the OSRS Wiki calculator, because item stats and mechanics are updated by Jagex.</p>
+
+<h2>What DPS Does Not Include</h2>
+<p>The formula gives an average against one steady target. Real fights also have:</p>
+<ul>
+  <li>Special attacks and item effects.</li>
+  <li>Target defence reductions (for example from certain specials).</li>
+  <li>Boss phases, prayers, and mechanics.</li>
+  <li>Your downtime for eating, drinking, and moving.</li>
+</ul>
+<p>Treat DPS as a way to compare setups, not as an exact kill timer.</p>
+
+<h2>Using Our DPS Calculator for OSRS</h2>
+<p>Our <a href="https://perfcalcpro.com/tools/dps-calculator">DPS Calculator</a> is a general-purpose tool. It does not know OSRS items, prayers, or accuracy rolls, so it cannot pick gear for you. You can use it for the final step:</p>
+<ol>
+  <li>Work out your max hit and hit chance with the steps above.</li>
+  <li>Enter the average damage per attack (max hit ÷ 2 × hit chance) as the base damage. In our example that is about 17.73.</li>
+  <li>Enter attacks per second as 1 ÷ (ticks × 0.6). For 4 ticks that is about 0.4167.</li>
+  <li>Leave critical hit chance at 0, since OSRS has no critical hits in this formula.</li>
+</ol>
+<p>The result is your DPS, which is about 7.39 in the example. For a full gear and boss simulator, use the OSRS Wiki's DPS calculator, listed on the <a href="https://oldschool.runescape.wiki/">OSRS Wiki</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>How is DPS calculated in OSRS?</h3>
-<p>Damage Output = (Max Hit ÷ 2) × Accuracy ÷ Attack Speed in seconds. Accuracy comes from your attack roll versus the target's defence roll. Max hit comes from your effective Strength level and equipment strength bonus. Attack speed is your weapon's tick value multiplied by 0.6 seconds per tick.</p>
+<p>DPS = (max hit ÷ 2) × hit chance ÷ (attack ticks × 0.6). The steps above show how to get each part.</p>
+
+<h3>Is max hit or DPS more important?</h3>
+<p>DPS. Max hit is only the top of the damage range, while DPS includes accuracy and speed.</p>
 
 <h3>What is the best DPS weapon in OSRS?</h3>
-<p>It depends on your target. Twisted Bow leads ranged DPS against high-Magic monsters. Scythe of Vitur leads melee Damage Per Second against large targets in raids. Tumeken's Shadow leads magic Damage Output in most high-level PvM. No single weapon wins everywhere — target defence and size determine which setup wins.</p>
+<p>It depends on the target. Compare weapons against the actual target's defence, and check the OSRS Wiki calculator for current stats.</p>
 
-<h3>Does attack style affect DPS?</h3>
-<p>Yes. Aggressive stance adds 3 invisible Strength levels, raising your max hit. Accurate stance adds 3 invisible Attack levels, raising your hit chance. Against targets where your accuracy already exceeds 70%, Aggressive stance produces higher Damage Output at zero cost.</p>
+<h3>Does my attack style change DPS?</h3>
+<p>Yes. Accurate raises hit chance and Aggressive raises max hit. Run both to see which one wins.</p>
 
-<h3>How does the Slayer Helm bonus affect DPS?</h3>
-<p>Slayer Helm (i) applies a ×7/6 multiplier to both accuracy and damage on Slayer tasks. On undead targets it stacks multiplicatively with Salve Amulet (ei), producing a combined DPS increase of over 50% compared to neither bonus active.</p>
+<h3>How accurate are DPS calculators?</h3>
+<p>They are good for comparing setups. They usually assume a steady target, so real kill times are longer.</p>
 
-<h3>Is max hit or accuracy more important for DPS?</h3>
-<p>Accuracy wins when your hit chance sits below 55%. Max hit wins when your accuracy already clears 75%. Between 55% and 75%, run both options through a Damage Output calculator osrs wiki tool or our calculator the result depends on your exact setup and target defence level.</p>
+<h3>How do I calculate time to kill?</h3>
+<p>Divide the target's hit points by your DPS. It is an estimate, because real fights have downtime and mechanics.</p>
 
-
-
-
-
-
-`
-
-
-
-
-
-
-
-
-
-
+`;

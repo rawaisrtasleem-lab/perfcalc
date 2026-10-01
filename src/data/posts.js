@@ -88,14 +88,14 @@ export const posts = [
     date: "2024-06-25",
     author: "Rao Awais",
      readTime:"12 min read",
-    image: "/blog-images/blog4-1.png",
+    image: "/blog-images/can-my-pc-run.webp",
     content: blog4,
   },
 
   {
     id: 5,
     slug: "fps-vs-hz",
-    title: "FPS vs Hz: 7 Key Differences Every Gamer Must Know",
+    title: "FPS vs Hz: 7 Key Differences Every Gamer Should Know",
     description:
       "Confused about FPS vs Hz? Learn how frame rate and refresh rate differ, work together, and affect your gaming experience. Don't miss this.",
 
@@ -201,9 +201,10 @@ export const posts = [
 {
   id:13,
   slug:"osrs-dps-calculator",
-  title:"OSRS DPS Calculator Guide",
-  description:"Calculate OSRS DPS instantly with our free calculator. Learn the max hit formula, accuracy rolls, tick speed, and why DPS beats max hit every time.",
-  excerpt:"Calculate OSRS DPS instantly with our free calculator. Learn the max hit formula, accuracy rolls, tick speed, and why DPS beats max hit every time.",
+  title:"OSRS DPS Calculator: How Is DPS Calculated in OSRS?",
+  description:"How OSRS DPS is calculated: max hit, accuracy rolls, and attack speed in ticks. Formulas, worked examples, and how to use our DPS Calculator.",
+  excerpt:"How OSRS DPS is calculated: max hit, accuracy rolls, and attack speed in ticks. Formulas, worked examples, and how to use our DPS Calculator.",
+  category:"OSRS Guides",
    image:"/blog-images/orrs-dps.png",
   author:"Rao Awais",
   date:"june 29,2026",
@@ -254,7 +255,7 @@ export const posts = [
 {
   id: 17,
   slug: "gta-6-gameplay-features",
-  title: "GTA 6 Gameplay & Features: Every Confirmed Mechanic Explained",
+  title: "GTA 6 Gameplay &amp; Features: Every Confirmed Mechanic Explained",
   description: "GTA 6 launches November 19, 2026 on PS5 and Xbox Series X/S with dual protagonists, a witness-based wanted system, and a map twice the size of GTA 5. See every confirmed mechanic, labeled by source, with leaks and speculation clearly separated.",
 
   excerpt: "GTA 6 gameplay reveals are buried under three years of speculation. This guide separates the confirmed from the fake — dual protagonists, the new wanted system, dynamic weather, and NPC AI, all labeled by official source.",
@@ -268,7 +269,7 @@ export const posts = [
 {
   id: 18,
   slug: "how-to-fix-cpu-bottleneck",
-  title: "How to Help with CPU Bottleneck: Every Confirmed Fix, Ranked by Cost",
+  title: "How to Fix CPU Bottleneck: Fixes Ranked by Cost",
   description:
     "Learn how to fix a CPU bottleneck with confirmed solutions ranked by cost. Discover free optimizations, BIOS tweaks, cooling improvements, hardware upgrades, and how to accurately diagnose CPU bottlenecks before spending money.",
 
@@ -321,7 +322,7 @@ export const posts = [
 {
   id: 21,
   slug: "why-is-my-pc-so-laggy",
-  title: "Why Is My PC So Laggy?",
+  title: "Why Is My PC So Laggy? 10 Causes and Fixes",
   description:
     "Is your PC running slow or lagging? Learn about common causes, including CPU bottlenecks, background processes, outdated drivers, overheating, and storage issues.",
   excerpt:

@@ -1,5 +1,7 @@
 "use client";
 
+import BottleneckFAQ from "./BottleneckFAQ";
+
 const headingClass = "text-2xl font-bold text-white sm:text-3xl";
 const subheadingClass = "text-lg font-semibold text-white sm:text-xl";
 const paragraphClass = "leading-7 text-gray-300";
@@ -189,6 +191,8 @@ export default function BottleneckCalculatorSeo() {
           The Bottleneck Calculator helps you choose balanced CPU and GPU combinations for high refresh rate gaming, smooth rendering, and editing. Proper component pairing ensures no hardware imbalance and maximum performance.
         </p>
       </section>
+
+      <BottleneckFAQ />
     </section>
   );
 }

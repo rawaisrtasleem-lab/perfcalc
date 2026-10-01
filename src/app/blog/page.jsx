@@ -37,7 +37,7 @@ export default function BlogPage() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-          {posts.map((post) => (
+          {posts.map((post, index) => (
             <Link
               key={post.id}
               href={`/blog/${post.slug}`}
@@ -51,6 +51,7 @@ export default function BlogPage() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
+                  loading={index === 0 ? "eager" : "lazy"}
                 />
               </div>
 
