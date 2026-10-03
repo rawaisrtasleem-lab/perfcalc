@@ -10,20 +10,6 @@ export const minecraftBlogs = `
 <p>
 You've probably heard someone argue that Minecraft isn't real, or maybe you downloaded an app that looked nothing like the game your friends play. That kind of mix up is more common than you'd think, and it leaves a lot of players second guessing themselves. Here's the good news: this guide clears up exactly what's real, what's fake, and how to tell the difference in seconds.</p>
 
-<nav aria-label="Table of Contents" class="my-8 rounded-2xl border border-blue-400/20 bg-slate-900/60 p-5 shadow-lg shadow-black/10 sm:p-6">
-<h2 id="table-of-contents" class="!mt-0 !mb-4 border-0 !pb-0 text-2xl text-white">Table of Contents</h2>
-<ul class="m-0 list-disc space-y-2 pl-5 marker:text-blue-400">
-<li class="pl-1 text-zinc-300"><a class="text-blue-300 transition-colors hover:text-blue-200 hover:underline" href="#what-is-minecraft">What is Minecraft?</a></li>
-<li class="pl-1 text-zinc-300"><a class="text-blue-300 transition-colors hover:text-blue-200 hover:underline" href="#real-vs-fake-features">Real vs Fake Features</a></li>
-<li class="pl-1 text-zinc-300"><a class="text-blue-300 transition-colors hover:text-blue-200 hover:underline" href="#how-to-identify-fake-minecraft-games">How to Identify Fake Minecraft Games</a></li>
-<li class="pl-1 text-zinc-300"><a class="text-blue-300 transition-colors hover:text-blue-200 hover:underline" href="#list-of-fake-minecraft-apps-clones">List of Fake Minecraft Apps/Clones</a></li>
-<li class="pl-1 text-zinc-300"><a class="text-blue-300 transition-colors hover:text-blue-200 hover:underline" href="#why-people-get-confused-about-minecrafts-authenticity">Why People Get Confused About Minecraft's Authenticity</a></li>
-<li class="pl-1 text-zinc-300"><a class="text-blue-300 transition-colors hover:text-blue-200 hover:underline" href="#real-life-minecraft-experiences">Real-Life Minecraft Experiences</a></li>
-<li class="pl-1 text-zinc-300"><a class="text-blue-300 transition-colors hover:text-blue-200 hover:underline" href="#mobile-app-warnings-avoid-fake-versions">Mobile App Warnings: Avoid Fake Versions</a></li>
-<li class="pl-1 text-zinc-300"><a class="text-blue-300 transition-colors hover:text-blue-200 hover:underline" href="#faqs">FAQs</a></li>
-</ul>
-</nav>
-
 <blockquote>
 <p><strong>Quick answer:</strong> Yes. <strong>Minecraft</strong> is a genuine, officially released video game built by <strong>Mojang Studios</strong> and owned by Microsoft. It isn't a hoax, a rumor, or an AI generated fake. Most of the confusion comes from unofficial <strong>Minecraft clone apps</strong> that borrow its name and look, and those are the versions you actually need to watch out for.</p>
 </blockquote>

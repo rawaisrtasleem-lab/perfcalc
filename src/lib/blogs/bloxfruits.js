@@ -15,15 +15,6 @@ export const bloxfruits = `
   />
 </figure>
 <p>Losing a rare fruit in a bad deal stings more than any boss fight ever could. Scammers, shifting demand, and outdated value lists turn <strong>Blox Fruits trading</strong> into a guessing game for most players. That's exactly the gap a <strong>Blox Fruits value calculator</strong> fills. Drop both sides of an offer into the tool, get an instant Win, Fair, or Loss reading, and walk into every trade window with real numbers instead of a gut feeling.</p>
-<p><strong>Table of Contents</strong></p>
-<ul>
-<li><a href="#blox-fruits-trade-value-calculator">Blox Fruits Trade Value Calculator</a></li>
-<li><a href="#blox-fruits-trading-values-explained">Blox Fruits Trading Values Explained</a></li>
-<li><a href="#safe-blox-fruits-trading-guide">Safe Blox Fruits Trading Guide</a></li>
-<li><a href="#common-blox-fruits-trading-scams">Common Blox Fruits Trading Scams</a></li>
-<li><a href="#blox-fruits-trading-tips">Blox Fruits Trading Tips</a></li>
-<li><a href="#faq">FAQ</a></li>
-</ul>
 <h2 id="blox-fruits-trade-value-calculator">Blox Fruits Trade Value Calculator</h2>
 <p>Every trader who's been around long enough builds the same habit: check the number before you commit. A <strong>Blox Fruits trade calculator</strong> pulls current community <strong>trade value</strong> data for fruits, swords, and gamepasses, then weighs both sides of an offer in seconds. You skip the endless scrolling through trading chats and get a clear, side-by-side answer instead.</p>
 <p>Think of this section as your pre-trade checklist. A calculator speeds up your decisions, but it doesn't replace the need to stay sharp during the actual trade. Pair the tool with the safety habits later in this guide, and you'll rarely walk away from a deal feeling shortchanged.</p>

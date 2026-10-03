@@ -13,17 +13,6 @@ export const mostXP = `
 
 <p>Leveling up in Minecraft feels slow when you're stuck punching coal for an hour and going nowhere. You need enchantments, you need Mending, you need anvil repairs, and none of that happens without a full XP bar. The good news? A handful of blocks give far more XP than the rest, and once you know which blocks give the most XP , grinding levels stops feeling like a grind.</p>
 
-<h2>Table of Contents</h2>
-<ul>
-<li><a href="#quick-answer-best-xp-blocks">Quick Answer: Best XP Blocks</a></li>
-<li><a href="#which-blocks-give-xp-when-mined">Which Blocks Give XP When Mined?</a></li>
-<li><a href="#blocks-that-provide-xp-without-mining">Blocks That Provide XP Without Mining</a></li>
-<li><a href="#best-block-for-each-xp-goal">Best Block for Each XP Goal</a></li>
-<li><a href="#how-to-get-more-xp-from-these-blocks">How to Get More XP From These Blocks</a></li>
-<li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-</ul>
-
 <h2 id="quick-answer-best-xp-blocks">Quick Answer: Best XP Blocks</h2>
 If you only remember one thing, remember this: Monster Spawners hand out the biggest single reward at 15 to 43 XP per break, while Diamond Ore and Emerald Ore lead the renewable ores at 3 to 7 XP each. Nether Quartz comes close behind and is far easier to find in bulk.
 

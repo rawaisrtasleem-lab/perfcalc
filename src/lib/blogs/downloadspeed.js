@@ -11,17 +11,6 @@ export const downloadSpeed = `
   
   <p>Waiting for files feels incredibly frustrating. Your screen shows hours remaining for a simple update. Why suffer through such agonizing delays? You need real solutions to fix your connection problems. Thankfully, solving this network issue takes only minutes. Discover the exact steps explaining how to increase download speed instantly. Let us optimize your computer system today.</p>
   
-  <h2>Table of Contents</h2>
-  <ul>
-    <li><a href="#identify-why-your-network-struggles">Identify Why Your Network Struggles</a></li>
-    <li><a href="#immediate-fixes-for-better-connectivity">Immediate Fixes For Better Connectivity</a></li>
-    <li><a href="#advanced-settings-to-change-now">Advanced Settings To Change Now</a></li>
-    <li><a href="#hardware-upgrades-worth-considering">Hardware Upgrades Worth Considering</a></li>
-    <li><a href="#optimize-your-operating-system">Optimize Your Operating System</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-    <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
-  </ul>
-  
   <h2 id="identify-why-your-network-struggles">Identify Why Your Network Struggles</h2>
   
   <p>Many users wonder why my download speed is so slow on pc during peak hours. Background processes often hoard your available bandwidth secretly. You might experience download speed extremely slow because of hidden software updates. Therefore, identifying these sneaky culprits teaches you how to increase download rate quickly.</p>

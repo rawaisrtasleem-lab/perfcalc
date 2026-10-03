@@ -9,18 +9,6 @@ export const osrsTable =`
   />
 </figure>
 
-<h2 id="on-this-page">On This Page</h2>
-
-<ul>
-  <li><a href="#what-is-the-osrs-xp-table">What is the OSRS XP table</a></li>
-  <li><a href="#full-xp-table">Full XP table, level 1 to 99</a></li>
-  <li><a href="#key-xp-milestones">Key XP milestones</a></li>
-  <li><a href="#how-osrs-xp-and-levels-work">How OSRS XP and levels work</a></li>
-  <li><a href="#virtual-levels">Virtual levels, 100 to 126</a></li>
-  <li><a href="#osrs-xp-calculator">OSRS XP calculator</a></li>
-  <li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
-</ul>
-
 <p>Grinding a skill without knowing the target level is a rough way to spend an evening. You train for an hour, check your stats, and still can't tell how close you actually are. That kind of guesswork burns time you could spend banking real experience instead. The OSRS XP table below settles the question for good: it lists the exact XP needed for every level from 1 to 99, so you always know precisely where you stand before you log off.</p>
 
 <h2 id="what-is-the-osrs-xp-table">What Is the OSRS XP Table?</h2>

@@ -13,21 +13,6 @@ export const starBuilder =`
 
 
 
-<nav aria-label="Table of Contents">
-  <h2 id="table-of-contents">Table of Contents</h2>
-  <ul>
-    <li><a href="#build-your-star-citizen-ship-loadout">Build Your Star Citizen Ship Loadout</a></li>
-    <li><a href="#analyze-ship-loadout-performance">Analyze Ship Loadout Performance</a></li>
-    <li><a href="#compare-star-citizen-ships-and-builds">Compare Star Citizen Ships and Builds</a></li>
-    <li><a href="#best-star-citizen-loadouts-by-role">Best Star Citizen Loadouts by Role</a></li>
-    <li><a href="#find-star-citizen-ship-components">Find Star Citizen Ship Components</a></li>
-    <li><a href="#save-and-share-your-ship-builds">Save and Share Your Ship Builds</a></li>
-    <li><a href="#star-citizen-ship-builder-features">Star Citizen Ship Builder Features</a></li>
-    <li><a href="#how-to-use-the-ship-builder">How to Use the Ship Builder</a></li>
-    <li><a href="#star-citizen-ship-builder-faq">Star Citizen Ship Builder FAQ</a></li>
-  </ul>
-</nav>
-
 <p>Picking the wrong power plant or an incompatible shield can turn a promising ship into a floating liability. Every patch reshuffles component stats, hardpoint sizes, and prices, so manual math rarely keeps up. A dedicated Star Citizen ship builder fixes that problem by validating every part you equip, calculating your DPS and survivability instantly, and letting you compare builds before you ever undock.</p>
 
 <p><strong>Quick take:</strong> Pick a ship, add compatible parts, and watch DPS, survivability, and travel range update live. No spreadsheets, no guesswork.</p>
