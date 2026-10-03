@@ -1,0 +1,17 @@
+# Short URLs
+/fps  /tools/fps-calculator  301
+/dps  /tools/dps-calculator  301
+/bottleneck  /tools/bottleneck-calculator  301
+/xp  /tools/xp-calculator  301
+
+# Old tool URLs without /tools/
+/fps-calculator  /tools/fps-calculator  301
+/dps-calculator  /tools/dps-calculator  301
+/bottleneck-calculator  /tools/bottleneck-calculator  301
+/xp-calculator  /tools/xp-calculator  301
+
+# Incorrect relative blog URL
+/blog/tools/dps-calculator  /tools/dps-calculator  301
+
+# Legacy blog alias
+/blogs  /blog  301

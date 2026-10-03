@@ -1,115 +1,17 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  output: "export",
   reactCompiler: true,
 
   // Turbopack configuration
   turbopack: {},
 
-  // Image optimization
+  // Static export mein Next.js image optimization nahi chalta
   images: {
-    unoptimized: false,
-    formats: ["image/avif", "image/webp"],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    unoptimized: true,
   },
 
-  // Security headers
-  async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: [
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "X-Frame-Options",
-            value: "SAMEORIGIN",
-          },
-          {
-            key: "X-XSS-Protection",
-            value: "1; mode=block",
-          },
-          {
-            key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
-          },
-          {
-            key: "Permissions-Policy",
-            value: "geolocation=(), microphone=(), camera=()",
-          },
-        ],
-      },
-    ];
-  },
-
-  // Redirects for old / incorrect tool URLs
-  async redirects() {
-    return [
-      // Existing short URLs
-      {
-        source: "/fps",
-        destination: "/tools/fps-calculator",
-        permanent: true,
-      },
-      {
-        source: "/dps",
-        destination: "/tools/dps-calculator",
-        permanent: true,
-      },
-      {
-        source: "/bottleneck",
-        destination: "/tools/bottleneck-calculator",
-        permanent: true,
-      },
-      {
-        source: "/xp",
-        destination: "/tools/xp-calculator",
-        permanent: true,
-      },
-
-      // Fix old tool URLs without /tools/
-      {
-        source: "/fps-calculator",
-        destination: "/tools/fps-calculator",
-        permanent: true,
-      },
-      {
-        source: "/dps-calculator",
-        destination: "/tools/dps-calculator",
-        permanent: true,
-      },
-      {
-        source: "/bottleneck-calculator",
-        destination: "/tools/bottleneck-calculator",
-        permanent: true,
-      },
-      {
-        source: "/xp-calculator",
-        destination: "/tools/xp-calculator",
-        permanent: true,
-      },
-
-      // Fix incorrect relative blog URL
-      {
-        source: "/blog/tools/dps-calculator",
-        destination: "/tools/dps-calculator",
-        permanent: true,
-      },
-
-      // Legacy blog URL alias
-      {
-        source: "/blogs",
-        destination: "/blog",
-        permanent: true,
-      },
-    ];
-  },
-
-  // Performance optimizations
-  compress: true,
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
 };

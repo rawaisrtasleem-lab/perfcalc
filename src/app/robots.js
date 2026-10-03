@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 export default function robots() {
   return {
     rules: [
@@ -14,5 +16,5 @@ export default function robots() {
     ],
     sitemap: "https://perfcalcpro.com/sitemap.xml",
     host: "https://perfcalcpro.com",
-  }
+  };
 }
