@@ -13,7 +13,7 @@ return (
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
 <h1 className="text-4xl font-bold mb-2">
-XP Calculator
+    Free XP Calculator – Calculate Experience Points, Levels & Progress
 </h1>
 
 <p className="text-slate-400 leading-relaxed mb-10">

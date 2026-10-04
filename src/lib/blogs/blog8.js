@@ -1,7 +1,7 @@
 export const blog8 = `
 
 
-<h1>Star Citizen DPS Calculator: What the Number Actually Means in Alpha 4.5</h1>
+<h2>Star Citizen DPS Calculator: What the Number Actually Means in Alpha 4.5</h2>
 
 <figure><img src="/blog-images/blog8-1.png" alt="Star Citizen DPS Calculator" class="w-full rounded-lg object-cover"></figure>
 
@@ -138,7 +138,7 @@ export const blog8 = `
 <h3>Check TTK, not total DPS:</h3>
 <p>Divide your target's shield HP by your energy Damage Per Second to get shield break time. Divide hull HP by your ballistic DPS to get hull time. Add them. That is your real TTK.</p>
 
-<h1>DPS Builds by Ship Role, What Numbers to Actually Target</h1>
+<h2>DPS Builds by Ship Role, What Numbers to Actually Target</h2>
 <p>Not every ship needs maximum Damage Per Second. Each combat role needs a specific Effective DPS range against the right target type.</p>
 
 <h3>Shield Stripper:</h3>

@@ -1,7 +1,7 @@
 export const blog17 = `
 
-<h1>GTA 6 Gameplay &amp; Features: Every Confirmed Mechanic Explained</h1>
-<figure><img src="/blog-images/gta6-gameplay-and-features.webp" alt="GTA 6 Gameplay & Features" class="w-full rounded-xl"></figure>
+<h2>GTA 6 Gameplay &amp; Features: Every Confirmed Mechanic Explained</h2>
+<figure><img src="/blog-images/gta-6-gameplay-and-features.webp" alt="GTA 6 Gameplay & Features" class="w-full rounded-xl"></figure>
 <p>Between two trailers, a leak, a Netflix premiere, and endless fan theories, it is hard to know what is actually confirmed about GTA 6. This guide sorts it out. Every feature below is labeled by where it comes from, and unconfirmed claims are kept in their own section.</p>
 
 <h2>Quick Answer</h2>

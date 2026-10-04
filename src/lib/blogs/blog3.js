@@ -1,7 +1,7 @@
 export const blog3=`
 
 
-  <h1>Best Budget Gaming PC in 2026: Top Picks for Every Budget</h1>
+  <h2>Best Budget Gaming PC in 2026: Top Picks for Every Budget</h2>
 <figure><img src="/blog-images/blog33-1.png" alt="Best Budget Gaming PC in 2026: Top Picks Under $1000" class="w-full rounded-lg object-cover"></figure>
   <p>Catching a best budget gaming PC does not mean you settle for weak performance. These machines handle 1080p gaming just fine without burning a hole in your pocket. The right affordable performance desktop gives you real power at a price that actually makes sense.</p>
 

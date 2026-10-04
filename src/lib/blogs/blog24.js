@@ -1,11 +1,11 @@
 export const blog24 = `
 
-<h1>What Internet Speed Do I Need to Work From Home?</h1>
+<h2>What Internet Speed Do I Need to Work From Home?</h2>
 
 
  <figure>
     <img
-      src="/blog-images/interenthome.webp"
+      src="/blog-images/internethome.webp"
       alt="what-internet-speed-do-i-need-to-work-from-home"
       class="w-full rounded-xl"
     />

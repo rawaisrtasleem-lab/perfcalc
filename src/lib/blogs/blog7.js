@@ -1,7 +1,7 @@
 export const blog7 =`
 
 
-  <h1>Cloud Gaming vs Console Gaming: Pros, Cons & Key Differences (2026)</h1>
+  <h2>Cloud Gaming vs Console Gaming: Pros, Cons & Key Differences (2026)</h2>
 <figure><img src="/blog-images/blog7-1.png" alt="Cloud Gaming vs Console Gaming: Pros, Cons & Key Differences (2026)" class="w-full rounded-lg object-cover"></figure>
   <p>Playing has changed a lot in recent years. Two big options now dominate the scene: cloud gaming and console gaming. Both let you play amazing games but work in completely different ways. Picking between them depends on your lifestyle, your budget and how you like to play.</p>
 

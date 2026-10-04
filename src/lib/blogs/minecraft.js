@@ -6,7 +6,7 @@ export const minecraftBlogs = `
       alt="Minecraft game screenshot"
       class="w-full rounded-xl"
     />
-  </figure>b
+  </figure>
 <p>
 You've probably heard someone argue that Minecraft isn't real, or maybe you downloaded an app that looked nothing like the game your friends play. That kind of mix up is more common than you'd think, and it leaves a lot of players second guessing themselves. Here's the good news: this guide clears up exactly what's real, what's fake, and how to tell the difference in seconds.</p>
 

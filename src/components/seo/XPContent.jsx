@@ -13,10 +13,7 @@ export default function XPContentPage() {
         transition={{ duration: 0.5 }}
         className="max-w-4xl mx-auto space-y-8"
       >
-        {/* Header */}
-        <h1 className="text-3xl md:text-5xl font-bold text-center mb-6">
-          Free XP Calculator – Calculate Experience Points, Levels & Progress
-        </h1>
+
 
         {/* Intro */}
         <h2 className="text-2xl font-bold">Calculate Your XP Instantly</h2>

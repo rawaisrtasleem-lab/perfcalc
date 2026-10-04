@@ -23,14 +23,14 @@ export default function BottleneckVisual() {
 
         <div>
 
-          <h1 className="text-4xl font-bold leading-tight ">
+          <h2 className="text-4xl font-bold leading-tight ">
 
             Find Your Perfect
             <span className="text-cyan-400 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
               {" "}Gaming Balance
             </span>
 
-          </h1>
+          </h2>
 
           <p className="text-slate-400 mt-6 text-lg">
             Analyze CPU and GPU performance to discover system bottlenecks

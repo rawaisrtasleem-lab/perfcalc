@@ -63,7 +63,7 @@ const defaultTools = [
     id: 8,
     title: "VRAM Calculator",
     description: "Estimate VRAM requirements for LLMs and gaming workloads.",
-    link: "/vram-calculator-for-llm",
+    link: "/tools/vram-calculator-for-llm",
     category: "Performance & Hardware",
     icon: () => <span aria-hidden="true">🧠</span>,
   },

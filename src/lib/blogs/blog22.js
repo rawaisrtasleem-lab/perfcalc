@@ -1,6 +1,6 @@
 export const blog22 = `
 
-<h1>Bits vs Bytes: What's the Difference?</h1>
+<h2>Bits vs Bytes: What's the Difference?</h2>
 
 <figure><img src="/blog-images/bits-vs-bytes-whats-the-difference.webp" alt="Bits vs Bytes: What's the Difference?" class="w-full rounded-xl"></figure>
 <p>Your internet plan says 500 Mbps. Your download bar shows about 60. You were not cheated. You ran into the most common mix-up in tech: bits versus bytes. This guide explains the difference, how to convert between them, and why it changes how fast a download looks.</p>

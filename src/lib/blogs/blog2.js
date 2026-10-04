@@ -1,7 +1,7 @@
 export const blog2=`
 
 
-  <h1>What Is FPS in Video Editing? Complete Beginner Guide</h1>
+  <h2>What Is FPS in Video Editing? Complete Beginner Guide</h2>
    <figure>
   <img src="/blog-images/blog2-1.png" alt="What Is FPS in Video Editing?" className="w-full h-auto rounded-lg border border-zinc-800" />
   

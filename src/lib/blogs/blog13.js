@@ -1,6 +1,6 @@
 export const blog13 = `
 
-<h1>OSRS DPS Calculator: How Is DPS Calculated in OSRS?</h1>
+<h2>OSRS DPS Calculator: How Is DPS Calculated in OSRS?</h2>
 <figure><img src="/blog-images/osrs-dps-calculator.webp" alt="dps calculator image" class="w-full rounded-xl"></figure>
 
 <p>You upgrade your weapon and the max hit goes up, but kills feel slower. This is the "max hit trap." Max hit shows your biggest possible hit, not your real damage output. This guide explains how OSRS DPS is calculated, with the formulas and a full worked example, so you can compare setups before you spend GP.</p>

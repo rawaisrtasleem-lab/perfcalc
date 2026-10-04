@@ -11,9 +11,9 @@ export default function BottleneckCalculatorSeo() {
   return (
     <section className="mx-auto max-w-6xl space-y-12 px-4 py-16 text-gray-100 sm:px-6 lg:px-8">
       <section className="space-y-5">
-        <h1 className="text-3xl font-bold text-white sm:text-4xl">
+        <h2 className="text-3xl font-bold text-white sm:text-4xl">
           Bottleneck Calculator (Check Your PC Performance Balance Instantly)
-        </h1>
+        </h2>
         <p className={paragraphClass}>
           Compare the relative CPU and GPU tiers in your PC build. Select a processor, graphics card, and gaming resolution to see a rough pairing estimate and which part may deserve closer attention.
         </p>

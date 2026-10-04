@@ -1,6 +1,6 @@
 export const uploadSpeed = `
 
-<h1>Why Is My Upload Speed So Slow? Causes, Tests, and Fixes</h1>
+<h2>Why Is My Upload Speed So Slow? Causes, Tests, and Fixes</h2>
 
 
 

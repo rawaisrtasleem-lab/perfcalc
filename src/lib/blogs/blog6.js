@@ -3,7 +3,7 @@ export const blog6=`
 
 
 
-  <h1>What Is a Good FPS for Gaming?</h1>
+  <h2>What Is a Good FPS for Gaming?</h2>
   <figure>
   <img src="/blog-images/blog6-1.png" alt="What Is a Good FPS for Gaming?" className="w-full h-auto rounded-lg border border-zinc-800" />
   </figure>
