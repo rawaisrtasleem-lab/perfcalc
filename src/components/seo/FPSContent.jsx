@@ -15,7 +15,7 @@ export default function FpsCalculatorContent() {
           <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
             <h3 className="mb-2 text-lg font-semibold text-white">Accurate Data</h3>
             <p className="text-sm leading-6 text-gray-400">
-              Estimates are based on published hardware benchmarks and typical performance patterns across similar CPU/GPU combinations.
+              This tool combines relative CPU and GPU benchmark scores with game and resolution factors to produce a repeatable estimate.
             </p>
           </div>
           <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
@@ -43,21 +43,21 @@ export default function FpsCalculatorContent() {
           <div>
             <h3 className="mb-2 text-xl font-semibold text-white">Enter Your PC Configuration</h3>
             <p className="text-gray-300 leading-7">
-              Use the FPS Calculator by entering your PC's CPU, GPU, and RAM details. Then select your game and screen resolution for accurate results. It shows your estimated frames per second, highlights any bottlenecks, and helps you optimize settings for smoother gameplay.
+              Choose your CPU, GPU, RAM, game, and screen resolution. The calculator estimates frames per second, checks your selected monitor refresh-rate target, and indicates a likely CPU or GPU limiter.
             </p>
           </div>
 
           <div>
             <h3 className="mb-2 text-xl font-semibold text-white">Select Game &amp; Graphics Settings</h3>
             <p className="text-gray-300 leading-7">
-              Use the FPS Calculator to pick your game and adjust graphics settings easily. Choose resolution, texture quality, and effects for accurate FPS estimates. Experimenting with different presets also helps you see how your CPU and GPU handle different loads.
+              Choose a supported game, resolution, RAM amount, and monitor refresh rate. Lower resolutions can raise the estimate, while the refresh-rate check shows whether it reaches your selected target.
             </p>
           </div>
 
           <div>
             <h3 className="mb-2 text-xl font-semibold text-white">Get Instant FPS Results</h3>
             <p className="text-gray-300 leading-7">
-              Get instant results with the FPS Calculator after entering your PC and game settings. It shows estimated frames per second for different graphics presets in seconds, so you can spot CPU or GPU bottlenecks and adjust settings for smoother gameplay right away.
+              Calculate an FPS estimate, performance tier, refresh-rate match, and likely bottleneck after choosing your PC and game settings. Try changing the resolution or components to compare results.
             </p>
           </div>
         </div>
@@ -68,21 +68,21 @@ export default function FpsCalculatorContent() {
           <div>
             <h3 className="mb-2 text-xl font-semibold text-white">Which Data Does It Use?</h3>
             <p className="text-gray-300 leading-7">
-              The FPS Calculator uses real-world benchmark data from CPUs, GPUs, and games. It compares your hardware against tested system configurations to estimate frame rates. The underlying data is reviewed periodically as new games and drivers are released, to keep predictions as reliable as possible.
+              The calculator uses the relative benchmark scores stored for the selected CPU, GPU, and game, along with resolution and RAM multipliers. This lightweight model is intended for comparison, not as a substitute for measured game benchmarks.
             </p>
           </div>
 
           <div>
             <h3 className="mb-2 text-xl font-semibold text-white">Is the FPS Calculator Accurate?</h3>
             <p className="text-gray-300 leading-7">
-              The FPS Calculator gives reliable estimates, not exact numbers. Actual frame rates can vary based on drivers, background apps, and in-game settings.
+              Treat the result as a rough estimate rather than a guaranteed frame rate. Real performance depends on graphics presets, game updates, drivers, thermals, and other system details not modeled here.
             </p>
           </div>
 
           <div>
             <h3 className="mb-2 text-xl font-semibold text-white">Why Do Results Change Over Time?</h3>
             <p className="text-gray-300 leading-7">
-              Estimates can shift over time because the underlying benchmark data and prediction models get updated periodically. New games, drivers, and hardware releases all affect estimated FPS. Software updates, in-game optimization, and PC upgrades can also change your real-world performance, even if your hardware hasn't changed.
+              Results change when you select different hardware, games, resolutions, or RAM amounts. Real-world performance may also change with new drivers, game updates, and system conditions.
             </p>
           </div>
         </div>

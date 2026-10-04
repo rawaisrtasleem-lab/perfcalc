@@ -3,7 +3,7 @@ import Script from "next/script"
 
 export const metadata = getMetadata({
   title: "FPS Calculator",
-  description: "Calculate expected FPS (frames per second) for any PC gaming setup. Get accurate performance predictions for your CPU and GPU combination to optimize gaming performance.",
+  description: "Estimate gaming FPS from your selected CPU, GPU, game, and resolution. Check monitor refresh-rate targets and likely hardware bottlenecks.",
   path: "/tools/fps-calculator",
 })
 

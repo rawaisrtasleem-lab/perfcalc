@@ -3,7 +3,7 @@ import Script from "next/script"
 
 export const metadata = getMetadata({
   title: "Bottleneck Calculator",
-  description: "Check your CPU & GPU bottleneck for free. Get accurate FPS estimates, resolution testing & personalized upgrade recommendations instantly.",
+  description: "Compare relative CPU and GPU hardware tiers for 1080p, 1440p, or 4K gaming with a rough resolution-aware pairing guide.",
   path: "/tools/bottleneck-calculator",
 })
 

@@ -27,10 +27,9 @@ export default function Page() {
             Bottleneck Calculator
           </h1>
           <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-            The Bottleneck Calculator helps you analyze how well your CPU and GPU
-            work together. A bottleneck occurs when one component limits the
-            performance of another, reducing overall efficiency. 
-            you can plan upgrades and achieve smoother performance.
+            Compare the relative CPU and GPU tiers for 1080p, 1440p, or 4K gaming.
+            The result is a rough pairing guide based on the benchmark scores in
+            our hardware lists, not a live test or a guaranteed measure of FPS loss.
           </p>
         </div>
 

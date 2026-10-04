@@ -11,7 +11,7 @@ export default function DPSCalculatorPage() {
 
             <ToolHeader
                 title="DPS Calculator"
-                                description="The Damage Per Second (DPS) Calculator helps gamers and developers measure how much damage a character, weapon, or ability can deal over time. By analyzing attack speed, damage values, and cooldowns, this tool provides accurate insights into your performance so you can optimize builds, strategies, and gameplay efficiency."
+                description="Estimate burst and sustained damage per second from damage, attack speed, critical stats, magazine size, and reload time. Add target health for an estimated time to kill."
             />
 
             <motion.div

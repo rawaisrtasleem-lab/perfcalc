@@ -1,12 +1,13 @@
 import "../../styles/Select.css";
 
-function Select({ label, options, value, onChange }) {
+function Select({ id, label, options, value, onChange, className = "" }) {
   return (
     <div className="select-container">
-      <label className="select-label">{label}</label>
+      <label className="select-label" htmlFor={id}>{label}</label>
 
       <select
-        className="select-input"
+        id={id}
+        className={`select-input ${className}`}
         value={value}
         onChange={(e) => onChange(e.target.value)}
       >

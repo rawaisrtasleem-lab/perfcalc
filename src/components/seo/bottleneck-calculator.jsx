@@ -15,7 +15,7 @@ export default function BottleneckCalculatorSeo() {
           Bottleneck Calculator (Check Your PC Performance Balance Instantly)
         </h1>
         <p className={paragraphClass}>
-          With Bottleneck Calculator check your PC performance balance instantly. It helps you quickly spot a CPU bottleneck or GPU bottleneck in your system. It works as a reliable hardware bottleneck checker and performs a fast PC bottleneck test for accurate system performance analysis.
+          Compare the relative CPU and GPU tiers in your PC build. Select a processor, graphics card, and gaming resolution to see a rough pairing estimate and which part may deserve closer attention.
         </p>
         <p className={paragraphClass}>
           By detecting hardware mismatch, it ensures proper CPU and GPU compatibility and helps resolve gaming performance issues like frame rate drops (FPS drops).
@@ -28,16 +28,16 @@ export default function BottleneckCalculatorSeo() {
       <section className="space-y-5">
         <h2 className={headingClass}>What Is a Bottleneck Calculator &amp; How It Works</h2>
         <p className={paragraphClass}>
-          The Bottleneck Calculator helps you identify which PC parts limit performance. It performs a CPU performance check, GPU performance check, and RAM performance test.
+          This tool compares benchmark-score positions for selected CPUs and GPUs in the site's hardware lists. Resolution adds context because lower resolutions tend to be more CPU-sensitive while higher resolutions tend to be more GPU-sensitive.
         </p>
         <p className={paragraphClass}>
           This PC bottleneck calculator ensures your system maintains a healthy system performance balance.
         </p>
         <p className={paragraphClass}>
-          The tool runs hardware performance tests to detect CPU and GPU mismatch or other issues. It also checks component compatibility and provides performance imbalance analysis. Using it helps with gaming performance optimization and overall PC optimization tool guidance.
+          This is a database-based comparison, not a benchmark run on your computer. It does not measure live usage, FPS, thermals, memory, storage, or game-specific performance.
         </p>
         <p className={paragraphClass}>
-          After analysis, it gives upgrade recommendations to improve speed. You can run storage performance checks and optimize for real-world PC performance. This makes your computer faster and easier to manage, following a clear computer performance guide.
+          Use the result as a starting point, then check benchmarks for the games and settings you actually use before choosing an upgrade.
         </p>
       </section>
 
@@ -47,25 +47,25 @@ export default function BottleneckCalculatorSeo() {
           <article className={cardClass}>
             <h3 className={subheadingClass}>CPU (Processor)</h3>
             <p className={`${paragraphClass} mt-3`}>
-              The Bottleneck Calculator can show if your CPU (Processor) limits your PC's speed. It performs a CPU performance check and identifies hardware bottleneck detection issues. This helps spot CPU and GPU mismatch and ensures component compatibility. Using it also improves real-world PC performance and guides gaming performance optimization.
+              The estimate compares the selected CPU's position within the CPU benchmark list. It cannot determine actual CPU limits without game-specific testing and utilization data.
             </p>
           </article>
           <article className={cardClass}>
             <h3 className={subheadingClass}>GPU (Graphics Card)</h3>
             <p className={`${paragraphClass} mt-3`}>
-              The Bottleneck Calculator helps check if your GPU (Graphics Card) limits performance. It runs a GPU performance check and detects hardware bottleneck detection issues. This ensures CPU and GPU mismatch is avoided and supports gaming performance optimization. It also guides PC optimization tools to improve real-world PC performance.
+              The estimate compares the selected GPU's position within the GPU benchmark list. Actual GPU limits depend on the game, graphics settings, resolution, and measured utilization.
             </p>
           </article>
           <article className={cardClass}>
             <h3 className={subheadingClass}>RAM (Memory)</h3>
             <p className={`${paragraphClass} mt-3`}>
-              The Bottleneck Calculator can check if your RAM (Memory) slows down your PC. It performs a RAM performance test and identifies hardware bottleneck detection issues. Also, it helps with system performance balance and suggests upgrade recommendations. Using it ensures smoother gaming performance optimization and better real-world PC performance.
+              This calculator does not collect RAM capacity, speed, or timings, so it cannot diagnose memory-related performance limits.
             </p>
           </article>
           <article className={cardClass}>
             <h3 className={subheadingClass}>Storage (SSD vs HDD)</h3>
             <p className={`${paragraphClass} mt-3`}>
-              The Bottleneck Calculator helps compare SSD vs HDD and identifies storage slowdowns. It performs a storage performance check to detect hardware bottleneck detection issues. Also, it highlights PC optimization tool tips for faster data access. Using it improves system performance balance and supports smoother gaming performance optimization.
+              This calculator does not test storage devices. Storage can affect loading times and asset streaming, but that is outside this CPU/GPU tier comparison.
             </p>
           </article>
         </div>
@@ -97,10 +97,10 @@ export default function BottleneckCalculatorSeo() {
 
         <h3 className={subheadingClass}>Real Usage Scenarios (CPU &amp; GPU Behavior)</h3>
         <ul className="list-disc space-y-3 pl-6 leading-7 text-gray-300 marker:text-gray-300">
-          <li><strong className="text-white">Low CPU + Low GPU Usage:</strong> Balanced system performance during light gaming or simple tasks.</li>
-          <li><strong className="text-white">Low CPU + High GPU Usage:</strong> GPU bottleneck caused by graphics-intensive workloads. Lower settings or GPU upgrade recommended.</li>
-          <li><strong className="text-white">High CPU + High GPU Usage:</strong> Both components maxed out, near balanced but slight GPU bottleneck possible.</li>
-          <li><strong className="text-white">High CPU + Low GPU Usage:</strong> CPU bottleneck with underutilized GPU. Upgrade CPU or optimize CPU-heavy tasks.</li>
+          <li><strong className="text-white">Low CPU + Low GPU Usage:</strong> May indicate a frame cap, light workload, or another system limit; this calculator does not measure utilization.</li>
+          <li><strong className="text-white">Low CPU + High GPU Usage:</strong> Can indicate a GPU-limited workload in a live game. Check actual utilization before changing hardware.</li>
+          <li><strong className="text-white">High CPU + High GPU Usage:</strong> Both parts may be working hard; observed FPS and frame times help identify practical limits.</li>
+          <li><strong className="text-white">High CPU + Low GPU Usage:</strong> Can indicate a CPU-limited game or another constraint, but the pattern needs in-game measurement to confirm.</li>
         </ul>
       </section>
 
@@ -108,17 +108,16 @@ export default function BottleneckCalculatorSeo() {
         <h2 className={headingClass}>How to Use the Bottleneck Calculator</h2>
         <ol className="list-decimal space-y-5 pl-6 leading-7 text-gray-300 marker:text-gray-300">
           <li>
-            <strong className="text-white">Enter CPU &amp; GPU:</strong> To use the Bottleneck Calculator, first select your CPU model and GPU model from the hardware database. You can choose from the latest hardware models or even old hardware models for comparison. This helps with PC component selection and ensures component compatibility check. By entering your system specifications, you can optimize PC build and plan processor and graphics card selection for better performance.
+            <strong className="text-white">Enter CPU &amp; GPU:</strong> Select a processor and graphics card from the hardware lists to compare their relative score positions. This gives a rough pairing overview, not a compatibility test.
           </li>
           <li>
-            <strong className="text-white">Select Resolution:</strong> Choose your target gaming resolution 1080p, 1440p, or 4K to match your use case. Resolution affects how the workload is shared between your CPU and GPU, so selecting the right one helps produce more accurate bottleneck results.
+            <strong className="text-white">Select Resolution:</strong> Choose 1080p, 1440p, or 4K. The tool uses resolution as a broad CPU- or GPU-sensitivity hint; it does not simulate a specific game or graphics preset.
           </li>
           <li>
-            <strong className="text-white">Add RAM &amp; Settings:</strong> Add RAM and adjust settings to match your use case. Choosing the right RAM size impacts system performance for CPU-heavy tasks like gaming, video editing, or programming.
-            <span className="mt-2 block">As well, configure advanced PC options and storage type selection, including NVMe SSD performance versus SSD vs HDD, for accurate performance results. These steps help optimize system performance across gaming, streaming, and workstation setups.</span>
+            <strong className="text-white">Choose a Resolution:</strong> Select the resolution you usually play at. This adjusts the likely-limiter hint toward CPU sensitivity at 1080p and GPU sensitivity at 4K; it does not change measured benchmark data.
           </li>
           <li>
-            <strong className="text-white">Analyze Results:</strong> Analyze results to calculate the PC bottleneck and check the bottleneck percentage. You can view your CPU and GPU analysis, gaming tier rating, and expected FPS range for a better system efficiency score. The tool provides component-specific recommendations and a hardware performance report, even a downloadable performance report. Use these insights to optimize PC performance and follow hardware upgrade suggestions for improved gaming performance assessment.
+            <strong className="text-white">Analyze Results:</strong> Review the relative hardware-tier gap and the part that may be more limiting for the selected resolution. The percentage is a difference between each part's position in its own benchmark list; it is not a predicted FPS loss or a measured bottleneck.
           </li>
         </ol>
       </section>

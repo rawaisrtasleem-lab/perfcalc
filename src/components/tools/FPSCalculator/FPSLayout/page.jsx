@@ -5,81 +5,71 @@ import CPUSelect from "../CPUSelect";
 import GPUSelect from "../GPUSelect";
 import GameSettings from "../GameSettings";
 import FPSResult from "../FPSResult";
+import cpuData from "@/data/cpu2";
+import gpuData from "@/data/gpu2";
 
 export default function FPSLayout() {
   const [result, setResult] = useState(null);
+  const [cpu, setCpu] = useState(cpuData[0]);
+  const [gpu, setGpu] = useState(gpuData[0]);
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-[#0F1628] via-[#0F1628] to-[#0B0F19] text-gray-100">
-      
-      
-
-      {/* Main Content */}
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 max-w-6xl lg:max-w-7xl">
-        
-        {/* Hero */}
-        <div className="mb-12 sm:mb-16">
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+        <div className="mb-10 sm:mb-12">
           <div className="flex items-center gap-2 mb-4">
             <div className="h-1 w-10 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full"></div>
             <span className="text-xs sm:text-sm font-semibold text-indigo-400 uppercase tracking-wider">
-              Performance Tool
+              Performance estimator
             </span>
           </div>
-          
+
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-white">
-            FPS Calculator 
+            FPS Calculator
           </h1>
-          
+
           <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-3xl leading-relaxed">
-               The Frames Per Second (FPS)  analyzing your CPU, GPU, RAM, and 
-    resolution settings, this tool provides accurate predictions of performance 
-    so you can optimize your hardware and enjoy a better gaming experience.</p>
+            Choose your processor, graphics card, game, and display settings to get a
+            consistent FPS estimate, monitor refresh-rate check, and likely hardware bottleneck.
+          </p>
         </div>
 
-        {/* Layout Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16 m-8">
-          
-          {/* Inputs */}
-          <div className="lg:col-span-2 space-y-6">
-            <div>
-              <label className="block text-sm font-semibold text-gray-300 mb-2 m-8">CPU Selection</label>
-              <CPUSelect className="w-full rounded-lg m-8 bg-slate-900/60 border border-slate-700 focus:ring-2 focus:ring-indigo-500 transition-all text-sm py-3 px-4" />
-            </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-gray-300 mb-2 m-8">GPU Selection</label>
-              <GPUSelect className="w-full rounded-lg m-8 bg-slate-900/60 border border-slate-700 focus:ring-2 focus:ring-indigo-500 transition-all text-sm py-3 px-4" />
-            </div>
-
+        <div className="mb-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div className="space-y-4 lg:col-span-2">
+            <CPUSelect
+              value={cpu.value}
+              onChange={(value) => setCpu(cpuData.find((item) => item.value === value))}
+            />
+            <GPUSelect
+              value={gpu.value}
+              onChange={(value) => setGpu(gpuData.find((item) => item.value === value))}
+            />
             <GameSettings
+              cpu={cpu}
+              gpu={gpu}
               setResult={setResult}
-              className="w-full rounded-lg m-8 bg-slate-900/60 border border-slate-700 focus:ring-2 focus:ring-indigo-500 transition-all text-sm md:text-base py-3 px-4"
             />
 
-            {/* Mobile Result */}
             <div className="lg:hidden mt-6">
               <FPSResult result={result} />
             </div>
           </div>
 
-          {/* Sidebar */}
-          <div className="hidden lg:block space-y-6">
+          <div className="hidden lg:block">
             <FPSResult result={result} />
-         
           </div>
         </div>
 
-        {/* Info Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 m-8  mb-16">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {[
-            { title: "How It Works", desc: "Select your components and game settings, then click calculate for instant FPS estimates." },
-            { title: "Accurate Data", desc: "Built with real performance benchmarks from thousands of gaming rigs." },
-            { title: "Bottleneck Analysis", desc: "Get insights on CPU/GPU compatibility and performance limitations." },
-            { title: "Optimization Tips", desc: "Receive personalized recommendations to boost your gaming performance." }
+            { title: "Repeatable estimates", desc: "The same hardware and settings produce the same result; changing a selection updates the estimate." },
+            { title: "Refresh-rate check", desc: "See whether the estimate reaches your monitor's selected 60, 144, or 240 Hz target." },
+            { title: "Bottleneck insight", desc: "Compare CPU and GPU benchmark scores to identify which component may limit performance." },
+            { title: "Treat as a guide", desc: "Drivers, game patches, quality settings, and thermals can make real gameplay differ from this estimate." }
           ].map((card, i) => (
             <div
               key={i}
-              className="p-6 m-8  rounded-xl bg-slate-800/50 border border-slate-700/50 hover:border-indigo-500/40 transition-all cursor-pointer"
+              className="rounded-xl border border-slate-700/50 bg-slate-800/50 p-5 transition-colors hover:border-indigo-500/40"
             >
               <h3 className="text-base font-semibold text-white mb-2">{card.title}</h3>
               <p className="text-sm text-gray-400 leading-relaxed">{card.desc}</p>

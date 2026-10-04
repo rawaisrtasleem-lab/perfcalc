@@ -14,7 +14,7 @@ export default function DPSContent() {
         <section className="space-y-4">
           <h2 className={sectionHeadingClass}>What Is a DPS Calculator?</h2>
           <p className={paragraphClass}>
-            A DPS calculator helps you quickly measure your damage per second in any game by using base damage, attack speed, and critical hit chance . while also factoring in elemental damage, reload time, and magazine size to show both burst DPS and sustained DPS for smarter weapon or spell choices.
+            Enter damage, attacks per second, critical-hit stats, magazine size, and reload time to compare burst DPS with sustained DPS. Add target health to estimate how long it may take to defeat it.
           </p>
         </section>
 
@@ -24,21 +24,21 @@ export default function DPSContent() {
           <div className="rounded-xl border border-white/10 bg-white/[0.04] p-5">
             <h3 className={subheadingClass}>Enter Base Damage</h3>
             <p className={`${paragraphClass} mt-3`}>
-              Input your minimum and maximum weapon power into the DPS Calculator to set your baseline. These figures represent the raw, unmitigated strength of your strikes before any buff tracking or stat weighting begins.
+              Enter the damage dealt by one hit. Critical chance and critical damage bonus are used to calculate expected damage per hit.
             </p>
           </div>
 
           <div className="rounded-xl border border-white/10 bg-white/[0.04] p-5">
             <h3 className={subheadingClass}>Add Attack Speed</h3>
             <p className={`${paragraphClass} mt-3`}>
-              Enter your attacks per second into the DPS Calculator to determine your sustained output. This metric shows how fast you hit, which helps you reach your scaling ceiling quickly.
+              Enter attacks per second, shots per magazine, and reload duration. The calculator shows firing DPS and sustained DPS averaged across reloads.
             </p>
           </div>
 
           <div className="rounded-xl border border-white/10 bg-white/[0.04] p-5">
             <h3 className={subheadingClass}>Apply Bonus Multipliers</h3>
             <p className={`${paragraphClass} mt-3`}>
-              Boost your DPS Calculator results by including every active buff tracking effect. These multipliers turn a simple hit into a massive burst window for your build.
+              Enter an optional target health value to estimate the number of hits and time needed to defeat it, including reloads between magazines.
             </p>
           </div>
         </section>
@@ -46,10 +46,10 @@ export default function DPSContent() {
         <section className="space-y-4">
           <h2 className={sectionHeadingClass}>DPS Formula Explained (With Example)</h2>
           <p className={paragraphClass}>
-            Master your DPS by multiplying your average hit by your attack speed. This simple math reveals your sustained output during any intense boss encounter.
+            Burst DPS is expected damage per hit multiplied by attacks per second. Sustained DPS also accounts for the time spent reloading between magazines.
           </p>
           <p className={paragraphClass}>
-            For instance, if you deal 50 damage twice per second, your final score is 100. However, adding a critical multiplier into the mix will quickly elevate your burst potential.
+            For example, 50 expected damage per hit at two attacks per second produces 100 burst DPS. A magazine of 30 shots followed by a two-second reload lowers sustained DPS.
           </p>
         </section>
 
@@ -59,7 +59,7 @@ export default function DPSContent() {
           <div>
             <h3 className={subheadingClass}>Identify Your Average Damage</h3>
             <p className={`${paragraphClass} mt-3`}>
-              Start by finding your base hit range using the DPS Calculator manually. Add your minimum and maximum weapon values together and divide them by two.
+              Enter the damage of one hit. Critical chance and critical damage bonus determine the expected damage used by the calculator.
             </p>
             <p className={`${paragraphClass} mt-3`}>
               This simple number serves as your consistency floor for all future math. Hardware lag can also lower your results. Use our{" "}
@@ -73,14 +73,14 @@ export default function DPSContent() {
           <div>
             <h3 className={subheadingClass}>Multiply by Attack Speed</h3>
             <p className={`${paragraphClass} mt-3`}>
-              Take your average damage and multiply it by your attacks per second. This step reveals your raw sustained output before any other buffs apply. However, you must use your actual combat speed for the most accurate results.
+              Multiply expected damage per hit by attacks per second to get burst DPS. Magazine size and reload time are then used to estimate sustained DPS.
             </p>
           </div>
 
           <div>
             <h3 className={subheadingClass}>Account for Critical Hits</h3>
             <p className={`${paragraphClass} mt-3`}>
-              Factor in your critical multiplier to find your true burst potential during a fight. Also, subtract any enemy damage mitigation to see your final, real-world performance. This final check ensures your offensive efficiency remains high against tough bosses.
+              Enter critical-hit chance and critical damage bonus. The calculator uses the average expected damage over many hits; actual outcomes can vary due to randomness.
             </p>
           </div>
         </section>
@@ -92,7 +92,7 @@ export default function DPSContent() {
             <div className="rounded-xl border border-white/10 bg-white/[0.04] p-5">
               <h3 className={subheadingClass}>Base Damage</h3>
               <p className={`${paragraphClass} mt-3`}>
-                Enter your minimum and maximum weapon power into the DPS Calculator to find your consistency floor. This starting value serves as the essential foundation for calculating your total sustained output.
+                Enter the expected damage dealt by one non-critical hit. Critical stats are applied separately to calculate expected damage per hit.
               </p>
             </div>
 
@@ -113,7 +113,7 @@ export default function DPSContent() {
             <div className="rounded-xl border border-white/10 bg-white/[0.04] p-5">
               <h3 className={subheadingClass}>Buffs &amp; Multipliers</h3>
               <p className={`${paragraphClass} mt-3`}>
-                Boost your DPS Calculator results by adding every active power-up to your calculation. These extra layers quickly amplify your sustained output during a difficult encounter. Also, remember that stacking too many identical effects often leads to diminishing returns. Instead, try mixing different buff tracking categories for the best possible damage.
+                Magazine size and reload duration affect sustained DPS. The estimate assumes each shot hits and does not include armor, buffs, cooldowns, or other game-specific modifiers.
               </p>
             </div>
           </div>
@@ -135,10 +135,10 @@ export default function DPSContent() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td className="border border-white/10 p-4 text-gray-300">Definition</td><td className="border border-white/10 p-4 text-gray-300">Max damage dealt in a short window</td><td className="border border-white/10 p-4 text-gray-300">Average damage maintained over a full fight</td></tr>
+                <tr><td className="border border-white/10 p-4 text-gray-300">Definition</td><td className="border border-white/10 p-4 text-gray-300">Expected damage per second while firing</td><td className="border border-white/10 p-4 text-gray-300">Average DPS including magazine reload time</td></tr>
                 <tr><td className="border border-white/10 p-4 text-gray-300">Best For</td><td className="border border-white/10 p-4 text-gray-300">Clearing trash mobs, execute phases</td><td className="border border-white/10 p-4 text-gray-300">Long boss fights, enrage timers</td></tr>
-                <tr><td className="border border-white/10 p-4 text-gray-300">Weakness</td><td className="border border-white/10 p-4 text-gray-300">Drops off between cooldowns</td><td className="border border-white/10 p-4 text-gray-300">Needs consistent rotation and uptime</td></tr>
-                <tr><td className="border border-white/10 p-4 text-gray-300">Depends On</td><td className="border border-white/10 p-4 text-gray-300">Crit chance, burst cooldowns</td><td className="border border-white/10 p-4 text-gray-300">Buff uptime, downtime minimization</td></tr>
+                <tr><td className="border border-white/10 p-4 text-gray-300">Weakness</td><td className="border border-white/10 p-4 text-gray-300">Does not account for reload downtime</td><td className="border border-white/10 p-4 text-gray-300">Assumes shots hit and ignores other combat downtime</td></tr>
+                <tr><td className="border border-white/10 p-4 text-gray-300">Depends On</td><td className="border border-white/10 p-4 text-gray-300">Damage, attack speed, critical stats</td><td className="border border-white/10 p-4 text-gray-300">Burst DPS, magazine size, reload time</td></tr>
               </tbody>
             </table>
           </div>
@@ -159,10 +159,10 @@ export default function DPSContent() {
           <div>
             <h3 className={subheadingClass}>DPS vs Time to Kill (TTK)</h3>
             <p className={`${paragraphClass} mt-3`}>
-              A high DPS Calculator score often hides your true practical lethality in fast-paced combat. While raw damage averages your output, reaching specific TTK thresholds determines how quickly an enemy actually dies.
+              Add target health to estimate the hits and time required to defeat it, including reloads. The estimate assumes every hit connects and uses average critical-hit damage.
             </p>
             <p className={`${paragraphClass} mt-3`}>
-              For example, a one-shot potential build might have lower average stats but better results. Focus on downtime minimization to keep your effective uptime high and your kills fast.
+              Real time to kill may differ because of missed shots, armor, damage falloff, and game-specific mechanics not included in this estimate.
             </p>
           </div>
 

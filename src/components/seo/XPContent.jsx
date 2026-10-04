@@ -37,9 +37,9 @@ export default function XPContentPage() {
         {/* How it Works */}
         <h2 className="text-2xl font-bold">How the XP Calculator Works</h2>
         <p className="text-gray-300">
-          The XP Calculator is designed to give fast and accurate results based on
-          simple inputs. You can enter your current XP, target XP, or XP per action.
-          The tool instantly calculates how much progress you need.
+          Enter your current level, target level, and XP earned per action to see the
+          total XP and actions required. Add how long each action takes to estimate
+          the time needed to reach your goal.
         </p>
         <p className="text-gray-300">
           This removes guesswork and helps you plan your next move with clarity.

@@ -1,21 +1,33 @@
-export function calculateXP(currentLevel,targetLevel,xpPerAction){
+export function calculateXP(currentLevel, targetLevel, xpPerAction, minutesPerAction = 1) {
+  const current = Number(currentLevel)
+  const target = Number(targetLevel)
+  const xp = Number(xpPerAction)
+  const minutes = Number(minutesPerAction)
 
-currentLevel = Number(currentLevel)
-targetLevel = Number(targetLevel)
+  if (!Number.isInteger(current) || current < 1) {
+    throw new RangeError("Current level must be a whole number of 1 or higher.")
+  }
 
-let xpNeeded = 0
+  if (!Number.isInteger(target) || target <= current) {
+    throw new RangeError("Target level must be a whole number greater than current level.")
+  }
 
-for(let level=currentLevel; level<targetLevel; level++){
+  if (!Number.isFinite(xp) || xp <= 0 || !Number.isFinite(minutes) || minutes <= 0) {
+    throw new RangeError("XP and minutes per action must both be greater than zero.")
+  }
 
-xpNeeded += 100 * Math.pow(level,2)
+  let xpNeeded = 0
 
-}
+  for (let level = current; level < target; level++) {
+    xpNeeded += 100 * Math.pow(level, 2)
+  }
 
-const actionsRequired = Math.ceil(xpNeeded / xpPerAction)
+  const actionsRequired = Math.ceil(xpNeeded / xp)
+  const estimatedMinutes = Math.ceil(actionsRequired * minutes)
 
-return {
-xpNeeded,
-actionsRequired
-}
-
+  return {
+    xpNeeded,
+    actionsRequired,
+    estimatedMinutes,
+  }
 }

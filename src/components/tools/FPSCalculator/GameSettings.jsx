@@ -1,118 +1,109 @@
 "use client";
 
+import { useState } from "react";
 import { Settings } from "lucide-react";
 import Select from "@/components/ui/Select";
 import games from "@/data/games";
 import { calculateFPS } from "@/lib/fpsCalculation";
 
-export default function GameSettings({ setResult }) {
-  function handleCalculate() {
-    const fps = calculateFPS();
-    setResult(fps);
+const resolutions = [
+  { label: "1080p (FHD)", value: "1080p" },
+  { label: "1440p (QHD)", value: "1440p" },
+  { label: "4K (UHD)", value: "4k" },
+];
+
+const ramOptions = [
+  { label: "8 GB", value: "8gb" },
+  { label: "16 GB", value: "16gb" },
+  { label: "32 GB", value: "32gb" },
+];
+
+const refreshRates = [
+  { label: "60 Hz", value: "60" },
+  { label: "144 Hz", value: "144" },
+  { label: "240 Hz", value: "240" },
+];
+
+export default function GameSettings({ cpu, gpu, setResult }) {
+  const [game, setGame] = useState(games[0].value);
+  const [resolution, setResolution] = useState("1080p");
+  const [ram, setRam] = useState("16gb");
+  const [refreshRate, setRefreshRate] = useState("144");
+  const [error, setError] = useState("");
+
+  function handleCalculate(event) {
+    event.preventDefault();
+
+    try {
+      const selectedGame = games.find((item) => item.value === game);
+      const result = calculateFPS({
+        cpu,
+        gpu,
+        game: selectedGame,
+        resolution,
+        ram,
+        refreshRate,
+      });
+      setError("");
+      setResult(result);
+    } catch (calculationError) {
+      setError(calculationError.message);
+      setResult(null);
+    }
   }
 
-  const selectClasses =
-    "w-full rounded-lg bg-slate-800/60 text-slate-100 border border-slate-700 " +
-    "focus:ring-2 focus:ring-green-500 focus:border-green-500 " +
-    "placeholder-slate-400 text-xs sm:text-sm " +
-    "py-2 sm:py-2 px-3 sm:px-3 " +
-    "transition-all duration-200 " +
-    "hover:border-slate-600 hover:bg-slate-800/80";
-
-  const buttonClasses =
-    "w-full bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 " +
-    "active:from-indigo-700 active:to-indigo-600 transition-all duration-200 rounded-lg py-2.5 sm:py-3 " +
-    "font-bold text-white text-xs sm:text-sm md:text-base shadow-lg shadow-indigo-500/30 " +
-    "hover:shadow-indigo-500/50 border border-indigo-400/30 hover:border-indigo-300/50 flex items-center " +
-    "justify-center gap-2 min-h-10 sm:min-h-12 mt-1";
-
   return (
-    <div className="w-full bg-gradient-to-br from-slate-800/60 to-slate-900/60 border border-slate-700/50 rounded-xl p-4 sm:p-5 space-y-3 sm:space-y-4 hover:border-green-500/20 transition-all">
-      {/* Heading */}
-      <div className="flex items-center gap-2 sm:gap-3">
-        <div className="p-1.5 sm:p-2 rounded-lg bg-green-500/10 border border-green-500/30">
-          <Settings size={16} className="text-green-400" />
-        </div>
-        <h3 className="text-xs sm:text-sm md:text-base font-bold text-white">
-          Game Settings
-        </h3>
-      </div>
+    <form
+      onSubmit={handleCalculate}
+      className="w-full space-y-4 rounded-xl border border-slate-700/50 bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-4 sm:p-5"
+    >
+      <h3 className="flex items-center gap-2 text-sm font-bold text-white sm:text-base">
+        <Settings size={18} className="text-green-400" />
+        Game & display settings
+      </h3>
 
-      {/* Game Selection */}
-      <div>
-        <label className="block text-xs font-semibold text-gray-300 mb-0.5">
-          Select Game
-        </label>
-        <Select
-          placeholder="Choose a game..."
-          options={games.map(game => ({
-            label: game.label,
-            value: game.value,
-          }))}
-          className={selectClasses}
-        />
-      </div>
+      <Select
+        id="game-select"
+        label="Game"
+        options={games.map(({ label, value }) => ({ label, value }))}
+        value={game}
+        onChange={setGame}
+      />
+      <Select
+        id="resolution-select"
+        label="Resolution"
+        options={resolutions}
+        value={resolution}
+        onChange={setResolution}
+      />
+      <Select
+        id="ram-select"
+        label="System RAM"
+        options={ramOptions}
+        value={ram}
+        onChange={setRam}
+      />
+      <Select
+        id="refresh-rate-select"
+        label="Monitor refresh rate"
+        options={refreshRates}
+        value={refreshRate}
+        onChange={setRefreshRate}
+      />
 
-      {/* Resolution */}
-      <div>
-        <label className="block text-xs font-semibold text-gray-300 mb-0.5">
-          Resolution
-        </label>
-        <Select
-          placeholder="Pick resolution..."
-          options={[
-            { label: "1080p (FHD) - Balanced", value: "1080p" },
-            { label: "1440p (QHD) - High Quality", value: "1440p" },
-            { label: "4K (Ultra) - Maximum Quality", value: "4k" },
-          ]}
-          className={selectClasses}
-        />
-      </div>
+      {error && <p role="alert" className="text-sm text-red-400">{error}</p>}
 
-      {/* RAM */}
-      <div>
-        <label className="block text-xs font-semibold text-gray-300 mb-0.5">
-          RAM Amount
-        </label>
-        <Select
-          placeholder="Select RAM..."
-          options={[
-            { label: "8GB", value: "8gb" },
-            { label: "16GB (Recommended)", value: "16gb" },
-            { label: "32GB", value: "32gb" },
-          ]}
-          className={selectClasses}
-        />
-      </div>
-
-      {/* Storage */}
-      <div>
-        <label className="block text-xs font-semibold text-gray-300 mb-0.5">
-          Storage Type
-        </label>
-        <Select
-          placeholder="Pick storage..."
-          options={[
-            { label: "NVMe SSD (Fastest)", value: "nvme" },
-            { label: "SATA SSD (Fast)", value: "sata" },
-            { label: "HDD (Standard)", value: "hdd" },
-          ]}
-          className={selectClasses}
-        />
-      </div>
-
-      {/* Calculate Button - Mobile Optimized */}
       <button
-        onClick={handleCalculate}
-        className={buttonClasses}
+        type="submit"
+        className="mt-1 flex min-h-11 w-full items-center justify-center gap-2 rounded-lg border border-indigo-400/30 bg-gradient-to-r from-indigo-600 to-indigo-500 py-2.5 font-bold text-white shadow-lg shadow-indigo-500/20 transition-all hover:from-indigo-500 hover:to-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-900"
       >
-        <span>⚡ Calculate FPS Now</span>
+        <span aria-hidden="true">⚡</span>
+        Calculate FPS
       </button>
 
-      {/* Info Text */}
-      <p className="text-xs text-center text-gray-500 px-2">
-        Results are estimates based on average benchmark data
+      <p className="px-2 text-center text-xs text-slate-400">
+        Rough estimate based on relative benchmark scores, not a live measurement.
       </p>
-    </div>
+    </form>
   );
 }
