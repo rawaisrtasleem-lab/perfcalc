@@ -323,7 +323,7 @@ export const posts = [
   id: 21,
   slug: "why-is-my-pc-so-laggy",
   title: "Why Is My PC So Laggy? 10 Causes and Fixes",
-  description:
+    description:
     "Is your PC running slow or lagging? Learn about common causes, including CPU bottlenecks, background processes, outdated drivers, overheating, and storage issues.",
   excerpt:
     "Discover why your PC is laggy and learn practical solutions to improve performance, reduce CPU bottlenecks, and enjoy a smoother gaming experience.",
