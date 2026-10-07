@@ -184,17 +184,13 @@ export default function RootLayout({ children }) {
 
 
         {/* =================================================
-            GOOGLE ADSENSE
-            Disabled until real AdSense approval is active.
-        ================================================= */}
-
-        {/* =================================================
             GOOGLE TAG MANAGER
+            Loaded lazily to reduce impact on LCP
         ================================================= */}
 
         <Script
           id="google-tag-manager"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){
@@ -222,6 +218,7 @@ export default function RootLayout({ children }) {
 
         {/* =================================================
             GOOGLE ANALYTICS GA4
+            Loaded lazily to reduce initial JS work
 
             Measurement ID:
             G-NL3W1KDQ9N
@@ -230,12 +227,12 @@ export default function RootLayout({ children }) {
         <Script
           id="google-analytics-library"
           src="https://www.googletagmanager.com/gtag/js?id=G-NL3W1KDQ9N"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
 
         <Script
           id="google-analytics"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -255,9 +252,14 @@ export default function RootLayout({ children }) {
 
 
         {/* =================================================
-            MICROSOFT CLARITY
+            GOOGLE ADSENSE
+            Disabled until real AdSense approval is active
+        ================================================= */}
 
-            Intentionally removed for performance.
+
+        {/* =================================================
+            MICROSOFT CLARITY
+            Intentionally removed for performance
         ================================================= */}
 
       </body>
