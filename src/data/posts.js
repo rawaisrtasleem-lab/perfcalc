@@ -34,6 +34,7 @@ import { bloxfruits } from "@/lib/blogs/bloxfruits";
 import {minecraftBlogs} from "@/lib/blogs/minecraft";
 import { vramNeed } from "@/lib/blogs/vram-need";
 import {bloxFruit} from "@/lib/blogs/blox-cal";
+import { edpiblog } from "@/lib/blogs/edpi-blog";
 
 
 
@@ -633,6 +634,27 @@ export const posts = [
   date: "2026-09-13",
   readTime: "7 min read",
   content: bloxFruit,
+},
+
+
+
+
+
+
+
+
+
+{
+  id: 37,
+  slug: "what-is-edpi-how-to-calculate",
+  title: "What Is eDPI? How to Calculate and Find Your Effective DPI",
+  description: "Learn what eDPI means, how to calculate your effective DPI, and how mouse DPI and in-game sensitivity affect your aim in popular FPS games.",
+  excerpt: "Discover how to calculate eDPI, find your mouse DPI, compare sensitivity settings, and optimize your aim in Valorant, CS2, Apex Legends, Overwatch, and more.",
+  image: "/blog-images/edpi-formula.webp",
+  author: "Rao Awais",
+  date: "2026-10-14",
+  readTime: "7 min read",
+  content: edpiblog,
 }
   ]
 
