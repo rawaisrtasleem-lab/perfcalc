@@ -261,6 +261,13 @@ export default function RootLayout({ children }) {
             Disabled until real AdSense approval is active
         ================================================= */}
 
+        <Script
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="297599"
+          data-cfasync="false"
+          strategy="afterInteractive"
+        />
+
 
         {/* =================================================
             MICROSOFT CLARITY
