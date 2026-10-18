@@ -87,6 +87,11 @@ export default function RootLayout({ children }) {
         />
 
         <meta
+          name="monetag"
+          content="e99ee6ac8f7c0fc354eaa565beabf363"
+        />
+
+        <meta
           name="copyright"
           content="© 2026 PerfCalcPro. All rights reserved."
         />
