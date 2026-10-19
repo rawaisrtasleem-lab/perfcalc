@@ -35,6 +35,7 @@ import {minecraftBlogs} from "@/lib/blogs/minecraft";
 import { vramNeed } from "@/lib/blogs/vram-need";
 import {bloxFruit} from "@/lib/blogs/blox-cal";
 import { edpiblog } from "@/lib/blogs/edpi-blog";
+import { edpiBlog } from "@/lib/blogs/bestedpi";
 
 
 
@@ -655,6 +656,23 @@ export const posts = [
   date: "2026-10-14",
   readTime: "7 min read",
   content: edpiblog,
+},
+
+
+
+
+
+{
+  id: 38,
+  slug: "best-edpi-for-valorant",
+  title: "Best eDPI for Valorant : 5 Easy Settings",
+  description: "Discover the best eDPI for Valorant, recommended sensitivity settings for 800 and 1600 DPI, and how to improve aim accuracy.",
+  excerpt: "Find the best eDPI for Valorant, compare pro player sensitivity settings, calculate your eDPI, and improve your aim with five easy settings.",
+  image: "/blog-images/best-edpi-valorant-main.webp",
+  author: "Rao Awais",
+  date: "2026-10-18",
+  readTime: "7 min read",
+  content: edpiBlog,
 }
   ]
 

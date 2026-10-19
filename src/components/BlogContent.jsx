@@ -173,9 +173,10 @@ export default function BlogContent({ post }) {
     "prose-strong:text-white",
     "prose-a:text-blue-400 hover:prose-a:text-blue-300",
     "prose-li:text-zinc-300 prose-li:marker:text-blue-400 prose-ul:space-y-2",
-    "prose-table:w-full prose-table:border-collapse",
-    "prose-th:border prose-th:border-white/10 prose-th:bg-white/5 prose-th:p-3 prose-th:font-semibold prose-th:text-white",
-    "prose-td:border prose-td:border-white/10 prose-td:p-3 prose-td:text-zinc-300",
+    "prose-table:my-6 prose-table:w-full prose-table:overflow-hidden prose-table:rounded-xl prose-table:border prose-table:border-white/10 prose-table:bg-slate-950/40 prose-table:text-sm",
+    "prose-th:border prose-th:border-white/10 prose-th:bg-blue-500/10 prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold prose-th:text-blue-100",
+    "prose-td:border prose-td:border-white/10 prose-td:px-4 prose-td:py-3 prose-td:text-zinc-300",
+    "prose-tr:transition-colors prose-tr:even:bg-white/[0.025] hover:prose-tr:bg-blue-400/[0.06]",
     "prose-blockquote:rounded-xl prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:bg-white/5 prose-blockquote:px-5 prose-blockquote:py-2 prose-blockquote:text-zinc-300",
   ].join(" ");
 
