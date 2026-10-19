@@ -24,20 +24,20 @@ export const edpiBlog = `
 
 <p>Every row below turns your view the same distance. Pick the DPI your mouse already runs.</p>
 
-<table>
+<table class="my-6 w-full overflow-hidden rounded-xl border border-white/10 bg-slate-950/40 text-sm">
 <thead>
 <tr>
-<th>Mouse DPI</th>
-<th>In-game sensitivity</th>
-<th>eDPI</th>
+<th class="border border-white/10 bg-blue-500/10 px-4 py-3 text-left font-semibold text-blue-100">Mouse DPI</th>
+<th class="border border-white/10 bg-blue-500/10 px-4 py-3 text-left font-semibold text-blue-100">In-game sensitivity</th>
+<th class="border border-white/10 bg-blue-500/10 px-4 py-3 text-left font-semibold text-blue-100">eDPI</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>400</td><td>0.70</td><td>280</td></tr>
-<tr><td>800</td><td>0.35</td><td>280</td></tr>
-<tr><td>1000</td><td>0.28</td><td>280</td></tr>
-<tr><td>1600</td><td>0.175</td><td>280</td></tr>
-<tr><td>2000</td><td>0.14</td><td>280</td></tr>
+<tr class="transition-colors even:bg-white/[0.025] hover:bg-blue-400/[0.06]"><td class="border border-white/10 px-4 py-3 text-zinc-300">400</td><td class="border border-white/10 px-4 py-3 text-zinc-300">0.70</td><td class="border border-white/10 px-4 py-3 text-zinc-300">280</td></tr>
+<tr class="transition-colors even:bg-white/[0.025] hover:bg-blue-400/[0.06]"><td class="border border-white/10 px-4 py-3 text-zinc-300">800</td><td class="border border-white/10 px-4 py-3 text-zinc-300">0.35</td><td class="border border-white/10 px-4 py-3 text-zinc-300">280</td></tr>
+<tr class="transition-colors even:bg-white/[0.025] hover:bg-blue-400/[0.06]"><td class="border border-white/10 px-4 py-3 text-zinc-300">1000</td><td class="border border-white/10 px-4 py-3 text-zinc-300">0.28</td><td class="border border-white/10 px-4 py-3 text-zinc-300">280</td></tr>
+<tr class="transition-colors even:bg-white/[0.025] hover:bg-blue-400/[0.06]"><td class="border border-white/10 px-4 py-3 text-zinc-300">1600</td><td class="border border-white/10 px-4 py-3 text-zinc-300">0.175</td><td class="border border-white/10 px-4 py-3 text-zinc-300">280</td></tr>
+<tr class="transition-colors even:bg-white/[0.025] hover:bg-blue-400/[0.06]"><td class="border border-white/10 px-4 py-3 text-zinc-300">2000</td><td class="border border-white/10 px-4 py-3 text-zinc-300">0.14</td><td class="border border-white/10 px-4 py-3 text-zinc-300">280</td></tr>
 </tbody>
 </table>
 
@@ -86,18 +86,18 @@ export const edpiBlog = `
 
 <p>High sensitivity favors quick turns, so you clear close corners fast. Meanwhile, small hand shakes grow bigger on screen, which can hurt <strong>aim accuracy</strong> at range. Most players find the best eDPI for Valorant in the middle band, then nudge toward their comfort zone.</p>
 
-<table>
+<table class="my-6 w-full overflow-hidden rounded-xl border border-white/10 bg-slate-950/40 text-sm">
 <thead>
 <tr>
-<th>eDPI band</th>
-<th>cm/360</th>
-<th>Typical feel</th>
+<th class="border border-white/10 bg-blue-500/10 px-4 py-3 text-left font-semibold text-blue-100">eDPI band</th>
+<th class="border border-white/10 bg-blue-500/10 px-4 py-3 text-left font-semibold text-blue-100">cm/360</th>
+<th class="border border-white/10 bg-blue-500/10 px-4 py-3 text-left font-semibold text-blue-100">Typical feel</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>200 to 240</td><td>54 to 65 cm</td><td>Slow and steady</td></tr>
-<tr><td>240 to 320</td><td>41 to 54 cm</td><td>Balanced</td></tr>
-<tr><td>320 to 400</td><td>33 to 41 cm</td><td>Fast and twitchy</td></tr>
+<tr class="transition-colors even:bg-white/[0.025] hover:bg-blue-400/[0.06]"><td class="border border-white/10 px-4 py-3 text-zinc-300">200 to 240</td><td class="border border-white/10 px-4 py-3 text-zinc-300">54 to 65 cm</td><td class="border border-white/10 px-4 py-3 text-zinc-300">Slow and steady</td></tr>
+<tr class="transition-colors even:bg-white/[0.025] hover:bg-blue-400/[0.06]"><td class="border border-white/10 px-4 py-3 text-zinc-300">240 to 320</td><td class="border border-white/10 px-4 py-3 text-zinc-300">41 to 54 cm</td><td class="border border-white/10 px-4 py-3 text-zinc-300">Balanced</td></tr>
+<tr class="transition-colors even:bg-white/[0.025] hover:bg-blue-400/[0.06]"><td class="border border-white/10 px-4 py-3 text-zinc-300">320 to 400</td><td class="border border-white/10 px-4 py-3 text-zinc-300">33 to 41 cm</td><td class="border border-white/10 px-4 py-3 text-zinc-300">Fast and twitchy</td></tr>
 </tbody>
 </table>
 
