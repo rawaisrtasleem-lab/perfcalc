@@ -268,6 +268,18 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
         />
 
+        <Script
+          src="https://al5sm.com/tag.min.js"
+          data-zone="12086538"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="https://nap5k.com/tag.min.js"
+          data-zone="12076956"
+          strategy="afterInteractive"
+        />
+
 
         {/* =================================================
             MICROSOFT CLARITY
