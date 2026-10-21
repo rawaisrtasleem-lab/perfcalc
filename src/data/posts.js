@@ -36,6 +36,7 @@ import { vramNeed } from "@/lib/blogs/vram-need";
 import {bloxFruit} from "@/lib/blogs/blox-cal";
 import { edpiblog } from "@/lib/blogs/edpi-blog";
 import { edpiBlog } from "@/lib/blogs/bestedpi";
+import { valorantEDPI } from "@/lib/blogs/valorantedpi";
 
 
 
@@ -673,7 +674,25 @@ export const posts = [
   date: "2026-10-18",
   readTime: "7 min read",
   content: edpiBlog,
-}
+},
+
+
+
+
+
+{
+  id: 39,
+  slug: "valorant-pro-settings-edpi",
+  title: "Valorant Pro Settings & eDPI (Updated)",
+  description: "Valorant pro settings & eDPI, updated for 2026. See real pro numbers, cm/360 charts and crosshair tips, then test your own.",
+  excerpt: "Explore Valorant pro settings for 2026, compare pro player eDPI values, check cm/360 conversion charts, and find the right sensitivity and crosshair settings.",
+  image: "/blog-images/valorant-pro-settings-cm-360-swipe.webp",
+  author: "Rani",
+  date: "2026-10-20",
+  readTime: "7 min read",
+  content: valorantEDPI,
+},
+
   ]
 
 
