@@ -37,6 +37,7 @@ import {bloxFruit} from "@/lib/blogs/blox-cal";
 import { edpiblog } from "@/lib/blogs/edpi-blog";
 import { edpiBlog } from "@/lib/blogs/bestedpi";
 import { valorantEDPI } from "@/lib/blogs/valorantedpi";
+import { edpics2 } from "@/lib/blogs/edpics2";
 
 
 
@@ -693,6 +694,22 @@ export const posts = [
   content: valorantEDPI,
 },
 
+
+
+
+
+{
+  id: 40,
+  slug: "best-edpi-for-cs2-csgo",
+  title: "Best eDPI for CS2 and CS:GO: What Pros Use and How to Pick Yours",
+  description: "Find the best eDPI for CS2 and CS:GO. See real pro data, cm/360 math and a 5-step test, then pick your number today.",
+  excerpt: "Discover the best eDPI for CS2 and CS:GO using real pro data, learn how to calculate cm/360, and follow a simple 5-step method to find your ideal sensitivity.",
+  image: "/blog-images/best-edpi-for-cs2-hero.webp",
+  author: "Rani",
+  date: "2026-10-24",
+  readTime: "6 min read",
+  content: edpics2,
+},
   ]
 
 
